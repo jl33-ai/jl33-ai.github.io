@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="It all started during a UMCPC x Jane Street programming competition held at my uni, curiously labelled a ‘Heuristic Programming Competition’. The problem was to find an arrow arrangement which kept th">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Metaheuristic Algorithms or Machine Learning?">
+<meta property="og:url" content="http://example.com/2023/06/19/metaheuristic-algorithms/index.html">
+<meta property="og:site_name" content="jlee-blog">
+<meta property="og:description" content="It all started during a UMCPC x Jane Street programming competition held at my uni, curiously labelled a ‘Heuristic Programming Competition’. The problem was to find an arrow arrangement which kept th">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/amanda-automaton.gif">
+<meta property="article:published_time" content="2023-06-18T14:00:00.000Z">
+<meta property="article:modified_time" content="2023-12-27T01:55:27.138Z">
+<meta property="article:author" content="Justin Lee">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/amanda-automaton.gif">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>Metaheuristic Algorithms or Machine Learning?</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/writings/">Writings</a></li><!--
+     --><!--
+       --><li><a href="/extras/">About</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/10/27/renovate-datascience-bedroom/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2022/12/09/memory-hoarding-gpt/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/06/19/metaheuristic-algorithms/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/06/19/metaheuristic-algorithms/&text=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/06/19/metaheuristic-algorithms/&is_video=false&description=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Metaheuristic Algorithms or Machine Learning?&body=Check out this article: http://example.com/2023/06/19/metaheuristic-algorithms/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/06/19/metaheuristic-algorithms/&name=Metaheuristic Algorithms or Machine Learning?&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/06/19/metaheuristic-algorithms/&t=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-Jane-Street-Problem"><span class="toc-number">1.</span> <span class="toc-text">The Jane Street Problem</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Machine-Learning"><span class="toc-number">2.</span> <span class="toc-text">Machine Learning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Parameters"><span class="toc-number">2.0.1.</span> <span class="toc-text">Parameters</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hyperparameters"><span class="toc-number">2.0.2.</span> <span class="toc-text">Hyperparameters</span></a></li></ol></li></ol></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        Metaheuristic Algorithms or Machine Learning?
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Justin Lee</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-06-18T14:00:00.000Z" class="dt-published" itemprop="datePublished">2023-06-19</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p><strong>It all started during</strong> a <a href="">UMCPC x Jane Street</a> programming competition held at my uni, curiously labelled a ‘Heuristic Programming Competition’.</p>
+<p><strong>The problem</strong> was to find an arrow arrangement which kept the ball on the board for as many iterations as possible. </p>
+<p><em><strong>Heuristic algorithms</strong> are problem-solving methods that use practical techniques or rules of thumb to produce solutions that are good enough for solving complex problems where finding an optimal solution might be impractical or impossible due to constraints like time or computational resources.</em></p>
+<p>Here, the bounds between machine learning, reinforcement learning, and evolutionairy algorithms start to get really blurred. </p>
+<h1 id="The-Jane-Street-Problem"><a href="#The-Jane-Street-Problem" class="headerlink" title="The Jane Street Problem"></a>The Jane Street Problem</h1><p>The problem of keeping a ball on the board for as long as possible became one <strong>great analogy</strong> for hyperparameter tuning. </p>
+<p><img src="/images/amanda-automaton.gif"></p>
+<p>So how to solve? Introducing the sexy second cousin of machine learning, <em><strong>metaheuristic algorithms</strong></em></p>
+<p>The idea behind most of these is hilariously simple: see what ‘direction’ gives the best gains, go in that direction. </p>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">├── Optimization Algorithms</span><br><span class="line">│   ├── Metaheuristic Algorithms</span><br><span class="line">│   │   ├── Evolutionary Algorithms</span><br><span class="line">│   │   │   └── Genetic Algorithm</span><br><span class="line">│   │   ├── Beam <span class="keyword">Search</span></span><br><span class="line">│   │   ├── Simulated Annealing</span><br><span class="line">│   │   ├── <span class="keyword">Local</span> <span class="keyword">Search</span> Algorithms</span><br><span class="line">│   │   │   ├── Hill Climb</span><br><span class="line">│   │   │   └── Gradient Descent</span><br><span class="line">│   ├── Hyperparameter Tuning Methods</span><br><span class="line">│   │   ├── Grid <span class="keyword">Search</span></span><br><span class="line">│   │   ├── Random <span class="keyword">Search</span></span><br><span class="line">│   │   └── Bayesian Optimization</span><br></pre></td></tr></table></figure>
+
+<p>I used <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Simulated_annealing">simulated annealing</a> to get the third best score in the competition leaderboard. <a href="">Read the full notebook here</a></p>
+<p>(small images)</p>
+<p>The thing about this is that metaheuristic algorithms can also be used for hyperparameter optimization, where they help in selecting the best parameters for a learning algorithm.</p>
+<h1 id="Machine-Learning"><a href="#Machine-Learning" class="headerlink" title="Machine Learning"></a>Machine Learning</h1><p>But what does this have to do with <strong>machine learning?</strong></p>
+<p>Well, a machine learning model consists of <strong>parameters</strong> and <strong>hyperparameters</strong>.</p>
+<h3 id="Parameters"><a href="#Parameters" class="headerlink" title="Parameters"></a>Parameters</h3><p>Parameters are the configuration variables that are internal to the model and whose values can be estimated from the data. They are learned from the data during the training process. </p>
+<p><strong>For example</strong></p>
+<ul>
+<li>Weights in a neural network</li>
+<li>Coefficients in a linear regression</li>
+<li>Support vectors in a support vector machine</li>
+</ul>
+<h3 id="Hyperparameters"><a href="#Hyperparameters" class="headerlink" title="Hyperparameters"></a>Hyperparameters</h3><p>Hyperparameters, on the other hand, are configuration variables external to the model and whose value cannot be estimated from data. They control the training process, so are typically set before training begins. </p>
+<p><strong>For example</strong></p>
+<ul>
+<li>Learning rate</li>
+<li>Number of trees in a random forest</li>
+<li>Kernel in a support vector machine</li>
+<li>Batch size in gradient descent</li>
+<li>Number of epochs in neural network training</li>
+</ul>
+<hr>
+<p>The <strong>simulated annealing</strong> algorithm was employed to solve an independent problem. But let’s say, hypothetically, we had some model with <code>n*n</code> hyperparameters</p>
+<p>If we think of each of the cells in the grid as representing some <strong>hyperparameters</strong>, able to take on the value of <code>←, ↑, →, ↓</code>, then it is the job of the metaheuristic algorithm to find the best value for these hyperparameters.</p>
+<p>Selecting the appropriate hyperparameters can be critical, and techniques like grid search, random search, or Bayesian optimization are often used to find the most effective hyperparameters.</p>
+<p>Hopefully, now the distinction is clear: </p>
+<ul>
+<li>Metaheuristic&#x2F;Search Algorithms are used to fine tune the hyperparameters of a model (instead of doing a grid search)</li>
+</ul>
+<p>It gets even more confusing, when the algorithms used to find hyperparameters also have their own hyperparameters.<br>E.g The granularity of the grid in grid search.<br>There are diminishing return as you attempt to optimise hyperparameters on hyperparameters. </p>
+<p><strong>But actually, it all started</strong> with this little android game I used to play as a kid; <a target="_blank" rel="noopener" href="https://keiwan.itch.io/evolution">Evolution</a>. </p>
+<p>Essentially involved trying to evolve a creature the best at running, jumping, climbing or flying.</p>
+<p>Responsible for my deeply rooted interest in machine learning and evolutionary mechanisms? </p>
+<blockquote>
+<p>[!quote] Use joints, bones and muscles to build creatures that are only limited by your imagination. Watch how the combination of a neural network and a genetic algorithm can enable your creatures to “learn” and improve at their given tasks all on their own.</p>
+</blockquote>
+<p><strong><a href="">Evolution</a></strong> embodies the perfect intelligent system: a combination of evolutionary algorithm.</p>
+<p>And is a great way to understand the difference between parameters and hyperparameters</p>
+<p>The game seemed to reinforce some deeply rooted intuition for the simple rule: </p>
+<p>$$\text{generations}+\text{mutation}&#x3D;\text{improvements}$$</p>
+<p>… and how pure trial and error can create a semblance of ‘intelligent improvement’</p>
+<p>Little did I know that this game would perfectly exemplify my two biggest interests later down the line… </p>
+<ol>
+<li>Machine learning</li>
+<li>Metaheuristic algorithms</li>
+</ol>
+<p>Some really interesting genetic algorithms include: </p>
+<p>I was intrigued to learn that this problem could be solved through simple evolutionary algorithms</p>
+<p>So how do metaheuristic algorithms solve for hyper parameters? </p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">Home</a></li>
+        
+          <li><a href="/archives/">Projects</a></li>
+        
+          <li><a href="/writings/">Writings</a></li>
+        
+          <li><a href="/extras/">About</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-Jane-Street-Problem"><span class="toc-number">1.</span> <span class="toc-text">The Jane Street Problem</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Machine-Learning"><span class="toc-number">2.</span> <span class="toc-text">Machine Learning</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Parameters"><span class="toc-number">2.0.1.</span> <span class="toc-text">Parameters</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Hyperparameters"><span class="toc-number">2.0.2.</span> <span class="toc-text">Hyperparameters</span></a></li></ol></li></ol></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/06/19/metaheuristic-algorithms/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/06/19/metaheuristic-algorithms/&text=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/06/19/metaheuristic-algorithms/&is_video=false&description=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Metaheuristic Algorithms or Machine Learning?&body=Check out this article: http://example.com/2023/06/19/metaheuristic-algorithms/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/06/19/metaheuristic-algorithms/&title=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/06/19/metaheuristic-algorithms/&name=Metaheuristic Algorithms or Machine Learning?&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/06/19/metaheuristic-algorithms/&t=Metaheuristic Algorithms or Machine Learning?"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2023
+    Justin Lee
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Projects</a></li><!--
+     --><!--
+       --><li><a href="/writings/">Writings</a></li><!--
+     --><!--
+       --><li><a href="/extras/">About</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
