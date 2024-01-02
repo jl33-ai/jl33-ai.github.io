@@ -6,17 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="It all started because I wanted to follow this tutorial in creating a character-level GPT, and train on a dataset more interesting than Shakespeare. A stroke of genius: I could use my ~2 million words">
+    <meta name="description" content="It all started because I wanted to follow this tutorial - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: I could use my ~2 millio">
 <meta property="og:type" content="article">
 <meta property="og:title" content="I accidentally cured my OCD (and cloned myself)">
 <meta property="og:url" content="http://example.com/2022/12/09/memory-hoarding-gpt/index.html">
 <meta property="og:site_name" content="jlee-blog">
-<meta property="og:description" content="It all started because I wanted to follow this tutorial in creating a character-level GPT, and train on a dataset more interesting than Shakespeare. A stroke of genius: I could use my ~2 million words">
+<meta property="og:description" content="It all started because I wanted to follow this tutorial - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: I could use my ~2 millio">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/gp2-xl2.png">
 <meta property="og:image" content="http://example.com/images/gpt2-output.png">
 <meta property="article:published_time" content="2022-12-08T14:00:00.000Z">
-<meta property="article:modified_time" content="2024-01-01T06:39:04.964Z">
+<meta property="article:modified_time" content="2024-01-01T08:54:39.655Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/gp2-xl2.png">
@@ -167,15 +167,14 @@
   
 
   <div class="content e-content" itemprop="articleBody">
-    <p><strong>It all started because</strong> I wanted to follow <a target="_blank" rel="noopener" href="https://youtu.be/kCc8FmEb1nY">this tutorial</a> in creating a character-level GPT, and train on a dataset more interesting than Shakespeare. A stroke of genius: <em>I could use my ~2 million words worth of diary entries.</em> </p>
-<p>2 million words, that seems like a lot? Well, I had <a target="_blank" rel="noopener" href="https://ocdla.com/memory-hoarding-obsessive-compulsive-disorder-ocd-1964#:~:text=Memory%20hoarding%20is%20a%20mental,is%20at%20a%20later%20date.">Memory Hoarding OCD (mhocd)</a> aka the neurological compulsion to write things down. </p>
-<p>Pay attention to that internal monologue going on in your head right now. If there was some was to record, or transcribe it, you would have a dataset 1 to 1 with your mind. Without getting too <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Qualia">philosophical</a>, you probably get the gist of what I’m saying. </p>
-<p>So I continued forth, hoping for some kind of <strong>psuedotherapy</strong>. </p>
+    <p><strong>It all started because</strong> I wanted to follow <a target="_blank" rel="noopener" href="https://youtu.be/kCc8FmEb1nY">this tutorial</a> - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: <em>I could use my ~2 million words worth of diary entries.</em> </p>
+<p>2 million words, that seems like a lot? Well, I had <a target="_blank" rel="noopener" href="https://ocdla.com/memory-hoarding-obsessive-compulsive-disorder-ocd-1964#:~:text=Memory%20hoarding%20is%20a%20mental,is%20at%20a%20later%20date.">Memory Hoarding OCD (mhocd)</a> aka the neurological compulsion to write everything down. </p>
+<p>Pay attention to that internal monologue going on in your head right now. If there was some way to rigorously transcribe it, you would have a dataset near 1-to-1 with your mind. Without getting too <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Qualia">philosophical</a>, you probably get the gist of what I’m saying. So I continued forth, hoping for some kind of <strong>psuedotherapy</strong>. </p>
 <blockquote>
 <p>In the deepest hour of the night, confess to yourself that you would die if you were forbidden to write. And look deep into your heart where it spreads its roots, the answer, and ask yourself, must I write? - <strong><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Letters_to_a_Young_Poet">Rainer Maria Rilke</a></strong></p>
 </blockquote>
 <hr>
-<h1 id="training"><a href="#training" class="headerlink" title="training"></a>training</h1><p>Using <code>pytorch</code>, <code>numpy</code> and 12 hours of training on a <code>2080ti q-max</code> graphics card, the <a target="_blank" rel="noopener" href="https://colab.research.google.com/drive/1JMLa53HDuA-i7ZBmqV7ZnA3c_fvtXnx-?usp=sharing">transformer model</a> is able to ‘dream’ sentences.</p>
+<h1 id="training"><a href="#training" class="headerlink" title="training"></a>training</h1><p>Using <code>pytorch</code>, <code>numpy</code> and <code>12 hours</code> of training on a <a target="_blank" rel="noopener" href="https://www.techradar.com/reviews/razer-blade-2019-review">laptop</a>, the model is able to ‘dream’ sentences.</p>
 <figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">She holds me every on mt dinner word to something I f*ck right a milk I must want to no feel about this stuff like ur whole quickly detail adorable in bedroom with why Just deserve that did then. you Feel someone like those fring from whole excited to be the tell her personality about her friends it gets so deeplying into the reminder. Be hot. Actually get drying to Oat and I could drive the places with her. Aight the whole Integrity. Get To Her. </span><br><span class="line">Icle Tim. </span><br><span class="line">Her mind. What was the explainates rough. </span><br><span class="line">She had a difference record of her mhm</span><br><span class="line">‘Forgive.’ 🙏🙏🙏❤️</span><br><span class="line">The&#x27;res omg we’d reply don’t even insecurity and my form tho. Mental… now charge, andddd Mew harder. unspitateful. The most registical girl. She’s picking in.. Budget. The couple stuff. And they helped my copperment and so bsugging ur v not to warm like the schedule customach englishmic dinner with EYES too.</span><br><span class="line">- </span><br><span class="line">- Moli is the prank you invitewt ugh?!‘She perfect meanly the RB people seriously thing.’ ‘Rip my friend all the music crack on the&#x27;</span><br></pre></td></tr></table></figure>
 
 <p>I know - this is unintelligible gibberish. It’s still very impressive; given ~ 16 KB of code, the model is even able to use emojis the exact same way I do…</p>
