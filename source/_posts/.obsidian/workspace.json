@@ -1,0 +1,278 @@
+{
+  "main": {
+    "id": "ce6abb9ab72d1700",
+    "type": "split",
+    "children": [
+      {
+        "id": "dec2b3b794c4f10e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "221ce02994ba5f5d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "sai-justin-stable-diffusion.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "dec171391d095756",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "unimelb-wam-calculator.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "14ed74d4a81a807d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "will-and-justin.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a881cd7b3fc8bdc5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "will-and-justin.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "c1d0fe3e92335e11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "meal-ml.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2ef8ad6823cd684e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "renovate-datascience-bedroom.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "9fd36f0db86666cb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "memory-hoarding-gpt.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4430a651c9c608d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "memory-hoarding-gpt.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "19aa4e3798419843",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "unimelb-wam-calculator.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "901589776ebdb55a",
+    "type": "split",
+    "children": [
+      {
+        "id": "19cf92954cb0893f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "85cecfa6c331d7c1",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "11c2f8a4f191c5b2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "77208f9cf3b7d6c2",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "bb6c29abbec268ea",
+    "type": "split",
+    "children": [
+      {
+        "id": "f5aa44045776f464",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e54d2d69c2e5f49c",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "unimelb-wam-calculator.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "252fccf46a005826",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "unimelb-wam-calculator.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "28527094ddcb0528",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "eccbc88e88f25751",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "unimelb-wam-calculator.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "dec171391d095756",
+  "lastOpenFiles": [
+    "sai-justin-stable-diffusion.md",
+    "thumbnail3.3 2.png",
+    "thumbnail3.3 1.png",
+    "hello-world.md",
+    "unimelb-wam-calculator.md",
+    "memory-hoarding-gpt.md",
+    "renovate-datascience-bedroom.md",
+    "meal-ml.md",
+    "will-and-justin.md",
+    "Users/justinlee/Documents/projport/sai-justin/thumbnail4.png.md",
+    "Users/justinlee/Documents/projport/sai-justin",
+    "Users/justinlee/Documents/projport",
+    "Users/justinlee/Documents",
+    "Users/justinlee",
+    "Users",
+    "thumbnail4 1.png",
+    "thumbnail4.png",
+    "thumbnail3.3.png",
+    "thumbnail2.2.png",
+    "redd4.png",
+    "redd3.png",
+    "redd2.png",
+    "redd1.png",
+    "probablistic-counting-in-R.md",
+    "zetamatrix.md",
+    "ml-ai-hack-23.md",
+    "pairs-trading-analysis.md",
+    "dsx.md"
+  ]
+}
