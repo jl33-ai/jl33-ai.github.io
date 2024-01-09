@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "6cb38269e5f8f948",
+    "type": "split",
+    "children": [
+      {
+        "id": "c136c9b098df651f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d7292d31d755cdda",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/sai-justin-stable-diffusion.md",
+                "mode": "preview",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e301b1bbd9bc18a7",
+    "type": "split",
+    "children": [
+      {
+        "id": "2750d213372b51b4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6d46c6b24aca675d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8c7b50cbcd323e11",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "29e674e9da5469c3",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a8a07b7951a7d593",
+    "type": "split",
+    "children": [
+      {
+        "id": "4b87b4003bf7014e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e1a0259cb20dda7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "_posts/sai-justin-stable-diffusion.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "dad1ce0ac88288ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "_posts/sai-justin-stable-diffusion.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1ce4e4db831a923f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "95080080bc19f029",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "_posts/sai-justin-stable-diffusion.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "d7292d31d755cdda",
+  "lastOpenFiles": [
+    "images/thumbnail6.1.png",
+    "_drafts/hack4nets.md",
+    "_drafts/walking-playlist.md",
+    "_drafts/zendesky.md",
+    "_drafts/renovate-datascience-bedroom.md",
+    "_drafts/security-of-payment.md",
+    "extras/index.md",
+    "_posts/sai-justin-stable-diffusion.md",
+    "_posts/memory-hoarding-gpt.md",
+    "_drafts/ascii-net.md",
+    "_drafts/are-they-into-me-com.md",
+    "_drafts/extra-writings.md",
+    "_drafts/gpt-ocd-extras.md",
+    "images/car-yt-res.png",
+    "_drafts/ml-playlist.md",
+    "_data/morelinks.json",
+    "_data/randomlinks.json",
+    "_posts/dsx.md",
+    "images/lava-climb-res.png",
+    "images/amanda-automaton.gif",
+    "images/inventory-optimized.svg",
+    "_posts/ml-ai-hack-23.md",
+    "_drafts/graphic-design-portfolio.md",
+    "_posts/unimelb-wam-calculator.md",
+    "images/inventory.svg",
+    "music/annafedorava-rach2.mp3",
+    "_drafts/will-and-justin.md",
+    "_drafts/metaheuristic-algorithms.md",
+    "music",
+    "images/bouldering-lava.jpg",
+    "images/IMG_4362.jpg",
+    "images/bouldering-lava.png",
+    "images/climbing.svg",
+    "_drafts/pairs-trading-analysis.md",
+    "_drafts/test.md",
+    "_drafts/test",
+    "_drafts",
+    "writings/index.md",
+    "writings",
+    "images/thumbnail5.2.png",
+    "extras/thoughts.json",
+    "extras",
+    "_drafts/zetamatrix.md",
+    "_drafts/probablistic-counting-in-R.md",
+    "_drafts/meal-ml.md",
+    "drafts"
+  ]
+}
