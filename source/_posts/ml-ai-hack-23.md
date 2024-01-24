@@ -1,5 +1,5 @@
 ---
-title: "[Py] ML-AI Hack '23"
+title: "ML-AI Hack '23"
 date: 2023-12-18
 ---
 

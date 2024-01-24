@@ -1,5 +1,5 @@
 ---
-title: "[Py] The story of my university WAM Calculator"
+title: "The story of my university WAM Calculator"
 date: 2023-11-17
 ---
 
