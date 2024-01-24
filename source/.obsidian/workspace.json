@@ -4,18 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "c136c9b098df651f",
+        "id": "b0781598d5d92fe5",
         "type": "tabs",
         "children": [
           {
-            "id": "d7292d31d755cdda",
+            "id": "45cb93b57c91e873",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/sai-justin-stable-diffusion.md",
-                "mode": "preview",
-                "source": true
+                "file": "_drafts/water-net.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_posts/sai-justin-stable-diffusion.md",
+                "file": "_drafts/water-net.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_posts/sai-justin-stable-diffusion.md",
+                "file": "_drafts/water-net.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_posts/sai-justin-stable-diffusion.md"
+                "file": "_drafts/water-net.md"
               }
             }
           }
@@ -146,53 +146,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7292d31d755cdda",
+  "active": "45cb93b57c91e873",
   "lastOpenFiles": [
+    "_posts/hacks4nets.md",
+    "_posts/hacks4nets.com.md",
+    "_drafts/water-net.md",
+    "_drafts/deep-learning-experiments.md",
+    "extras/index.md",
+    "_drafts/extra-writings.md",
+    "images/neuron-activation.png",
+    "_data/morelinks.json",
+    "_data/morelinks-old.json",
+    "_data/projects copy.json",
+    "_posts/dotplotlib.md",
+    "images/home-time.png",
+    "images/bike-island.png",
+    "images/climibing photo rounded corners.svg",
+    "_drafts/will-and-justin.md",
+    "_drafts/markov-error-and-basketball.md",
+    "_posts/memory-hoarding-gpt.md",
+    "_posts/unimelb-wam-calculator.md",
+    "_posts/sai-justin-stable-diffusion.md",
+    "_posts/ml-ai-hack-23.md",
+    "_posts/dsx.md",
+    "_drafts/ascii-net.md",
+    "_drafts/are-they-into-me-com.md",
+    "_drafts/warning.md",
     "images/thumbnail6.1.png",
     "_drafts/hack4nets.md",
     "_drafts/walking-playlist.md",
     "_drafts/zendesky.md",
     "_drafts/renovate-datascience-bedroom.md",
     "_drafts/security-of-payment.md",
-    "extras/index.md",
-    "_posts/sai-justin-stable-diffusion.md",
-    "_posts/memory-hoarding-gpt.md",
-    "_drafts/ascii-net.md",
-    "_drafts/are-they-into-me-com.md",
-    "_drafts/extra-writings.md",
     "_drafts/gpt-ocd-extras.md",
     "images/car-yt-res.png",
     "_drafts/ml-playlist.md",
-    "_data/morelinks.json",
     "_data/randomlinks.json",
-    "_posts/dsx.md",
     "images/lava-climb-res.png",
     "images/amanda-automaton.gif",
     "images/inventory-optimized.svg",
-    "_posts/ml-ai-hack-23.md",
     "_drafts/graphic-design-portfolio.md",
-    "_posts/unimelb-wam-calculator.md",
     "images/inventory.svg",
     "music/annafedorava-rach2.mp3",
-    "_drafts/will-and-justin.md",
     "_drafts/metaheuristic-algorithms.md",
     "music",
-    "images/bouldering-lava.jpg",
-    "images/IMG_4362.jpg",
-    "images/bouldering-lava.png",
-    "images/climbing.svg",
-    "_drafts/pairs-trading-analysis.md",
-    "_drafts/test.md",
     "_drafts/test",
     "_drafts",
-    "writings/index.md",
     "writings",
-    "images/thumbnail5.2.png",
-    "extras/thoughts.json",
-    "extras",
-    "_drafts/zetamatrix.md",
-    "_drafts/probablistic-counting-in-R.md",
-    "_drafts/meal-ml.md",
-    "drafts"
+    "extras/thoughts.json"
   ]
 }

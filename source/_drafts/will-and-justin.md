@@ -5,7 +5,7 @@ date: 2013-07-09
 
 Will&JustinGame.bat was the **first program** I ever wrote, alongside my childhood friend William. See the source code [here](https://github.com/jl33-ai/legacy-projects/blob/main/first-program-ever/Will%26JustinGame.bat)
 
-It was not only the program that was hardcoded with hundreds of `GOTO` and `ECHO`'s, but also the **storyline**.
+It was not only the program that was hardcoded with hundreds of `GOTO` and `ECHO`'s, but also the **storyline**. [](https://youtu.be/AKJhThyTmQw?si=L3EFpRwAvS_eD9pw)
 
 What if we didn't have to hardcode every possible storyline. 
 
