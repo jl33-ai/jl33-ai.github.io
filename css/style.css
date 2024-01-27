@@ -1062,6 +1062,9 @@ body {
   margin-left: 0;
   list-style-type: none;
 }
+.post-list .post-item .tech_type {
+  color: #008000;
+}
 .post-list .post-item .meta {
   display: block;
   margin-right: 16px;
