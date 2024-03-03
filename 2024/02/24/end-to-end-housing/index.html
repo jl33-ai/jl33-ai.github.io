@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="This project uses the Melbourne Housing Market dataset, put together by Tony Pino. It can be found on Kaggle. This will be a highly condensed ‘speedrun’ of the project methodology outlined in Hands on">
+<meta property="og:type" content="article">
+<meta property="og:title" content="end-to-end ML on the Melbourne Housing Market">
+<meta property="og:url" content="http://example.com/2024/02/24/end-to-end-housing/index.html">
+<meta property="og:site_name" content="jlee-blog">
+<meta property="og:description" content="This project uses the Melbourne Housing Market dataset, put together by Tony Pino. It can be found on Kaggle. This will be a highly condensed ‘speedrun’ of the project methodology outlined in Hands on">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/dream-apt.jpg">
+<meta property="article:published_time" content="2024-02-24T01:18:15.665Z">
+<meta property="article:modified_time" content="2024-02-25T12:18:47.321Z">
+<meta property="article:author" content="Justin Lee">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/dream-apt.jpg">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>end-to-end ML on the Melbourne Housing Market</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">home</a></li><!--
+     --><!--
+       --><li><a href="/art/">art</a></li><!--
+     --><!--
+       --><li><a href="/extras/">about</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2024/02/27/tc,%20sc,%20implementation%20of%20ml%20models/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2024/01/24/hacks4nets/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/02/24/end-to-end-housing/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/02/24/end-to-end-housing/&text=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/02/24/end-to-end-housing/&is_video=false&description=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=end-to-end ML on the Melbourne Housing Market&body=Check out this article: http://example.com/2024/02/24/end-to-end-housing/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/02/24/end-to-end-housing/&name=end-to-end ML on the Melbourne Housing Market&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/02/24/end-to-end-housing/&t=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    
+    
+      <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Big-picture"><span class="toc-number">1.</span> <span class="toc-text">Big picture</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#motivation"><span class="toc-number">1.1.</span> <span class="toc-text">motivation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#framing-the-problem"><span class="toc-number">1.2.</span> <span class="toc-text">framing the problem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pipelines"><span class="toc-number">1.3.</span> <span class="toc-text">pipelines</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#what%E2%80%99s-the-current-sitch"><span class="toc-number">1.4.</span> <span class="toc-text">what’s the current sitch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#framing-the-ML-problem"><span class="toc-number">1.5.</span> <span class="toc-text">framing the ML problem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assumptions"><span class="toc-number">1.6.</span> <span class="toc-text">assumptions</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Get-the-data"><span class="toc-number">2.</span> <span class="toc-text">Get the data</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Discover-Visualize"><span class="toc-number">3.</span> <span class="toc-text">Discover&#x2F;Visualize</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prepare-the-Data"><span class="toc-number">4.</span> <span class="toc-text">Prepare the Data</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Select-model-train"><span class="toc-number">5.</span> <span class="toc-text">Select model &amp; train</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Yarra-bend"><span class="toc-number">6.</span> <span class="toc-text">Yarra bend</span></a></li></ol>
+      </div>
+    
+  </span>
+</div>
+
+    
+    <div class="content index py4 ">
+        
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle p-name" itemprop="name headline">
+        end-to-end ML on the Melbourne Housing Market
+    </h1>
+
+    <div class="meta">
+      <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-name" itemprop="name">Justin Lee</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2024-02-24T01:18:15.665Z" class="dt-published" itemprop="datePublished">2024-02-24</time>
+        
+      
+    </div>
+
+
+      
+
+      
+
+    </div>
+  </header>
+  
+
+  <div class="content e-content" itemprop="articleBody">
+    <p>This project uses the <a target="_blank" rel="noopener" href="https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market">Melbourne Housing Market</a> dataset, put together by Tony Pino. It can be found on <strong>Kaggle</strong>. This will be a highly condensed ‘speedrun’ of the project methodology outlined in <em>Hands on Machine Learning</em>. </p>
+<p>♨︎ See the Jupyter notebook [here]. </p>
+<!--Cut the crap!-->
+
+<hr>
+<h1 id="Big-picture"><a href="#Big-picture" class="headerlink" title="Big picture"></a>Big picture</h1><h2 id="motivation"><a href="#motivation" class="headerlink" title="motivation"></a>motivation</h2><p><strong>Motivation</strong>: <em>I once had a calling come to me in the form of a dream. It was me, at age 21, buying an apartment. When I woke up the next morning, I sat up, and immediately wrote down my new destiny:</em></p>
+<blockquote>
+<p>you will buy an apartment at 21</p>
+</blockquote>
+<img src="/images/dream-apt.jpg">
+
+<h2 id="framing-the-problem"><a href="#framing-the-problem" class="headerlink" title="framing the problem"></a>framing the problem</h2><p>The ‘<em><strong>business objective</strong></em>‘ is straightforward: Use the dataset to build a model of housing prices in Melbourne, in order to ascertain <strong>where should I buy, and when</strong>? Breaking this down into discrete objectives:  </p>
+<ul>
+<li>Supervised: Be able to predict the sale price of a house given all other features. <ul>
+<li>Identify which are best value for money</li>
+</ul>
+</li>
+<li>Unsupervised: Perform clustering to segregate different types of <ul>
+<li>Identify potentially ‘anomalous’ sales - in either direction, and see what they have in common.</li>
+</ul>
+</li>
+<li>Forecast the housing market? (And backtest?)</li>
+</ul>
+<p>Building a model is not the end goal. Fulfilling the ‘business objective’. mastering <code>sklearn</code>, and getting arbitrarily closer to a childish, impossible, fantastical goal? That is the goal. </p>
+<p>It is important to distinguish the problem of housing <strong>valuation</strong> (i.e given these attributes of a house)</p>
+<h2 id="pipelines"><a href="#pipelines" class="headerlink" title="pipelines"></a>pipelines</h2><p>Since this is a static (and old) dataset, are no live <strong>upstream</strong> components that my model will sit within. However, this project could be viewed as one signal which feeds into a <strong>downstream</strong> ‘personal investment analysis’ component, which eventually informs the actual purchase of an apartment.  </p>
+<p>If we take into consideration how the data itself was scraped, we could probably consider <code>domain.com</code> as an upstream component, yielding the following pipeline: </p>
+<h2 id="what’s-the-current-sitch"><a href="#what’s-the-current-sitch" class="headerlink" title="what’s the current sitch"></a>what’s the current sitch</h2><ol>
+<li><strong>Current solutions&#x2F;workarounds</strong>: there are no tools which are open source - all are monetized&#x2F;restricted access&#x2F;spun into a dodgy a real estate course. I need something highly localized to my specific area of investment (Greater Melbourne)</li>
+<li><strong>Human expertise&#x2F;Manual solution</strong>: I currently rely on my parents to give me real estate advice (sorry mum and dad).</li>
+</ol>
+<h2 id="framing-the-ML-problem"><a href="#framing-the-ML-problem" class="headerlink" title="framing the ML problem"></a>framing the ML problem</h2><ul>
+<li>This task involves both supervised (regression on sale price) and unsupervised (clustering of house sales) components. </li>
+<li><strong>performance measures</strong>: <ul>
+<li>for supervised: MAE (since I expect many anomalies)</li>
+<li>for unsupervised: ground truth, vision inspection via t-sne</li>
+<li>for forecasting: RMSE via time series cross validation</li>
+</ul>
+</li>
+</ul>
+<h2 id="assumptions"><a href="#assumptions" class="headerlink" title="assumptions"></a>assumptions</h2><ul>
+<li>As mentioned, there are no <strong>downstream</strong> components that I need to check my assumptions against. Regarding the upstream source of the data, one assumption is that the dataset is representative; that is, the author <a target="_blank" rel="noopener" href="https://www.kaggle.com/anthonypino">Tony Pino</a> didn’t limit his data scraping to <em>only</em> regions he was personally interested in buying. Violating this assumption means that the models may not generalize well to unseen suburbs, and will constrain or skew the breadth of my purchasing power. Other than this, there are no blocking assumptions, and it is safe to progress.</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> <span class="variable">$PROJPORT</span>/my-first-apartment</span><br></pre></td></tr></table></figure>
+
+<hr>
+<h1 id="Get-the-data"><a href="#Get-the-data" class="headerlink" title="Get the data"></a>Get the data</h1><ul>
+<li><em>In any production system, any work required to bring the data from its source to your workspace should be encapsulated within a small function for the sake of refreshing, or distributing the dataset on multiple machines.</em> <ul>
+<li>Luckily, this isn’t a production system, so I downloaded the <code>.csv</code> file and got to work.</li>
+</ul>
+</li>
+</ul>
+<p>I wrote as if I was in a production system, when really I was alone in my bedroom, on my Macbook. Instead of clicking the ‘download’ button and dragging the file into my project like an ape, I made a function to fetch the data and save it straight to a project directory.</p>
+<p><a target="_blank" rel="noopener" href="https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market/download?datasetVersionNumber=27">https://www.kaggle.com/datasets/anthonypino/melbourne-housing-market/download?datasetVersionNumber=27</a> &lt;- </p>
+<ul>
+<li>When it comes to data loading, you can never have too many wrappers - I mean modular functions.</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="Discover-Visualize"><a href="#Discover-Visualize" class="headerlink" title="Discover&#x2F;Visualize"></a>Discover&#x2F;Visualize</h1><h1 id="Prepare-the-Data"><a href="#Prepare-the-Data" class="headerlink" title="Prepare the Data"></a>Prepare the Data</h1><blockquote>
+<p>Any piece of information fed to a Machine Learning model is known as signal, and you should strive for a high <strong>signal : noise</strong> ratio. - Claude Shannon</p>
+</blockquote>
+<h1 id="Select-model-train"><a href="#Select-model-train" class="headerlink" title="Select model &amp; train"></a>Select model &amp; train</h1><h1 id="Yarra-bend"><a href="#Yarra-bend" class="headerlink" title="Yarra bend"></a>Yarra bend</h1>
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">home</a></li>
+        
+          <li><a href="/art/">art</a></li>
+        
+          <li><a href="/extras/">about</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Big-picture"><span class="toc-number">1.</span> <span class="toc-text">Big picture</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#motivation"><span class="toc-number">1.1.</span> <span class="toc-text">motivation</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#framing-the-problem"><span class="toc-number">1.2.</span> <span class="toc-text">framing the problem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#pipelines"><span class="toc-number">1.3.</span> <span class="toc-text">pipelines</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#what%E2%80%99s-the-current-sitch"><span class="toc-number">1.4.</span> <span class="toc-text">what’s the current sitch</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#framing-the-ML-problem"><span class="toc-number">1.5.</span> <span class="toc-text">framing the ML problem</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#assumptions"><span class="toc-number">1.6.</span> <span class="toc-text">assumptions</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Get-the-data"><span class="toc-number">2.</span> <span class="toc-text">Get the data</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Discover-Visualize"><span class="toc-number">3.</span> <span class="toc-text">Discover&#x2F;Visualize</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Prepare-the-Data"><span class="toc-number">4.</span> <span class="toc-text">Prepare the Data</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Select-model-train"><span class="toc-number">5.</span> <span class="toc-text">Select model &amp; train</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Yarra-bend"><span class="toc-number">6.</span> <span class="toc-text">Yarra bend</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2024/02/24/end-to-end-housing/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2024/02/24/end-to-end-housing/&text=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2024/02/24/end-to-end-housing/&is_video=false&description=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=end-to-end ML on the Melbourne Housing Market&body=Check out this article: http://example.com/2024/02/24/end-to-end-housing/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2024/02/24/end-to-end-housing/&title=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2024/02/24/end-to-end-housing/&name=end-to-end ML on the Melbourne Housing Market&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2024/02/24/end-to-end-housing/&t=end-to-end ML on the Melbourne Housing Market"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    <!--[🇺🇦, 🏳️‍🌈, ♍️]-->
+    
+    
+    
+    2022-2024
+    Justin Lee
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">home</a></li><!--
+     --><!--
+       --><li><a href="/art/">art</a></li><!--
+     --><!--
+       --><li><a href="/extras/">about</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
