@@ -1,6 +1,7 @@
 ---
-title: "[pip] dotplotlib"
+title: ★ dotplotlib
 date: 2024-01-11
+tech_type: pip
 ---
 
 > I hijacked `matplotlib`'s scatterplot function to give the people what they want; a dot chart (also know as strip plot). You can install it with `pip install dotplotlib`, or see the source code [here](https://github.com/jl33-ai/dotplotlib).
