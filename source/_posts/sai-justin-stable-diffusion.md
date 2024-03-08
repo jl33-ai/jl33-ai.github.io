@@ -1,6 +1,7 @@
 ---
-title: "[Manim] Stable Diffusion, Olivia Rodrigo, and Sexism"
+title: Stable Diffusion, Olivia Rodrigo, and Sexism
 date: 2023-12-09
+tech_type: manim
 ---
 I teamed up with my friend [Sai Kumar](http://saikumarmk.com) to make a **Lex Fridman/  Computerphile** styled video series, and learnt some [`manim`](https://www.manim.community)
 

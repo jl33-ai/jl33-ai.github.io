@@ -1,9 +1,9 @@
 ---
-title: Zetamatrix
+title: ★ Zetamatrix
+tech_type: django
 date: 2023-07-15
 ---
 
-# What is Zetamatrix
+Play the game [here](https://zetamatrix-production.up.railway.app). 
 
-To answer this, one must first be familiar with [Zetamac]()
-
+Watch the trailer [here]().

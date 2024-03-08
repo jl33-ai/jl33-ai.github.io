@@ -35,48 +35,32 @@
             "id": "14ed74d4a81a807d",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "will-and-justin.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "a881cd7b3fc8bdc5",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "will-and-justin.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "c1d0fe3e92335e11",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "meal-ml.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
             "id": "2ef8ad6823cd684e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "renovate-datascience-bedroom.md",
-                "mode": "source",
-                "source": true
-              }
+              "type": "empty",
+              "state": {}
             }
           },
           {
@@ -166,8 +150,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "bb6c29abbec268ea",

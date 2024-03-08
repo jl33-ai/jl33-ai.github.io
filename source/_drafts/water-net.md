@@ -1,13 +1,38 @@
+Song: Teardrop, massive attack
+or No Surprises 
+Post the raw version and the project version. Project: WaterNet. 
+
+Exploring how a sigmoid function cna be represented in an anlogue way w/ fluid simulations. You could calculate the change in height as a function of the volume coming in... it's kind of a sigmoid x relu 
+
+https://www.youtube.com/watch?v=dE_XVl7fwBQ
+
+https://silverplatteraudio.com/products/water-foley
+
+https://youtu.be/NJuSStkIZBg?si=9YXwlPewedPJlf9e
+
+Water sfx
+
+Ever since I was a young boy I was obsessed with moving water. 
+water features, rivers, aqueducts, water systems (show in blender). Flowing water always seemed to possess this innate beauty and raw power to harness
+
+Manim some algorithms
+
 - A functioning water neural network
 - To show how analogue they are; there is not much non-linearity. 
+	- Gives better clarity about how a neural network is made up of both linear and non-linear components. 
 - The real challenge is the training process, but the cold state of the network is not too hard to simulate
 
-Had to [master](https://youtu.be/ESShqTMvZWU?si=bravVaEtG3BwrLT6) the manta liquid simulator engine. Found a workaround to this $O(n^3)$ issue, and ironically this gave me muchhhh better workarounds to actually obtaining accurate representation and fine-tunability. 
+	Had to [master](https://youtu.be/ESShqTMvZWU?si=bravVaEtG3BwrLT6) the manta liquid simulator engine. Found a workaround to this $O(n^3)$ issue, and ironically this gave me muchhhh better workarounds to actually obtaining accurate representation and fine-tunability. Ideally, your domain should be as small as it possible can be, and cube shaped. 
 
-holy shit
+**Keep coming back to that diagram** 
 
-the bldner MANTA fluid sim is very imprecise. and neural nets are very... precise... this was a terrible idea. 
-MAnta is not good at SPOARCE, LARGE SCALE... shit. 
+No such thing as negative water... but RELU + Funnels (aggregation operation
+
+**Weights**: width of water channel
+**Funnel**: aggregation
+**ReLU**: special box 
+**Softmax**: sigmoid <- this is wrong
+
 
 domain must be set as small as possible; computation time increases $O(n^3)$
 
@@ -93,3 +118,5 @@ the plan was to create an actual functioning, analogue, neural net, but i'll qui
 felt like shader art coding... understanding how inputs are influenced by functions. 
 
 "I could hide the complexity by abstracting away further, but I think it's worth putting up with a little complexity, for the sake of getting a more concrete feel for how these networks work."
+
+Neural Net video pages do something

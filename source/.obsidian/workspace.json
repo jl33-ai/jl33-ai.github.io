@@ -4,22 +4,47 @@
     "type": "split",
     "children": [
       {
-        "id": "b0781598d5d92fe5",
+        "id": "cf443987f459e411",
         "type": "tabs",
         "children": [
           {
-            "id": "45cb93b57c91e873",
+            "id": "bb3fb8088bf7fa74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_drafts/water-net.md",
+                "file": "_posts/ml-ai-hack-23.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "292cff95c47717e8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_posts/unihack-24.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "e60936e06917cd60",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "extras/index.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -48,7 +73,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "bedroom",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/water-net.md",
+                "file": "extras/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/water-net.md",
+                "file": "extras/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/water-net.md"
+                "file": "extras/index.md"
               }
             }
           }
@@ -146,53 +171,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "45cb93b57c91e873",
+  "active": "e60936e06917cd60",
   "lastOpenFiles": [
-    "_posts/hacks4nets.md",
-    "_posts/hacks4nets.com.md",
-    "_drafts/water-net.md",
-    "_drafts/deep-learning-experiments.md",
-    "extras/index.md",
-    "_drafts/extra-writings.md",
-    "images/neuron-activation.png",
-    "_data/morelinks.json",
-    "_data/morelinks-old.json",
-    "_data/projects copy.json",
-    "_posts/dotplotlib.md",
-    "images/home-time.png",
-    "images/bike-island.png",
-    "images/climibing photo rounded corners.svg",
-    "_drafts/will-and-justin.md",
-    "_drafts/markov-error-and-basketball.md",
-    "_posts/memory-hoarding-gpt.md",
-    "_posts/unimelb-wam-calculator.md",
-    "_posts/sai-justin-stable-diffusion.md",
+    "_drafts/end-to-end-housing.md",
+    "_drafts/tsne-wardrobe.md",
+    "_drafts/dataset-project.md",
+    "_drafts/winning-an-ai-contest-for-free-advertising.md",
+    "_posts/unihack-24.md",
     "_posts/ml-ai-hack-23.md",
-    "_posts/dsx.md",
-    "_drafts/ascii-net.md",
-    "_drafts/are-they-into-me-com.md",
+    "images/fashion-tsne-3.png",
+    "images/fashion-tsne-2.png",
+    "images/fashion-tsne-1.png",
+    "_posts/hacks4nets.md",
+    "_posts/dotplotlib.md",
+    "_drafts/water-net.md",
     "_drafts/warning.md",
-    "images/thumbnail6.1.png",
-    "_drafts/hack4nets.md",
-    "_drafts/walking-playlist.md",
-    "_drafts/zendesky.md",
-    "_drafts/renovate-datascience-bedroom.md",
-    "_drafts/security-of-payment.md",
-    "_drafts/gpt-ocd-extras.md",
-    "images/car-yt-res.png",
-    "_drafts/ml-playlist.md",
-    "_data/randomlinks.json",
-    "images/lava-climb-res.png",
-    "images/amanda-automaton.gif",
-    "images/inventory-optimized.svg",
-    "_drafts/graphic-design-portfolio.md",
-    "images/inventory.svg",
-    "music/annafedorava-rach2.mp3",
-    "_drafts/metaheuristic-algorithms.md",
-    "music",
-    "_drafts/test",
-    "_drafts",
-    "writings",
-    "extras/thoughts.json"
+    "_drafts/TODO.md",
+    "images/art-assets/fashion/torso.glb",
+    "images/art-assets/fashion/tsne.png",
+    "images/art-assets/fashion",
+    "images/art-assets/dj/taojustin.gif",
+    "images/art-assets/dj/dj-raw.mp4",
+    "images/art-assets/dj",
+    "art/index.html",
+    "extras/index.md",
+    "art/index.md",
+    "_drafts/the-weird-running-app.md",
+    "_posts/unimelb-wam-calculator.md",
+    "images/fashion-mnist.svg",
+    "_posts/sai-justin-stable-diffusion.md",
+    "_posts/memory-hoarding-gpt.md",
+    "_drafts/tc, sc, implementation of ml models.md",
+    "images/unihack-24-team.png",
+    "_drafts/association-learning-and-rnns-valorant.md",
+    "_drafts/mathematically-why-everythings-going-to-be-okay.md",
+    "images/dream-apt.jpg",
+    "images/art-assets/nft/steampunk-2.png",
+    "images/art-assets/nft/Cover Image.png",
+    "images/art-assets/nft/pi-stud.avi",
+    "images/art-assets/nft/1 ETH STUD.avi",
+    "images/art-assets/nft",
+    "images/art-assets/pv",
+    "images/art-assets/untitled folder",
+    "_drafts/zetamatrix.md",
+    "_drafts/dsx.md",
+    "_drafts/tit-for-tat.md",
+    "_drafts/graphic-designs.md",
+    "writings/index.md",
+    "_drafts/deep-learning-experiments.md"
   ]
 }
