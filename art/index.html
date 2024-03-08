@@ -44,7 +44,7 @@
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-bedroom.png">
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-pool.png">
 <meta property="article:published_time" content="2024-02-18T05:09:01.000Z">
-<meta property="article:modified_time" content="2024-03-08T09:03:54.322Z">
+<meta property="article:modified_time" content="2024-03-08T11:40:54.948Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/art-assets/fashion/tsne.png">
@@ -357,68 +357,79 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 <script>
-    // Scene setup
-    var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
-    var renderer = new THREE.WebGLRenderer({ alpha: true });
-    renderer.setSize(500, 500);
-    renderer.setClearColor( 0x000000, 0 ); // the default
-    document.getElementById('threejs-container').appendChild(renderer.domElement);
+  // Scene setup
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
+  const renderer = new THREE.WebGLRenderer({ alpha: true });
+  
+  renderer.setSize(window.innerWidth/3, window.innerWidth/3);
+  renderer.setClearColor(0x000000, 0); // the default
+  document.getElementById('threejs-container').appendChild(renderer.domElement);
+  
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+  });
 
-    var directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-    directionalLight.position.set(0.5, 1, 0.25);
-    scene.add(directionalLight);
-
-    // Adding ambient light for soft shadows
-    var ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-    scene.add(ambientLight);
-
-    // Updating the directional light for better shadows
-    directionalLight.castShadow = true;
-    directionalLight.shadow.mapSize.width = 512; // Adjust for shadow resolution
-    directionalLight.shadow.mapSize.height = 512; // Adjust for shadow resolution
-
-    var loader = new THREE.GLTFLoader();
-    var torso; 
-    loader.load(
-        '/images/art-assets/fashion/torso-new.glb',
-        function(gltf) {
-            torso = gltf.scene
-            torso.scale.set(1, 1, 1); // Scale down the model, adjust as needed
-            scene.add(torso);
-            camera.rotation.x = -0.35;
-            camera.position.y = 1;
-            camera.position.z = 3;
-            torso.traverse(function (child) {
-            if (child.isMesh) {
-                child.material = new THREE.MeshStandardMaterial({
-                    color: 0x444444, // Example: a grayish color
-                    metalness: 0.35, // Adjust for metallic effect
-                    roughness: 0.55, // Adjust for surface roughness
-                });
-            }
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+  directionalLight.position.set(0.5, 1, 0.25);
+  directionalLight.castShadow = true;
+  directionalLight.shadow.mapSize.set(512, 512); // Adjust for shadow resolution
+  scene.add(directionalLight);
+  
+  const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+  scene.add(ambientLight);
+  
+  camera.position.set(0, 1, 3);
+  camera.rotation.x = -0.35;
+  
+  const loader = new THREE.GLTFLoader();
+  const models = [
+    { url: '/images/art-assets/fashion/torso.glb', color: 0x555555 },
+    { url: '/images/art-assets/fashion/rings.glb', color: 0x0345fc, metalness: 0.75, roughness: 0.25 }
+  ];
+  
+  models.forEach((model) => {
+    loader.load(model.url,
+      (gltf) => {
+        const mesh = gltf.scene;
+        mesh.scale.set(1, 1, 1); // Scale down the model, adjust as needed
+        mesh.traverse((child) => {
+          if (child.isMesh) {
+            child.material = new THREE.MeshStandardMaterial({
+              color: model.color,
+              metalness: model.metalness || 0, // Use model's metalness or default to 0
+              roughness: model.roughness || 1 // Use model's roughness or default to 1
+            });
+          }
         });
-            animate();
-        },
-        function (xhr) {
-            console.log((xhr.loaded / xhr.total * 100) + '% loaded');
-        },
-        function (error) {
-            console.log('An error happened', error);
-        }
+        scene.add(mesh);
+        mesh.rotationAnimationSpeed = 0.001; // Custom property for animation speed
+      },
+      (xhr) => {
+        console.log(`${(xhr.loaded / xhr.total * 100).toFixed(2)}% loaded`);
+      },
+      (error) => {
+        console.error('An error happened', error);
+      }
     );
+  });
 
-    // Animation loop
-    function animate() {
-        requestAnimationFrame(animate);
-        if (torso) {
-            torso.rotation.y += 0.001;
-        }
-        renderer.render(scene, camera);
-    }
+  // Animation loop
+  function animate() {
+    requestAnimationFrame(animate);
+    scene.children.forEach((child) => {
+      if (child.rotationAnimationSpeed) {
+        child.rotation.y += child.rotationAnimationSpeed;
+      }
+    });
+    renderer.render(scene, camera);
+  }
 
-    animate();
+  animate();
 </script>
+
         
   </div>
 </article>
