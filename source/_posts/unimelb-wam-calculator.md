@@ -1,6 +1,7 @@
 ---
-title: "The story of my university WAM Calculator"
+title: Learnings from a WAM Calculator
 date: 2023-11-17
+tech_type: streamlit
 ---
 
 A lightweight, statistics-oriented weighted average mark (WAM) calculator. 

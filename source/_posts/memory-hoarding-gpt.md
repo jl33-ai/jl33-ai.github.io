@@ -1,10 +1,11 @@
 ---
-title: "Fine tuning an LLM on 2 million words of journalling"
+title: Fine tuning an LLM on 2 million words of journalling
 date: 2022-12-09
+tec: gpt
 ---
 **It all started because** I wanted to follow [this tutorial](https://youtu.be/kCc8FmEb1nY) - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: *I could use my \~2 million words worth of diary entries.* 
 
-2 million words, that seems like a lot? Well, I have [Memory Hoarding OCD (mhocd)](https://ocdla.com/memory-hoarding-obsessive-compulsive-disorder-ocd-1964#:~:text=Memory%20hoarding%20is%20a%20mental,is%20at%20a%20later%20date.) aka the neurological compulsion to write everything down. 
+2 million words, that seems like a lot? Well, I have [Memory Hoarding OCD (mhocd)](https://ocdla.com/memory-hoarding-obsessive-compulsive-disorder-ocd-1964#:~:text=Memory%20hoarding%20is%20a%20mental,is%20at%20a%20later%20date.) aka the neurological compulsion to write everything down. Memory hoarders believe it is of upmost importance to **encode** every detail of their human experience. 
 
 Pay attention to that internal monologue going on in your head right now. If there was some way to rigorously transcribe it, you would have a dataset near 1-to-1 with your mind. Without getting too [philosophical](https://en.wikipedia.org/wiki/Qualia), you probably get the gist of what I'm saying. So I continued forth, hoping for some kind of **psuedotherapy**. 
 
