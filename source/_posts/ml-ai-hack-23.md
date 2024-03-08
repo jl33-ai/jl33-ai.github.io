@@ -1,6 +1,7 @@
 ---
-title: "ML-AI Hack '23"
+title: ML-AI Hack '23
 date: 2023-12-18
+tech_type: aws
 ---
 
 # The Team
@@ -11,7 +12,9 @@ date: 2023-12-18
 
 **The Solution:** A live data-enabled ChatBot with algorithms and predictive analytics built in
 
-[Watch the submission video](https://youtu.be/NmYVubGNH-E?si=o_3Cf7nmCq03rcRi)
+**Submission Video:** [here](https://youtu.be/NmYVubGNH-E?si=o_3Cf7nmCq03rcRi)
+
+**Github Repo:** [here](https://github.com/jl33-ai/ml-ai-hack)
 
 ---
 
@@ -29,4 +32,3 @@ date: 2023-12-18
 
 ![](/images/mlai-6.png)
 
-[Github](https://github.com/jl33-ai/ml-ai-hack)

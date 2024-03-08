@@ -64,8 +64,13 @@ layout: about
     <img src="/images/home-time.png" alt="Youtube in car" style="width: 75%; height: auto;">
 </div>
 
+*Watching comfort lectures and working on projects, into the night...*
 
-  
+<div style="text-align: center;">
+    <img src="/images/study-desk.png" alt="Studying at desk" style="width: 75%; height: auto;">
+</div>
+
+---
 
 # Contact
 
@@ -74,49 +79,23 @@ phone : 0481369898
 email : justinkhlee27[at]gmail.com
 ```
 
-
-This site is a modified <a href="#">Cactus</a> theme built on <a href="#">Hexo</a>.
-
-
 <br>
 
 ---
 
-# More links
+# my gear
+
+[Why you should delete all your social media and make a website](https://youtu.be/r0RqucKwIcw?si=40keNMn3HyrWuuxs)
+
+This site is a heavily modified <a href="#">Cactus</a> theme built on <a href="#">Hexo</a>.
+
+
+---
+
+# bonus content
 
 <audio controls>
   <source src="/music/annafedorava-rach2.mp3" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 
-
----
-
-```
- 🌩️                    ⛈️                  🌥️         ☀️
-         🌫️🌈                        ⚡️ ☁️           🌙
-                          (1   )
-                          (  0 0)
-                           ( 1 0 )
-                          ( 1  1 )
-                            ) 0 )
-                           (0  (                 /\
-                            (_)                 /  \  /\
-                    ________[_]________      /\/    \/  \
-           /\      /\        ______    \    /   /\/\  /\/\
-          /  \    //_\       \    /\    \  /\/\/    \/    \
-   /\    / /\/\  //___\       \__/  \    \/
-  /  \  /\/    \//_____\       \ |[]|     \
- /\/\/\/       //_______\       \|__|      \
-/      \      /XXXXXXXXXX\                  \
-        \    /_I_II  I__I_\__________________\
-               I_I|  I__I_____[]_|_[]_____I
-               I_II  I__I_____[]_|_[]_____I
-               I II__I  I     XXXXXXX     I
-            ~~~~~"   “~~~~~~~~~~~~~~~~~~~~~~~~
-
-              >> "Build me a house of 1's and 0's"
-
-```
-
----

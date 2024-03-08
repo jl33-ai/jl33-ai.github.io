@@ -2,6 +2,7 @@
 title: Pairs Trading Strategy w/ Backtesting
 date: 2024-10-08
 ---
+BACKTESTING 
 
 Based on large time series dataset of two financial instruments X and Y, includes crude simulation **+ backtesting**. 
 

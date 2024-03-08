@@ -12,6 +12,7 @@
 - [ ] Deep Pedagogy
 - [ ] Torch-text, a pytorch ascii library 
 - [ ] Complex Number Neural Nets. 
+- [ ] Unwind-Rewind Neural Networks (w/ Tensorflow or maybe Numpy)
 
 
 
