@@ -44,7 +44,7 @@
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-bedroom.png">
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-pool.png">
 <meta property="article:published_time" content="2024-02-18T05:09:01.000Z">
-<meta property="article:modified_time" content="2024-03-08T04:07:43.207Z">
+<meta property="article:modified_time" content="2024-03-08T09:03:54.322Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/art-assets/fashion/tsne.png">
@@ -148,10 +148,11 @@
                         <figcaption>clustering my favourite pieces of clothing against the fashion-MNIST dataset (w/ TSNE). <a href="">More details here</a></figcaption>
                     </div>
 				</div>
-                <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
-					<div class="image-block">
-                        <div id="threejs-container" style="justify-content: center;"></div>
-					<figcaption>ring necklace (w/ three.js)</figcaption>
+                <hr>
+                <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; ">
+					<div style="display: flex; flex-direction: column; ">
+                        <div id="threejs-container" ></div>
+					<figcaption><strong>invention</strong>: rings go on the neck (w/ three.js)</figcaption>
                     </div>
 				</div>
 			</div>
@@ -176,7 +177,7 @@
 
 <h2>digital posters</h2>
 <div class="art-projects"> 
-	<details class="project"><summary class="project-title">square</summary> 
+	<details class="project"><summary class="project-title"><i>square</i></summary> 
 			<div class="project-content"> 
 				<div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
 					<div class="image-block"><img src="/images/art-assets/square.png" style="width: 100%; height: auto;" loading="lazy"></div>
@@ -192,7 +193,7 @@
 			</div>
 	</details>
 	<details class="project"> 
-		<summary class="project-title">portrait</summary> 
+		<summary class="project-title"><i>portrait</i></summary> 
 			<div class="project-content"> 
 				<div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
 					<figure class="image-block">
@@ -215,7 +216,7 @@
 <h2>jl33.ai (the AI-influencer era)</h2>
 <div class="art-projects"> 
     <details class="project"> 
-        <summary class="project-title">assets</summary> 
+        <summary class="project-title"><i>graphics</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                 <figure class="image-block">
@@ -234,7 +235,7 @@
         </div> 
     </details>
     <details class="project"> 
-        <summary class="project-title">digital scans</summary> 
+        <summary class="project-title"><i>photocopier</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                 <figure class="image-block">
@@ -256,7 +257,7 @@
 
 <h2>nfts</h2>
 <div class="art-projects"> 
-    <details class="project"><summary class="project-title"><strong>plant vault</strong></summary> 
+    <details class="project"><summary class="project-title"><i>plant vault</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                 <figure class="image-block">
@@ -292,7 +293,7 @@
             </div>
         </div> 
     </details>
-    <details class="project"><summary class="project-title"><strong>perfect-imperfect</strong></summary> 
+    <details class="project"><summary class="project-title"><i>perfect-imperfect</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                 <figure class="image-block">
@@ -316,7 +317,7 @@
             </div>
         </div> 
     </details>
-    <details class="project"><summary class="project-title"><strong>steampunk series</strong></summary> 
+    <details class="project"><summary class="project-title"><i>steampunk</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                 <figure class="image-block">
@@ -336,7 +337,7 @@
 <h2>3-D</h2>
 <div class="art-projects"> 
     <details class="project"> 
-        <summary class="project-title">dream reconstruction (liminal)</summary> 
+        <summary class="project-title"><i>dream reconstruction (liminal)</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                 <figure class="image-block">
@@ -358,7 +359,7 @@
 <script>
     // Scene setup
     var scene = new THREE.Scene();
-    var camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+    var camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
     var renderer = new THREE.WebGLRenderer({ alpha: true });
     renderer.setSize(500, 500);
     renderer.setClearColor( 0x000000, 0 ); // the default
@@ -368,16 +369,35 @@
     directionalLight.position.set(0.5, 1, 0.25);
     scene.add(directionalLight);
 
+    // Adding ambient light for soft shadows
+    var ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
+
+    // Updating the directional light for better shadows
+    directionalLight.castShadow = true;
+    directionalLight.shadow.mapSize.width = 512; // Adjust for shadow resolution
+    directionalLight.shadow.mapSize.height = 512; // Adjust for shadow resolution
 
     var loader = new THREE.GLTFLoader();
     var torso; 
     loader.load(
-        '/images/art-assets/fashion/torso.glb',
+        '/images/art-assets/fashion/torso-new.glb',
         function(gltf) {
             torso = gltf.scene
             torso.scale.set(1, 1, 1); // Scale down the model, adjust as needed
             scene.add(torso);
-            camera.position.z = 3.5;
+            camera.rotation.x = -0.35;
+            camera.position.y = 1;
+            camera.position.z = 3;
+            torso.traverse(function (child) {
+            if (child.isMesh) {
+                child.material = new THREE.MeshStandardMaterial({
+                    color: 0x444444, // Example: a grayish color
+                    metalness: 0.35, // Adjust for metallic effect
+                    roughness: 0.55, // Adjust for surface roughness
+                });
+            }
+        });
             animate();
         },
         function (xhr) {
