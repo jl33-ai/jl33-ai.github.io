@@ -44,7 +44,7 @@
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-bedroom.png">
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-pool.png">
 <meta property="article:published_time" content="2024-02-18T05:09:01.000Z">
-<meta property="article:modified_time" content="2024-03-08T11:42:17.832Z">
+<meta property="article:modified_time" content="2024-03-09T04:46:19.637Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/art-assets/fashion/tsne.png">
@@ -145,7 +145,7 @@
                 <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
 					<div class="image-block">
                         <img src="/images/art-assets/fashion/tsne.png" style="width: 100%; height: auto;" loading="lazy">
-                        <figcaption>clustering my favourite pieces of clothing against the fashion-MNIST dataset (w/ TSNE). <a href="">More details here</a></figcaption>
+                        <figcaption>clustering my favourite pieces of clothing against the fashion-MNIST dataset (w/ TSNE). <a href="/2024/03/02/tsne-wardrobe">More details here</a></figcaption>
                     </div>
 				</div>
                 <hr>
@@ -362,7 +362,7 @@
   const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
   const renderer = new THREE.WebGLRenderer({ alpha: true });
   
-  renderer.setSize(window.innerWidth/3, window.innerWidth/3);
+  renderer.setSize(500, 500);
   renderer.setClearColor(0x000000, 0); // the default
   document.getElementById('threejs-container').appendChild(renderer.domElement);
   
