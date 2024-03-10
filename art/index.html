@@ -54,7 +54,7 @@
 <meta property="og:image" content="http://example.com/images/art-assets/liminal-pool.png">
 <meta property="og:image" content="http://example.com/images/art-assets/indoor-pool.png">
 <meta property="article:published_time" content="2024-02-18T05:09:01.000Z">
-<meta property="article:modified_time" content="2024-03-10T04:29:41.084Z">
+<meta property="article:modified_time" content="2024-03-10T07:19:03.287Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/art-assets/fashion/tsne.png">
@@ -189,7 +189,7 @@
 	<details class="project"><summary class="project-title"><i>+ bikes</i></summary> 
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;" loading="lazy">
             <div>
-                <p><strong>Basically, the context is</strong> one day during lockdown (COVID-19) I was so bored, I just started going to work on my desk with a permanent marker...</p>
+                <p><strong>Basically,</strong> one day during lockdown (COVID-19) I was so bored, I just started writing stuff on my desk with a permanent marker...</p>
             </div>
             <div>
                 <img src="/images/art-assets/bike/drawing-start.png" style="max-width: 75%; height: auto;" loading="lazy">
@@ -197,10 +197,10 @@
         </div>
 
         <div>
-            <p><i>After a year, it looked like this.</i></p>
+            <p><i>After a year, it looked like this</i></p>
             <figure>
                 <img src="/images/art-assets/bike/full-desk-final.png" style="max-width: 100%; height: auto;" loading="lazy">
-                <figcaption><i>oh young, anxsty justin</i></figcaption>
+                <figcaption><i>oh young, anxsty justin, I have so much to tell you</i></figcaption>
             </figure>
         </div>
 
@@ -228,7 +228,6 @@
 					<figure class="image-block"><img src="/images/art-assets/house-10.png" style="width: 100%; height: auto;" loading="lazy"></figure>
 				</div>
 			</div>
-			<hr>
 			<div class="project-content"> 
 				<div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
 					<div class="image-block"><img src="/images/art-assets/square-lifetime-1.png" style="width: 100%; height: auto;" loading="lazy"></div>
@@ -236,6 +235,7 @@
 				</div>
 			</div>
 	</details>
+    <hr>
 	<details class="project"> 
 		<summary class="project-title"><i>portrait</i></summary> 
 			<div class="project-content"> 
@@ -245,7 +245,6 @@
 						<figcaption>Canva design challenge 2024</figcaption>
 					</figure>
                 </div>
-                <hr>
                 <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
                     <figure class="image-block">
 						<img src="/images/art-assets/dj/taojustin.gif" style="width: 50%; height: auto;" loading="lazy">
@@ -278,6 +277,7 @@
             </div>
         </div> 
     </details>
+    <hr>
     <details class="project"> 
         <summary class="project-title"><i>photocopier</i></summary> 
         <div class="project-content"> 
@@ -337,6 +337,7 @@
             </div>
         </div> 
     </details>
+    <hr>
     <details class="project"><summary class="project-title"><i>perfect-imperfect</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
@@ -361,6 +362,7 @@
             </div>
         </div> 
     </details>
+    <hr>
     <details class="project"><summary class="project-title"><i>steampunk</i></summary> 
         <div class="project-content"> 
             <div class="image-wrap" style="text-align: center; display: flex; justify-content: center; align-items: center;">
@@ -438,77 +440,81 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
 <script>
-  // Scene setup
-  const scene = new THREE.Scene();
-  const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
-  const renderer = new THREE.WebGLRenderer({ alpha: true });
-  
-  renderer.setSize(500, 500);
-  renderer.setClearColor(0x000000, 0); // the default
-  document.getElementById('threejs-container').appendChild(renderer.domElement);
-  
-  window.addEventListener('resize', () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-  });
+  // Function to initialize Three.js
+  function initThreeJS() {
+    if (window.threeJSSceneInitialized) return; // Prevent multiple initializations
+    window.threeJSSceneInitialized = true; // Set a flag to indicate the scene is initialized
 
-  const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-  directionalLight.position.set(0.5, 1, 0.25);
-  directionalLight.castShadow = true;
-  directionalLight.shadow.mapSize.set(512, 512); // Adjust for shadow resolution
-  scene.add(directionalLight);
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(55, 1, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ alpha: true });
   
-  const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
-  scene.add(ambientLight);
+    renderer.setSize(500, 500);
+    renderer.setClearColor(0x000000, 0);
+    document.getElementById('threejs-container').appendChild(renderer.domElement);
   
-  camera.position.set(0, 1, 3);
-  camera.rotation.x = -0.35;
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
+    directionalLight.position.set(0.5, 1, 0.25);
+    directionalLight.castShadow = true;
+    directionalLight.shadow.mapSize.set(512, 512);
+    scene.add(directionalLight);
   
-  const loader = new THREE.GLTFLoader();
-  const models = [
-    { url: '/images/art-assets/fashion/torso.glb', color: 0x555555 },
-    { url: '/images/art-assets/fashion/rings.glb', color: 0xcccccc, metalness: 0.85, roughness: 0.25 }
-  ];
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
+    scene.add(ambientLight);
   
-  models.forEach((model) => {
-    loader.load(model.url,
-      (gltf) => {
+    camera.position.set(0, 1, 3);
+    camera.rotation.x = -0.35;
+  
+    const loader = new THREE.GLTFLoader();
+    // Assuming models array is defined elsewhere or you can define it here
+    const models = [
+      { url: '/images/art-assets/fashion/torso.glb', color: 0x555555 },
+      { url: '/images/art-assets/fashion/rings.glb', color: 0xcccccc, metalness: 0.85, roughness: 0.25 }
+    ];
+  
+    models.forEach((model) => {
+      loader.load(model.url, (gltf) => {
         const mesh = gltf.scene;
-        mesh.scale.set(1, 1, 1); // Scale down the model, adjust as needed
+        mesh.scale.set(1, 1, 1);
         mesh.traverse((child) => {
           if (child.isMesh) {
             child.material = new THREE.MeshStandardMaterial({
               color: model.color,
-              metalness: model.metalness || 0, // Use model's metalness or default to 0
-              roughness: model.roughness || 1 // Use model's roughness or default to 1
+              metalness: model.metalness || 0,
+              roughness: model.roughness || 1
             });
           }
         });
         scene.add(mesh);
-        mesh.rotationAnimationSpeed = 0.001; // Custom property for animation speed
-      },
-      (xhr) => {
-        console.log(`${(xhr.loaded / xhr.total * 100).toFixed(2)}% loaded`);
-      },
-      (error) => {
-        console.error('An error happened', error);
-      }
-    );
-  });
-
-  // Animation loop
-  function animate() {
-    requestAnimationFrame(animate);
-    scene.children.forEach((child) => {
-      if (child.rotationAnimationSpeed) {
-        child.rotation.y += child.rotationAnimationSpeed;
-      }
+        mesh.rotationAnimationSpeed = 0.001;
+      });
     });
-    renderer.render(scene, camera);
+
+    function animate() {
+      requestAnimationFrame(animate);
+      scene.children.forEach((child) => {
+        if (child.rotationAnimationSpeed) {
+          child.rotation.y += child.rotationAnimationSpeed;
+        }
+      });
+      renderer.render(scene, camera);
+    }
+
+    animate();
   }
 
-  animate();
+  // Event listener for the <details> element
+  document.querySelector('.project').addEventListener('toggle', function(event) {
+    if (this.open) {
+      initThreeJS(); // Initialize Three.js when the dropdown is opened
+    }
+  });
 </script>
 
         
