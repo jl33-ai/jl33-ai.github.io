@@ -1,13 +1,26 @@
 ---
-title: ★ UniHack '24'
+title: ★ UniHack '24' (1st Place 🥇)
 date: 2024-03-01
-tech_type: nodejs, express, threejs
+tech_type: js
 ---
 # The Team
 
+
 ![](/images/unihack-24-team.png)
 
-**The Problem:** Dysfunctional Group Projects (especially online groups)
+**Outcome:** In the end we won:
+```
+🥇 Overall first place (pog!)
+🎖️ Most original idea
+```
+
+**UniHack:** Australia's largest university student hackathon, read more [here](https://www.unihack.net/about)
+
+<img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;">
+
+---
+
+**The Problem:** Dysfunctional Group Projects (thus, this was a self-referential project).
 
 **The Solution:** A unified product suite for group work, led by an omniscient project manager AI 'Freckle'. 
 
@@ -17,9 +30,9 @@ tech_type: nodejs, express, threejs
 
 **Devpost**: [here](https://devpost.com/software/sweet-qlndop)
 
-**Watch a weekend of coding in 30 seconds:** [here]()
+**Watch the timelapse here:** [here](https://youtu.be/LfvLdgmBXa8)
 
-Self referntial. 
+
 
 ---
 # Gallery
