@@ -2,6 +2,11 @@ Song: Teardrop, massive attack
 or No Surprises 
 Post the raw version and the project version. Project: WaterNet. 
 
+Show a water-sim proof of why you need a non-linear activation function
+Show a water-sim proof of the universal approximation theory
+Show a water-sim of a sigmoid activation function 
+
+
 Exploring how a sigmoid function cna be represented in an anlogue way w/ fluid simulations. You could calculate the change in height as a function of the volume coming in... it's kind of a sigmoid x relu 
 
 https://www.youtube.com/watch?v=dE_XVl7fwBQ

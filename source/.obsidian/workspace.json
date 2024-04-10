@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_posts/unihack-24.md",
+                "file": "_drafts/speech-2-drugs.md",
                 "mode": "source",
                 "source": true
               }
@@ -37,14 +37,36 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "extras/index.md",
+                "file": "_posts/tsne-wardrobe.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "4fb27648731d5d99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_drafts/speech-2-drugs.md",
                 "mode": "source",
                 "source": false
               }
             }
+          },
+          {
+            "id": "36f2d69ac471bbd0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.5.12"
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -110,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "extras/index.md",
+                "file": "_drafts/speech-2-drugs.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "extras/index.md",
+                "file": "_drafts/speech-2-drugs.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +172,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "extras/index.md"
+                "file": "_drafts/speech-2-drugs.md"
               }
             }
           }
@@ -171,53 +193,53 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e60936e06917cd60",
+  "active": "36f2d69ac471bbd0",
   "lastOpenFiles": [
+    "images/whisper-schematics.svg",
+    "_drafts/speech-to.md",
+    "_drafts/water-net.md",
+    "_drafts/speech-2-drugs.md",
+    "_posts/zetamatrix.md",
+    "_posts/hacks4nets.md",
+    "_posts/ml-ai-hack-23.md",
+    "images/art-assets/umcpc/des2.gif",
+    "images/art-assets/umcpc/des3.jpg",
+    "images/art-assets/umcpc/des1.png",
+    "images/art-assets/umcpc/umcpc rendered.png",
+    "images/art-assets/umcpc/des1.jpg",
+    "images/art-assets/umcpc/In the next few weeks... (7).jpg",
+    "images/art-assets/umcpc",
+    "images/unihack-devpost-cover.png",
+    "images/art-assets/indoor-pool.png",
+    "images/art-assets/jl33.ai_an_indoor_pool_party_with_fun_friends_and_a_fun_intrica_ffca5908-2e91-4f64-a1e4-786168244d6e-2.png",
+    "images/art-assets/desk/db-3.png",
+    "images/art-assets/desk",
+    "images/art-assets/desks",
+    "images/art-assets/bike",
+    "_posts/memory-hoarding-gpt.md",
+    "_posts/sai-justin-stable-diffusion.md",
+    "_posts/tsne-wardrobe.md",
+    "_posts/unimelb-wam-calculator.md",
+    "_posts/dotplotlib.md",
+    "_posts/unihack-24.md",
+    "extras/index.md",
     "_drafts/end-to-end-housing.md",
-    "_drafts/tsne-wardrobe.md",
     "_drafts/dataset-project.md",
     "_drafts/winning-an-ai-contest-for-free-advertising.md",
-    "_posts/unihack-24.md",
-    "_posts/ml-ai-hack-23.md",
-    "images/fashion-tsne-3.png",
-    "images/fashion-tsne-2.png",
-    "images/fashion-tsne-1.png",
-    "_posts/hacks4nets.md",
-    "_posts/dotplotlib.md",
-    "_drafts/water-net.md",
     "_drafts/warning.md",
     "_drafts/TODO.md",
     "images/art-assets/fashion/torso.glb",
-    "images/art-assets/fashion/tsne.png",
     "images/art-assets/fashion",
-    "images/art-assets/dj/taojustin.gif",
     "images/art-assets/dj/dj-raw.mp4",
     "images/art-assets/dj",
     "art/index.html",
-    "extras/index.md",
     "art/index.md",
     "_drafts/the-weird-running-app.md",
-    "_posts/unimelb-wam-calculator.md",
-    "images/fashion-mnist.svg",
-    "_posts/sai-justin-stable-diffusion.md",
-    "_posts/memory-hoarding-gpt.md",
     "_drafts/tc, sc, implementation of ml models.md",
-    "images/unihack-24-team.png",
     "_drafts/association-learning-and-rnns-valorant.md",
     "_drafts/mathematically-why-everythings-going-to-be-okay.md",
-    "images/dream-apt.jpg",
-    "images/art-assets/nft/steampunk-2.png",
-    "images/art-assets/nft/Cover Image.png",
     "images/art-assets/nft/pi-stud.avi",
-    "images/art-assets/nft/1 ETH STUD.avi",
-    "images/art-assets/nft",
-    "images/art-assets/pv",
-    "images/art-assets/untitled folder",
-    "_drafts/zetamatrix.md",
     "_drafts/dsx.md",
-    "_drafts/tit-for-tat.md",
-    "_drafts/graphic-designs.md",
-    "writings/index.md",
-    "_drafts/deep-learning-experiments.md"
+    "_drafts/tit-for-tat.md"
   ]
 }
