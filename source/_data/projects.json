@@ -1,27 +1,32 @@
 [
-    {
-      "name":"Internship Tracker Template",
-      "url":"https://medium.com/@justinkhlee27/the-perfect-internship-tracker-template-included-3c9eac877a22",
-      "desc":"[Medium]"
-    },
-    {
-       "name":"LLM's: Technical Skills, Agency and Pessimism",
-       "url":"https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee",
-       "desc":"[Melbourne Microfinance]"
-    },
-    {
-       "name":"A Text to Music Video Generator",
-       "url":"https://medium.com/dscubed-unimelb/song-to-music-video-generator-dceaaaea3597",
-       "desc":"[Medium]"
-    },
-    {
-      "name" : "A Text to Wikipedia Generator",
-      "url" : "https://medium.com/@justinkhlee27/1a-text-to-wikipedia-generator-b200c350633d",
-      "desc" : "[Medium]"
-    },
-    {
-      "name" : "SNP by Moli",
-      "url" : "https://jstnlee.wixsite.com/snpbym",
-      "desc" : "[Wix]"
-    }
+  {
+    "name": "Why the LLM might unify data science and software engineering [The LLM OS]",
+    "url": "https://jl33ai.substack.com/p/how-llms-unify-data-science-and-software",
+    "desc": "[Substack]"
+  },
+  {
+    "name": "Internship Tracker Template",
+    "url": "https://medium.com/@justinkhlee27/the-perfect-internship-tracker-template-included-3c9eac877a22",
+    "desc": "[Medium]"
+  },
+  {
+    "name": "LLM's: Technical Skills, Agency and Pessimism",
+    "url": "https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee",
+    "desc": "[Melbourne Microfinance]"
+  },
+  {
+    "name": "A Text to Music Video Generator",
+    "url": "https://medium.com/dscubed-unimelb/song-to-music-video-generator-dceaaaea3597",
+    "desc": "[Medium]"
+  },
+  {
+    "name": "A Text to Wikipedia Generator",
+    "url": "https://medium.com/@justinkhlee27/1a-text-to-wikipedia-generator-b200c350633d",
+    "desc": "[Medium]"
+  },
+  {
+    "name": "SNP by Moli",
+    "url": "https://jstnlee.wixsite.com/snpbym",
+    "desc": "[Wix]"
+  }
 ]
