@@ -59,9 +59,11 @@
             "id": "36f2d69ac471bbd0",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.5.12"
+                "file": "writings/index.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -132,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_drafts/speech-2-drugs.md",
+                "file": "writings/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_drafts/speech-2-drugs.md",
+                "file": "writings/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_drafts/speech-2-drugs.md"
+                "file": "writings/index.md"
               }
             }
           }
@@ -195,24 +197,28 @@
   },
   "active": "36f2d69ac471bbd0",
   "lastOpenFiles": [
-    "images/whisper-schematics.svg",
+    "images/sliders/climb.png",
+    "images/sliders/house.png",
+    "images/sliders/car.png",
+    "images/sliders/bike.png",
+    "images/sliders/1.png",
+    "images/sliders/2.png",
+    "images/sliders/3.png",
+    "images/sliders/4.png",
+    "images/sliders",
+    "images/gear-gallery/gopro.png",
+    "images/gear-gallery/moleskin.png",
+    "images/gear-gallery/dicta.png",
+    "images/gear-gallery",
+    "_posts/hacks4nets.md",
+    "_posts/dotplotlib.md",
+    "_drafts/deep-learning-experiments.md",
     "_drafts/speech-to.md",
     "_drafts/water-net.md",
     "_drafts/speech-2-drugs.md",
     "_posts/zetamatrix.md",
-    "_posts/hacks4nets.md",
     "_posts/ml-ai-hack-23.md",
-    "images/art-assets/umcpc/des2.gif",
-    "images/art-assets/umcpc/des3.jpg",
-    "images/art-assets/umcpc/des1.png",
-    "images/art-assets/umcpc/umcpc rendered.png",
-    "images/art-assets/umcpc/des1.jpg",
-    "images/art-assets/umcpc/In the next few weeks... (7).jpg",
     "images/art-assets/umcpc",
-    "images/unihack-devpost-cover.png",
-    "images/art-assets/indoor-pool.png",
-    "images/art-assets/jl33.ai_an_indoor_pool_party_with_fun_friends_and_a_fun_intrica_ffca5908-2e91-4f64-a1e4-786168244d6e-2.png",
-    "images/art-assets/desk/db-3.png",
     "images/art-assets/desk",
     "images/art-assets/desks",
     "images/art-assets/bike",
@@ -220,7 +226,6 @@
     "_posts/sai-justin-stable-diffusion.md",
     "_posts/tsne-wardrobe.md",
     "_posts/unimelb-wam-calculator.md",
-    "_posts/dotplotlib.md",
     "_posts/unihack-24.md",
     "extras/index.md",
     "_drafts/end-to-end-housing.md",
@@ -232,14 +237,11 @@
     "images/art-assets/fashion",
     "images/art-assets/dj/dj-raw.mp4",
     "images/art-assets/dj",
-    "art/index.html",
     "art/index.md",
     "_drafts/the-weird-running-app.md",
     "_drafts/tc, sc, implementation of ml models.md",
     "_drafts/association-learning-and-rnns-valorant.md",
     "_drafts/mathematically-why-everythings-going-to-be-okay.md",
-    "images/art-assets/nft/pi-stud.avi",
-    "_drafts/dsx.md",
-    "_drafts/tit-for-tat.md"
+    "_drafts/dsx.md"
   ]
 }
