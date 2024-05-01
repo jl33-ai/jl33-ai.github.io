@@ -14,15 +14,21 @@
 <meta property="og:description" content="I&#39;m thinking...     document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     var quotesPath &#x3D; &#39;&#x2F;extras&#x2F;thoughts.json&#39;; &#x2F;&#x2F; Update with the correct path to your JSON file     fetch(quotesPath)">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/inventory-optimized.svg">
-<meta property="og:image" content="http://example.com/images/car-yt-res.png">
-<meta property="og:image" content="http://example.com/images/lava-climb-res.png">
-<meta property="og:image" content="http://example.com/images/bike-island.png">
-<meta property="og:image" content="http://example.com/images/home-time.png">
-<meta property="og:image" content="http://example.com/images/gear-gallery/a-cam.png">
+<meta property="og:image" content="http://example.com/images/sliders/car.png">
+<meta property="og:image" content="http://example.com/images/sliders/climb.png">
+<meta property="og:image" content="http://example.com/images/sliders/bike.png">
+<meta property="og:image" content="http://example.com/images/sliders/house.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/a-cam-2.png">
 <meta property="og:image" content="http://example.com/images/gear-gallery/airpod.png">
 <meta property="og:image" content="http://example.com/images/gear-gallery/sal.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/b-cam.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/kindle.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/gopro.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/moleskin.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/lacie.png">
+<meta property="og:image" content="http://example.com/images/gear-gallery/watch.png">
 <meta property="article:published_time" content="2023-12-24T05:09:01.000Z">
-<meta property="article:modified_time" content="2024-04-28T21:47:51.578Z">
+<meta property="article:modified_time" content="2024-04-30T21:26:43.608Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/inventory-optimized.svg">
@@ -133,39 +139,25 @@
 </div>
 
 <hr>
-<h1 id="My-hobbies"><a href="#My-hobbies" class="headerlink" title="My hobbies"></a>My hobbies</h1><p><em>If the weather’s nice, I like to drive somewhere pretty and watch math youtube videos in my car…</em></p>
-<div style="text-align: center;">
-    <img src="/images/car-yt-res.png" alt="Youtube in car" style="width: 75%; height: auto;">
-</div>
+<style>
+  .image-with-caption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+  }
+  .image-with-caption img {
+    width: 50%;
+    height: auto;
+    display: block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .caption {
+    width: 50%;
+    padding-left: 45px;
+  }
 
-<br>
+/*----------*/
 
-<p><em>I’m a risk taker…</em></p>
-<div style="text-align: center;">
-    <img src="/images/lava-climb-res.png" alt="A sticky situation" style="width: 75%; height: auto;">
-</div>
-
-<br>
-
-<p><em>On the weekends, I might go bike-packing…</em></p>
-<div style="text-align: center;">
-    <img src="/images/bike-island.png" alt="Youtube in car" style="width: 75%; height: auto;">
-</div>
-
-<br>
-
-<p><em>And then, it’s home time.</em></p>
-<div style="text-align: center;">
-    <img src="/images/home-time.png" alt="Youtube in car" style="width: 75%; height: auto;">
-</div>
-
-<hr>
-<h1 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">phone : 0481369898</span><br><span class="line">email : justinkhlee27[at]gmail.com</span><br></pre></td></tr></table></figure>
-
-<br>
-
-<hr>
-<h1 id="my-gear"><a href="#my-gear" class="headerlink" title="my gear"></a>my gear</h1><style>
   .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -173,7 +165,7 @@
     margin: -10px;
   }
   .gallery-item {
-    width: calc(33.33% - 20px); /* Adjust margin according to your design */
+    width: calc(33.33% - 20px); 
     margin: 10px;
   }
   .gallery-item img {
@@ -184,9 +176,49 @@
   }
 </style>
 
-<div class="gallery">
+<h1 id="My-hobbies"><a href="#My-hobbies" class="headerlink" title="My hobbies"></a>My hobbies</h1><div class="image-with-caption">
+  <img src="/images/sliders/car.png" alt="Youtube in car">
+  <div class="caption">
+    <p>If the weather's nice, I like to drive somewhere pretty and watch math YouTube videos in my car...</p>
+  </div>
+</div>
+
+<br>
+
+<div class="image-with-caption">
+  <img src="/images/sliders/climb.png" alt="A sticky situation">
+  <div class="caption">
+    <p>I'm a risk-taker...</p>
+  </div>
+</div>
+
+<br>
+
+<div class="image-with-caption">
+  <img src="/images/sliders/bike.png" alt="Bike-packing">
+  <div class="caption">
+    <p>On the weekends, I might go bike-packing...</p>
+  </div>
+</div>
+
+<br>
+
+<div class="image-with-caption">
+  <img src="/images/sliders/house.png" alt="Home time">
+  <div class="caption">
+    <p>And then, it's home time.</p>
+  </div>
+</div>
+
+<hr>
+<h1 id="Contact"><a href="#Contact" class="headerlink" title="Contact"></a>Contact</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">phone : 0481369898</span><br><span class="line">email : justinkhlee27[at]gmail.com</span><br></pre></td></tr></table></figure>
+
+<br>
+
+<hr>
+<h1 id="my-gear"><a href="#my-gear" class="headerlink" title="my gear"></a>my gear</h1><div class="gallery">
   <div class="gallery-item">
-    <img src="/images/gear-gallery/a-cam.png" alt="Photo 1">
+    <img src="/images/gear-gallery/a-cam-2.png" alt="Photo 1">
   </div>
   <div class="gallery-item">
     <img src="/images/gear-gallery/airpod.png" alt="Photo 2">
@@ -194,7 +226,24 @@
   <div class="gallery-item">
     <img src="/images/gear-gallery/sal.png" alt="Photo 3">
   </div>
-  
+  <div class="gallery-item">
+    <img src="/images/gear-gallery/b-cam.png" alt="Photo 3">
+  </div>
+  <div class="gallery-item">
+    <img src="/images/gear-gallery/kindle.png" alt="Photo 3">
+  </div>
+  <div class="gallery-item">
+    <img src="/images/gear-gallery/gopro.png" alt="Photo 3">
+  </div>
+  <div class="gallery-item">
+    <img src="/images/gear-gallery/moleskin.png" alt="Photo 3">
+  </div>
+  <div class="gallery-item">
+    <img src="/images/gear-gallery/lacie.png" alt="Photo 3">
+  </div>
+  <div class="gallery-item">
+    <img src="/images/gear-gallery/watch.png" alt="Photo 3">
+  </div>
 </div>
 
 <p>Check the <code>alt</code> tag to see the name.</p>
