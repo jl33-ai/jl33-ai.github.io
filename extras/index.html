@@ -6,12 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-    <meta name="description" content="I&#39;m thinking...     document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     var quotesPath &#x3D; &#39;&#x2F;extras&#x2F;thoughts.json&#39;; &#x2F;&#x2F; Update with the correct path to your JSON file     fetch(quotesPath)">
+    <meta name="description" content="So I was thinking...     document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     setTimeout(function() {       var quotesPath &#x3D; &#39;&#x2F;extras&#x2F;thoughts.json&#39;;        fetch(quotesPath)         .the">
 <meta property="og:type" content="website">
 <meta property="og:title" content="extras">
 <meta property="og:url" content="http://example.com/extras/index.html">
 <meta property="og:site_name" content="jlee-blog">
-<meta property="og:description" content="I&#39;m thinking...     document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     var quotesPath &#x3D; &#39;&#x2F;extras&#x2F;thoughts.json&#39;; &#x2F;&#x2F; Update with the correct path to your JSON file     fetch(quotesPath)">
+<meta property="og:description" content="So I was thinking...     document.addEventListener(&#39;DOMContentLoaded&#39;, function() {     setTimeout(function() {       var quotesPath &#x3D; &#39;&#x2F;extras&#x2F;thoughts.json&#39;;        fetch(quotesPath)         .the">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/images/inventory-optimized.svg">
 <meta property="og:image" content="http://example.com/images/sliders/car.png">
@@ -28,7 +28,7 @@
 <meta property="og:image" content="http://example.com/images/gear-gallery/lacie.png">
 <meta property="og:image" content="http://example.com/images/gear-gallery/watch.png">
 <meta property="article:published_time" content="2023-12-24T05:09:01.000Z">
-<meta property="article:modified_time" content="2024-05-01T11:27:05.498Z">
+<meta property="article:modified_time" content="2024-05-04T11:47:28.906Z">
 <meta property="article:author" content="Justin Lee">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/inventory-optimized.svg">
@@ -116,20 +116,22 @@
         
         <div class="content">
     <div id="random-quote">
-  <blockquote id="quote-container" class="quote">I'm thinking...</blockquote>
+  <blockquote id="quote-container" class="quote">So I was thinking...</blockquote>
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var quotesPath = '/extras/thoughts.json'; // Update with the correct path to your JSON file
-    fetch(quotesPath)
-      .then(function(response) { return response.json(); })
-      .then(function(quotes) {
-        var quoteIndex = Math.floor(Math.random() * quotes.length);
-        document.getElementById('quote-container').textContent = quotes[quoteIndex];
-      })
-      .catch(function(error) {
-        console.error('Could not load quotes:', error);
-      });
+    setTimeout(function() {
+      var quotesPath = '/extras/thoughts.json'; 
+      fetch(quotesPath)
+        .then(function(response) { return response.json(); })
+        .then(function(quotes) {
+          var quoteIndex = Math.floor(Math.random() * quotes.length);
+          document.getElementById('quote-container').textContent = quotes[quoteIndex];
+        })
+        .catch(function(error) {
+          console.error('Could not load quotes:', error);
+        });
+    }, 1000); 
   });
   </script>  
 
