@@ -1,10 +1,13 @@
+---
+title: "Waternet"
+---
 Song Teardrop, massive attack
 or No Surprises 
 Post the raw version and the project version. Project WaterNet. 
 do your ML study down the transparent paper, cursive with the inkjet, timelapse it, camera. 
 
-- make the grooves in the ground 
-- record me sketching out plans for: 
+make the grooves in the ground 
+record me sketching out plans for
 	- Aqua eGradient Descent
 		- Changing the Gravity is analogous to changing the step size; increasing stochastic behavioiur
 		- draw a dendrite. 
