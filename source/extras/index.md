@@ -5,20 +5,25 @@ layout: about
 ---
 
 <div id="random-quote">
-  <blockquote id="quote-container" class="quote">I'm thinking...</blockquote>
+  <blockquote id="quote-container" class="quote">So I was thinking...</blockquote>
+</div>
+<div class="naval-quote">
+  <a href="/bigfiles/naval.mp3">the meta quote</a>
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var quotesPath = '/extras/thoughts.json'; // Update with the correct path to your JSON file
-    fetch(quotesPath)
-      .then(function(response) { return response.json(); })
-      .then(function(quotes) {
-        var quoteIndex = Math.floor(Math.random() * quotes.length);
-        document.getElementById('quote-container').textContent = quotes[quoteIndex];
-      })
-      .catch(function(error) {
-        console.error('Could not load quotes:', error);
-      });
+    setTimeout(function() {
+      var quotesPath = '/extras/thoughts.json'; 
+      fetch(quotesPath)
+        .then(function(response) { return response.json(); })
+        .then(function(quotes) {
+          var quoteIndex = Math.floor(Math.random() * quotes.length);
+          document.getElementById('quote-container').textContent = quotes[quoteIndex];
+        })
+        .catch(function(error) {
+          console.error('Could not load quotes:', error);
+        });
+    }, 1000); 
   });
   </script>  
 
@@ -33,6 +38,16 @@ layout: about
 ---
 
 <style>
+  .naval-quote {
+    position: absolute;
+    right: 0;
+    top: 53px;
+    margin-right: 20px; 
+}
+.naval-quote a {
+    color: rgb(34, 139, 34)
+}
+
   .image-with-caption {
     display: flex;
     align-items: center;
@@ -72,7 +87,7 @@ layout: about
 # My hobbies
 
 <div class="image-with-caption">
-  <img src="/images/sliders/car.png" alt="Youtube in car">
+  <img src="/images/sliders/car.png" alt="Youtube in car" loading="lazy">
   <div class="caption">
     <p>If the weather's nice, I like to drive somewhere pretty and watch math YouTube videos in my car...</p>
   </div>
@@ -81,7 +96,7 @@ layout: about
 <br>
 
 <div class="image-with-caption">
-  <img src="/images/sliders/climb.png" alt="A sticky situation">
+  <img src="/images/sliders/climb.png" alt="A sticky situation" loading="lazy">
   <div class="caption">
     <p>I'm a risk-taker...</p>
   </div>
@@ -90,7 +105,7 @@ layout: about
 <br>
 
 <div class="image-with-caption">
-  <img src="/images/sliders/bike.png" alt="Bike-packing">
+  <img src="/images/sliders/bike.png" alt="Bike-packing" loading="lazy">
   <div class="caption">
     <p>On the weekends, I might go bike-packing...</p>
   </div>
@@ -99,7 +114,7 @@ layout: about
 <br>
 
 <div class="image-with-caption">
-  <img src="/images/sliders/house.png" alt="Home time">
+  <img src="/images/sliders/house.png" alt="Home time" loading="lazy">
   <div class="caption">
     <p>And then, it's home time.</p>
   </div>
@@ -110,8 +125,8 @@ layout: about
 # Contact
 
 ```python
-phone : 0481369898
-email : justinkhlee27[at]gmail.com
+phone : +61_481_369_898
+email : justinkhlee27<at>gmail.com
 ```
 
 <br>
@@ -122,28 +137,28 @@ email : justinkhlee27[at]gmail.com
 
 <div class="gallery">
   <div class="gallery-item">
-    <img src="/images/gear-gallery/a-cam-2.png" alt="Photo 1">
+    <img src="/images/gear-gallery/a-cam-2.png" alt="Photo 1" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/airpod.png" alt="Photo 2">
+    <img src="/images/gear-gallery/airpod.png" alt="Photo 2" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/sal.png" alt="Photo 3">
+    <img src="/images/gear-gallery/sal.png" alt="Photo 3" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/b-cam.png" alt="Photo 3">
+    <img src="/images/gear-gallery/b-cam.png" alt="Photo 3" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/kindle.png" alt="Photo 3">
+    <img src="/images/gear-gallery/kindle.png" alt="Photo 3" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/gopro.png" alt="Photo 3">
+    <img src="/images/gear-gallery/gopro.png" alt="Photo 3" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/moleskin.png" alt="Photo 3">
+    <img src="/images/gear-gallery/moleskin.png" alt="Photo 3" loading="lazy">
   </div>
   <div class="gallery-item">
-    <img src="/images/gear-gallery/lacie.png" alt="Photo 3">
+    <img src="/images/gear-gallery/lacie.png" alt="Photo 3" loading="lazy">
   </div>
   <div class="gallery-item">
     <img src="/images/gear-gallery/watch.png" alt="Photo 3">
@@ -158,7 +173,7 @@ Check the `alt` tag to see the name.
 # bonus content
 
 <audio controls>
-  <source src="/music/annafedorava-rach2.mp3" type="audio/mp3">
+  <source src="/music/annafedorava-rach2.mp3" type="audio/mp3" loading="lazy">
   Your browser does not support the audio element.
 </audio>
 

@@ -94,7 +94,12 @@ exclude:
 ignore:
 
 # Extensions
-## Plugins: https://hexo.io/plugins/
+## Plugins: https://hexo.io/plugins/]
+plugins:
+  - hexo-plugin-ipfs
+
+ipfs_plugin:
+  enabled: true
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 theme : cactus
