@@ -1,17 +1,17 @@
 [
         {
-        "name" : "21 days in Vietnam", 
-        "url" : "https://youtube.com",
-        "desc" : "[Youtube]"
+                "name": "21 days in Vietnam",
+                "url": "https://youtube.com",
+                "desc": "[Youtube]"
         },
         {
-        "name" : "Bon Voyage on Drums", 
-        "url" : "https://youtu.be/1xuwcOctD5Q?si=S5qXm2FLJSs_Lae5",
-        "desc" : "[Youtube]"
+                "name": "Bon Voyage on Drums",
+                "url": "https://youtu.be/1xuwcOctD5Q?si=S5qXm2FLJSs_Lae5",
+                "desc": "[Youtube]"
         },
         {
-        "name" : "My Comfort Playlist",
-        "url" : "https://open.spotify.com/playlist/25lBRSWuWVdsNpqBSzHCp7?si=5fd8ae0df0b2430f",
-        "desc" :"[Spotify]"
+                "name": "My Comfort Playlist",
+                "url": "https://open.spotify.com/playlist/25lBRSWuWVdsNpqBSzHCp7?si=5fd8ae0df0b2430f",
+                "desc": "[Spotify]"
         }
 ]
