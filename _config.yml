@@ -100,7 +100,7 @@ plugins:
 
 ## Themes: https://hexo.io/themes/
 # theme: landscape
-theme : cactus
+theme: cactus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -109,3 +109,7 @@ deploy:
   repo: git@github.com:jl33-ai/jl33-ai.github.io
   branch: gh-pages
   message: "{{ now('YYYY-MM-DD HH:mm:ss') }}"
+
+stories:
+  layout: story
+  source: _stories
