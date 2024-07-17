@@ -4,7 +4,9 @@ date: 2024-01-11
 tech_type: pip
 ---
 
-> I hijacked `matplotlib`'s scatterplot function to give the people what they want; a dot chart (also know as strip plot). You can install it with `pip install dotplotlib`, or see the source code [here](https://github.com/jl33-ai/dotplotlib).
+> I hijacked `matplotlib`'s scatterplot function to give the people what they want; a dot chart (also know as strip
+> plot). You can install it with `pip install dotplotlib`, or see the source
+> code [here](https://github.com/jl33-ai/dotplotlib).
 
 ```text
 Current stars: 6
@@ -14,7 +16,9 @@ Current stars: 6
 
 ![](https://github.com/jl33-ai/dotplotlib/blob/main/demos/daterange.png?raw=true)
 
-*Great things come in tiny packages*. A bare minimum extension library for creating tree dot plots, strip plots or dot charts w/ matplotlib or seaborn in Python
+*Great things come in tiny packages*. A bare minimum extension library for creating tree dot plots, strip plots or dot
+charts w/ matplotlib or seaborn in Python
+
 - Designed to work with `matplotlib` and `seaborn` in Python
 - Fully customizable
 
@@ -32,7 +36,8 @@ pip install dotplotlib
 
 ### Example 1: Simple Dot Chart
 
-`.dotchart` returns `x` and `y` lists that can be inputted straight into `matplotlib` or `seaborn` [scatterplots](https://www.w3schools.com/python/matplotlib_scatter.asp). 
+`.dotchart` returns `x` and `y` lists that can be inputted straight into `matplotlib`
+or `seaborn` [scatterplots](https://www.w3schools.com/python/matplotlib_scatter.asp).
 
 ```python
 from dotplotlib import dotchart
@@ -50,9 +55,10 @@ plt.show()
 
 ### Example 2: Dot Chart with Color Mapping
 
-Pass the data you would like to color by to the `color_by=` argument. 
+Pass the data you would like to color by to the `color_by=` argument.
 
-Returns an extra list `c` that should be passed into the `c=` parameter if using `matplotlib` or `hue=` if using `seaborn`. 
+Returns an extra list `c` that should be passed into the `c=` parameter if using `matplotlib` or `hue=` if
+using `seaborn`.
 
 ```python
 from dotplotlib import dotchart
@@ -74,7 +80,7 @@ plt.show()
 
 ### Example 3: Using `make_dotchart` to plot in one step
 
-Instead of just giving you `x, y` lists to make the plot yourself, `make_dotplot()` actually generates the plot. 
+Instead of just giving you `x, y` lists to make the plot yourself, `make_dotplot()` actually generates the plot.
 
 ```python
 from dotplotlib import make_dotchart
@@ -95,7 +101,8 @@ make_dotchart(df['size'],
 
 ### Example 4: Plotting in a Jupyter Notebook
 
-If plotting inline, use the default `.dotchart()` to obtain `x` and `y` lists, and then adjust as necessary with one of the following: 
+If plotting inline, use the default `.dotchart()` to obtain `x` and `y` lists, and then adjust as necessary with one of
+the following:
 
 ```python
 plt.figure(figsize=(12,6))  # or
@@ -117,7 +124,8 @@ plt.figure().set_figheight(12)
 
 ### `cmap`
 
-Any cmap value supported by matplotlib ([see here](https://matplotlib.org/stable/users/explain/colors/colormaps.html)) will work when passed into `theme='viridis'`.
+Any cmap value supported by matplotlib ([see here](https://matplotlib.org/stable/users/explain/colors/colormaps.html))
+will work when passed into `theme='viridis'`.
 
 **viridis:**
 
