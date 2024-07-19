@@ -1,7 +1,8 @@
 ---
 layout: story
-title: Why and how to size everybody up
+title: How to size everybody up (and why)
 date: 2024-07-19 23:18:47
+status: unfinished
 tags:
 ---
 
@@ -10,7 +11,10 @@ Why and how to size everybody up.
 Scrutiny should not include judgment.  
 Inspection should not include perversion.
 
+what is attention? commetning on someone's new piece of clothing, or haircut. 
 Attention is a social currency. And just like real money, people are often so hyperfixated on the pursuit of amassing more of it, that they forget to be generous with it.
+Attention is literally to be 'paid' - we start our day with a finite amount to be dispensed, and yet are consumed only by the pursuit of accumulating more of it
+
 
 In a sense, the world lacks attention liquidity. No economy made up of only people willing to sell will be healthy [1]
 
@@ -35,4 +39,3 @@ But few books, podcasts, or courses teach us the importance of extrospection. ‚Ä
 self‚Äù. Paying attention to others in a non-judgemental way is not reductive. It will teach you more about yourself than
 
 Ask Claude to add cool words
-
