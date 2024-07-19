@@ -439,6 +439,31 @@ body td {
   font-family: "Meslo LG";
   src: local("Meslo LG S"), url("../lib/meslo-LG/MesloLGS-Regular.ttf") format("truetype");
 }
+@font-face {
+  font-family: 'newspaper';
+  src: url("../fonts/newspaper-font.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.story .story-body {
+  font-family: 'newspaper', sans-serif;
+  font-size: 20px;
+}
+.story .story-header {
+  margin-bottom: 50px;
+}
+.story .story-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.storytitle {
+  font-family: 'newspaper', sans-serif;
+  font-size: 35px !important;
+}
 *,
 *:before,
 *:after {
@@ -478,7 +503,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  background-color: #fafafa;
+  background-color: #e2e0de;
   color: #22272a;
   font-weight: 400;
   font-size: 14px;
@@ -926,7 +951,7 @@ body {
   z-index: 5000000;
   width: 100%;
   border-top: 1px solid #666;
-  background: #f5f5f5;
+  background: #dedcd9;
   transition: opacity 0.2s;
 }
 #footer-post a {
@@ -943,7 +968,7 @@ body {
 #footer-post #nav-footer {
   padding-right: 1rem;
   padding-left: 1rem;
-  background: #e1e1e1;
+  background: #cdcac6;
   text-align: center;
 }
 #footer-post #nav-footer a {
@@ -987,7 +1012,7 @@ body {
 #footer-post #share-footer {
   padding-right: 1rem;
   padding-left: 1rem;
-  background: #e1e1e1;
+  background: #cdcac6;
   text-align: center;
 }
 #footer-post #share-footer ul {
@@ -1007,7 +1032,7 @@ body {
   clear: both;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background: #e1e1e1;
+  background: #cdcac6;
   text-align: left;
 }
 #footer-post #toc-footer ol {
@@ -1355,9 +1380,10 @@ article .content .caption {
   outline: none;
   border: solid 1px #666;
   border-radius: 5px;
-  background-color: #fafafa;
+  background-color: #e2e0de;
   color: #22272a;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  font-family: monospace;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
 }
@@ -1415,7 +1441,7 @@ article .content .caption {
   display: none;
   padding: 0.2em 0.5em;
   -webkit-font-smoothing: subpixel-antialiased;
-  color: #fafafa;
+  color: #e2e0de;
   font-display: swap;
   font-weight: 400;
   font-size: 11.200000000000001px;
@@ -1620,7 +1646,7 @@ code {
   margin: 1rem 0;
   padding: 10px 15px;
   border-radius: 4px;
-  background: #f5f5f5;
+  background: #dedcd9;
   font-family: "Menlo", "Meslo LG", monospace;
   -webkit-border-radius: 4px;
 }

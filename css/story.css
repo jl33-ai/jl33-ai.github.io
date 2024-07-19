@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'newspaper';
+  src: url("../fonts/newspaper-font.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.story .story-body {
+  font-family: 'newspaper', sans-serif;
+  font-size: 20px;
+}
+.story .story-header {
+  margin-bottom: 50px;
+}
+.story .story-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.storytitle {
+  font-family: 'newspaper', sans-serif;
+  font-size: 35px !important;
+}
