@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title>The 4 LLM Design Patterns</title>
+      <link href="/2024/08/18/four-llm-design-patterns/"/>
+      <url>/2024/08/18/four-llm-design-patterns/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><p><em>Each essay is meant to stand on its own, though I’d strongly encourage reading the series as a whole. For a pdf version of the full essay series, click here.</em></p><p><strong>Introduction [this page]</strong><br>History is live in San Francisco.</p><p>I. <strong><a href="">From GPT-4 to AGI: Counting the OOMs</a></strong><br>AGI by 2027 is strikingly plausible. GPT-2 to GPT-4 took us from <del>preschooler to ~smart high-schooler abilities in 4 years. Tracing trendlines in compute (</del>0.5 orders of magnitude or OOMs&#x2F;year), algorithmic efficiencies (~0.5 OOMs&#x2F;year), and “unhobbling” gains (from chatbot to agent), we should expect another preschooler-to-high-schooler-sized qualitative jump by 2027. </p><p>II. From AGI to Superintelligence: the Intelligence Explosion<br>AI progress won’t stop at human-level. Hundreds of millions of AGIs could automate AI research, compressing a decade of algorithmic progress (5+ OOMs) into ≤1 year. We would rapidly go from human-level to vastly superhuman AI systems. The power—and the peril—of superintelligence would be dramatic.</p><p>III. The Challenges</p><blockquote>  <p>The quote text goes here.</p>  <footer>    — <a href="#">Source of the quote</a>  </footer></blockquote><hr><p>*<br>⁑<br>⁂</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>20240813</title>
+      <link href="/2024/08/13/20240813/"/>
+      <url>/2024/08/13/20240813/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>How to size everybody up (and why)</title>
       <link href="/2024/07/19/size-everyone-up/"/>
       <url>/2024/07/19/size-everyone-up/</url>
       
-        <content type="html"><![CDATA[<p>Why and how to size everybody up.</p><p>Scrutiny should not include judgment.<br>Inspection should not include perversion.</p><p>what is attention? commetning on someone’s new piece of clothing, or haircut.<br>But attention is transactional<br>Attention is a social currency. And just like real money, people are often so hyperfixated on the pursuit of amassing more of it, that they forget to be generous with it.<br>Attention is literally to be ‘paid’ - we start our day with a finite amount to be dispensed, and yet are consumed only by the pursuit of accumulating more of it</p><p>In a sense, the world lacks attention liquidity. No economy made up of only people willing to sell will be healthy [1]</p><p>We ‘pay’ attention</p><p>Attention doesn’t have to be a 0-sum game; if everyone made an intentional effort to (appreciate?) other people more, the net level of attention received by any given person at any given time would increase.</p><p>(Sketch), a one-way attention society vs. a healthy, two-way attention society</p><p>Unsolicited activities are fun when they’re innocent.</p><p>And without judgement, people watching is innocent</p><p>Not only will it make you incredibly accurate at humoursly doing ‘wait, let me guess.’ Or even just flattering<br>perceptiveness &#x2F; psychoanalysis.</p><p>but it is representative of the idea that we should externally appreciative instead of internally obsessive.</p><p>So many great books (link) have been written on self improvement. But they are only self - we learn to be great<br>self-observes, we master introspection - and there are good reasons for this, too.<br>But few books, podcasts, or courses teach us the importance of extrospection. “The examination of things outside ones<br>self”. Paying attention to others in a non-judgemental way is not reductive. It will teach you more about yourself than</p><p>Ask Claude to add cool words</p><p>How to do it? It’s pretty simple - just deploy empathy</p><ul><li>6 senses</li><li>everything someone is presenting was an intentional choice - either for the notice of others, or simply for one’s own satisfaction</li></ul><hr><p>*<br>⁑<br>⁂</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="I-link"><a href="#I-link" class="headerlink" title="I. link"></a>I. <a href="link">link</a></h3><h1 id="hey"><a href="#hey" class="headerlink" title="hey"></a>hey</h1><h2 id="hey-1"><a href="#hey-1" class="headerlink" title="hey"></a>hey</h2><h3 id="hey-2"><a href="#hey-2" class="headerlink" title="hey"></a>hey</h3><p>Okay so how does this look<br><strong>bold</strong><br><em>italics</em></p><hr><p>*<br>⁑<br>⁂</p>]]></content>
       
       
       
