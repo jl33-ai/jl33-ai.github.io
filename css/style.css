@@ -1754,3 +1754,8 @@ code {
   font-size: clamp(9px, 1.25vw, 14px);
   line-height: 1.2;
 }
+.index-page {
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
