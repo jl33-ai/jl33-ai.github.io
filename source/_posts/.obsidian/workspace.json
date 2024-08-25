@@ -20,18 +20,6 @@
             }
           },
           {
-            "id": "dec171391d095756",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "unimelb-wam-calculator.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          },
-          {
             "id": "14ed74d4a81a807d",
             "type": "leaf",
             "state": {
@@ -99,8 +87,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -166,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "unimelb-wam-calculator.md",
+                "file": "sai-justin-stable-diffusion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "unimelb-wam-calculator.md",
+                "file": "sai-justin-stable-diffusion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -206,7 +193,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "unimelb-wam-calculator.md"
+                "file": "sai-justin-stable-diffusion.md"
               }
             }
           }
@@ -227,13 +214,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "dec171391d095756",
+  "active": "221ce02994ba5f5d",
   "lastOpenFiles": [
+    "four-llm-design-patterns.md",
+    "Pasted image 20240819204119.png",
+    "Untitled 1.md",
+    "Untitled.md",
+    "unimelb-wam-calculator.md",
     "sai-justin-stable-diffusion.md",
     "thumbnail3.3 2.png",
     "thumbnail3.3 1.png",
     "hello-world.md",
-    "unimelb-wam-calculator.md",
     "memory-hoarding-gpt.md",
     "renovate-datascience-bedroom.md",
     "meal-ml.md",
@@ -251,7 +242,6 @@
     "redd4.png",
     "redd3.png",
     "redd2.png",
-    "redd1.png",
     "probablistic-counting-in-R.md",
     "zetamatrix.md",
     "ml-ai-hack-23.md",

@@ -1,5 +1,5 @@
 ---
-title: ★ UniHack '24' (1st Place 🥇)
+title: ★ UniHack '24' writeup
 date: 2024-03-01
 tech_type: js
 ---
@@ -10,8 +10,8 @@ tech_type: js
 
 **Outcome:** In the end we won:
 ```
-🥇 Overall first place (pog!)
-🎖️ Most original idea
+🥇 First place
+🎖️ + Most original idea
 ```
 
 **UniHack:** Australia's largest university student hackathon, read more [here](https://www.unihack.net/about)
