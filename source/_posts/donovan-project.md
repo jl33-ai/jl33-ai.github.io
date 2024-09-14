@@ -15,4 +15,3 @@ I offered the following 'services':
 - SEO
 - Copywriting
 - 3D modelling
-

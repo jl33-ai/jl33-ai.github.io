@@ -1,7 +1,7 @@
 ---
 title: MLAI Hack '23 writeup
 date: 2023-12-18
-tech_type: aws
+tech_type: AWS, OpenAI
 ---
 
 # The Team
