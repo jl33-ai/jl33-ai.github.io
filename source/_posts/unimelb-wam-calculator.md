@@ -46,16 +46,23 @@ Almost 7 months later, I check, on a random Tuesday night...
 
 # ⚐ Why did I build it with `Streamlit`?
 
-**Every month or so** a new feature request pops up in the Reddit thread from some wishful university student. In order to add this new feature with `Streamlit`, all I need to do is hot-swap a few lines of Python on the train to work. `Streamlit` is near-instant deploy time
+TL,DR: Because the end-users don't care. 
 
-If I had used an actual stack (even as a static site), by the time I had *re-familiarized myself with the code, added the feature, and deployed it*, it wouldn't be worth it anymore.
+Complicated engineering is beautiful, but it has its place. The goal of this webapp was to reach (and help) **_as many people as possible_**, in as short amount of time as possible. 
 
-Other small benefits include:
+**Every month or so** a new feature request pops up in the Reddit thread from some wishful university student. 
+
+With `Streamlit` this usually means a few lines of code (maybe a few more lines of refactoring.) 
+
+And 'deploying' with `Streamlit` - yeah, don't worry, it's covered. No blue whale required from your end 🐳. 
+
+This is a **common pattern** in the space of engineers who want to build things that other people use: [be a Jedi master, not a mid-wit](https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989).
+
+Other benefits include:
 1. Free hosting
 2. Built-in analytics
-3. Python-native (for all the nerdy data visualization stuff)
-4. UI comes for free with any new functionality (no `css` required)
-
+3. Python-native (like all the data visualisation libraries you always want to use)
+4. `css`-less (CSS, I love you, but not right now)
 
 ---
 
