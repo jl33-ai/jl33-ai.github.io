@@ -1,6 +1,7 @@
 ---
 layout: story
 title: Six Design Patterns for Building with LLM's
+status: Finished
 date: 2024-08-18 16:56:22
 tags:
 ---
