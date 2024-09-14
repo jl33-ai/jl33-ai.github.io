@@ -1,7 +1,7 @@
 ---
 title: Learnings from a WAM Calculator
 date: 2023-11-17
-tech_type: streamlit
+tech_type: Streamlit
 ---
 **I built an** open-source University grading calculator that ranks #1 on Google.
 

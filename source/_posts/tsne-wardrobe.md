@@ -1,7 +1,7 @@
 ---
 title: tsne wardrobe
 date: 2024-03-02
-tech_type: tsne
+tech_type: T-sne
 ---
 
 > "The joy of dressing is an art." – John Galliano
