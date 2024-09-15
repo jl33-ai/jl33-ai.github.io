@@ -75,40 +75,61 @@
 <body class="max-width mx-auto px3 ltr">
 
     <div id="header-post">
-  <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
-  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa-solid fa-chevron-up fa-lg"></i></a>
-  <span id="menu">
+    <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" aria-label="Top"
+       onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i
+                class="fa-solid fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
     <span id="nav">
       <ul>
         <!--
        --><li><a href="/">home</a></li><!--
-     --><!--
+     -->
+          <!--
        --><li><a href="/engineering/">engineering</a></li><!--
-     --><!--
+     -->
+          <!--
        --><li><a href="/design/">design</a></li><!--
-     --><!--
+     -->
+          <!--
        --><li><a href="/product/">product</a></li><!--
-     --><!--
+     -->
+          <!--
        --><li><a href="/salesmarketing/">sales&amp;marketing</a></li><!--
-     --><!--
+     -->
+          <!--
        --><li><a href="/leadership/">people</a></li><!--
-     --><!--
+     -->
+          <!--
        --><li><a href="/artphilosophy/">art&amp;philosophy</a></li><!--
      -->
+          
       </ul>
     </span>
     <br/>
     <span id="actions">
       <ul>
-        
-        <li><a class="icon" aria-label="Previous post" href="/2024/03/01/unihack-24/"><i class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
-        
-        
-        <li><a class="icon" aria-label="Next post" href="/2023/12/18/ml-ai-hack-23/"><i class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
-        
-        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
-        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+          
+              <li><a class="icon" aria-label="Previous post" href="/2024/03/01/unihack-24/"><i
+                              class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();"
+                              onmouseout="$('#i-prev').toggle();"></i></a></li>
+          
+          
+              <li><a class="icon" aria-label="Next post" href="/2023/12/18/ml-ai-hack-23/"><i
+                              class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();"
+                              onmouseout="$('#i-next').toggle();"></i></a></li>
+          
+          <li><a class="icon" aria-label="Back to top" href="#"
+                 onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up"
+                                                                                 aria-hidden="true"
+                                                                                 onmouseover="$('#i-top').toggle();"
+                                                                                 onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt"
+                                                                                     aria-hidden="true"
+                                                                                     onmouseover="$('#i-share').toggle();"
+                                                                                     onmouseout="$('#i-share').toggle();"
+                                                                                     onclick="$('#share').toggle();return false;"></i></a></li>
       </ul>
       <span id="i-prev" class="info" style="display:none;">Previous post</span>
       <span id="i-next" class="info" style="display:none;">Next post</span>
@@ -132,13 +153,13 @@
 </ul>
 
     </div>
-    
-    
-      <div id="toc">
+        
+        
+            <div id="toc">
         <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#installation"><span class="toc-number">1.</span> <span class="toc-text">installation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#usage"><span class="toc-number">2.</span> <span class="toc-text">usage</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1-Simple-Dot-Chart"><span class="toc-number">2.0.1.</span> <span class="toc-text">Example 1: Simple Dot Chart</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2-Dot-Chart-with-Color-Mapping"><span class="toc-number">2.0.2.</span> <span class="toc-text">Example 2: Dot Chart with Color Mapping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3-Using-make-dotchart-to-plot-in-one-step"><span class="toc-number">2.0.3.</span> <span class="toc-text">Example 3: Using make_dotchart to plot in one step</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4-Plotting-in-a-Jupyter-Notebook"><span class="toc-number">2.0.4.</span> <span class="toc-text">Example 4: Plotting in a Jupyter Notebook</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#preset-themes"><span class="toc-number">3.</span> <span class="toc-text">preset themes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#custom-lavender"><span class="toc-number">3.0.1.</span> <span class="toc-text">custom:lavender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cmap"><span class="toc-number">3.0.2.</span> <span class="toc-text">cmap</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#features"><span class="toc-number">4.</span> <span class="toc-text">features</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#attribution"><span class="toc-number">5.</span> <span class="toc-text">attribution</span></a></li></ol>
       </div>
-    
-  </span>
+        
+    </span>
 </div>
 
 
