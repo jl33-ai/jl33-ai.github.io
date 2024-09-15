@@ -1,13 +1,13 @@
 ---
 title: Supertab
-description: Collaborative storytelling powered by LLM's
-date: 2024-04-14 18:04:59
+description: A lights-on place for safe, unfiltered internet media
+date: 2024-04-14
 tech_type: Java, Springboot
 categories:
   - home
   - product
   - engineering
-thumbnail: /images/thumbnails/couple.png
+thumbnail: /images/thumbnails/mocks/supertab.png
 icons:
   - name: Java
     image: /images/icons/java.png

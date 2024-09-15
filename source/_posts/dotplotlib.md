@@ -7,7 +7,6 @@ tags:
   - open source
 description: Open source extension for making better dot-plots in Python
 categories:
-  - home
   - engineering
 redirect_url:
 thumbnail: /images/thumbnails/blocks.png

@@ -2,7 +2,7 @@
 title: Zetamatrix
 redirect_url: https://zetamatrix-production.up.railway.app/
 date: 2023-07-15
-description: Ever wondered which two numbers we're the worst at adding together?
+description: High frequency data on the way we do mental math
 categories:
     - engineering
     - home
