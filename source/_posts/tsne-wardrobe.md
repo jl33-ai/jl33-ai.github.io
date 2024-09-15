@@ -5,6 +5,7 @@ tech_type: T-sne
 categories:
 	- engineering
 	- artphilosophy
+description: Can good taste be graphed?
 ---
 
 > "The joy of dressing is an art." – John Galliano
