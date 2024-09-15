@@ -1,10 +1,28 @@
 ---
-title: ★ UniHack '24' writeup
+title: ★ UniHack '24 writeup
 date: 2024-03-01
 tech_type: js
 categories:
+  - home
   - product
-  - engineering
+thumbnail: /images/thumbnails/city.png
+description: First Place in UNIHACK 2024 with Sweet AI
+icons:
+  - name: 3JS
+    image: /images/icons/3js.png
+    url:   
+  - name: Figma
+    image: /images/icons/figma.png
+    url:
+  - name: MySQL
+    image: /images/icons/mysql.png
+    url:
+#  - name: AWS
+#    url:
+#  - name: Express
+#    url:
+#  - name: React
+#    url:
 ---
 # The Team
 
