@@ -1631,12 +1631,13 @@ article .content .caption {
 .post-item .post-icons {
   margin-top: auto;
   display: flex;
+  justify-content: flex-start;
   align-items: center;
   gap: 0.25rem;
 }
 .post-item .post-icons .icon-link img {
-  width: 24px;
   height: 24px;
+  width: auto;
   filter: grayscale(100%);
   transition: filter 0.14s;
 }
