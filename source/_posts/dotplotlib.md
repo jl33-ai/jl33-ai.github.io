@@ -2,6 +2,8 @@
 title: ★ dotplotlib
 date: 2024-01-11
 tech_type: Python
+categories:
+  - engineering
 ---
 
 > I hijacked `matplotlib`'s scatterplot function to give the people what they want; a dot chart (also know as strip

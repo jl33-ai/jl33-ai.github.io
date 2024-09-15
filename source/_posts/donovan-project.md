@@ -1,7 +1,9 @@
 ---
 title: The Donovan Project
 date: 2016-01-01 17:52:21
-tags:
+categories:
+  - design
+  - product
 ---
 
 A self-run digital agency that helped local startups make a larger impact through **tech** (or what of it I knew at the time).
