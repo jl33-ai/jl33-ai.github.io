@@ -85,6 +85,8 @@
         <a href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-2x"></i></a>
       </li>
       
+        <li><a href="/">home</a></li>
+        
         <li><a href="/engineering/">engineering</a></li>
         
         <li><a href="/design/">design</a></li>
@@ -103,51 +105,6 @@
 
     
     <div class="index-page">
-    <pre id="ascii-house" class="cover-ascii">
-    
-    
-                                     (1   )
-                                   (  0 0)
-                                    ( 1 0 )
-                                   ( 1  1 )
-                                     ) 0 )
-                                    (0  (                 /\
-                                     (_)                 /  \  /\
-                             ________[_]________      /\/    \/  \
-                    /\      /\        ______    \    /   /\/\  /\/\
-                   /  \    //_\       \    /\    \  /\/\/    \/    \
-            /\    / /\/\  //___\       \__/  \    \/
-           /  \  /\/    \//_____\       \ |[]|     \
-          /\/\/\/       //_______\       \|__|      \
-         /      \      /XXXXXXXXXX\                  \
-                 \    /_I_II  I__I_\__________________\
-                        I_I|  I__I_____[]_|_[]_____I
-                        I_II  I__I_____[]_|_[]_____I
-                        I II__I  I     XXXXXXX     I
-                     ~~~~~&#34;   &#34;~~~~~~~~~~~~~~~~~~~~~~~~
-
-              &gt;&gt; build_me_a_house_out_of_1s_and_0s()
-
-</pre>
-
-
-<script>
-    (function () {
-        const asciiHouse = document.getElementById('ascii-house');
-        const intervalMs = 1000;
-        const flipProbability = 0.1;
-
-        function flipDigits() {
-            let content = asciiHouse.innerHTML;
-            content = content.replace(/[01]/g, match => {
-                return Math.random() < flipProbability ? (match === '0' ? '1' : '0') : match;
-            });
-            asciiHouse.innerHTML = content;
-        }
-
-        setInterval(flipDigits, intervalMs);
-    })();
-</script>
     
         <p>
             
@@ -215,6 +172,8 @@
     <nav>
       <ul>
         <!--
+       --><li><a href="/">home</a></li><!--
+     --><!--
        --><li><a href="/engineering/">engineering</a></li><!--
      --><!--
        --><li><a href="/design/">design</a></li><!--

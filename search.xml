@@ -4,27 +4,6 @@
   
     
     <entry>
-      <title>Supertab</title>
-      <link href="/2024/09/14/supertab/"/>
-      <url>/2024/09/14/supertab/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> product </category>
-          
-          <category> engineering </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Six Design Patterns for Building with LLM&#39;s</title>
       <link href="/2024/08/18/six-llm-design-patterns/"/>
       <url>/2024/08/18/six-llm-design-patterns/</url>
@@ -38,6 +17,12 @@
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> LLM </tag>
+            
+        </tags>
       
     </entry>
     
@@ -92,6 +77,27 @@
       
       
       <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Supertab</title>
+      <link href="/2024/04/14/supertab/"/>
+      <url>/2024/04/14/supertab/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> product </category>
           
           <category> engineering </category>
           
