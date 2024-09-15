@@ -2,8 +2,11 @@
 layout: story
 title: Six Design Patterns for Building with LLM's
 date: 2024-08-18 16:56:22
+tags:
+	- LLM
 categories:
   - engineering
+thumbnail: /images/thumbnails/red-houses.png
 ---
 
 # Introduction
