@@ -1591,6 +1591,12 @@ article .content .caption {
   border-bottom: 1px dashed #e1e0e4;
   padding: 1rem 0;
 }
+@media (max-width: 768px) {
+  .post-item {
+    flex-direction: column;
+    padding: 1rem 1rem;
+  }
+}
 .post-item .post-thumbnail {
   flex: 0 0 150px;
   margin-right: 1rem;
@@ -1647,7 +1653,7 @@ article .content .caption {
 }
 .post-item .post-meta {
   flex: 0 0 150px;
-  text-align: right;
+  text-align: left;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -1673,7 +1679,6 @@ article .content .caption {
   text-decoration: none;
   transition: color 0.3s ease;
   margin-top: 1rem;
-  text-align: left;
 }
 .highlight {
   color: #333;
