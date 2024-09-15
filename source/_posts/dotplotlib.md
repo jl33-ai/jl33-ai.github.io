@@ -4,6 +4,7 @@ date: 2024-01-11
 tags:
   - matplotlib
   - data viz
+  - open source
 description: Open source extension for making better dot-plots in Python
 categories:
   - home
@@ -13,9 +14,11 @@ thumbnail: /images/thumbnails/blocks.png
 icons:
   - name: Python
     image: /images/icons/python.png
+    url:  
+  - name: Streamlit
+    image: /images/icons/streamlit.png
     url:
-mau:
-revenue:
+mau: 9
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 ---
 
