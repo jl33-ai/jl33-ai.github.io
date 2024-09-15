@@ -3,7 +3,7 @@ title: Stable Diffusion, Olivia Rodrigo, and Sexism
 date: 2023-12-09
 categories:
 	- engineering
-	- leadership
+	- opinion
 description: Interviewing a Canva MLE about how to make AI less sexist
 icons:
 # manim

@@ -5,7 +5,7 @@ tags:
 description:
 categories:
 redirect_url:
-thumbnail: /images/thumbnails/classic-rainbow.png
+thumbnail: /images/thumbnails/name.png
 icons:
   - name: Name
     image: /images/icons/name.png
