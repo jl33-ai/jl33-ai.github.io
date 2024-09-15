@@ -44,39 +44,6 @@
     
     
     <entry>
-      <title>hexo-ipfs-plugin</title>
-      <link href="/2024/06/15/hexo-ipfs-plugin/"/>
-      <url>/2024/06/15/hexo-ipfs-plugin/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> home </category>
-          
-          <category> engineering </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> open source </tag>
-            
-            <tag> ipfs </tag>
-            
-            <tag> hexo </tag>
-            
-            <tag> plugin </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Poll Anything</title>
       <link href="/2024/06/15/poll-anything/"/>
       <url>/2024/06/15/poll-anything/</url>
@@ -264,10 +231,68 @@
           
           <category> engineering </category>
           
-          <category> leadership </category>
+          <category> opinion </category>
           
       </categories>
       
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Why the LLM might unify data science and software engineering</title>
+      <link href="/2023/12/01/the-llm-os/"/>
+      <url>/2023/12/01/the-llm-os/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LLM </tag>
+            
+            <tag> Data Science </tag>
+            
+            <tag> Programming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LLM&#39;s - Technical Skills, Agency and Pessimism</title>
+      <link href="/2023/11/29/llm-agency-vs-pessimism/"/>
+      <url>/2023/11/29/llm-agency-vs-pessimism/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> LLM </tag>
+            
+            <tag> Agency </tag>
+            
+            <tag> Pessimism </tag>
+            
+        </tags>
       
     </entry>
     
@@ -305,6 +330,39 @@
     
     
     <entry>
+      <title>hexo-ipfs-plugin</title>
+      <link href="/2023/10/15/hexo-ipfs-plugin/"/>
+      <url>/2023/10/15/hexo-ipfs-plugin/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> open source </tag>
+            
+            <tag> ipfs </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> plugin </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Zetamatrix</title>
       <link href="/2023/07/15/zetamatrix/"/>
       <url>/2023/07/15/zetamatrix/</url>
@@ -326,6 +384,25 @@
             <tag> big-data </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SnP by M</title>
+      <link href="/2023/03/01/snp-by-m/"/>
+      <url>/2023/03/01/snp-by-m/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> artphilosophy </category>
+          
+      </categories>
+      
       
     </entry>
     
