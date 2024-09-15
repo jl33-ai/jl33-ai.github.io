@@ -17,7 +17,6 @@ tags:
   - open source
 description: A Hexo plugin for persisting your writing on IPFS
 categories:
-  - home
   - engineering
 redirect_url: https://github.com/jl33-ai/hexo-ipfs-plugin
 mau: 0
