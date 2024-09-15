@@ -2,6 +2,9 @@
 title: ★ UniHack '24' writeup
 date: 2024-03-01
 tech_type: js
+categories:
+  - product
+  - engineering
 ---
 # The Team
 
