@@ -8,11 +8,11 @@ categories:
   - engineering
 thumbnail: /images/thumbnails/classic-rainbow.png
 icons:
-  - name: Icon1
-    image: /path/to/icon1.png
+  - name: Java
+    image: /images/icons/java.png
     url: https://example.com/icon1
-  - name: Icon2
-    image: /path/to/icon2.png
+  - name: Springboot
+    image: /images/icons/springboot.png
     url: https://example.com/icon2
 mau: 0
 revenue: -$10
