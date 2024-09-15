@@ -19,7 +19,7 @@
 <meta property="og:image" content="http://example.com/images/redd1.png">
 <meta property="og:image" content="http://example.com/images/wam-stats.png">
 <meta property="article:published_time" content="2023-11-16T13:00:00.000Z">
-<meta property="article:modified_time" content="2024-06-05T11:07:36.383Z">
+<meta property="article:modified_time" content="2024-09-15T02:08:40.467Z">
 <meta property="article:author" content="JL">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/gallery-wam-2.png">
@@ -83,15 +83,17 @@
     <span id="nav">
       <ul>
         <!--
-       --><li><a href="/">home</a></li><!--
+       --><li><a href="/engineering/">engineering</a></li><!--
      --><!--
-       --><li><a href="/search/">search</a></li><!--
+       --><li><a href="/design/">design</a></li><!--
      --><!--
-       --><li><a href="/projects/">projects</a></li><!--
+       --><li><a href="/product/">product</a></li><!--
      --><!--
-       --><li><a href="/stories/">opinion</a></li><!--
+       --><li><a href="/salesmarketing/">salesmarketing</a></li><!--
      --><!--
-       --><li><a href="/art/">art</a></li><!--
+       --><li><a href="/leadership/">leadership</a></li><!--
+     --><!--
+       --><li><a href="/artphilosophy/">artphilosophy</a></li><!--
      -->
       </ul>
     </span>
@@ -166,6 +168,11 @@
 
 
           
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/product/">product</a> › <a class="category-link" href="/categories/product/engineering/">engineering</a>
+    </div>
+
 
             
 
@@ -200,14 +207,18 @@
 <p><em>Someone makes it all worth it.</em></p>
 <hr>
 <h1 id="Analytics"><a href="#Analytics" class="headerlink" title="Analytics"></a>Analytics</h1><p>Almost 7 months later, I check, on a random Tuesday night…<br><img src="/images/wam-stats.png"></p>
-<h1 id="⚐-Why-did-I-build-it-with-Streamlit"><a href="#⚐-Why-did-I-build-it-with-Streamlit" class="headerlink" title="⚐ Why did I build it with Streamlit?"></a>⚐ Why did I build it with <code>Streamlit</code>?</h1><p><strong>Every month or so</strong> a new feature request pops up in the Reddit thread from some wishful university student. In order to add this new feature with <code>Streamlit</code>, all I need to do is hot-swap a few lines of Python on the train to work. <code>Streamlit</code> is near-instant deploy time</p>
-<p>If I had used an actual stack (even as a static site), by the time I had <em>re-familiarized myself with the code, added the feature, and deployed it</em>, it wouldn’t be worth it anymore.</p>
-<p>Other small benefits include:</p>
+<h1 id="⚐-Why-did-I-build-it-with-Streamlit"><a href="#⚐-Why-did-I-build-it-with-Streamlit" class="headerlink" title="⚐ Why did I build it with Streamlit?"></a>⚐ Why did I build it with <code>Streamlit</code>?</h1><p>TL,DR: Because the end-users don’t care. </p>
+<p>Complicated engineering is beautiful, but it has its place. The goal of this webapp was to reach (and help) <strong><em>as many people as possible</em></strong>, in as short amount of time as possible. </p>
+<p><strong>Every month or so</strong> a new feature request pops up in the Reddit thread from some wishful university student. </p>
+<p>With <code>Streamlit</code> this usually means a few lines of code (maybe a few more lines of refactoring.) </p>
+<p>And ‘deploying’ with <code>Streamlit</code> - yeah, don’t worry, it’s covered. No blue whale required from your end 🐳. </p>
+<p>This is a <strong>common pattern</strong> in the space of engineers who want to build things that other people use: <a target="_blank" rel="noopener" href="https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989">be a Jedi master, not a mid-wit</a>.</p>
+<p>Other benefits include:</p>
 <ol>
 <li>Free hosting</li>
 <li>Built-in analytics</li>
-<li>Python-native (for all the nerdy data visualization stuff)</li>
-<li>UI comes for free with any new functionality (no <code>css</code> required)</li>
+<li>Python-native (like all the data visualisation libraries you always want to use)</li>
+<li><code>css</code>-less (CSS, I love you, but not right now)</li>
 </ol>
 <hr>
 <p>View the <a target="_blank" rel="noopener" href="http://www.github.com/">repo here</a></p>
@@ -230,15 +241,17 @@
     <div id="nav-footer" style="display: none">
       <ul>
         
-          <li><a href="/">home</a></li>
+          <li><a href="/engineering/">engineering</a></li>
         
-          <li><a href="/search/">search</a></li>
+          <li><a href="/design/">design</a></li>
         
-          <li><a href="/projects/">projects</a></li>
+          <li><a href="/product/">product</a></li>
         
-          <li><a href="/stories/">opinion</a></li>
+          <li><a href="/salesmarketing/">salesmarketing</a></li>
         
-          <li><a href="/art/">art</a></li>
+          <li><a href="/leadership/">leadership</a></li>
+        
+          <li><a href="/artphilosophy/">artphilosophy</a></li>
         
       </ul>
     </div>
@@ -293,15 +306,17 @@
     <nav>
       <ul>
         <!--
-       --><li><a href="/">home</a></li><!--
+       --><li><a href="/engineering/">engineering</a></li><!--
      --><!--
-       --><li><a href="/search/">search</a></li><!--
+       --><li><a href="/design/">design</a></li><!--
      --><!--
-       --><li><a href="/projects/">projects</a></li><!--
+       --><li><a href="/product/">product</a></li><!--
      --><!--
-       --><li><a href="/stories/">opinion</a></li><!--
+       --><li><a href="/salesmarketing/">salesmarketing</a></li><!--
      --><!--
-       --><li><a href="/art/">art</a></li><!--
+       --><li><a href="/leadership/">leadership</a></li><!--
+     --><!--
+       --><li><a href="/artphilosophy/">artphilosophy</a></li><!--
      -->
       </ul>
     </nav>

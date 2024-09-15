@@ -702,7 +702,7 @@ body {
   line-height: 15px;
 }
 #header #nav ul a {
-  margin-right: 15px;
+  margin-right: 5px;
   color: #0a0a0a;
 }
 #header #nav ul a:hover {
@@ -713,8 +713,7 @@ body {
 }
 #header #nav ul li {
   display: inline-block;
-  margin-right: 15px;
-  border-right: 1px dotted;
+  margin-right: 5px;
   border-color: #0a0a0a;
   vertical-align: middle;
 }
