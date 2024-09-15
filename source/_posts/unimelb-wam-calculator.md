@@ -7,9 +7,8 @@ categories:
   - product
   - engineering
 tags:
-  - calculator
-  - webapp
-  - users
+  - reddit
+  - open source
 description: An open source University grade calculator that ranks no. 1 on Google
 redirect_url:
 thumbnail: /images/thumbnails/classic-rainbow.png
