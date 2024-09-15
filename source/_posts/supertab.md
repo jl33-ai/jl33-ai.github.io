@@ -1,7 +1,7 @@
 ---
 title: Supertab
 description: Collaborative storytelling powered by LLM's
-date: 2024-09-14 18:04:59
+date: 2024-04-14 18:04:59
 tech_type: Java, Springboot
 categories:
   - product
