@@ -1,12 +1,17 @@
 ---
 layout: story
-title: Six Design Patterns for Building with LLM's
+title: Six Design Patterns for Agentic LLM's
 date: 2024-08-18 16:56:22
 tags:
 	- LLM
+	- Opinion
 categories:
   - engineering
 thumbnail: /images/thumbnails/red-houses.png
+icons:
+	- name: Docs
+	  image: /images/icons/docs.png
+	  url: https://example.com/icon1
 ---
 
 # Introduction

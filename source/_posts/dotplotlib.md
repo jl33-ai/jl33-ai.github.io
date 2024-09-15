@@ -1,17 +1,30 @@
 ---
-title: ★ dotplotlib
+title: dot-plot-lib
 date: 2024-01-11
-tech_type: Python
+tags:
+  - matplotlib
+  - data viz
+description: Open source extension for making better dot-plots in Python
 categories:
+  - home
   - engineering
+redirect_url:
+thumbnail: /images/thumbnails/blocks.png
+icons:
+  - name: Python
+    image: /images/icons/python.png
+    url:
+mau:
+revenue:
+help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 ---
 
-> I hijacked `matplotlib`'s scatterplot function to give the people what they want; a dot chart (also know as strip
+> I hacked `matplotlib`'s scatter plot to give the people what they want: a dot chart (aka strip
 > plot). You can install it with `pip install dotplotlib`, or see the source
 > code [here](https://github.com/jl33-ai/dotplotlib).
 
 ```text
-Current stars: 6
+Current stars: 9
 ```
 
 ---
