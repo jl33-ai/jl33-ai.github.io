@@ -3,13 +3,27 @@ title: Learnings from a WAM Calculator
 date: 2023-11-17
 tech_type: Streamlit
 categories:
+  - home
   - product
   - engineering
+tags:
+  - calculator
+  - webapp
+  - users
+description: An open source University grade calculator that ranks no. 1 on Google
+redirect_url:
+thumbnail: /images/thumbnails/classic-rainbow.png
+icons:
+  - name: Python
+    image: /images/icons/python.png
+    url:
+mau: 249
+help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 ---
 
-**I built an** open-source University grading calculator that ranks #1 on Google.
+**I built an** open source University grade calculator that ranks #1 on Google.
 
-It fundamentally just works, and has some extra nerdy stuff like: statistics and OCR. 
+It just _works_, and has some nerdy stuff (stats and OCR) for those who want it
 
 
 ![](/images/gallery-wam-2.png)
