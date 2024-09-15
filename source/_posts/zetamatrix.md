@@ -1,10 +1,8 @@
 ---
 title: ★ Zetamatrix
 tech_type: django
-layout: redirect-zm
+redirect_url: https://zetamatrix-production.up.railway.app/
 date: 2023-07-15
+categories:
+  - engineering
 ---
-
-Play the game [here](https://zetamatrix-production.up.railway.app/). 
-
-Watch the trailer [~~here~~]().(Pending ⏳)

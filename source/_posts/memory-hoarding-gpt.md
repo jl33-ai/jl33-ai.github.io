@@ -2,6 +2,9 @@
 title: Fine tuning an LLM on 2 million words of journalling
 date: 2022-12-09
 tech_type: GPT-2
+categories:
+  - artphilosophy
+  - engineering
 ---
 **It all started because** I wanted to follow [this tutorial](https://youtu.be/kCc8FmEb1nY) - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: *I could use my \~2 million words worth of diary entries.* 
 

@@ -1,0 +1,2 @@
+- [] Sync up Quartz
+- [] Add the tech used as icons

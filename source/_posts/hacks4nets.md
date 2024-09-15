@@ -1,8 +1,8 @@
 ---
 title: hacks4nets.com
-layout: redirect-h4n
 tech_type: ml
-redirect_url: hacks4nets.com
+redirect_url: https://hacks4nets.com/
+categories:
+  - engineering
 ---
-(Project under construction 🏗️)
 
