@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>speech2drug</title>
+      <link href="/2024/09/15/speech2drug/"/>
+      <url>/2024/09/15/speech2drug/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Six Design Patterns for Agentic LLM&#39;s</title>
       <link href="/2024/08/18/six-llm-design-patterns/"/>
       <url>/2024/08/18/six-llm-design-patterns/</url>
@@ -23,6 +36,39 @@
             <tag> LLM </tag>
             
             <tag> Opinion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-ipfs-plugin</title>
+      <link href="/2024/06/15/hexo-ipfs-plugin/"/>
+      <url>/2024/06/15/hexo-ipfs-plugin/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> open source </tag>
+            
+            <tag> ipfs </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> plugin </tag>
             
         </tags>
       
@@ -113,7 +159,7 @@
     
     
     <entry>
-      <title>tsne wardrobe</title>
+      <title>Dimensionality reduction on my wardrobe</title>
       <link href="/2024/03/02/tsne-wardrobe/"/>
       <url>/2024/03/02/tsne-wardrobe/</url>
       
@@ -134,7 +180,7 @@
     
     
     <entry>
-      <title>★ UniHack &#39;24&#39; writeup</title>
+      <title>★ UniHack &#39;24 writeup</title>
       <link href="/2024/03/01/unihack-24/"/>
       <url>/2024/03/01/unihack-24/</url>
       
@@ -143,9 +189,9 @@
       
       <categories>
           
-          <category> product </category>
+          <category> home </category>
           
-          <category> engineering </category>
+          <category> product </category>
           
       </categories>
       
@@ -176,6 +222,8 @@
             <tag> matplotlib </tag>
             
             <tag> data viz </tag>
+            
+            <tag> open source </tag>
             
         </tags>
       
@@ -244,11 +292,9 @@
       
         <tags>
             
-            <tag> calculator </tag>
+            <tag> open source </tag>
             
-            <tag> webapp </tag>
-            
-            <tag> users </tag>
+            <tag> reddit </tag>
             
         </tags>
       
