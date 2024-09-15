@@ -1588,7 +1588,7 @@ article .content .caption {
   display: flex;
   align-items: stretch;
   margin-bottom: 2rem;
-  border-bottom: 1px dashed #eee;
+  border-bottom: 1px dashed #e1e0e4;
   padding: 1rem 0;
 }
 .post-item .post-thumbnail {
