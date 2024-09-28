@@ -18,4 +18,7 @@ categories:
 redirect_url:
 mau: 0
 revenue: 0
+photos:
+  - /images/project-mocks/reads/1.png
+  - /images/project-mocks/reads/2.png
 ---

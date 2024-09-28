@@ -1,10 +1,9 @@
 ---
 title: Supertab
-description: A lights-on place for unfiltered media on the internet
+description: A lights-on place for permission-less media on the internet
 date: 2024-04-14
 tech_type: Java, Springboot
 categories:
-  - home
   - product
   - engineering
 thumbnail: /images/thumbnails/mocks/supertab.png
