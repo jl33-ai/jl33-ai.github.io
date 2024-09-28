@@ -1,6 +1,6 @@
 ---
 title: Supertab
-description: A lights-on place for safe, unfiltered internet media
+description: A lights-on place for unfiltered media on the internet
 date: 2024-04-14
 tech_type: Java, Springboot
 categories:

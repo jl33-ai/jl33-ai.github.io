@@ -6,7 +6,7 @@ categories:
   - home
   - product
 thumbnail: /images/thumbnails/city.png
-description: First Place in UNIHACK 2024 with Sweet AI
+description: First Place in UNIHACK 2024 w/ Sweet AI
 icons:
   - name: 3JS
     image: /images/icons/3js.png
