@@ -9,7 +9,7 @@ categories:
 tags:
   - reddit
   - open source
-description: An open source University grade calculator that ranks no. 1 on Google
+description: An open source University grade calculator, ranks no. 1 on Google
 redirect_url:
 thumbnail: /images/thumbnails/classic-rainbow.png
 icons:

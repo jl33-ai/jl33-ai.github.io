@@ -4,7 +4,7 @@ date: 2016-01-01 17:52:21
 categories:
   - design
   - product
-description: A neighbourhood digital agency helping local businesses use more tech
+description: Helping local businesses use more tech
 tags:
   - graphic design
   - 3d rendering
@@ -21,7 +21,7 @@ revenue: 2K
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 ---
 
-A neighbourhood digital agency helping local businesses use **tech** (or what of it I knew at the time).
+Your friendly neighbourhood digital agency helping local businesses use **tech** (or what of it I knew at the time).
 
 I offered the following 'services': 
 - Website building
