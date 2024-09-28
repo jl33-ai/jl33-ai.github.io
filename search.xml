@@ -191,7 +191,7 @@
       <link href="/2024/03/27/lyrebird/"/>
       <url>/2024/03/27/lyrebird/</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<figure>    <img src="/images/project-mocks/lyrebird/1.jpg">    <p class="figcaption">Got creative with realtime detection</p></figure><figure>    <img src="/images/project-mocks/lyrebird/2.jpg">    <p class="figcaption"><a href="https://github.com/jl33-ai/speech-2-drug">speech to text</a></p></figure><figure>    <img src="/images/project-mocks/lyrebird/3.jpg">    <p class="figcaption">billing code prediction via RAG</p></figure><figure>    <img src="/images/project-mocks/lyrebird/4.jpg">    <p class="figcaption">prompt customization suites</p></figure>]]></content>
       
       
       <categories>

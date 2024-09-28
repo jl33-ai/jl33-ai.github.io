@@ -1754,6 +1754,15 @@ article .content .caption {
 .highlight .code .strong {
   font-weight: bold;
 }
+figure {
+  flex: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+figure p {
+  text-align: center;
+  color: #7e7c87;
+}
 pre {
   overflow-x: auto;
   padding: 10px 15px;
