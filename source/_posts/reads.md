@@ -11,7 +11,7 @@ icons:
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 date: 2024-06-24
 tags:
-description: Track your information diet and share your reads in a Strava-esque way
+description: Share & track your information diet in a Strava-esque way
 categories:
   - home
   - product
