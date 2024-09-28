@@ -8,7 +8,7 @@ date: 2024-07-27
 tags:
 description: AI Agents.
 categories:
-  - home
+  - engineering
   - product
 redirect_url: https://landing-page-tau-peach.vercel.app/
 mau: 0

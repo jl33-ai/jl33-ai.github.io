@@ -1,7 +1,6 @@
 ---
 title: Learnings from a WAM Calculator
 date: 2023-11-17
-tech_type: Streamlit
 categories:
   - home
   - product
@@ -18,6 +17,8 @@ icons:
     url:
 mau: 249
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
+photos:
+    -
 ---
 
 **I built an** open source University grade calculator that ranks #1 on Google.
