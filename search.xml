@@ -68,6 +68,8 @@
           
           <category> engineering </category>
           
+          <category> opinion </category>
+          
       </categories>
       
       
@@ -514,6 +516,25 @@
       <categories>
           
           <category> artphilosophy </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aquaponics</title>
+      <link href="/2017/11/10/aquaponics/"/>
+      <url>/2017/11/10/aquaponics/</url>
+      
+        <content type="html"><![CDATA[<p>My first engineering project wasn’t a program, it was a fish tank. </p><p><strong>Here is the idea behind aquaponics:</strong> </p><ol><li>The fish sh*t in the water, which fertilizes it for the plants</li><li>The plants keep the water clean for the fish</li></ol><p>A perfect system, perfection in its simplicity. Perfectly self-sustaining, enclosed, and symbiotic. </p><p>It fascinated my mind. I begged my parents to take me to <a href="https://en.wikipedia.org/wiki/Bunnings">Bunnings</a>.<br>Nothing would stop me from building my <strong>aquaponics system</strong>.</p>]]></content>
+      
+      
+      <categories>
           
           <category> engineering </category>
           
