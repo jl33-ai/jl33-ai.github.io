@@ -7,6 +7,7 @@ tags:
 	- Opinion
 categories:
   - engineering
+  - opinion
 thumbnail: /images/thumbnails/red-houses.png
 icons:
 	- name: Docs
