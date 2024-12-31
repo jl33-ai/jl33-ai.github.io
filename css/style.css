@@ -1610,6 +1610,22 @@ article .content .caption {
   height: auto;
   object-fit: cover;
 }
+.post-item .post-thumbnail-large {
+  flex: 0 0 200px;
+  margin-right: 1rem;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.post-item .post-thumbnail-large img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 0.08rem solid #e5e5e5;
+  border-radius: 0.8rem;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.03);
+}
 .post-item .post-content {
   display: flex;
   flex: 1;
