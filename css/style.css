@@ -680,10 +680,10 @@ body {
   display: inline-block;
   float: left;
   margin-right: 20px;
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 5px;
-  background-size: 65px 65px;
+  background-size: 50px 50px;
   background-repeat: no-repeat;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
@@ -735,7 +735,7 @@ body {
   #header #title {
     display: table;
     margin-right: 5rem;
-    min-height: 65px;
+    min-height: 50px;
   }
   #header #title h1 {
     display: table-cell;
@@ -765,7 +765,7 @@ body {
   }
   #header #nav li:not(:first-child) {
     padding-top: 1rem;
-    padding-left: 85px;
+    padding-left: 70px;
     font-size: 1rem;
   }
 }
@@ -1656,6 +1656,10 @@ article .content .caption {
   justify-content: flex-start;
   align-items: center;
   gap: 0.6rem;
+}
+.post-item .post-icons a {
+  border: none !important;
+  text-underline: none !important;
 }
 .post-item .post-icons .icon-link img {
   width: 24px;
