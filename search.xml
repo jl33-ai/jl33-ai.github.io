@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>AgentWare and the next API</title>
+      <link href="/2025/01/01/the-next-interface/"/>
+      <url>/2025/01/01/the-next-interface/</url>
+      
+        <content type="html"><![CDATA[<p>The history of technology is earmarked by the invention of new interfaces. Interfaces are born when we realize that there is a new type of <em>consumer</em> that wants to read or write to our systems.</p><br><h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><p>For example, the Application Programming Interface (API) was born because software needed a way to communicate with other software and other programmers. So we started writing specifications, and made things like REST. </p><p>Then, the Graphical User Interface (GUI) was born in Xerox PARC because we needed to make computers accessible to <em>normal people</em> (not just programmers). So we moved from text-based commands to visual metaphors (like the mouse, desktop, or folders).</p><p>When you apply this framework, all breakthroughs in technology seem obvious. All they were doing was catering to a new type of consumer.</p><p>A recent example is Search Engine Optimization. SEO was born thanks to a new type of consumer: the web crawler. People understood that their webpages were no longer being read by just humans, so they started writing html to be read by crawlers too. </p><br><h1 id="How-to-create-interfaces"><a href="#How-to-create-interfaces" class="headerlink" title="How to create interfaces"></a>How to create interfaces</h1><p>The Act of Interface Creation is a simple <strong>two-step process</strong>:</p><ol><li>Identify that there is a new type of consumer who wants to read&#x2F;write to your stuff.</li><li>Consider how to design your interface so that it is as “readable” as possible for the consumer.</li></ol><br><h1 id="AgentWare"><a href="#AgentWare" class="headerlink" title="AgentWare"></a>AgentWare</h1><p>There’s a new consumer on the block: the <strong>Agent</strong>*. </p><p>All content we create will eventually be read by an Agent. We must start redesigning with this in mind. Hypermedia was at first computer-readable, then human-readable, and then web-scraper-readable. Now it must be Agent-readable.</p><p>We propose <strong><em>AgentWare</em></strong> — applications built from the bottom-up for Agents as the end-user. </p><p><strong><em>AgentWare</em></strong> will be made of underlying data structures that can be easily read by Agents, and written to if needed. </p><p>Because humans and Agents “read” quite similarly, <strong><em>AgentWare</em></strong> will be backwards-compatible with existing software for a while, and therefore maintain good “user-interface” for human beings.</p><p>Without interfaces, things exist in pure isolation. With good interfaces, there is infinite emergent potential.</p><br> <hr><p>* Or, for simplicity, LLMs. </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Everything I know about API design</title>
       <link href="/2024/12/31/atlassian/"/>
       <url>/2024/12/31/atlassian/</url>
