@@ -1596,32 +1596,39 @@ article .content .caption {
     flex-direction: column;
     padding: 1rem 1rem;
   }
+  .post-item .post-thumbnail,
+  .post-item .post-thumbnail-large {
+    margin-right: 0;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+  .post-item .post-thumbnail img,
+  .post-item .post-thumbnail-large img {
+    width: 70%;
+  }
 }
-.post-item .post-thumbnail {
-  flex: 0 0 150px;
-  margin-right: 1rem;
-  float: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.post-item .post-thumbnail img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
+.post-item .post-thumbnail,
 .post-item .post-thumbnail-large {
-  flex: 0 0 200px;
   margin-right: 1rem;
   float: left;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.post-item .post-thumbnail img,
 .post-item .post-thumbnail-large img {
   width: 100%;
   height: auto;
   object-fit: cover;
+  border-radius: 0.2rem;
+}
+.post-item .post-thumbnail {
+  flex: 0 0 150px;
+}
+.post-item .post-thumbnail-large {
+  flex: 0 0 200px;
+}
+.post-item .post-thumbnail-large img {
   border: 0.08rem solid #e5e5e5;
   border-radius: 0.8rem;
   box-shadow: 0 1px 5px rgba(0,0,0,0.03);
