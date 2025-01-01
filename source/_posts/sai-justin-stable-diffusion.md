@@ -4,7 +4,7 @@ date: 2023-12-09
 categories:
 	- engineering
 	- opinion
-description: Interviewing a Canva MLE about how to make AI less sexist
+description: w/ Sai Kumar (Canva)
 icons:
 # manim
 # youtube

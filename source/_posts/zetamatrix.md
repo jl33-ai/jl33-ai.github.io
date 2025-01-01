@@ -2,7 +2,7 @@
 title: Zetamatrix
 redirect_url: https://zetamatrix-production.up.railway.app/
 date: 2023-07-15
-description: A game to collect data on the way we do mental math
+description: A high-speed math game with a secret agenda
 categories:
     - engineering
     - home

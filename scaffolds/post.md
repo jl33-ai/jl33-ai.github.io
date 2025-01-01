@@ -14,4 +14,12 @@ mau:
 revenue: 
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 photos:
+type: project
 ---
+
+
+---
+
+\* Asterix
+
+[1] Reference
