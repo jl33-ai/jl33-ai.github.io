@@ -7,7 +7,7 @@ icons:
     url: null
 date: 2023-11-29
 tags:
-  - LLM
+  - llm
   - Agency
   - Pessimism
 description: Melbourne Microfinance

@@ -2,13 +2,13 @@
 title: AI @ Lyrebird
 thumbnail: /images/thumbnails/mocks/lyrebird.png
 icons:
-  - name: Name
-    image: /images/icons/name.png
-    url: null
+  - name: Lyrebird Health
+    image: /images/icons/lyrebird.png
+    url: https://www.lyrebirdhealth.com
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 date: 2024-03-27 12:14:25
 tags:
-description: Making products w/ GenAI at Australia's fastest growing (and best) startup
+description: Seed -> Series A at one of Australia's most successful startups
 categories:
   - home
 redirect_url:

@@ -7,7 +7,7 @@ icons:
     url: null
 date: 2023-12-01
 tags:
-  - LLM
+  - llm
   - Data Science
   - Programming
 description: Melbourne Center for Data Science

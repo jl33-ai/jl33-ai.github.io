@@ -3,8 +3,9 @@ layout: story
 title: Six Design Patterns for Agentic LLM's
 date: 2024-08-18 16:56:22
 tags:
-	- LLM
-	- Opinion
+	- llm
+	- opinion
+description: Justin Lee
 categories:
   - engineering
   - opinion

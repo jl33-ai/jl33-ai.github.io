@@ -8,7 +8,7 @@ icons:
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 date: 2024-08-25
 tags:
-description: How was your day?
+description: AI-as-a-friend
 categories:
   - home
   - product
