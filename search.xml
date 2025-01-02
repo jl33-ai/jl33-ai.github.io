@@ -83,9 +83,7 @@
       
       <categories>
           
-          <category> home </category>
-          
-          <category> product </category>
+          <category> engineering </category>
           
       </categories>
       
@@ -132,29 +130,6 @@
       <categories>
           
           <category> engineering </category>
-          
-          <category> product </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Reads</title>
-      <link href="/2024/06/24/reads/"/>
-      <url>/2024/06/24/reads/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      <categories>
-          
-          <category> home </category>
-          
-          <category> product </category>
           
       </categories>
       
@@ -343,8 +318,6 @@
       
       <categories>
           
-          <category> product </category>
-          
           <category> engineering </category>
           
       </categories>
@@ -517,6 +490,27 @@
             <tag> big-data </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Reads</title>
+      <link href="/2023/06/24/reads/"/>
+      <url>/2023/06/24/reads/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
       
     </entry>
     
