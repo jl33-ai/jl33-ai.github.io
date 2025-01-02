@@ -1618,6 +1618,7 @@ article .content .caption {
 .post-item .post-thumbnail img,
 .post-item .post-thumbnail-large img {
   width: 100%;
+  aspect-ratio: 1.51;
   height: auto;
   object-fit: cover;
   border-radius: 0.2rem;
