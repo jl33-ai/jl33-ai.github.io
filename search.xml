@@ -4,12 +4,18 @@
   
     
     <entry>
-      <title>open-dating</title>
+      <title>OpenDating</title>
       <link href="/2025/01/01/open-dating/"/>
       <url>/2025/01/01/open-dating/</url>
       
-        <content type="html"><![CDATA[<p>OpenDating is a simple dating service which is only accessible via. REST API.</p><p>OpenDating is a headless dating app. In other words, you can only access it via a REST api.</p><p>OpenDating is an extremely simple dating app that can be accessed via a REST api. Go here for instructions. </p><p>You can either build your own frontend, or simply use the REST api. </p><p>OpenDating is a dating app designed to be used through a REST api. </p><p>This creates a natural filter on gender, and IQ. </p><p>OpenDating:</p><ul><li>All males</li><li>But over certain level of iq</li></ul><hr><p>* Asterix</p><p>[1] Reference</p>]]></content>
+        <content type="html"><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui.min.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui-bundle.min.js"></script><script>    window.onload = () => {        window.ui = SwaggerUIBundle({            url: 'https://raw.githubusercontent.com/jl33-ai/OpenDating/refs/heads/main/docs/api-spec.yaml',            dom_id: '#swagger-ui',            deepLinking: true,            presets: [                SwaggerUIBundle.presets.apis,                SwaggerUIBundle.SwaggerUIStandalonePreset            ],        });    };</script><div id="swagger-ui"></div>]]></content>
       
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
       
       
     </entry>
