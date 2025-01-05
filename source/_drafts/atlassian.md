@@ -104,6 +104,8 @@ When implementing APIs, don't get lost in the code. Your API should reflect the 
 
 In the same way a GUI interacts with the end-user, an API interacts with the end-programmer. 
 
+You are an author. Act like one. 
+
 
 Simplicity, extensibility, idempotency, statelessness, performance
 

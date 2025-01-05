@@ -6,6 +6,7 @@ categories:
 	- engineering
 	- artphilosophy
 description: Can good taste be graphed?
+thumbnail: /images/thumbnails/wardrobe.gif
 ---
 
 > "The joy of dressing is an art." – John Galliano

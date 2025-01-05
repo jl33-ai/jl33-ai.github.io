@@ -12,7 +12,6 @@ description: Seed -> Series A at one of Australia's most successful startups
 categories:
   - home
 redirect_url:
-mau:
 revenue:
 gallery:
   - 

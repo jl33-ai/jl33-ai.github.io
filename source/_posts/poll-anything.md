@@ -1,7 +1,7 @@
 ---
 title: Poll Anything
 date: 2024-06-15
-description: Do the majority of men close the bathroom door?
+description: "Do the majority of men close the bathroom door?"
 categories:
   - product
   - engineering
