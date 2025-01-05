@@ -9,7 +9,6 @@ tags:
 description: AI Agents.
 categories:
   - engineering
-  - product
 redirect_url: https://landing-page-tau-peach.vercel.app/
 mau: 0
 revenue: 0

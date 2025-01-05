@@ -1,5 +1,6 @@
 ---
 layout: story
+thumbnail: /images/thumbnails/design-patterns.jpg
 title: Six Design Patterns for Agentic LLM's
 date: 2024-08-18 16:56:22
 tags:
@@ -7,9 +8,7 @@ tags:
 	- opinion
 description: Justin Lee
 categories:
-  - engineering
   - opinion
-thumbnail: /images/thumbnails/red-houses.png
 icons:
 	- name: Docs
 	  image: /images/icons/docs.png

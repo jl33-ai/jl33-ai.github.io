@@ -1,6 +1,6 @@
 ---
 title: aquaponics
-thumbnail: /images/thumbnails/name.png
+thumbnail: /images/thumbnails/farming.jpg
 icons:
   - name: Name
     image: /images/icons/name.png
