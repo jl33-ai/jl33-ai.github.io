@@ -3,9 +3,8 @@ title: MLAI Hack '23 writeup
 date: 2023-12-18
 tech_type: AWS, OpenAI
 categories:
-  - product
   - engineering
-description: A live agent to help you navigate Melbourne's public transport
+description: An AI agent to help you navigate Melbourne's public transport
 ---
 
 # The Team

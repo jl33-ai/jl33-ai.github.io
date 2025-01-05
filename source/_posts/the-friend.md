@@ -10,8 +10,7 @@ date: 2024-08-25
 tags:
 description: AI-as-a-friend
 categories:
-  - home
-  - product
+  - engineering
 redirect_url:
 mau: 0
 revenue: 0

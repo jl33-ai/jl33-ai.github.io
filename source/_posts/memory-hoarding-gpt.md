@@ -5,6 +5,7 @@ tech_type: GPT-2
 categories:
   - artphilosophy
   - engineering
+thumbnail: /images/thumbnails/walking-girl.gif
 icons:
   - name: Docs
     image: /images/icons/docs.png

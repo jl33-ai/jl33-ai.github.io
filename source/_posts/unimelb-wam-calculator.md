@@ -8,14 +8,14 @@ categories:
 tags:
   - reddit
   - open source
-description: An open source University grade calculator that ranks No. 1 on Google
+description: A University grade calculator that ranks No. 1 on Google
 redirect_url:
 thumbnail: /images/thumbnails/classic-rainbow.png
 icons:
   - name: Python
     image: /images/icons/python.png
     url:
-mau: 249
+mau: 500+
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 photos:
     -

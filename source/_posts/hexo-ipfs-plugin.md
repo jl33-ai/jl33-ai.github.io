@@ -1,6 +1,6 @@
 ---
 title: hexo-ipfs-plugin
-thumbnail: /images/thumbnails/arab.png
+thumbnail: /images/thumbnails/planets.gif
 icons:
   - name: NodeJS
     image: /images/icons/nodejs.png
@@ -15,7 +15,7 @@ tags:
   - hexo
   - plugin
   - open source
-description: A Hexo plugin for persisting your writing on IPFS
+description: A Hexo plugin for persisting your blog posts on the IPFS
 categories:
   - engineering
 redirect_url: https://github.com/jl33-ai/hexo-ipfs-plugin

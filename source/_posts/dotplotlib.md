@@ -5,7 +5,7 @@ tags:
   - matplotlib
   - data viz
   - open source
-description: Open source extension for making better dot-plots in Python
+description: A library for making better dot-plots in Python
 categories:
   - engineering
 redirect_url:

@@ -20,6 +20,7 @@ type: project
 
 ---
 
-\* Asterix
+\* &nbsp;&nbsp; [something]
+⁑ &nbsp;&nbsp;
 
-[1] Reference
+[1] &nbsp;&nbsp; Reference
