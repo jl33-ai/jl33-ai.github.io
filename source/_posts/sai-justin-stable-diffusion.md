@@ -2,7 +2,6 @@
 title: Stable Diffusion, Olivia Rodrigo, and Sexism
 date: 2023-12-09
 categories:
-	- engineering
 	- opinion
 description: w/ Sai Kumar (Canva)
 icons:

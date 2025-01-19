@@ -7,7 +7,7 @@ icons:
     url: null
 date: 2024-11-04 11:57:00
 tags:
-description: Substack
+description:
 categories:
   - opinion
 redirect_url: https://jl33ai.substack.com/p/a-massively-open-source-neural-network
