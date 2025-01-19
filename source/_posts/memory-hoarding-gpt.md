@@ -4,7 +4,6 @@ date: 2022-12-09
 tech_type: GPT-2
 categories:
   - artphilosophy
-  - engineering
 thumbnail: /images/thumbnails/walking-girl.gif
 icons:
   - name: Docs

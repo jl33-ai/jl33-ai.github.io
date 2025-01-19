@@ -3,7 +3,6 @@ title: Dimensionality reduction on my wardrobe
 date: 2024-03-02
 tech_type: T-sne
 categories:
-	- engineering
 	- artphilosophy
 description: Can good taste be graphed?
 thumbnail: /images/thumbnails/wardrobe.gif

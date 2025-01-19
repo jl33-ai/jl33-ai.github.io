@@ -11,7 +11,7 @@ tags:
   - opinion
 categories:
   - opinion
-description: Justin Lee
+description:
 redirect_url:
 mau:
 revenue:

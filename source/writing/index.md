@@ -1,6 +1,6 @@
 ---
-title: writing
-date: 2024-12-29 15:54:16
+title: writings
+date: 2023-12-24 16:36:01
+layout: writing
+category: Writing
 ---
-
-[//]: # (whoops, ignore - use 'writings' instead)
