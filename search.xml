@@ -13,6 +13,8 @@
       
       <categories>
           
+          <category> home </category>
+          
           <category> engineering </category>
           
       </categories>
@@ -175,7 +177,7 @@
       
       <categories>
           
-          <category> engineering </category>
+          <category> opinion </category>
           
       </categories>
       
@@ -194,7 +196,7 @@
       
       <categories>
           
-          <category> engineering </category>
+          <category> opinion </category>
           
       </categories>
       
@@ -252,8 +254,6 @@
       
       
       <categories>
-          
-          <category> engineering </category>
           
           <category> artphilosophy </category>
           
@@ -342,8 +342,6 @@
       
       
       <categories>
-          
-          <category> engineering </category>
           
           <category> opinion </category>
           
@@ -453,6 +451,8 @@
       
       <categories>
           
+          <category> home </category>
+          
           <category> engineering </category>
           
       </categories>
@@ -547,8 +547,6 @@
           
           <category> artphilosophy </category>
           
-          <category> engineering </category>
-          
       </categories>
       
       
@@ -567,6 +565,8 @@
       <categories>
           
           <category> engineering </category>
+          
+          <category> home </category>
           
       </categories>
       
