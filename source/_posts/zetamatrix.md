@@ -3,7 +3,7 @@ title: Zetamatrix
 redirect_url: https://zetamatrix-production.up.railway.app/
 thumbnail: /images/thumbnails/zetamatrix.jpg
 date: 2023-07-15
-description: A high-speed math game with a secret agenda
+description: A high-speed math game with a hidden agenda
 categories:
     - engineering
     - home

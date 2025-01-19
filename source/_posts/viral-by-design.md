@@ -3,7 +3,7 @@ title: Viral by Design
 date: 2024-05-18
 pdf: "/writings/viral-by-design-justin-lee.pdf"
 categories:
-  - engineering
+#  - opinion
 
 icons:
   - name: Docs

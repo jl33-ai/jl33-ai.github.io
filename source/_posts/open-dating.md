@@ -1,21 +1,23 @@
 ---
 title: OpenDating
 sublayout: basic
-thumbnail: /images/thumbnails/name.png
+thumbnail: /images/thumbnails/opendating.jpg
 icons:
-  - name: Name
-    image: /images/icons/name.png
+  - name: OpenDating
+    image: /images/icons/opendatingcolor.png
     url: null
 help_link: https://github.com/jl33-ai/OpenDating
 type: project
 date: 2025-01-01 17:09:31
 tags:
-description: headless dating app, open source matching algorithm
+description: An open-source and collaborative dating app.
 categories:
+  - home
   - engineering
 #redirect_url: /static/open-dating
 mau:
 photos:
+permalink: /opendating/
 ---
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui.min.css" />

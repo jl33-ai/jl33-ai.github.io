@@ -1,12 +1,12 @@
 ---
 layout: story
-thumbnail: /images/thumbnails/design-patterns.jpg
+thumbnail: 
 title: Six Design Patterns for Agentic LLM's
 date: 2024-08-18 16:56:22
 tags:
 	- llm
 	- opinion
-description: Justin Lee
+description:
 categories:
   - opinion
 icons:
@@ -14,8 +14,6 @@ icons:
 	  image: /images/icons/docs.png
 	  url: https://example.com/icon1
 ---
-
-# Introduction
 
 **[Design patterns](https://refactoring.guru/design-patterns)** are pre thought-out solutions to common problems in software engineering. Anyone with an inclination for engineering will find design patterns enjoyable to merely think about - the *[factory method](https://refactoring.guru/design-patterns/factory-method)*, the *[builder pattern](https://refactoring.guru/design-patterns/builder)*. 
 
