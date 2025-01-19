@@ -1413,6 +1413,9 @@ article .content .caption {
 .pagination a:hover:not(.active) {
   color: #1528ab;
 }
+#search {
+  margin-bottom: 2.5rem;
+}
 .search-input {
   padding: 4px 7px;
   width: 100%;
@@ -1807,6 +1810,90 @@ article .content .caption {
   font-size: 0.4rem;
   flex-grow: 0;
   cursor: pointer;
+}
+.twitter-item {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 1px dashed #e1e0e4;
+}
+.twitter-item .pfp {
+  cursor: pointer;
+  flex-grow: 0;
+  cursor: pointer;
+  padding: 0.1rem 0.25rem;
+}
+.twitter-item .pfp img {
+  max-width: 32px;
+  aspect-ratio: 1;
+  margin-right: 0.2rem;
+  border-radius: 1000px;
+}
+.twitter-item .content {
+  cursor: pointer;
+  flex-grow: 1;
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.twitter-item .content a p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.twitter-item .content .header {
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.twitter-item .content .header strong {
+  margin-right: 0.35rem;
+}
+.twitter-item .content .header p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.twitter-item .content .header .primary {
+  color: #0a0a0a;
+}
+.twitter-item .content .header .secondary {
+  color: #7e7c87;
+}
+.twitter-item .content .twitter-img {
+  border-radius: 0.33rem;
+  border-width: 0.1rem;
+  border-color: #7e7c87;
+  max-height: 5rem;
+}
+.twitter-item .content .body {
+  margin-top: 0 !important;
+  color: #0a0a0a;
+  font-size: 0.75rem;
+}
+.twitter-item .content .body p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.twitter-item .content .icons {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.twitter-item .content .icons .icon {
+  display: flex;
+  align-items: center;
+  gap: 0.33rem;
+}
+.twitter-item .content .icons .icon img {
+  aspect-ratio: 1;
+  max-width: 10px;
+  opacity: 45%;
+}
+.twitter-item .content .icons .icon p {
+  font-size: 0.7rem;
+  color: #7e7c87;
 }
 .highlight {
   color: #333;
