@@ -1759,11 +1759,11 @@ article .content .caption {
   cursor: pointer;
 }
 #videos .videos-grid .video-item .upper .thumbnail .lozenge p {
+  font-size: 0.7rem;
   position: absolute;
   right: 0.3rem;
-  bottom: 0.3rem;
+  bottom: 0.25rem;
   padding: 0 0.2rem;
-  font-size: 0.5rem;
   border-radius: 0.2rem;
   color: #fff;
   background-color: rgba(0,0,0,0.25);
@@ -1791,17 +1791,19 @@ article .content .caption {
   flex-grow: 1;
 }
 #videos .videos-grid .video-item .lower .info h3 {
-  font-size: 0.75rem;
   margin-top: -0.1rem;
   margin-bottom: 0;
 }
-#videos .videos-grid .video-item .lower .info p {
-  font-size: 0.55rem;
-  margin-top: -0.25rem;
-  margin-bottom: 0;
+#videos .videos-grid .video-item .lower .info h3 a {
+  font-size: 0.85rem;
 }
 #videos .videos-grid .video-item .lower .info .subtext {
   color: #7e7c87;
+}
+#videos .videos-grid .video-item .lower .info .subtext p {
+  font-size: 0.75rem;
+  margin-top: -0.25rem;
+  margin-bottom: 0;
 }
 #videos .videos-grid .video-item .lower .ellipsis {
   aspect-ratio: 1;
