@@ -1814,6 +1814,7 @@ article .content .caption {
   cursor: pointer;
 }
 .twitter-item {
+  position: relative;
   margin-top: 1rem;
   display: flex;
   justify-content: flex-start;
@@ -1894,6 +1895,22 @@ article .content .caption {
   opacity: 45%;
 }
 .twitter-item .content .icons .icon p {
+  font-size: 0.7rem;
+  color: #7e7c87;
+}
+.twitter-item .pinned {
+  position: absolute;
+  display: flex;
+  top: -1.2rem;
+  left: 2.33rem;
+}
+.twitter-item .pinned img {
+  aspect-ratio: 1;
+  max-width: 10px;
+  opacity: 45%;
+  margin-right: 0.33rem;
+}
+.twitter-item .pinned strong {
   font-size: 0.7rem;
   color: #7e7c87;
 }
