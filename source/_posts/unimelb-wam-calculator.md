@@ -7,38 +7,37 @@ categories:
   - engineering
 tags:
   - reddit
-  - open source
 description: A University grade calculator that ranks No. 1 on Google
 redirect_url:
-thumbnail: /images/thumbnails/classic-rainbow.png
+thumbnail: /images/thumbnails/spaces.gif
 icons:
   - name: Python
     image: /images/icons/python.png
     url:
-mau: 500+
+mau: 1,000+
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 photos:
     -
 ---
 
-**I built an** open source University grade calculator that ranks #1 on Google.
+I made an open source University grade calculator that ranks #1 on Google.
 
-It just _works_, and has some nerdy stuff (stats and OCR) for those who want it
+<p align="center">
+  <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">
+    <img src="https://img.shields.io/badge/Reddit-60k-red">
+  </a>
+</p>
 
 
-![](/images/gallery-wam-2.png)
+- **[The website](https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko)**
 
-##### Features
-- Autofill from screenshot 
-- Infer grades needed for future WAM 
-- Statistics and analytics
-- Exam weighting calculator
+- **[Github repo](https://github.com/jl33-ai/um-wam)**
 
-**Try it [here](https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko)**
+- **[Original Reddit post](https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/)**
 
 ---
 
-# My takeaways
+# My learnings
 
 
 1. Someone else will have already thought of your idea
@@ -57,33 +56,24 @@ _Someone makes it all worth it._
 
 ---
 
-# Analytics 
+# The numbers 
 
-Almost 7 months later, I check, on a random Tuesday night... 
+Almost 7 months later (after completely forgetting about the project) I decided to check the analytics
+
+To my surprise, not only was the app still active, it had been used dozens of times in the **last hour**.
+
+<br>
+
 ![](/images/wam-stats.png)
 
-# ⚐ Why did I build it with `Streamlit`?
-
-TL,DR: Because the end-users don't care. 
-
-Complicated engineering is beautiful, but it has its place. The goal of this webapp was to reach (and help) **_as many people as possible_**, in as short amount of time as possible. 
-
-**Every month or so** a new feature request pops up in the Reddit thread from some wishful university student. 
-
-With `Streamlit` this usually means a few lines of code (maybe a few more lines of refactoring.) 
-
-And 'deploying' with `Streamlit` - yeah, don't worry, it's covered. No blue whale required from your end 🐳. 
-
-This is a **common pattern** in the space of engineers who want to build things that other people use: [be a Jedi master, not a mid-wit](https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989).
-
-Other benefits include:
-1. Free hosting
-2. Built-in analytics
-3. Python-native (like all the data visualisation libraries you always want to use)
-4. `css`-less (CSS, I love you, but not right now)
+<br>
 
 ---
 
-View the [repo here](http://www.github.com/)
+# ⚐ Why did I build it with `Streamlit`?
 
-View the [original Reddit post here](https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/)
+- TLDR: Because the users don't care.
+- Complex engineering is beautiful, but it has its place.
+- I can add new feature requests in ~30 mins instead of 3 hours.
+- Free, automatic hosting.
+- [Be a Jedi master, not a mid-wit](https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989).
