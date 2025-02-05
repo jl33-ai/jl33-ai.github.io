@@ -1619,6 +1619,10 @@ article .content .caption {
   flex-direction: column;
   justify-content: center;
 }
+.post-item .post-thumbnail a,
+.post-item .post-thumbnail-large a {
+  all: unset;
+}
 .post-item .post-thumbnail img,
 .post-item .post-thumbnail-large img {
   width: 100%;
@@ -1670,8 +1674,7 @@ article .content .caption {
   gap: 0.6rem;
 }
 .post-item .post-icons a {
-  border: none !important;
-  text-underline: none !important;
+  all: unset;
 }
 .post-item .post-icons .icon-link img {
   width: 24px;
