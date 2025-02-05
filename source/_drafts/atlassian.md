@@ -107,6 +107,10 @@ In the same way a GUI interacts with the end-user, an API interacts with the end
 You are an author. Act like one. 
 
 
+“Implementation is trivial”
+Through POV of consumers ‘what would make sense.”
+
+
 Simplicity, extensibility, idempotency, statelessness, performance
 
 [1] https://slack.engineering/how-we-design-our-apis-at-slack/
