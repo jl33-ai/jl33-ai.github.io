@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang=en>
+
+
+    <head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of consumer that wants to read or write to our systems.   ExamplesFor exam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="AgentWare and the next API">
+<meta property="og:url" content="https://jl33-ai.github.io/2025/01/01/the-next-interface/index.html">
+<meta property="og:site_name" content="Justin&#39;s Blog">
+<meta property="og:description" content="The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of consumer that wants to read or write to our systems.   ExamplesFor exam">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jl33-ai.github.io/images/thumbnails/xerox-parc.jpg">
+<meta property="article:published_time" content="2025-01-01T06:06:32.000Z">
+<meta property="article:modified_time" content="2025-01-18T10:28:33.590Z">
+<meta property="article:author" content="JL">
+<meta property="article:tag" content="opinion">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jl33-ai.github.io/images/thumbnails/xerox-parc.jpg">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>AgentWare and the next API</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+</head>
+
+
+    <body class="max-width mx-auto px3 ltr">
+    
+        <div id="header-post">
+    <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" aria-label="Top"
+       onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i
+                class="fa-solid fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+    <span id="nav">
+      <ul>
+          
+              <li><a href="/">home</a></li>
+          
+              <li><a href="/writing/">writing</a></li>
+          
+              <li><a href="/video/">video</a></li>
+          
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+          
+              <li><a class="icon" aria-label="Previous post" href="/opendating/"><i
+                              class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();"
+                              onmouseout="$('#i-prev').toggle();"></i></a></li>
+          
+          
+              <li><a class="icon" aria-label="Next post" href="/2024/11/04/massively-open-source-neural-network/"><i
+                              class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();"
+                              onmouseout="$('#i-next').toggle();"></i></a></li>
+          
+          <li><a class="icon" aria-label="Back to top" href="#"
+                 onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up"
+                                                                                 aria-hidden="true"
+                                                                                 onmouseover="$('#i-top').toggle();"
+                                                                                 onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt"
+                                                                                     aria-hidden="true"
+                                                                                     onmouseover="$('#i-share').toggle();"
+                                                                                     onmouseout="$('#i-share').toggle();"
+                                                                                     onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&text=AgentWare and the next API"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&is_video=false&description=AgentWare and the next API"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=AgentWare and the next API&body=Check out this article: https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&name=AgentWare and the next API&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/&t=AgentWare and the next API"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+        
+        
+            <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Examples"><span class="toc-number">1.</span> <span class="toc-text">Examples</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-create-interfaces"><span class="toc-number">2.</span> <span class="toc-text">How to create interfaces</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AgentWare"><span class="toc-number">3.</span> <span class="toc-text">AgentWare</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+        
+    </span>
+</div>
+
+    
+
+    <div class="content index py4 ">
+        
+
+        <article class="post story h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="story-header">
+        
+                        <h1 class="posttitle storytitle p-name" itemprop="name headline">
+                            AgentWare and the next API
+                        </h1>
+                        
+        <div class="meta">
+            
+    <div class="postdate">
+      
+        <time datetime="2025-01-01T06:06:32.000Z" class="dt-published" itemprop="datePublished">2025-01-01</time>
+        
+      
+    </div>
+
+
+            
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/opinion/">opinion</a>
+    </div>
+
+
+            
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/opinion/" rel="tag">opinion</a>
+    </div>
+
+
+            <span>, </span>
+        </div>
+    </header>
+
+    <div class="story-body e-content" itemprop="articleBody">
+        <p>The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of <strong><em>consumer</em></strong> that wants to read or write to our systems.</p>
+<br>
+
+<h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><p>For example, the Application Programming Interface (API) was born because software needed a way to communicate with other software and programmers. So we started writing protocols like <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">HTTP</a>.*</p>
+<p>The Graphical User Interface (GUI) was made in <a target="_blank" rel="noopener" href="https://spectrum.ieee.org/xerox-parc">Xerox PARC</a> because we needed to make computers accessible to <em>normal people</em> (not just programmers). So we moved from text-based commands to visual metaphors (like the mouse, desktop, or folders).</p>
+<p>When you apply this framework, all breakthroughs in technology seem obvious. All they were doing was catering to a new type of consumer.</p>
+<p>A recent example is <a target="_blank" rel="noopener" href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Search Engine Optimization</a>. SEO was born thanks to a new type of consumer: the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Web_crawler">web crawler</a>. People understood that their webpages were no longer being read by just humans, so they started writing html to be read by crawlers too. </p>
+<br>
+
+<h1 id="How-to-create-interfaces"><a href="#How-to-create-interfaces" class="headerlink" title="How to create interfaces"></a>How to create interfaces</h1><p>The Act of Interface Creation is a simple <strong>two-step process</strong>:</p>
+<ol>
+<li>Identify that there is a new type of consumer who wants to read&#x2F;write to your stuff.</li>
+<li>Consider how to design your interface so that it is as “readable” as possible for the consumer.</li>
+</ol>
+<br>
+
+<h1 id="AgentWare"><a href="#AgentWare" class="headerlink" title="AgentWare"></a>AgentWare</h1><p>There’s a new consumer on the block: the <strong><a target="_blank" rel="noopener" href="https://zapier.com/blog/ai-agent/">AI agent</a></strong>. </p>
+<p>Why? All content we create will eventually be read by an agent — whether this be an LLM or other AI. </p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hypermedia">Hypermedia</a> was at first <em>computer-readable</em>, then <em>human-readable</em>, and then <em>web-scraper-readable</em>. Now it must be <em>agent-readable</em>.</p>
+<p>I am proposing two things: </p>
+<ul>
+<li><strong>Agent-Application Interface (AAI)</strong>: the interface between agents and software.⁑</li>
+<li><strong><em>AgentWare</em></strong>: software that implements <strong>AAI</strong>, built from the ground-up for agents as the end-user.</li>
+</ul>
+<p><strong><em>AgentWare</em></strong> will have underlying data structures that can be easily read by agents, and written to if needed.⁂ </p>
+<p>Because the way humans and agents “read” is quite similar, <strong><em>AgentWare</em></strong> will be backwards-compatible with existing software for a while, and therefore maintain good “user-interface” for human beings.</p>
+<br>
+
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Interfaces are anything that allow <em>A</em> to connect with <em>B</em>. Without interfaces, things exist in complete isolation. But, with well-made interfaces, there is infinite emergent potential.</p>
+<br>
+
+<hr>
+<p>* &nbsp; <a target="_blank" rel="noopener" href="https://github.com/modelcontextprotocol">Model Context Protocol</a>: An open protocol that enables seamless integration between LLM applications and external data sources and tools<br>⁑ &nbsp;&nbsp; Most likely some derivative of natural language, but I have no idea :’)<br>⁂ &nbsp; Caveat — there needs to be clear monetary incentive for making your stuff more accessible. Web crawlers, for example, will thank you by leading to higher site traffic.</p>
+
+    </div>
+</article>
+
+
+    <div class="blog-post-comments">
+        <div id="utterances_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+            <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">home</a></li>
+        
+          <li><a href="/writing/">writing</a></li>
+        
+          <li><a href="/video/">video</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Examples"><span class="toc-number">1.</span> <span class="toc-text">Examples</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#How-to-create-interfaces"><span class="toc-number">2.</span> <span class="toc-text">How to create interfaces</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#AgentWare"><span class="toc-number">3.</span> <span class="toc-text">AgentWare</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">4.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&text=AgentWare and the next API"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&is_video=false&description=AgentWare and the next API"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=AgentWare and the next API&body=Check out this article: https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=AgentWare and the next API"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&name=AgentWare and the next API&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/&t=AgentWare and the next API"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- Always show footer -->
+        <footer id="footer">
+    <div class="footer-left">
+        
+        
+        200*-2025
+        JL
+    </div>
+    <div class="footer-right">
+        <nav>
+            <ul>
+                
+                    <li><a href="/">home</a></li>
+                
+                    <li><a href="/writing/">writing</a></li>
+                
+                    <li><a href="/video/">video</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+  
+<script src="/js/search.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+
+    var $inputArea = $("input#search-input");
+    var $resultArea = document.querySelector("div#search-result");
+
+    $inputArea.focus(function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    });
+
+    $inputArea.keydown(function(e) {
+      if (e.which == 13) {
+        e.preventDefault();
+      }
+    });
+
+    var observer = new MutationObserver(function(mutationsList, observer) {
+      if (mutationsList.length == 1) {
+        if (mutationsList[0].addedNodes.length) {
+          $(".search-no-result").hide();
+        } else if (mutationsList[0].removedNodes.length) {
+          $(".search-no-result").show(200);
+        }
+      }
+    });
+
+    observer.observe($resultArea, { childList: true });
+
+  });
+  </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+    <script type="text/javascript">
+      var utterances_repo = 'jl33-ai/utterances';
+      var utterances_issue_term = 'pathname';
+      var utterances_label = 'Comment';
+      var utterances_theme = 'github-light';
+
+      (function(){
+          var script = document.createElement('script');
+
+          script.src = 'https://utteranc.es/client.js';
+          script.setAttribute('repo', utterances_repo);
+          script.setAttribute('issue-term', 'pathname');
+          script.setAttribute('label', utterances_label);
+          script.setAttribute('theme', utterances_theme);
+          script.setAttribute('crossorigin', 'anonymous');
+          script.async = true;
+          (document.getElementById('utterances_thread')).appendChild(script);
+      }());
+  </script>
+
+    </body>
+
+</html>

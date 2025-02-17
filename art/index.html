@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang=en>
+
+
+    <head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="fashion               fashion                                                                                 clustering my favourite pieces of clothing against the fashion-MNIST dataset (w&#x2F; TSNE).">
+<meta property="og:type" content="website">
+<meta property="og:title" content="art">
+<meta property="og:url" content="https://jl33-ai.github.io/art/index.html">
+<meta property="og:site_name" content="Justin&#39;s Blog">
+<meta property="og:description" content="fashion               fashion                                                                                 clustering my favourite pieces of clothing against the fashion-MNIST dataset (w&#x2F; TSNE).">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/fashion/tsne.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/bike/drawing-start.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/bike/full-desk-final.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/bike/mtb.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/bike/road.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/square.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/house-10.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/square-lifetime-1.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/square-lifetime-2.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/canva-design-challenge.jpg">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/dj/taojustin.gif">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/jleeai-1.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/jleeai-2.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/jleeai-3.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/jleeai-4.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/scanned01.jpg">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/scanned02.jpg">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/scanned03.jpg">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/plant-vault-cover-photo.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/plant-vault-icon.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/plant-vault-minecraft.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/baobob-tree.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/corn-plant.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/snake-plant.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/willow-tree.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/pi.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/pi-corona.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/pi-dogecoin.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/pi-elon.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/pi-loveheart.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/steampunk-1.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/nft/steampunk-2.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/desk/db-3.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/desk/db-2.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/desk/db-1.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/desk/d-1.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/desk/d-2.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/liminal-bedroom.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/liminal-pool.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/indoor-pool.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/invisible-cities.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/umcpc/des1.png">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/umcpc/des2.gif">
+<meta property="og:image" content="https://jl33-ai.github.io/images/art-assets/umcpc/des3.jpg">
+<meta property="article:published_time" content="2024-02-18T08:09:01.000Z">
+<meta property="article:modified_time" content="2024-08-13T11:04:55.295Z">
+<meta property="article:author" content="JL">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jl33-ai.github.io/images/art-assets/fashion/tsne.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>art</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+<meta name="generator" content="Hexo 7.0.0"></head>
+
+
+    <body class="max-width mx-auto px3 ltr">
+    
+
+    <div class="content index py4 ">
+        
+            <header id="header">
+  <a class="u-url u-uid" href="/">
+  
+    
+      <img id="logo" alt class="u-logo" src="/images/icons/logo_100x100.png" />
+    
+  
+    <div id="title">
+      <h1 class="p-name">Justin&#39;s Blog</h1>
+    </div>
+  </a>
+  <div id="nav">
+    <ul>
+      <li class="icon">
+        <a href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+      </li>
+      
+        <li><a href="/">home</a></li>
+        
+        <li><a href="/writing/">writing</a></li>
+        
+        <li><a href="/video/">video</a></li>
+        
+    </ul>
+  </div>
+</header>
+
+        
+
+        (wip)
+<pre id="ascii-house" class="cover-ascii">
+    
+    
+                                     (1   )
+                                   (  0 0)
+                                    ( 1 0 )
+                                   ( 1  1 )
+                                     ) 0 )
+                                    (0  (                 /\
+                                     (_)                 /  \  /\
+                             ________[_]________      /\/    \/  \
+                    /\      /\        ______    \    /   /\/\  /\/\
+                   /  \    //_\       \    /\    \  /\/\/    \/    \
+            /\    / /\/\  //___\       \__/  \    \/
+           /  \  /\/    \//_____\       \ |[]|     \
+          /\/\/\/       //_______\       \|__|      \
+         /      \      /XXXXXXXXXX\                  \
+                 \    /_I_II  I__I_\__________________\
+                        I_I|  I__I_____[]_|_[]_____I
+                        I_II  I__I_____[]_|_[]_____I
+                        I II__I  I     XXXXXXX     I
+                     ~~~~~&#34;   &#34;~~~~~~~~~~~~~~~~~~~~~~~~
+
+              &gt;&gt; build_me_a_house_out_of_1s_and_0s()
+
+</pre>
+
+
+<script>
+    (function () {
+        const asciiHouse = document.getElementById('ascii-house');
+        const intervalMs = 1000;
+        const flipProbability = 0.1;
+
+        function flipDigits() {
+            let content = asciiHouse.innerHTML;
+            content = content.replace(/[01]/g, match => {
+                return Math.random() < flipProbability ? (match === '0' ? '1' : '0') : match;
+            });
+            asciiHouse.innerHTML = content;
+        }
+
+        setInterval(flipDigits, intervalMs);
+    })();
+</script>
+<img src="/images/page/mdodle.png" alt=""/>
+
+        
+        <!-- Always show footer -->
+        <footer id="footer">
+    <div class="footer-left">
+        
+        
+        200*-2025
+        JL
+    </div>
+    <div class="footer-right">
+        <nav>
+            <ul>
+                
+                    <li><a href="/">home</a></li>
+                
+                    <li><a href="/writing/">writing</a></li>
+                
+                    <li><a href="/video/">video</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+  
+<script src="/js/search.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+
+    var $inputArea = $("input#search-input");
+    var $resultArea = document.querySelector("div#search-result");
+
+    $inputArea.focus(function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    });
+
+    $inputArea.keydown(function(e) {
+      if (e.which == 13) {
+        e.preventDefault();
+      }
+    });
+
+    var observer = new MutationObserver(function(mutationsList, observer) {
+      if (mutationsList.length == 1) {
+        if (mutationsList[0].addedNodes.length) {
+          $(".search-no-result").hide();
+        } else if (mutationsList[0].removedNodes.length) {
+          $(".search-no-result").show(200);
+        }
+      }
+    });
+
+    observer.observe($resultArea, { childList: true });
+
+  });
+  </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+    <script type="text/javascript">
+      var utterances_repo = 'jl33-ai/utterances';
+      var utterances_issue_term = 'pathname';
+      var utterances_label = 'Comment';
+      var utterances_theme = 'github-light';
+
+      (function(){
+          var script = document.createElement('script');
+
+          script.src = 'https://utteranc.es/client.js';
+          script.setAttribute('repo', utterances_repo);
+          script.setAttribute('issue-term', 'pathname');
+          script.setAttribute('label', utterances_label);
+          script.setAttribute('theme', utterances_theme);
+          script.setAttribute('crossorigin', 'anonymous');
+          script.async = true;
+          (document.getElementById('utterances_thread')).appendChild(script);
+      }());
+  </script>
+
+    </body>
+
+</html>

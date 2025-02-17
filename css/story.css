@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'newspaper';
+  src: url("../fonts/newspaper-font.woff2") format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+.story .story-body {
+  font-family: 'newspaper', sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.story .story-body p {
+  color: #383838;
+}
+.story .story-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.story .story-header {
+  margin-bottom: 50px;
+}
+.story blockquote {
+  margin: 1rem 10px;
+  padding: 0.5em 10px;
+  background: inherit;
+  color: #4a4a4a;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+  font-weight: bold;
+  line-height: $line-height;
+}
+.story blockquote p {
+  margin: 0;
+}
+.story blockquote:before {
+  content: "\201C";
+  color: #4a4a4a;
+  font-size: 2em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+.story blockquote footer {
+  margin: 1em 0;
+  color: #666;
+  font-size: 12px;
+}
+.story blockquote footer a {
+  color: #666;
+}
+.story blockquote footer a:hover {
+#858585
+  color: #858585;
+}
+.story blockquote footer cite:before {
+  content: "—";
+  padding: 0 0.5em;
+}
+.storytitle {
+  font-family: 'newspaper', sans-serif;
+  font-size: 35px !important;
+}

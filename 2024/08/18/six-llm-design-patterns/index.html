@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang=en>
+
+
+    <head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="Design patterns are pre thought-out solutions to common problems in software engineering. Anyone with an inclination for engineering will find design patterns enjoyable to merely think about - the fac">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LLMs - Six Design Patterns for Agents">
+<meta property="og:url" content="https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/index.html">
+<meta property="og:site_name" content="Justin&#39;s Blog">
+<meta property="og:description" content="Design patterns are pre thought-out solutions to common problems in software engineering. Anyone with an inclination for engineering will find design patterns enjoyable to merely think about - the fac">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-18T08:56:22.000Z">
+<meta property="article:modified_time" content="2025-02-10T14:10:47.726Z">
+<meta property="article:author" content="JL">
+<meta property="article:tag" content="llm">
+<meta property="article:tag" content="opinion">
+<meta name="twitter:card" content="summary">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>LLMs - Six Design Patterns for Agents</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+</head>
+
+
+    <body class="max-width mx-auto px3 ltr">
+    
+        <div id="header-post">
+    <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" aria-label="Top"
+       onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i
+                class="fa-solid fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+    <span id="nav">
+      <ul>
+          
+              <li><a href="/">home</a></li>
+          
+              <li><a href="/writing/">writing</a></li>
+          
+              <li><a href="/video/">video</a></li>
+          
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+          
+              <li><a class="icon" aria-label="Previous post" href="/2024/08/25/the-friend/"><i
+                              class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();"
+                              onmouseout="$('#i-prev').toggle();"></i></a></li>
+          
+          
+              <li><a class="icon" aria-label="Next post" href="/2024/07/27/orchestra/"><i
+                              class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();"
+                              onmouseout="$('#i-next').toggle();"></i></a></li>
+          
+          <li><a class="icon" aria-label="Back to top" href="#"
+                 onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up"
+                                                                                 aria-hidden="true"
+                                                                                 onmouseover="$('#i-top').toggle();"
+                                                                                 onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt"
+                                                                                     aria-hidden="true"
+                                                                                     onmouseover="$('#i-share').toggle();"
+                                                                                     onmouseout="$('#i-share').toggle();"
+                                                                                     onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&text=LLMs - Six Design Patterns for Agents"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&is_video=false&description=LLMs - Six Design Patterns for Agents"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=LLMs - Six Design Patterns for Agents&body=Check out this article: https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&name=LLMs - Six Design Patterns for Agents&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&t=LLMs - Six Design Patterns for Agents"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+        
+        
+            <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-Six-Patterns"><span class="toc-number">1.</span> <span class="toc-text">The Six Patterns</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">2.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+        
+    </span>
+</div>
+
+    
+
+    <div class="content index py4 ">
+        
+
+        <article class="post story h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="story-header">
+        
+                        <h1 class="posttitle storytitle p-name" itemprop="name headline">
+                            LLMs - Six Design Patterns for Agents
+                        </h1>
+                        
+        <div class="meta">
+            
+    <div class="postdate">
+      
+        <time datetime="2024-08-18T08:56:22.000Z" class="dt-published" itemprop="datePublished">2024-08-18</time>
+        
+      
+    </div>
+
+
+            
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/opinion/">opinion</a>
+    </div>
+
+
+            
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/llm/" rel="tag">llm</a>, <a class="p-category" href="/tags/opinion/" rel="tag">opinion</a>
+    </div>
+
+
+            <span>, </span>
+        </div>
+    </header>
+
+    <div class="story-body e-content" itemprop="articleBody">
+        <p><strong><a target="_blank" rel="noopener" href="https://refactoring.guru/design-patterns">Design patterns</a></strong> are pre thought-out solutions to common problems in software engineering. Anyone with an inclination for engineering will find design patterns enjoyable to merely think about - the <em><a target="_blank" rel="noopener" href="https://refactoring.guru/design-patterns/factory-method">factory method</a></em>, the <em><a target="_blank" rel="noopener" href="https://refactoring.guru/design-patterns/builder">builder pattern</a></em>. </p>
+<p>These design patterns parcel up the insights of <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Design_Patterns">great engineers</a>, and once in our mental repertoire, we can leverage them to solve difficult and abstract problems. </p>
+<p>Recently, programmers have been given a new tool to play with - the Large Language Model.<br><em>Natural language programming</em> calls for a complementary set of design patterns in order to empower elegant and robust solutions to even <em>harder</em> problems.</p>
+<p>Many of these design patterns are predicated on the idea of ‘Agents’ - individual and autonomous <em>instances</em> of an LLM. Orchestrating many Agents in a sandbox is a complex problem with many degrees of freedom, thus motivating the need for these design patterns. </p>
+<h1 id="The-Six-Patterns"><a href="#The-Six-Patterns" class="headerlink" title="The Six Patterns"></a>The Six Patterns</h1><p>I. <strong><a href="">Looping</a></strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (task_not_done): </span><br><span class="line">	try_again()</span><br></pre></td></tr></table></figure>
+
+<p>Looping allows an LLM to break down a <em>natural language goal</em> into a set of subtasks, and then recursively execute on those tasks. </p>
+<p>Looping is a fundamental design pattern since it transforms the LLM from a single-use token generator into an Agent capable of satisfying a goal. It is the pattern used by <a target="_blank" rel="noopener" href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT</a> and <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Devin_AI">Devin.ai </a>.</p>
+<p>Looping hopes to complete discrete tasks with indefinite levels of difficulty, by enforcing repetition <em>until</em> the goal is accomplished.</p>
+<p>One limitation is the tendency for the Agent to get stuck in <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Auto-GPT">infinite loops</a> - due to limited context window, the Agent may repeatedly attempt the same subtask. </p>
+<br>
+
+<p>II. <strong><a href="">The Reflection Pattern</a></strong><br>In a nutshell, the reflection pattern is the classic <em>“make it better”</em> prompt. This pattern is based on the thesis that LLM’s rarely generate their best work the first time around - and we should never expect them to in the future. </p>
+<br>
+
+<p>III. <strong>[Persistence]</strong><br>This is an extension of the <em>Reflection Pattern</em>. An example of the persistence pattern is an Agent writes <a href="">unit tests</a> and persists them to a codebase. At face value, this simple act seems inconsequential, however it accomplishes two important feats:</p>
+<ol>
+<li><strong>Transmuting</strong> the stochastic into the deterministic. Converting the flux-like state of natural language into immutable code.</li>
+<li><strong>Persisting</strong> its thought process into the far future</li>
+</ol>
+<p>Through the act of writing a unit test, the LLM persists a piece of its own intellect as a piece of runnable code. </p>
+<p>Currently, most of the output generated by Agents in production systems is not persisted <em>back</em> to the system (it is ephemeral). The answer is discarded as soon as it serves its purpose, meaning those Agents are effectively idempotent. </p>
+<p>The Persistence pattern allows agentic systems to iteratively build up a separate system which exists independent of the Agents which created it. </p>
+<br>
+
+<p>IV. <strong><a href="">Tool use</a></strong></p>
+<blockquote>
+  <p>Models, however intelligent, still need access to live, reliable information. As much as the world’s knowledge can theoretically be encoded and made available in model weights, a huge amount of the inputs models need change in real time.</p>
+  <footer>
+    — <a target="_blank" rel="noopener" href="https://www.conviction.com/startups.html">Sarah Gou's Conviction</a>
+  </footer>
+</blockquote>
+
+<p>Another way to make an agentic system larger than the sum of its parts is to grant the Agents agency over the surrounding Web (or even the <a target="_blank" rel="noopener" href="https://youtu.be/Sq1QZB5baNw?si=2XtpVBw3048c4cuq">physical world</a>). This integration can be broken down into two sides: </p>
+<ol>
+<li><strong>Pull</strong>: the ability to freely <em>query</em> data from the outside world.<ol>
+<li>Integrations with communication channels like <em>Slack</em></li>
+<li>Integrations with databases</li>
+<li>Integrations with platforms like <em>Google Ads</em></li>
+</ol>
+</li>
+<li><strong>Push</strong>: the ability to <em>push</em> a change into the outside world.<ol>
+<li>Agents that can write <a target="_blank" rel="noopener" href="https://www.atlassian.com/git/tutorials/making-a-pull-request#:~:text=In%20their%20simplest%20form%2C%20pull,request%20via%20their%20Bitbucket%20account.">pull requests</a></li>
+<li>Agents that can call other Generative Agents (text to image, text to speech)*</li>
+</ol>
+</li>
+</ol>
+<p>In programming, <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Command%E2%80%93query_separation">command query separation</a> principle states that every method should either change the state of the system (command), or return the state of the system (query).</p>
+<p>Agents should be able to do both.</p>
+<br>
+
+<p>V. <strong><a href="">The Planning Pattern</a></strong><br>The <em>raw horsepower</em> of the LLM - being able to, for example, write an entire essay from a single prompt - has led us to incorrect expectations where we have forgotten the <em>general necessity of breaking down a problem into smaller tasks</em>.</p>
+<p>A student, given the task of writing an essay, does not immediately put pen to paper and write the essay without stopping. Just because LLM’s <em>can</em> write this way out of the box, doesn’t mean that it is an optimal way to use them.</p>
+<p>The benefits of <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2201.11903">Chain of Thought Reasoning</a> are well documented, so I will not go into them here. </p>
+<p>In 2022, Andrej Kaparthy referred to <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#:~:text=Thinking%2C%20Fast%20and%20Slow%20is,more%20deliberative%2C%20and%20more%20logical">System 1 and System 2 thinking</a> in human cognition when he described the need for LLM’s that could ‘think slowly’. I believe that this is possible through the planning pattern. </p>
+<br>
+
+<p>VI. <strong><a href="">Multiagent collaboration</a></strong></p>
+<p>Multiagent collaboration is self-explanatory and best summed up by the following quote:</p>
+<blockquote>
+  <p>“It works… much better than you might think”.</p>
+  <footer>
+    — <a target="_blank" rel="noopener" href="https://youtu.be/sal78ACtGTc?si=EOGU2QDUG5zsQNX3">Andrew Ng @ Sequoia</a>
+  </footer>
+</blockquote>
+
+<p>This pattern borrows from the pattern of <a target="_blank" rel="noopener" href="https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/">Ensemble Learning</a>⁑ in traditional machine learning. The idea is that if you had one hard question to answer, would you feel more comfortable asking <em>1000 average people</em>, or a <em>single expert</em>?</p>
+<p>Often, the average⁂ of many weak models beats a single strong model. </p>
+<p>Multi agent collaboration is the same general idea, but its implementation is different in nature.<br>For example, one might place Gemini, ChatGPT, and Anthropic Agents in a sandbox and let them ‘debate’ until an answer is resolved. This has the following characteristic differences: </p>
+<ul>
+<li>Instead of <em><strong>aggregating</strong></em> independent ‘votes’ to get the final answer, a network of Agents to <em><strong>argues</strong></em> until they reach the final answer. </li>
+<li>Thus, you are able to ‘spectate’ the decision making process - it is not a black box.</li>
+</ul>
+<p>However, there are a few limitations:</p>
+<ol>
+<li>These ‘arguments’ must unfold in real time - there is no way to parallelize this process.</li>
+<li>The Agents themselves are themselves bottlenecked by the efficacy of natural language in communicating ideas; unlike the pure 1’s and 0’s which transfer packets of data over the internet, there is inevitable signal loss when one idea is transferred from <em>Agent A</em> to <em>Agent B</em>.</li>
+</ol>
+<p>Nonetheless, we have to get used to delegating tasks to Agents and patiently waiting for a response. </p>
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Software is an abstraction of the <em>if&#x2F;else</em> statement and the <em>while loop</em>. Similarly, the fundamental unit of natural language programming is next word prediction. </p>
+<p>As a reminder, a system of Agents is already capable of <a target="_blank" rel="noopener" href="https://youtu.be/Zlgkzjndpak?si=FjyIq3CL8HM2t50G">creating video games</a>. This emergent complexity is the product of many next-word-predictors. Like programming, we should reason from first principles about </p>
+<p>Example:<br>![[Pasted image 20240819204119.png]]</p>
+<hr>
+<p><em>Patterns II, IV, V and VI are a synthesis of <a target="_blank" rel="noopener" href="https://youtu.be/sal78ACtGTc">Andrew Ng’s presentation at Sequoia</a>.</em></p>
+<p>* <a target="_blank" rel="noopener" href="https://arxiv.org/abs/2303.17580">HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face</a><br>⁑ Note: not actually known as a design pattern<br>⁂ You can also aggregate via the mode, weighted average, or even a meta classifier</p>
+
+    </div>
+</article>
+
+
+    <div class="blog-post-comments">
+        <div id="utterances_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+            <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">home</a></li>
+        
+          <li><a href="/writing/">writing</a></li>
+        
+          <li><a href="/video/">video</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#The-Six-Patterns"><span class="toc-number">1.</span> <span class="toc-text">The Six Patterns</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number">2.</span> <span class="toc-text">Conclusion</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&text=LLMs - Six Design Patterns for Agents"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&is_video=false&description=LLMs - Six Design Patterns for Agents"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=LLMs - Six Design Patterns for Agents&body=Check out this article: https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&title=LLMs - Six Design Patterns for Agents"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&name=LLMs - Six Design Patterns for Agents&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2024/08/18/six-llm-design-patterns/&t=LLMs - Six Design Patterns for Agents"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- Always show footer -->
+        <footer id="footer">
+    <div class="footer-left">
+        
+        
+        200*-2025
+        JL
+    </div>
+    <div class="footer-right">
+        <nav>
+            <ul>
+                
+                    <li><a href="/">home</a></li>
+                
+                    <li><a href="/writing/">writing</a></li>
+                
+                    <li><a href="/video/">video</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+  
+<script src="/js/search.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+
+    var $inputArea = $("input#search-input");
+    var $resultArea = document.querySelector("div#search-result");
+
+    $inputArea.focus(function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    });
+
+    $inputArea.keydown(function(e) {
+      if (e.which == 13) {
+        e.preventDefault();
+      }
+    });
+
+    var observer = new MutationObserver(function(mutationsList, observer) {
+      if (mutationsList.length == 1) {
+        if (mutationsList[0].addedNodes.length) {
+          $(".search-no-result").hide();
+        } else if (mutationsList[0].removedNodes.length) {
+          $(".search-no-result").show(200);
+        }
+      }
+    });
+
+    observer.observe($resultArea, { childList: true });
+
+  });
+  </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+    <script type="text/javascript">
+      var utterances_repo = 'jl33-ai/utterances';
+      var utterances_issue_term = 'pathname';
+      var utterances_label = 'Comment';
+      var utterances_theme = 'github-light';
+
+      (function(){
+          var script = document.createElement('script');
+
+          script.src = 'https://utteranc.es/client.js';
+          script.setAttribute('repo', utterances_repo);
+          script.setAttribute('issue-term', 'pathname');
+          script.setAttribute('label', utterances_label);
+          script.setAttribute('theme', utterances_theme);
+          script.setAttribute('crossorigin', 'anonymous');
+          script.async = true;
+          (document.getElementById('utterances_thread')).appendChild(script);
+      }());
+  </script>
+
+    </body>
+
+</html>

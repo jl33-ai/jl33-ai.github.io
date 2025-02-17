@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang=en>
+
+
+    <head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="A library for making better dot-plots in Python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="dot-plot-lib">
+<meta property="og:url" content="https://jl33-ai.github.io/2024/01/11/dotplotlib/index.html">
+<meta property="og:site_name" content="Justin&#39;s Blog">
+<meta property="og:description" content="A library for making better dot-plots in Python">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jl33-ai.github.io/images/thumbnails/blocks.png">
+<meta property="article:published_time" content="2024-01-10T16:00:00.000Z">
+<meta property="article:modified_time" content="2025-01-02T04:48:35.994Z">
+<meta property="article:author" content="JL">
+<meta property="article:tag" content="matplotlib">
+<meta property="article:tag" content="data viz">
+<meta property="article:tag" content="open source">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jl33-ai.github.io/images/thumbnails/blocks.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>dot-plot-lib</title>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+			tex2jax: {
+			  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+			  inlineMath: [['$','$']]
+			}
+		  });
+		</script>
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+	
+</head>
+
+
+    <body class="max-width mx-auto px3 ltr">
+    
+        <div id="header-post">
+    <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" aria-label="Top"
+       onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i
+                class="fa-solid fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+    <span id="nav">
+      <ul>
+          
+              <li><a href="/">home</a></li>
+          
+              <li><a href="/writing/">writing</a></li>
+          
+              <li><a href="/video/">video</a></li>
+          
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+          
+              <li><a class="icon" aria-label="Previous post" href="/2024/03/01/unihack-24/"><i
+                              class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();"
+                              onmouseout="$('#i-prev').toggle();"></i></a></li>
+          
+          
+              <li><a class="icon" aria-label="Next post" href="/2023/12/18/ml-ai-hack-23/"><i
+                              class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();"
+                              onmouseout="$('#i-next').toggle();"></i></a></li>
+          
+          <li><a class="icon" aria-label="Back to top" href="#"
+                 onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up"
+                                                                                 aria-hidden="true"
+                                                                                 onmouseover="$('#i-top').toggle();"
+                                                                                 onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt"
+                                                                                     aria-hidden="true"
+                                                                                     onmouseover="$('#i-share').toggle();"
+                                                                                     onmouseout="$('#i-share').toggle();"
+                                                                                     onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2024/01/11/dotplotlib/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&text=dot-plot-lib"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&is_video=false&description=dot-plot-lib"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=dot-plot-lib&body=Check out this article: https://jl33-ai.github.io/2024/01/11/dotplotlib/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&name=dot-plot-lib&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2024/01/11/dotplotlib/&t=dot-plot-lib"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+        
+        
+            <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#installation"><span class="toc-number">1.</span> <span class="toc-text">installation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#usage"><span class="toc-number">2.</span> <span class="toc-text">usage</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1-Simple-Dot-Chart"><span class="toc-number">2.0.1.</span> <span class="toc-text">Example 1: Simple Dot Chart</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2-Dot-Chart-with-Color-Mapping"><span class="toc-number">2.0.2.</span> <span class="toc-text">Example 2: Dot Chart with Color Mapping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3-Using-make-dotchart-to-plot-in-one-step"><span class="toc-number">2.0.3.</span> <span class="toc-text">Example 3: Using make_dotchart to plot in one step</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4-Plotting-in-a-Jupyter-Notebook"><span class="toc-number">2.0.4.</span> <span class="toc-text">Example 4: Plotting in a Jupyter Notebook</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#preset-themes"><span class="toc-number">3.</span> <span class="toc-text">preset themes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#custom-lavender"><span class="toc-number">3.0.1.</span> <span class="toc-text">custom:lavender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cmap"><span class="toc-number">3.0.2.</span> <span class="toc-text">cmap</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#features"><span class="toc-number">4.</span> <span class="toc-text">features</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#attribution"><span class="toc-number">5.</span> <span class="toc-text">attribution</span></a></li></ol>
+      </div>
+        
+    </span>
+</div>
+
+    
+
+    <div class="content index py4 ">
+        
+
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    
+        <header>
+            
+                        <h1 class="posttitle p-name" itemprop="name headline">
+                            dot-plot-lib
+                        </h1>
+                        
+            <div class="meta">
+        <span class="author p-author h-card" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <span class="p-name" itemprop="name">
+              JL
+              
+          </span>
+        </span>
+                
+    <div class="postdate">
+      
+        <time datetime="2024-01-10T16:00:00.000Z" class="dt-published" itemprop="datePublished">2024-01-11</time>
+        
+      
+    </div>
+
+
+                
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/engineering/">engineering</a>
+    </div>
+
+
+                
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/data-viz/" rel="tag">data viz</a>, <a class="p-category" href="/tags/matplotlib/" rel="tag">matplotlib</a>, <a class="p-category" href="/tags/open-source/" rel="tag">open source</a>
+    </div>
+
+
+            </div>
+        </header>
+    
+
+    
+
+    <div class="content e-content" itemprop="articleBody">
+        <blockquote>
+<p>I hacked <code>matplotlib</code>‘s scatter plot to give the people what they want: a dot chart (aka strip<br>plot). You can install it with <code>pip install dotplotlib</code>, or see the source<br>code <a target="_blank" rel="noopener" href="https://github.com/jl33-ai/dotplotlib">here</a>.</p>
+</blockquote>
+<figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Current stars: 9</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/daterange.png?raw=true"></p>
+<p><em>Great things come in tiny packages</em>. A bare minimum extension library for creating tree dot plots, strip plots or dot<br>charts w&#x2F; matplotlib or seaborn in Python</p>
+<ul>
+<li>Designed to work with <code>matplotlib</code> and <code>seaborn</code> in Python</li>
+<li>Fully customizable</li>
+</ul>
+<h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install dotplotlib</span><br></pre></td></tr></table></figure>
+
+<h1 id="usage"><a href="#usage" class="headerlink" title="usage"></a>usage</h1><p><code>dotplotlib</code> can be used to generate dot charts with minimal code. Here are some examples:</p>
+<br>
+
+<h3 id="Example-1-Simple-Dot-Chart"><a href="#Example-1-Simple-Dot-Chart" class="headerlink" title="Example 1: Simple Dot Chart"></a>Example 1: Simple Dot Chart</h3><p><code>.dotchart</code> returns <code>x</code> and <code>y</code> lists that can be inputted straight into <code>matplotlib</code><br>or <code>seaborn</code> <a target="_blank" rel="noopener" href="https://www.w3schools.com/python/matplotlib_scatter.asp">scatterplots</a>.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> dotplotlib <span class="keyword">import</span> dotchart</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;size&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate dot chart data</span></span><br><span class="line">x, y = dotchart(data[<span class="string">&#x27;size&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot</span></span><br><span class="line">plt.scatter(x, y)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="Example-2-Dot-Chart-with-Color-Mapping"><a href="#Example-2-Dot-Chart-with-Color-Mapping" class="headerlink" title="Example 2: Dot Chart with Color Mapping"></a>Example 2: Dot Chart with Color Mapping</h3><p>Pass the data you would like to color by to the <code>color_by=</code> argument.</p>
+<p>Returns an extra list <code>c</code> that should be passed into the <code>c=</code> parameter if using <code>matplotlib</code> or <code>hue=</code> if<br>using <code>seaborn</code>.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> dotplotlib <span class="keyword">import</span> dotchart</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;size&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>], <span class="string">&#x27;rating&#x27;</span>: [<span class="number">3</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">4</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate dot chart data with color mapping</span></span><br><span class="line">x, y, c = dotchart(data[<span class="string">&#x27;size&#x27;</span>], color_by=data[<span class="string">&#x27;rating&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot with color mapping</span></span><br><span class="line">plt.scatter(x, y, c=c, cmap=<span class="string">&#x27;viridis&#x27;</span>)</span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Size&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Number&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Mushroom Size Count Colored by Rating&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+
+<h3 id="Example-3-Using-make-dotchart-to-plot-in-one-step"><a href="#Example-3-Using-make-dotchart-to-plot-in-one-step" class="headerlink" title="Example 3: Using make_dotchart to plot in one step"></a>Example 3: Using <code>make_dotchart</code> to plot in one step</h3><p>Instead of just giving you <code>x, y</code> lists to make the plot yourself, <code>make_dotplot()</code> actually generates the plot.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> dotplotlib <span class="keyword">import</span> make_dotchart</span><br><span class="line"></span><br><span class="line">df = &#123;<span class="string">&#x27;size&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>], <span class="string">&#x27;rating&#x27;</span>: [<span class="number">3</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">7</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create a dot chart with optional arguments (only the first one is mandatory)</span></span><br><span class="line">make_dotchart(df[<span class="string">&#x27;size&#x27;</span>], </span><br><span class="line">                  color_by=df[<span class="string">&#x27;rating&#x27;</span>], <span class="comment"># list to color by</span></span><br><span class="line">                  reverse=<span class="literal">False</span>, <span class="comment"># inverts the color mapping</span></span><br><span class="line">                  theme=<span class="string">&#x27;gnuplot2&#x27;</span>, <span class="comment"># scroll down to see all themes</span></span><br><span class="line">                  colorbar=<span class="literal">True</span>, </span><br><span class="line">                  xlabel=<span class="string">&#x27;Sizes&#x27;</span>, </span><br><span class="line">                  ylabel=<span class="string">&#x27;Size Count&#x27;</span>, </span><br><span class="line">                  title=<span class="string">&#x27;Mushroom Sizes Colored by Rating&#x27;</span>, </span><br><span class="line">                  dot_size=<span class="number">40</span>):</span><br></pre></td></tr></table></figure>
+
+<h3 id="Example-4-Plotting-in-a-Jupyter-Notebook"><a href="#Example-4-Plotting-in-a-Jupyter-Notebook" class="headerlink" title="Example 4: Plotting in a Jupyter Notebook"></a>Example 4: Plotting in a Jupyter Notebook</h3><p>If plotting inline, use the default <code>.dotchart()</code> to obtain <code>x</code> and <code>y</code> lists, and then adjust as necessary with one of<br>the following:</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plt.figure(figsize=(<span class="number">12</span>,<span class="number">6</span>))  <span class="comment"># or</span></span><br><span class="line">plt.figure().set_figwidth(<span class="number">12</span>) <span class="comment"># or</span></span><br><span class="line">plt.figure().set_figheight(<span class="number">12</span>)</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/jupyter.png?raw=true"></p>
+<br>
+
+<hr>
+<h1 id="preset-themes"><a href="#preset-themes" class="headerlink" title="preset themes"></a>preset themes</h1><h3 id="custom-lavender"><a href="#custom-lavender" class="headerlink" title="custom:lavender"></a><code>custom:lavender</code></h3><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/lavender.png?raw=true"></p>
+<h3 id="cmap"><a href="#cmap" class="headerlink" title="cmap"></a><code>cmap</code></h3><p>Any cmap value supported by matplotlib (<a target="_blank" rel="noopener" href="https://matplotlib.org/stable/users/explain/colors/colormaps.html">see here</a>)<br>will work when passed into <code>theme=&#39;viridis&#39;</code>.</p>
+<p><strong>viridis:</strong></p>
+<p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/default.png?raw=true"></p>
+<p><strong>gnuplot:</strong></p>
+<p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/gnuplot.png?raw=true"></p>
+<p><strong>gallery:</strong></p>
+<p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/gallery.png?raw=true"></p>
+<hr>
+<h1 id="features"><a href="#features" class="headerlink" title="features"></a>features</h1><ul>
+<li>generate strip plots&#x2F;dot charts by exploiting <code>matplotlib/seaborn</code> scatterplots</li>
+<li>supports any cmap color profile</li>
+<li>the data can be automatically sorted for better visualization, especially when using color mapping.</li>
+<li>accepts both list and pandas.Series as input data.</li>
+<li>set custom labels, titles, and dot sizes for your charts.</li>
+<li>works with Jupyter Notebook</li>
+</ul>
+<h1 id="attribution"><a href="#attribution" class="headerlink" title="attribution"></a>attribution</h1><ul>
+<li><a target="_blank" rel="noopener" href="https://github.com/Pjarzabek/DotPlotPython/blob/master/How%20to%20create%20dot%20plots%20in%20Python.ipynb">pjarzabek</a></li>
+<li>m3</li>
+<li>ddlegal</li>
+</ul>
+
+    </div>
+</article>
+
+
+    <div class="blog-post-comments">
+        <div id="utterances_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+        
+            <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">home</a></li>
+        
+          <li><a href="/writing/">writing</a></li>
+        
+          <li><a href="/video/">video</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#installation"><span class="toc-number">1.</span> <span class="toc-text">installation</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#usage"><span class="toc-number">2.</span> <span class="toc-text">usage</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-1-Simple-Dot-Chart"><span class="toc-number">2.0.1.</span> <span class="toc-text">Example 1: Simple Dot Chart</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-2-Dot-Chart-with-Color-Mapping"><span class="toc-number">2.0.2.</span> <span class="toc-text">Example 2: Dot Chart with Color Mapping</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-3-Using-make-dotchart-to-plot-in-one-step"><span class="toc-number">2.0.3.</span> <span class="toc-text">Example 3: Using make_dotchart to plot in one step</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Example-4-Plotting-in-a-Jupyter-Notebook"><span class="toc-number">2.0.4.</span> <span class="toc-text">Example 4: Plotting in a Jupyter Notebook</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#preset-themes"><span class="toc-number">3.</span> <span class="toc-text">preset themes</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#custom-lavender"><span class="toc-number">3.0.1.</span> <span class="toc-text">custom:lavender</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cmap"><span class="toc-number">3.0.2.</span> <span class="toc-text">cmap</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#features"><span class="toc-number">4.</span> <span class="toc-text">features</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#attribution"><span class="toc-number">5.</span> <span class="toc-text">attribution</span></a></li></ol>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2024/01/11/dotplotlib/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&text=dot-plot-lib"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&is_video=false&description=dot-plot-lib"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=dot-plot-lib&body=Check out this article: https://jl33-ai.github.io/2024/01/11/dotplotlib/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&title=dot-plot-lib"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2024/01/11/dotplotlib/&name=dot-plot-lib&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2024/01/11/dotplotlib/&t=dot-plot-lib"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- Always show footer -->
+        <footer id="footer">
+    <div class="footer-left">
+        
+        
+        200*-2025
+        JL
+    </div>
+    <div class="footer-right">
+        <nav>
+            <ul>
+                
+                    <li><a href="/">home</a></li>
+                
+                    <li><a href="/writing/">writing</a></li>
+                
+                    <li><a href="/video/">video</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+    </div>
+
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="fa-regular fa-clone"></i>';
+    btn += '</span>';
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+  
+<script src="/js/search.js"></script>
+
+  <script type="text/javascript">
+  $(function() {
+
+    var $inputArea = $("input#search-input");
+    var $resultArea = document.querySelector("div#search-result");
+
+    $inputArea.focus(function() {
+      var search_path = "search.xml";
+      if (search_path.length == 0) {
+        search_path = "search.xml";
+      }
+      var path = "/" + search_path;
+      searchFunc(path, 'search-input', 'search-result');
+    });
+
+    $inputArea.keydown(function(e) {
+      if (e.which == 13) {
+        e.preventDefault();
+      }
+    });
+
+    var observer = new MutationObserver(function(mutationsList, observer) {
+      if (mutationsList.length == 1) {
+        if (mutationsList[0].addedNodes.length) {
+          $(".search-no-result").hide();
+        } else if (mutationsList[0].removedNodes.length) {
+          $(".search-no-result").show(200);
+        }
+      }
+    });
+
+    observer.observe($resultArea, { childList: true });
+
+  });
+  </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+    <script type="text/javascript">
+      var utterances_repo = 'jl33-ai/utterances';
+      var utterances_issue_term = 'pathname';
+      var utterances_label = 'Comment';
+      var utterances_theme = 'github-light';
+
+      (function(){
+          var script = document.createElement('script');
+
+          script.src = 'https://utteranc.es/client.js';
+          script.setAttribute('repo', utterances_repo);
+          script.setAttribute('issue-term', 'pathname');
+          script.setAttribute('label', utterances_label);
+          script.setAttribute('theme', utterances_theme);
+          script.setAttribute('crossorigin', 'anonymous');
+          script.async = true;
+          (document.getElementById('utterances_thread')).appendChild(script);
+      }());
+  </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Letters for my next life</title>
+      <link href="/3000/01/01/wiki/"/>
+      <url>/3000/01/01/wiki/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>beautiful-computer-science</title>
+      <link href="/2025/01/25/beautiful-computer-science/"/>
+      <url>/2025/01/25/beautiful-computer-science/</url>
+      
+        <content type="html"><![CDATA[<p>Do you mind if I quote you like so?<br>Nice to meet you. Said fuck you to the IQ&#x2F;EQ tradeoff. </p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OpenDating</title>
+      <link href="//opendating/"/>
+      <url>//opendating/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui.min.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui-bundle.min.js"></script><script>    window.onload = () => {        window.ui = SwaggerUIBundle({            url: 'https://raw.githubusercontent.com/jl33-ai/OpenDating/refs/heads/main/docs/api-spec.yaml',            dom_id: '#swagger-ui',            deepLinking: true,            presets: [                SwaggerUIBundle.presets.apis,                SwaggerUIBundle.SwaggerUIStandalonePreset            ],        });    };</script><div id="swagger-ui"></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>AgentWare and the next API</title>
+      <link href="/2025/01/01/the-next-interface/"/>
+      <url>/2025/01/01/the-next-interface/</url>
+      
+        <content type="html"><![CDATA[<p>The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of <strong><em>consumer</em></strong> that wants to read or write to our systems.</p><br><h1 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h1><p>For example, the Application Programming Interface (API) was born because software needed a way to communicate with other software and programmers. So we started writing protocols like <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">HTTP</a>.*</p><p>The Graphical User Interface (GUI) was made in <a href="https://spectrum.ieee.org/xerox-parc">Xerox PARC</a> because we needed to make computers accessible to <em>normal people</em> (not just programmers). So we moved from text-based commands to visual metaphors (like the mouse, desktop, or folders).</p><p>When you apply this framework, all breakthroughs in technology seem obvious. All they were doing was catering to a new type of consumer.</p><p>A recent example is <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Search Engine Optimization</a>. SEO was born thanks to a new type of consumer: the <a href="https://en.wikipedia.org/wiki/Web_crawler">web crawler</a>. People understood that their webpages were no longer being read by just humans, so they started writing html to be read by crawlers too. </p><br><h1 id="How-to-create-interfaces"><a href="#How-to-create-interfaces" class="headerlink" title="How to create interfaces"></a>How to create interfaces</h1><p>The Act of Interface Creation is a simple <strong>two-step process</strong>:</p><ol><li>Identify that there is a new type of consumer who wants to read&#x2F;write to your stuff.</li><li>Consider how to design your interface so that it is as “readable” as possible for the consumer.</li></ol><br><h1 id="AgentWare"><a href="#AgentWare" class="headerlink" title="AgentWare"></a>AgentWare</h1><p>There’s a new consumer on the block: the <strong><a href="https://zapier.com/blog/ai-agent/">AI agent</a></strong>. </p><p>Why? All content we create will eventually be read by an agent — whether this be an LLM or other AI. </p><p><a href="https://en.wikipedia.org/wiki/Hypermedia">Hypermedia</a> was at first <em>computer-readable</em>, then <em>human-readable</em>, and then <em>web-scraper-readable</em>. Now it must be <em>agent-readable</em>.</p><p>I am proposing two things: </p><ul><li><strong>Agent-Application Interface (AAI)</strong>: the interface between agents and software.⁑</li><li><strong><em>AgentWare</em></strong>: software that implements <strong>AAI</strong>, built from the ground-up for agents as the end-user.</li></ul><p><strong><em>AgentWare</em></strong> will have underlying data structures that can be easily read by agents, and written to if needed.⁂ </p><p>Because the way humans and agents “read” is quite similar, <strong><em>AgentWare</em></strong> will be backwards-compatible with existing software for a while, and therefore maintain good “user-interface” for human beings.</p><br><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Interfaces are anything that allow <em>A</em> to connect with <em>B</em>. Without interfaces, things exist in complete isolation. But, with well-made interfaces, there is infinite emergent potential.</p><br><hr><p>* &nbsp; <a href="https://github.com/modelcontextprotocol">Model Context Protocol</a>: An open protocol that enables seamless integration between LLM applications and external data sources and tools<br>⁑ &nbsp;&nbsp; Most likely some derivative of natural language, but I have no idea :’)<br>⁂ &nbsp; Caveat — there needs to be clear monetary incentive for making your stuff more accessible. Web crawlers, for example, will thank you by leading to higher site traffic.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> opinion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>A massively open source neural network</title>
+      <link href="/2024/11/04/massively-open-source-neural-network/"/>
+      <url>/2024/11/04/massively-open-source-neural-network/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>speech2drug</title>
+      <link href="/2024/09/15/speech2drug/"/>
+      <url>/2024/09/15/speech2drug/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The Friend</title>
+      <link href="/2024/08/25/the-friend/"/>
+      <url>/2024/08/25/the-friend/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LLMs - Six Design Patterns for Agents</title>
+      <link href="/2024/08/18/six-llm-design-patterns/"/>
+      <url>/2024/08/18/six-llm-design-patterns/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://refactoring.guru/design-patterns">Design patterns</a></strong> are pre thought-out solutions to common problems in software engineering. Anyone with an inclination for engineering will find design patterns enjoyable to merely think about - the <em><a href="https://refactoring.guru/design-patterns/factory-method">factory method</a></em>, the <em><a href="https://refactoring.guru/design-patterns/builder">builder pattern</a></em>. </p><p>These design patterns parcel up the insights of <a href="https://en.wikipedia.org/wiki/Design_Patterns">great engineers</a>, and once in our mental repertoire, we can leverage them to solve difficult and abstract problems. </p><p>Recently, programmers have been given a new tool to play with - the Large Language Model.<br><em>Natural language programming</em> calls for a complementary set of design patterns in order to empower elegant and robust solutions to even <em>harder</em> problems.</p><p>Many of these design patterns are predicated on the idea of ‘Agents’ - individual and autonomous <em>instances</em> of an LLM. Orchestrating many Agents in a sandbox is a complex problem with many degrees of freedom, thus motivating the need for these design patterns. </p><h1 id="The-Six-Patterns"><a href="#The-Six-Patterns" class="headerlink" title="The Six Patterns"></a>The Six Patterns</h1><p>I. <strong><a href="">Looping</a></strong></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span> (task_not_done): </span><br><span class="line">try_again()</span><br></pre></td></tr></table></figure><p>Looping allows an LLM to break down a <em>natural language goal</em> into a set of subtasks, and then recursively execute on those tasks. </p><p>Looping is a fundamental design pattern since it transforms the LLM from a single-use token generator into an Agent capable of satisfying a goal. It is the pattern used by <a href="https://github.com/Significant-Gravitas/AutoGPT">AutoGPT</a> and <a href="https://en.wikipedia.org/wiki/Devin_AI">Devin.ai </a>.</p><p>Looping hopes to complete discrete tasks with indefinite levels of difficulty, by enforcing repetition <em>until</em> the goal is accomplished.</p><p>One limitation is the tendency for the Agent to get stuck in <a href="https://en.wikipedia.org/wiki/Auto-GPT">infinite loops</a> - due to limited context window, the Agent may repeatedly attempt the same subtask. </p><br><p>II. <strong><a href="">The Reflection Pattern</a></strong><br>In a nutshell, the reflection pattern is the classic <em>“make it better”</em> prompt. This pattern is based on the thesis that LLM’s rarely generate their best work the first time around - and we should never expect them to in the future. </p><br><p>III. <strong>[Persistence]</strong><br>This is an extension of the <em>Reflection Pattern</em>. An example of the persistence pattern is an Agent writes <a href="">unit tests</a> and persists them to a codebase. At face value, this simple act seems inconsequential, however it accomplishes two important feats:</p><ol><li><strong>Transmuting</strong> the stochastic into the deterministic. Converting the flux-like state of natural language into immutable code.</li><li><strong>Persisting</strong> its thought process into the far future</li></ol><p>Through the act of writing a unit test, the LLM persists a piece of its own intellect as a piece of runnable code. </p><p>Currently, most of the output generated by Agents in production systems is not persisted <em>back</em> to the system (it is ephemeral). The answer is discarded as soon as it serves its purpose, meaning those Agents are effectively idempotent. </p><p>The Persistence pattern allows agentic systems to iteratively build up a separate system which exists independent of the Agents which created it. </p><br><p>IV. <strong><a href="">Tool use</a></strong></p><blockquote>  <p>Models, however intelligent, still need access to live, reliable information. As much as the world’s knowledge can theoretically be encoded and made available in model weights, a huge amount of the inputs models need change in real time.</p>  <footer>    — <a href="https://www.conviction.com/startups.html">Sarah Gou's Conviction</a>  </footer></blockquote><p>Another way to make an agentic system larger than the sum of its parts is to grant the Agents agency over the surrounding Web (or even the <a href="https://youtu.be/Sq1QZB5baNw?si=2XtpVBw3048c4cuq">physical world</a>). This integration can be broken down into two sides: </p><ol><li><strong>Pull</strong>: the ability to freely <em>query</em> data from the outside world.<ol><li>Integrations with communication channels like <em>Slack</em></li><li>Integrations with databases</li><li>Integrations with platforms like <em>Google Ads</em></li></ol></li><li><strong>Push</strong>: the ability to <em>push</em> a change into the outside world.<ol><li>Agents that can write <a href="https://www.atlassian.com/git/tutorials/making-a-pull-request#:~:text=In%20their%20simplest%20form%2C%20pull,request%20via%20their%20Bitbucket%20account.">pull requests</a></li><li>Agents that can call other Generative Agents (text to image, text to speech)*</li></ol></li></ol><p>In programming, <a href="https://en.wikipedia.org/wiki/Command%E2%80%93query_separation">command query separation</a> principle states that every method should either change the state of the system (command), or return the state of the system (query).</p><p>Agents should be able to do both.</p><br><p>V. <strong><a href="">The Planning Pattern</a></strong><br>The <em>raw horsepower</em> of the LLM - being able to, for example, write an entire essay from a single prompt - has led us to incorrect expectations where we have forgotten the <em>general necessity of breaking down a problem into smaller tasks</em>.</p><p>A student, given the task of writing an essay, does not immediately put pen to paper and write the essay without stopping. Just because LLM’s <em>can</em> write this way out of the box, doesn’t mean that it is an optimal way to use them.</p><p>The benefits of <a href="https://arxiv.org/abs/2201.11903">Chain of Thought Reasoning</a> are well documented, so I will not go into them here. </p><p>In 2022, Andrej Kaparthy referred to <a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow#:~:text=Thinking%2C%20Fast%20and%20Slow%20is,more%20deliberative%2C%20and%20more%20logical">System 1 and System 2 thinking</a> in human cognition when he described the need for LLM’s that could ‘think slowly’. I believe that this is possible through the planning pattern. </p><br><p>VI. <strong><a href="">Multiagent collaboration</a></strong></p><p>Multiagent collaboration is self-explanatory and best summed up by the following quote:</p><blockquote>  <p>“It works… much better than you might think”.</p>  <footer>    — <a href="https://youtu.be/sal78ACtGTc?si=EOGU2QDUG5zsQNX3">Andrew Ng @ Sequoia</a>  </footer></blockquote><p>This pattern borrows from the pattern of <a href="https://machinelearningmastery.com/tour-of-ensemble-learning-algorithms/">Ensemble Learning</a>⁑ in traditional machine learning. The idea is that if you had one hard question to answer, would you feel more comfortable asking <em>1000 average people</em>, or a <em>single expert</em>?</p><p>Often, the average⁂ of many weak models beats a single strong model. </p><p>Multi agent collaboration is the same general idea, but its implementation is different in nature.<br>For example, one might place Gemini, ChatGPT, and Anthropic Agents in a sandbox and let them ‘debate’ until an answer is resolved. This has the following characteristic differences: </p><ul><li>Instead of <em><strong>aggregating</strong></em> independent ‘votes’ to get the final answer, a network of Agents to <em><strong>argues</strong></em> until they reach the final answer. </li><li>Thus, you are able to ‘spectate’ the decision making process - it is not a black box.</li></ul><p>However, there are a few limitations:</p><ol><li>These ‘arguments’ must unfold in real time - there is no way to parallelize this process.</li><li>The Agents themselves are themselves bottlenecked by the efficacy of natural language in communicating ideas; unlike the pure 1’s and 0’s which transfer packets of data over the internet, there is inevitable signal loss when one idea is transferred from <em>Agent A</em> to <em>Agent B</em>.</li></ol><p>Nonetheless, we have to get used to delegating tasks to Agents and patiently waiting for a response. </p><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Software is an abstraction of the <em>if&#x2F;else</em> statement and the <em>while loop</em>. Similarly, the fundamental unit of natural language programming is next word prediction. </p><p>As a reminder, a system of Agents is already capable of <a href="https://youtu.be/Zlgkzjndpak?si=FjyIq3CL8HM2t50G">creating video games</a>. This emergent complexity is the product of many next-word-predictors. Like programming, we should reason from first principles about </p><p>Example:<br>![[Pasted image 20240819204119.png]]</p><hr><p><em>Patterns II, IV, V and VI are a synthesis of <a href="https://youtu.be/sal78ACtGTc">Andrew Ng’s presentation at Sequoia</a>.</em></p><p>* <a href="https://arxiv.org/abs/2303.17580">HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging Face</a><br>⁑ Note: not actually known as a design pattern<br>⁂ You can also aggregate via the mode, weighted average, or even a meta classifier</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llm </tag>
+            
+            <tag> opinion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Orchestra</title>
+      <link href="/2024/07/27/orchestra/"/>
+      <url>/2024/07/27/orchestra/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Poll Anything</title>
+      <link href="/2024/06/15/poll-anything/"/>
+      <url>/2024/06/15/poll-anything/</url>
+      
+        <content type="html"><![CDATA[<p>Poll Anything allows you to publish yes&#x2F;no questions and gather thousands of responses within minutes.</p><p>I built this one weekend because my colleague was arguing with his partner about whether ‘the majority of men’ close the bathroom door. He wished he had a way to instantly gather votes from a small sample size.</p><p>Try it here: <a href="https://sampler-sage.vercel.app/">https://sampler-sage.vercel.app/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> product </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Viral by Design</title>
+      <link href="/2024/05/18/viral-by-design/"/>
+      <url>/2024/05/18/viral-by-design/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hacks4nets.com</title>
+      <link href="/2024/05/01/hacks4nets/"/>
+      <url>/2024/05/01/hacks4nets/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Supertab</title>
+      <link href="/2024/04/14/supertab/"/>
+      <url>/2024/04/14/supertab/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> product </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>AI @ Lyrebird</title>
+      <link href="/2024/03/27/lyrebird/"/>
+      <url>/2024/03/27/lyrebird/</url>
+      
+        <content type="html"><![CDATA[<figure>    <img src="/images/project-mocks/lyrebird/1.jpg">    <p class="figcaption">LLM tool use in medical workflows</p></figure><figure>    <img src="/images/project-mocks/lyrebird/2.jpg">    <p class="figcaption">Fine-tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to catch drug names</p></figure><figure>    <img src="/images/project-mocks/lyrebird/3.jpg">    <p class="figcaption">Realtime billing code prediction</p></figure><figure>    <img src="/images/project-mocks/lyrebird/4.jpg">    <p class="figcaption">Abstracting away the prompting</p></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Dimensionality reduction on my wardrobe</title>
+      <link href="/2024/03/02/tsne-wardrobe/"/>
+      <url>/2024/03/02/tsne-wardrobe/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>“The joy of dressing is an art.” – John Galliano</p></blockquote><h2 id="my-wardrobe"><a href="#my-wardrobe" class="headerlink" title="my wardrobe"></a>my wardrobe</h2><ul><li><em>Is style quantifiable?</em> </li><li><em>Does something look good because it is ‘fashionable’, or merely because it is an outlier from the ‘crowd’ (at a given point in time).</em> </li><li><em>Is taste tangible?</em> </li><li><em>How basic is my taste?</em></li></ul><p>What better way to answer these questions than to plot my wardrobe in into fashion space… With that said, here is my (ideal) wardrobe:</p><p><img src="/images/fashion-tsne-1.png"></p><p><em>I must say, enumerating my wardrobe was deeply satisfying. (In an ideal world, my daily outfit would be one of $4!$ random combinations of these items.) (if you know me irl, don’t comment on the accuracy of this)</em></p><hr><h2 id="tsne"><a href="#tsne" class="headerlink" title="tsne"></a>tsne</h2><p><img src="/images/fashion-tsne-2.png"></p><ul><li>To be honest, the choice of <code>tsne</code> was quite arbitrary - it just works well. </li><li><code>tsne</code> is suitable for: <ul><li>high dimensionality data</li><li>non-linear data </li><li>preserving local structure</li></ul></li></ul><p><strong>You can find the notebook <a href="https://github.com/jl33-ai/mle-notes/blob/main/sklearn-practice/chapter-8/wardrobe-tsne.ipynb">here</a></strong></p><hr><h2 id="result"><a href="#result" class="headerlink" title="result"></a>result</h2><p><img src="/images/fashion-tsne-3.png"></p><p>If you look carefully, my attire tends to lie at the edge of clusters. There are two potential explanations: </p><ol><li>Attributes of the photos are completely inconsistent with the rest of the dataset (e.g the shoes facing the opposite direction)</li><li>I have edgy taste, y’know</li></ol><p>Even if the positioning of my clothes had proper signal, it would be difficult to associate with some concrete fashion-concept like ‘chicness’. </p><p>However, from first principles, we can ascertain a rough idea of ‘meaning’ within clusters…</p><br><ul><li>What mechanisms lead <code>tsne</code> to this 2D representation?</li><li>Well, <code>tsne</code> tries to keep neighboring instances close, and dissimilar instances far apart, after mapping from the high-dimensional <strong>pixel space</strong> to our low-dimensional <strong>$\mathbb{R}^2$ space</strong></li><li>Similarity in pixel space would be most likely dominated by two broad features: structure and luminosity.</li><li>This similarity is preserved after the mapping to <strong>2d space</strong>, which can be seen immediately from the graph; <em>items which are roughly the same color and shape</em></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> artphilosophy </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>UniHack &#39;24 writeup</title>
+      <link href="/2024/03/01/unihack-24/"/>
+      <url>/2024/03/01/unihack-24/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://www.unihack.net/about">UniHack</a></strong>, Australia’s largest university student hackathon.</p><p><strong>Outcome:</strong></p><ul><li>🥇 First place</li><li>🎖️ + Most original idea</li></ul><p><strong>What we built:</strong> A product management suite for group work with AI product manager, <em>Freckle</em>.</p><p><strong>Why:</strong> Dysfunctional group projects (self-referential). </p><p><strong>Submission Video:</strong> <a href="https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r">here</a></p><p><strong>Github Repo:</strong> <a href="https://github.com/orgs/amiables-2024/repositories">here</a></p><p><strong>Devpost</strong>: <a href="https://devpost.com/software/sweet-qlndop">here</a></p><p><strong>Timelapse:</strong> <a href="https://youtu.be/LfvLdgmBXa8">here</a></p><div style="display: flex;"><img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;"><img src="/images/unihack-24-team.png" style="width: 25%; height: auto;"></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+          <category> product </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>dot-plot-lib</title>
+      <link href="/2024/01/11/dotplotlib/"/>
+      <url>/2024/01/11/dotplotlib/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>I hacked <code>matplotlib</code>‘s scatter plot to give the people what they want: a dot chart (aka strip<br>plot). You can install it with <code>pip install dotplotlib</code>, or see the source<br>code <a href="https://github.com/jl33-ai/dotplotlib">here</a>.</p></blockquote><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Current stars: 9</span><br></pre></td></tr></table></figure><hr><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/daterange.png?raw=true"></p><p><em>Great things come in tiny packages</em>. A bare minimum extension library for creating tree dot plots, strip plots or dot<br>charts w&#x2F; matplotlib or seaborn in Python</p><ul><li>Designed to work with <code>matplotlib</code> and <code>seaborn</code> in Python</li><li>Fully customizable</li></ul><h1 id="installation"><a href="#installation" class="headerlink" title="installation"></a>installation</h1><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install dotplotlib</span><br></pre></td></tr></table></figure><h1 id="usage"><a href="#usage" class="headerlink" title="usage"></a>usage</h1><p><code>dotplotlib</code> can be used to generate dot charts with minimal code. Here are some examples:</p><br><h3 id="Example-1-Simple-Dot-Chart"><a href="#Example-1-Simple-Dot-Chart" class="headerlink" title="Example 1: Simple Dot Chart"></a>Example 1: Simple Dot Chart</h3><p><code>.dotchart</code> returns <code>x</code> and <code>y</code> lists that can be inputted straight into <code>matplotlib</code><br>or <code>seaborn</code> <a href="https://www.w3schools.com/python/matplotlib_scatter.asp">scatterplots</a>.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> dotplotlib <span class="keyword">import</span> dotchart</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;size&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate dot chart data</span></span><br><span class="line">x, y = dotchart(data[<span class="string">&#x27;size&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot</span></span><br><span class="line">plt.scatter(x, y)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><h3 id="Example-2-Dot-Chart-with-Color-Mapping"><a href="#Example-2-Dot-Chart-with-Color-Mapping" class="headerlink" title="Example 2: Dot Chart with Color Mapping"></a>Example 2: Dot Chart with Color Mapping</h3><p>Pass the data you would like to color by to the <code>color_by=</code> argument.</p><p>Returns an extra list <code>c</code> that should be passed into the <code>c=</code> parameter if using <code>matplotlib</code> or <code>hue=</code> if<br>using <code>seaborn</code>.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> dotplotlib <span class="keyword">import</span> dotchart</span><br><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"></span><br><span class="line">data = &#123;<span class="string">&#x27;size&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>], <span class="string">&#x27;rating&#x27;</span>: [<span class="number">3</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">4</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Generate dot chart data with color mapping</span></span><br><span class="line">x, y, c = dotchart(data[<span class="string">&#x27;size&#x27;</span>], color_by=data[<span class="string">&#x27;rating&#x27;</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># Plot with color mapping</span></span><br><span class="line">plt.scatter(x, y, c=c, cmap=<span class="string">&#x27;viridis&#x27;</span>)</span><br><span class="line">plt.colorbar()</span><br><span class="line">plt.xlabel(<span class="string">&#x27;Size&#x27;</span>)</span><br><span class="line">plt.ylabel(<span class="string">&#x27;Number&#x27;</span>)</span><br><span class="line">plt.title(<span class="string">&#x27;Mushroom Size Count Colored by Rating&#x27;</span>)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure><h3 id="Example-3-Using-make-dotchart-to-plot-in-one-step"><a href="#Example-3-Using-make-dotchart-to-plot-in-one-step" class="headerlink" title="Example 3: Using make_dotchart to plot in one step"></a>Example 3: Using <code>make_dotchart</code> to plot in one step</h3><p>Instead of just giving you <code>x, y</code> lists to make the plot yourself, <code>make_dotplot()</code> actually generates the plot.</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> dotplotlib <span class="keyword">import</span> make_dotchart</span><br><span class="line"></span><br><span class="line">df = &#123;<span class="string">&#x27;size&#x27;</span>: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">3</span>, <span class="number">4</span>], <span class="string">&#x27;rating&#x27;</span>: [<span class="number">3</span>, <span class="number">2</span>, <span class="number">5</span>, <span class="number">4</span>, <span class="number">3</span>, <span class="number">6</span>, <span class="number">7</span>]&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment"># Create a dot chart with optional arguments (only the first one is mandatory)</span></span><br><span class="line">make_dotchart(df[<span class="string">&#x27;size&#x27;</span>], </span><br><span class="line">                  color_by=df[<span class="string">&#x27;rating&#x27;</span>], <span class="comment"># list to color by</span></span><br><span class="line">                  reverse=<span class="literal">False</span>, <span class="comment"># inverts the color mapping</span></span><br><span class="line">                  theme=<span class="string">&#x27;gnuplot2&#x27;</span>, <span class="comment"># scroll down to see all themes</span></span><br><span class="line">                  colorbar=<span class="literal">True</span>, </span><br><span class="line">                  xlabel=<span class="string">&#x27;Sizes&#x27;</span>, </span><br><span class="line">                  ylabel=<span class="string">&#x27;Size Count&#x27;</span>, </span><br><span class="line">                  title=<span class="string">&#x27;Mushroom Sizes Colored by Rating&#x27;</span>, </span><br><span class="line">                  dot_size=<span class="number">40</span>):</span><br></pre></td></tr></table></figure><h3 id="Example-4-Plotting-in-a-Jupyter-Notebook"><a href="#Example-4-Plotting-in-a-Jupyter-Notebook" class="headerlink" title="Example 4: Plotting in a Jupyter Notebook"></a>Example 4: Plotting in a Jupyter Notebook</h3><p>If plotting inline, use the default <code>.dotchart()</code> to obtain <code>x</code> and <code>y</code> lists, and then adjust as necessary with one of<br>the following:</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">plt.figure(figsize=(<span class="number">12</span>,<span class="number">6</span>))  <span class="comment"># or</span></span><br><span class="line">plt.figure().set_figwidth(<span class="number">12</span>) <span class="comment"># or</span></span><br><span class="line">plt.figure().set_figheight(<span class="number">12</span>)</span><br></pre></td></tr></table></figure><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/jupyter.png?raw=true"></p><br><hr><h1 id="preset-themes"><a href="#preset-themes" class="headerlink" title="preset themes"></a>preset themes</h1><h3 id="custom-lavender"><a href="#custom-lavender" class="headerlink" title="custom:lavender"></a><code>custom:lavender</code></h3><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/lavender.png?raw=true"></p><h3 id="cmap"><a href="#cmap" class="headerlink" title="cmap"></a><code>cmap</code></h3><p>Any cmap value supported by matplotlib (<a href="https://matplotlib.org/stable/users/explain/colors/colormaps.html">see here</a>)<br>will work when passed into <code>theme=&#39;viridis&#39;</code>.</p><p><strong>viridis:</strong></p><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/default.png?raw=true"></p><p><strong>gnuplot:</strong></p><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/gnuplot.png?raw=true"></p><p><strong>gallery:</strong></p><p><img src="https://github.com/jl33-ai/dotplotlib/blob/main/demos/gallery.png?raw=true"></p><hr><h1 id="features"><a href="#features" class="headerlink" title="features"></a>features</h1><ul><li>generate strip plots&#x2F;dot charts by exploiting <code>matplotlib/seaborn</code> scatterplots</li><li>supports any cmap color profile</li><li>the data can be automatically sorted for better visualization, especially when using color mapping.</li><li>accepts both list and pandas.Series as input data.</li><li>set custom labels, titles, and dot sizes for your charts.</li><li>works with Jupyter Notebook</li></ul><h1 id="attribution"><a href="#attribution" class="headerlink" title="attribution"></a>attribution</h1><ul><li><a href="https://github.com/Pjarzabek/DotPlotPython/blob/master/How%20to%20create%20dot%20plots%20in%20Python.ipynb">pjarzabek</a></li><li>m3</li><li>ddlegal</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> matplotlib </tag>
+            
+            <tag> data viz </tag>
+            
+            <tag> open source </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MLAI Hack &#39;23 writeup</title>
+      <link href="/2023/12/18/ml-ai-hack-23/"/>
+      <url>/2023/12/18/ml-ai-hack-23/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Team"><a href="#The-Team" class="headerlink" title="The Team"></a>The Team</h1><p><img src="/images/the-team2.png"></p><p><strong>The Problem:</strong> Public Transport Victoria Interface</p><p><strong>The Solution:</strong> A live data-enabled ChatBot with algorithms and predictive analytics built in</p><p><strong>Submission Video:</strong> <a href="https://youtu.be/NmYVubGNH-E?si=o_3Cf7nmCq03rcRi">here</a></p><p><strong>Github Repo:</strong> <a href="https://github.com/jl33-ai/ml-ai-hack">here</a></p><hr><h1 id="Gallery"><a href="#Gallery" class="headerlink" title="Gallery"></a>Gallery</h1><p><img src="/images/mlai-1.png"></p><p><img src="/images/mlai-2.png"></p><p><img src="/images/mlai-3.png"></p><p><img src="/images/mlai-4.png"></p><p><img src="/images/mlai-5.png"></p><p><img src="/images/mlai-6.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Stable Diffusion, Olivia Rodrigo, and Sexism</title>
+      <link href="/2023/12/09/sai-justin-stable-diffusion/"/>
+      <url>/2023/12/09/sai-justin-stable-diffusion/</url>
+      
+        <content type="html"><![CDATA[<p>I teamed up with my friend <a href="http://saikumarmk.com/">Sai Kumar</a> to make a <strong>Lex Fridman&#x2F;  Computerphile</strong> styled video series, and learnt some <a href="https://www.manim.community/"><code>manim</code></a></p><p>It’s a <strong>Lex Fridman</strong> styled interview, with <strong>Computerphile</strong> editing and <strong>3B1B</strong> animations. </p><hr><p><strong>Watch the full video</strong> </p><p><a href="https://youtu.be/HyCV9n030Xw"><img src="/images/thumbnail5.2.png" alt="Thumbnail" width=500></a></p><p><strong>A complimentary video on the Markov diffusion process</strong></p><p><a href="https://youtu.be/Qi9Eglax-tM"><img src="/images/thumbnail6.1.png" alt="Thumbnail" width=500></a></p><hr><p><strong>Or go straight to chapters…</strong></p><ul><li><a href="https://youtu.be/HyCV9n030Xw?si=J0bYaZfMwxeALkdC&t=40">Stable diffusion math</a><ul><li><a href="https://youtu.be/HyCV9n030Xw?si=Z1psQwHqR5nWMdgI&t=318">Gaussian noise and markov chains</a></li><li><a href="https://youtu.be/HyCV9n030Xw?si=ZUtY99RgCrnGCkgo&t=623">Olivia Rodrigo</a></li><li><a href="https://youtu.be/HyCV9n030Xw?si=jcjZ0tArgWjPvXxa&t=824">DallE vs Midjourney</a></li></ul></li><li><a href="https://youtu.be/HyCV9n030Xw?si=DFKdhKi0kKK08Nks&t=1156">Modelling and mitigating bias</a><ul><li><a href="https://youtu.be/HyCV9n030Xw?si=U8GuYC9RUun-QmPy&t=1525">Man - Women &#x3D; Programmer - Homemaker</a></li></ul></li><li><a href="https://youtu.be/HyCV9n030Xw?si=5GQjA_sk943KiXJS&t=1978">Stable diffusion jailbreaks</a></li></ul><hr><p><strong>Snippet Thumbnails</strong></p><div style="display: flex; justify-content: space-around;">    <a href="https://youtu.be/x25Jja52kAI"><img src="/images/thumbnail2.2.png" alt="Thumbnail"></a>    <a href="https://youtu.be/dhkhRxZI2Ao"><img src="/images/thumbnail3.3.png" alt="Thumbnail"></a>    <a href="https://youtu.be/V3zBHGB0LWs"><img src="/images/thumbnail4.png"  alt="Thumbnail"></a></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LLMs - Why the LLM might unify data science and software engineering</title>
+      <link href="/2023/12/01/the-llm-os/"/>
+      <url>/2023/12/01/the-llm-os/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> llm </tag>
+            
+            <tag> Data Science </tag>
+            
+            <tag> Programming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>LLMs - Technical Skills, Agency and Pessimism</title>
+      <link href="/2023/11/29/llm-agency-vs-pessimism/"/>
+      <url>/2023/11/29/llm-agency-vs-pessimism/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llm </tag>
+            
+            <tag> Agency </tag>
+            
+            <tag> Pessimism </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-ipfs-plugin</title>
+      <link href="/2023/10/15/hexo-ipfs-plugin/"/>
+      <url>/2023/10/15/hexo-ipfs-plugin/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> open source </tag>
+            
+            <tag> ipfs </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> plugin </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Learnings from a WAM Calculator</title>
+      <link href="/2023/09/17/unimelb-wam-calculator/"/>
+      <url>/2023/09/17/unimelb-wam-calculator/</url>
+      
+        <content type="html"><![CDATA[<p>I made a University grade calculator that ranks #1 on Google.</p><p align="center">  <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">    <img src="https://img.shields.io/badge/Reddit-60k-red">  </a></p><p><a href="https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko">Website</a>, <a href="https://github.com/jl33-ai/um-wam">repo</a>, <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">Reddit post</a></p><hr><h1 id="My-learnings"><a href="#My-learnings" class="headerlink" title="My learnings"></a>My learnings</h1><ol><li>Someone else will have already thought of your idea</li></ol><p><img src="/images/redd4.png"></p><ol start="2"><li>Someone will point out why it’s pointless</li></ol><p><img src="/images/redd2.png"></p><ol start="3"><li>Someone will make it worth it</li></ol><p><img src="/images/redd1.png"></p><hr><h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><p>Almost 7 months later (after completely forgetting about the project) I checked the analytics.</p><br><p><img src="/images/wam-stats.png"></p><br><hr><h1 id="Why-Streamlit"><a href="#Why-Streamlit" class="headerlink" title="Why Streamlit?"></a>Why Streamlit?</h1><ul><li>No one, in the history of human civilization, has ever said: “boy, this app is so helpful, but I don’t like it cos it’s written in X”</li><li>I can respond to feature requests in ~30 minutes instead of 3 hours.</li><li>Free hosting, because hobbies should stay hobbies.</li><li><a href="https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989">Be a Jedi master, not a mid-wit</a>.</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+          <category> product </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> reddit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SnP by M</title>
+      <link href="/2023/03/01/snp-by-m/"/>
+      <url>/2023/03/01/snp-by-m/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Zetamatrix</title>
+      <link href="/2021/07/15/zetamatrix/"/>
+      <url>/2021/07/15/zetamatrix/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+          <category> home </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> big-data </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Reads</title>
+      <link href="/2020/06/24/reads/"/>
+      <url>/2020/06/24/reads/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aquaponics</title>
+      <link href="/2017/11/10/aquaponics/"/>
+      <url>/2017/11/10/aquaponics/</url>
+      
+        <content type="html"><![CDATA[<p>My first engineering project wasn’t a program, it was a fish tank. </p><p><strong>Here is the idea behind aquaponics:</strong> </p><ol><li>The fish sh*t in the water, which fertilizes it for the plants</li><li>The plants keep the water clean for the fish</li></ol><p>A perfect system, perfection in its simplicity. Perfectly self-sustaining, enclosed, and symbiotic. </p><p>It fascinated my mind. I begged my parents to take me to <a href="https://en.wikipedia.org/wiki/Bunnings">Bunnings</a>.<br>Nothing would stop me from building my <strong>aquaponics system</strong>.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The Donovan Project</title>
+      <link href="/2016/01/01/donovan-project/"/>
+      <url>/2016/01/01/donovan-project/</url>
+      
+        <content type="html"><![CDATA[<p>Your friendly neighbourhood digital agency helping local businesses use <strong>tech</strong> (or what of it I knew at the time).</p><p>I offered the following ‘services’: </p><ul><li>Website building<ul><li>Personal portfolios</li><li>Basic branding home pages</li></ul></li><li>Graphic design</li><li>Branding campaigns</li><li>SEO</li><li>Copywriting</li><li>3D modelling</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> design </category>
+          
+          <category> product </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> graphic design </tag>
+            
+            <tag> 3d rendering </tag>
+            
+            <tag> branding </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
