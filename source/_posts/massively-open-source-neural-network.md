@@ -1,6 +1,6 @@
 ---
 title: A massively open source neural network
-thumbnail: /images/thumbnails/moon.png
+thumbnail: /images/thumbnails/distributed.png
 icons:
   - name: Docs
     image: /images/icons/docs.png

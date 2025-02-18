@@ -5,10 +5,9 @@ icons:
   - name: Lyrebird Health
     image: /images/icons/lyrebird.png
     url: https://www.lyrebirdhealth.com
-help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 date: 2024-03-27 12:14:25
 tags:
-description: Seed -> Series A at one of Australia's most successful startups
+description: Seed -> Series A @ Lyrebird
 categories:
   - home
 redirect_url:
@@ -21,17 +20,17 @@ gallery:
 
 <figure>
     <img src="/images/project-mocks/lyrebird/1.jpg">
-    <p class="figcaption">Got creative with realtime detection</p>
+    <p class="figcaption">LLM tool use in medical workflows</p>
 </figure>
 <figure>
     <img src="/images/project-mocks/lyrebird/2.jpg">
-    <p class="figcaption"><a href="https://github.com/jl33-ai/speech-2-drug">speech to text</a></p>
+    <p class="figcaption">Fine-tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to catch drug names</p>
 </figure>
 <figure>
     <img src="/images/project-mocks/lyrebird/3.jpg">
-    <p class="figcaption">billing code prediction via RAG</p>
+    <p class="figcaption">Realtime billing code prediction</p>
 </figure>
 <figure>
     <img src="/images/project-mocks/lyrebird/4.jpg">
-    <p class="figcaption">prompt customization suites</p>
+    <p class="figcaption">Abstracting away the prompting</p>
 </figure>

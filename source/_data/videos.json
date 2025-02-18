@@ -1,17 +1,20 @@
 [
   {
-    "title": "Video test",
+    "title": "pushed off a pier",
     "url": "youtube.com",
-    "length": 209,
+    "video_url": "pier-push.mov",
+    "length": "0:05",
     "created_at": "2024-06-24",
     "author": "Justin Lee",
     "thumbnail": ""
   },
   {
-    "title": "Other video test",
+    "title": "Sydney skyline",
     "url": "youtube.com",
-    "length": 209,
-    "created_at": "",
-    "author": "Justin Lee"
+    "video_url": "syd-skyline.mov",
+    "length": "0:05",
+    "created_at": "2025-02-18",
+    "author": "Justin Lee",
+    "thumbnail": ""
   }
 ]

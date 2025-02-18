@@ -1,13 +1,13 @@
 ---
 title: Learnings from a WAM Calculator
-date: 2023-11-17
+date: 2023-09-17
 categories:
   - home
   - product
   - engineering
 tags:
   - reddit
-description: A University grade calculator that ranks No. 1 on Google
+description: A University grade calculator that ranks 2nd on Google
 redirect_url:
 thumbnail: /images/thumbnails/spaces.gif
 icons:
@@ -20,7 +20,7 @@ photos:
     -
 ---
 
-I made an open source University grade calculator that ranks #1 on Google.
+I made a University grade calculator that ranks #1 on Google.
 
 <p align="center">
   <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">
@@ -28,17 +28,11 @@ I made an open source University grade calculator that ranks #1 on Google.
   </a>
 </p>
 
-
-- **[The website](https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko)**
-
-- **[Github repo](https://github.com/jl33-ai/um-wam)**
-
-- **[Original Reddit post](https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/)**
+[Website](https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko), [repo](https://github.com/jl33-ai/um-wam), [Reddit post](https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/)
 
 ---
 
 # My learnings
-
 
 1. Someone else will have already thought of your idea
 
@@ -48,19 +42,15 @@ I made an open source University grade calculator that ranks #1 on Google.
 
 ![](/images/redd2.png)
 
-3. But at the end of the day... _‍_
+3. Someone will make it worth it
 
 ![](/images/redd1.png)
 
-_Someone makes it all worth it._
-
 ---
 
-# The numbers 
+# Results 
 
-Almost 7 months later (after completely forgetting about the project) I decided to check the analytics
-
-To my surprise, not only was the app still active, it had been used dozens of times in the **last hour**.
+Almost 7 months later (after completely forgetting about the project) I checked the analytics.
 
 <br>
 
@@ -70,10 +60,9 @@ To my surprise, not only was the app still active, it had been used dozens of ti
 
 ---
 
-# ⚐ Why did I build it with `Streamlit`?
+# Why Streamlit?
 
-- TLDR: Because the users don't care.
-- Complex engineering is beautiful, but it has its place.
-- I can add new feature requests in ~30 mins instead of 3 hours.
-- Free, automatic hosting.
+- No one, in the history of human civilization, has ever said: "boy, this app is so helpful, but I don't like it cos it's written in X"
+- I can respond to feature requests in ~30 minutes instead of 3 hours.
+- Free hosting, because hobbies should stay hobbies.
 - [Be a Jedi master, not a mid-wit](https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989).

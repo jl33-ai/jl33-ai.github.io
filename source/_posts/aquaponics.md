@@ -11,7 +11,6 @@ tags:
 description: A mini homemade aquaponics farm
 categories:
   - engineering
-  - home
 redirect_url:
 mau: 1
 revenue: -$100
