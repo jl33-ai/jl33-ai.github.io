@@ -1,5 +1,5 @@
 ---
-title: Why the LLM might unify data science and software engineering
+title: LLMs - Why the LLM might unify data science and software engineering
 thumbnail: 
 icons:
   - name: Docs
@@ -12,6 +12,5 @@ tags:
   - Programming
 description:
 categories:
-  - opinion
 redirect_url: https://medium.com/kernel-mcds/llms-and-data-science-a-transformative-landscape-awaits-7a2c82630a99
 ---

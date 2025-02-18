@@ -1,7 +1,7 @@
 ---
 layout: story
 thumbnail: 
-title: Six Design Patterns for Agentic LLM's
+title: LLMs - Six Design Patterns for Agents
 date: 2024-08-18 16:56:22
 tags:
 	- llm
