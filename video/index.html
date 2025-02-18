@@ -65,7 +65,7 @@
 		</script>
 		<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
 	
-</head>
+<meta name="generator" content="Hexo 7.0.0"></head>
 
 
     <body class="max-width mx-auto px3 ltr">
@@ -119,13 +119,19 @@
 <div class="video-item">
     <div class="upper">
         <div class="thumbnail">
-            <img
-                    src="/images/thumbnails-video/asdf.png"
-                    alt="Video test"
-                    loading="lazy"
-            >
+            <!--            <img-->
+            <!--                    src="/images/thumbnails-video/asdf.png"-->
+            <!--                    alt="pushed off a pier"-->
+            <!--                    loading="lazy"-->
+            <!--            >-->
+            <video class="video" muted loop>
+                <source
+                        src=/video/pier-push.mov
+                >
+                Your browser does not support the video tag.
+            </video>
             <div class="lozenge">
-                <p>21:20</p>
+                <p>0:05</p>
             </div>
         </div>
     </div>
@@ -136,7 +142,7 @@
         <div class="info">
             <h3>
                 <a href="youtube.com">
-                    Video test
+                    pushed off a pier
                 </a>
             </h3>
             <div class="subtext">
@@ -152,12 +158,71 @@
             ...
         </div>
     </div>
+</div>
+            
+                
 
-
+<div class="video-item">
+    <div class="upper">
+        <div class="thumbnail">
+            <!--            <img-->
+            <!--                    src="/images/thumbnails-video/asdf.png"-->
+            <!--                    alt="Sydney skyline"-->
+            <!--                    loading="lazy"-->
+            <!--            >-->
+            <video class="video" muted loop>
+                <source
+                        src=/video/syd-skyline.mov
+                >
+                Your browser does not support the video tag.
+            </video>
+            <div class="lozenge">
+                <p>0:05</p>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+        <div class="pfp">
+            <img src="/images/pfp3_100x100.jpg"/>
+        </div>
+        <div class="info">
+            <h3>
+                <a href="youtube.com">
+                    Sydney skyline
+                </a>
+            </h3>
+            <div class="subtext">
+                <p>
+                    Justin Lee
+                </p>
+                <p>
+                    6 hours ago
+                </p>
+            </div>
+        </div>
+        <div class="ellipsis">
+            ...
+        </div>
+    </div>
 </div>
             
         </div>
     </section>
+
+    <script>
+        const videos = document.querySelectorAll('.video');
+        console.log(videos)
+        videos.forEach(video => {
+            video.addEventListener('mouseenter', () => {
+                video.play();
+            });
+
+            video.addEventListener('mouseleave', () => {
+                video.pause();
+                video.currentTime = 0;
+            });
+        });
+    </script>
 
 
         
