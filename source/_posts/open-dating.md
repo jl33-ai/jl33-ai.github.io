@@ -10,7 +10,7 @@ help_link: https://github.com/jl33-ai/OpenDating
 type: project
 date: 2025-01-01 17:09:31
 tags:
-description: An open-source and collaborative dating app.
+description: Dating as an API
 categories:
   - home
   - engineering

@@ -9,12 +9,10 @@ icons:
     image: /images/icons/postgresql.png
     url: null
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
-date: 2022-06-24
+date: 2020-06-24
 tags:
 description: Strava for reading books
 categories:
-  - home
-  - engineering
 redirect_url:
 mau: 0
 revenue: 0
