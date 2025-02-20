@@ -111,6 +111,11 @@ You are an author. Act like one.
 Through POV of consumers ‘what would make sense.”
 
 
+First, plan your APIs through the eyes of your consumer - whether that's your enterprise customers, or your friend working on your startup with you. How would it look/feel to them. Go to Japan, understand what it means to make something convenient to use.
+It's so simple - think about the problem not how you're going to do the solution. Think about what the dream end solution is, feel yourself using it, thinking about how the perfect solution looks.
+
+
+
 Simplicity, extensibility, idempotency, statelessness, performance
 
 [1] https://slack.engineering/how-we-design-our-apis-at-slack/
