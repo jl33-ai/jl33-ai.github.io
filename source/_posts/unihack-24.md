@@ -1,12 +1,12 @@
 ---
-title: UniHack '24 writeup
+title: Winning UniHack
 date: 2024-03-01
 tech_type: js
 categories:
   - home
   - product
-thumbnail: /images/thumbnails/city.png
-description: First Place @ UNIHACK 2024
+thumbnail: /images/thumbnails/ghibli-0.gif
+description: First place @ UNIHACK 2024
 icons:
   - name: 3JS
     image: /images/icons/3js.png
