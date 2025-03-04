@@ -8,6 +8,18 @@ categories:
 thumbnail: /images/thumbnails/ghibli-0.gif
 description: First place @ UNIHACK 2024
 icons:
+  - name: Alex
+    image: /images/icons/uh-alex-m.png
+    url:
+  - name: Amanda
+    image: /images/icons/uh-amanda-c.png
+    url:
+  - name: Eli
+    image: /images/icons/uh-eli-a.png
+    url:
+  - name: Justin
+    image: /images/icons/uh-justin-l.png
+    url:
   - name: 3JS
     image: /images/icons/3js.png
     url:   
@@ -17,6 +29,7 @@ icons:
   - name: MySQL
     image: /images/icons/mysql.png
     url:
+ 
 #  - name: AWS
 #    url:
 #  - name: Express
