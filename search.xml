@@ -328,11 +328,11 @@
       
         <tags>
             
-            <tag> open source </tag>
-            
             <tag> matplotlib </tag>
             
             <tag> data viz </tag>
+            
+            <tag> open source </tag>
             
         </tags>
       
@@ -447,13 +447,13 @@
       
         <tags>
             
+            <tag> open source </tag>
+            
             <tag> ipfs </tag>
             
             <tag> hexo </tag>
             
             <tag> plugin </tag>
-            
-            <tag> open source </tag>
             
         </tags>
       
@@ -588,6 +588,25 @@
             <tag> branding </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The first program I ever wrote</title>
+      <link href="/2015/03/11/first-program/"/>
+      <url>/2015/03/11/first-program/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
       
     </entry>
     
