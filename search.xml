@@ -23,6 +23,25 @@
     
     
     <entry>
+      <title>A programming language for philosophy</title>
+      <link href="/2025/03/13/programming-language-for-philosophy/"/>
+      <url>/2025/03/13/programming-language-for-philosophy/</url>
+      
+        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li></ul><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>beautiful-computer-science</title>
       <link href="/2025/01/25/beautiful-computer-science/"/>
       <url>/2025/01/25/beautiful-computer-science/</url>
@@ -220,12 +239,6 @@
         <content type="html"><![CDATA[]]></content>
       
       
-      <categories>
-          
-          <category> opinion </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -291,7 +304,7 @@
     
     
     <entry>
-      <title>Winning UniHack</title>
+      <title>Winning a national hackathon</title>
       <link href="/2024/03/01/unihack-24/"/>
       <url>/2024/03/01/unihack-24/</url>
       
@@ -328,11 +341,11 @@
       
         <tags>
             
+            <tag> open source </tag>
+            
             <tag> matplotlib </tag>
             
             <tag> data viz </tag>
-            
-            <tag> open source </tag>
             
         </tags>
       
@@ -447,13 +460,13 @@
       
         <tags>
             
-            <tag> open source </tag>
-            
             <tag> ipfs </tag>
             
             <tag> hexo </tag>
             
             <tag> plugin </tag>
+            
+            <tag> open source </tag>
             
         </tags>
       
@@ -594,7 +607,7 @@
     
     
     <entry>
-      <title>The first program I ever wrote</title>
+      <title>My first program</title>
       <link href="/2015/03/11/first-program/"/>
       <url>/2015/03/11/first-program/</url>
       
