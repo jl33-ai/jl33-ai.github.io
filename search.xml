@@ -27,14 +27,8 @@
       <link href="/2025/03/13/programming-language-for-philosophy/"/>
       <url>/2025/03/13/programming-language-for-philosophy/</url>
       
-        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li></ul><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li></ul><p>Primitives:<br>Doing promise &#x3D;&gt; !conclusion should evaluate to ‘impossible’</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
       
-      
-      <categories>
-          
-          <category> opinion </category>
-          
-      </categories>
       
       
     </entry>
