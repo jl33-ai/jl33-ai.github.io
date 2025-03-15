@@ -23,11 +23,11 @@
     
     
     <entry>
-      <title>A programming language for philosophy</title>
+      <title>A functional programming language for philosophy</title>
       <link href="/2025/03/13/programming-language-for-philosophy/"/>
       <url>/2025/03/13/programming-language-for-philosophy/</url>
       
-        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li></ul><p>Primitives:<br>Doing promise &#x3D;&gt; !conclusion should evaluate to ‘impossible’</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li><li>Closure. I really like the name closure. It may be like but closure, a functional programming language for philosophy. </li><li>a deterministic adapter and a functional (deterministic) compiler to merely check the validity (w&#x2F; truth tables)</li></ul><p>Primitives:<br>Doing promise &#x3D;&gt; !conclusion should evaluate to ‘impossible’</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
       
       
       
@@ -302,7 +302,7 @@
       <link href="/2024/03/01/unihack-24/"/>
       <url>/2024/03/01/unihack-24/</url>
       
-        <content type="html"><![CDATA[<p><strong><a href="https://www.unihack.net/about">UniHack</a></strong>, Australia’s largest university student hackathon.</p><p><strong>Outcome:</strong></p><ul><li>🥇 First place</li><li>🎖️ + Most original idea</li></ul><p><strong>What we built:</strong> A product management suite for group work with AI product manager, <em>Freckle</em>.</p><p><strong>Why:</strong> Dysfunctional group projects (self-referential). </p><p><strong>Submission Video:</strong> <a href="https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r">here</a></p><p><strong>Github Repo:</strong> <a href="https://github.com/orgs/amiables-2024/repositories">here</a></p><p><strong>Devpost</strong>: <a href="https://devpost.com/software/sweet-qlndop">here</a></p><p><strong>Timelapse:</strong> <a href="https://youtu.be/LfvLdgmBXa8">here</a></p><div style="display: flex;"><img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;"><img src="/images/unihack-24-team.png" style="width: 25%; height: auto;"></div>]]></content>
+        <content type="html"><![CDATA[<p><strong><a href="https://www.unihack.net/about">UniHack</a></strong>, Australia’s largest university student hackathon sponsored by <strong>AWS</strong> and <strong>Atlassian</strong></p><ul><li>🥇 First place</li><li>🎖️ + Most original idea</li></ul><p><strong>What we built:</strong> A product management suite for group work with AI product manager, <em>Freckle</em>.</p><p><strong>Why:</strong> Dysfunctional group projects (self-referential). </p><p><a href="https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r">Submission video</a> | <a href="https://github.com/orgs/amiables-2024/repositories">Github Repo</a> | <a href="https://devpost.com/software/sweet-qlndop">Devpost</a> | <a href="https://youtu.be/LfvLdgmBXa8">Timelapse</a></p><div style="display: flex;"><img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;"><img src="/images/unihack-24-team.png" style="width: 25%; height: auto;"></div>]]></content>
       
       
       <categories>
