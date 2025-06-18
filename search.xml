@@ -56,14 +56,6 @@
         <content type="html"><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui.min.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui-bundle.min.js"></script><script>    window.onload = () => {        window.ui = SwaggerUIBundle({            url: 'https://raw.githubusercontent.com/jl33-ai/OpenDating/refs/heads/main/docs/api-spec.yaml',            dom_id: '#swagger-ui',            deepLinking: true,            presets: [                SwaggerUIBundle.presets.apis,                SwaggerUIBundle.SwaggerUIStandalonePreset            ],        });    };</script><div id="swagger-ui"></div>]]></content>
       
       
-      <categories>
-          
-          <category> home </category>
-          
-          <category> engineering </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -559,6 +551,8 @@
       
       
       <categories>
+          
+          <category> home </category>
           
           <category> engineering </category>
           
