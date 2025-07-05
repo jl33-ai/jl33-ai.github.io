@@ -1,5 +1,5 @@
 ---
-title: Winning UniHack
+title: Winning a national hackathon
 date: 2024-03-01
 tech_type: js
 categories:
@@ -20,15 +20,6 @@ icons:
   - name: Justin
     image: /images/icons/uh-justin-l.png
     url:
-  - name: 3JS
-    image: /images/icons/3js.png
-    url:   
-  - name: Figma
-    image: /images/icons/figma.png
-    url:
-  - name: MySQL
-    image: /images/icons/mysql.png
-    url:
  
 #  - name: AWS
 #    url:
@@ -37,9 +28,7 @@ icons:
 #  - name: React
 #    url:
 ---
-**[UniHack](https://www.unihack.net/about)**, Australia's largest university student hackathon.
-
-**Outcome:**
+**[UniHack](https://www.unihack.net/about)**, Australia's largest university student hackathon sponsored by **AWS** and **Atlassian**
 - 🥇 First place
 - 🎖️ + Most original idea
 
@@ -47,44 +36,9 @@ icons:
 
 **Why:** Dysfunctional group projects (self-referential). 
 
-**Submission Video:** [here](https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r)
-
-**Github Repo:** [here](https://github.com/orgs/amiables-2024/repositories)
-
-**Devpost**: [here](https://devpost.com/software/sweet-qlndop)
-
-**Timelapse:** [here](https://youtu.be/LfvLdgmBXa8)
+[Submission video](https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r) | [Github Repo](https://github.com/orgs/amiables-2024/repositories) | [Devpost](https://devpost.com/software/sweet-qlndop) | [Timelapse](https://youtu.be/LfvLdgmBXa8)
 
 <div style="display: flex;">
 <img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;">
 <img src="/images/unihack-24-team.png" style="width: 25%; height: auto;">
 </div>
-
-[//]: # ()
-[//]: # (---)
-
-[//]: # (# Gallery)
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/fT9iRno.gif]&#40;https://i.elijahaa.com/fT9iRno.gif&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/Hn5yPVt.gif]&#40;https://i.elijahaa.com/Hn5yPVt.gif "https://i.elijahaa.com/Hn5yPVt.gif"&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/p7e455r.gif]&#40;https://i.elijahaa.com/p7e455r.gif "https://i.elijahaa.com/p7e455r.gif"&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/CxXDmcx.gif]&#40;https://i.elijahaa.com/CxXDmcx.gif "https://i.elijahaa.com/CxXDmcx.gif"&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/hOPSlrf.gif]&#40;https://i.elijahaa.com/hOPSlrf.gif "https://i.elijahaa.com/hOPSlrf.gif"&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/UAW6Zwk.gif]&#40;https://i.elijahaa.com/UAW6Zwk.gif "https://i.elijahaa.com/UAW6Zwk.gif"&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/t99sUND.gif]&#40;https://i.elijahaa.com/t99sUND.gif "https://i.elijahaa.com/t99sUND.gif"&#41; )
-
-[//]: # ()
-[//]: # (![https://i.elijahaa.com/Xj7d5Cg.gif]&#40;https://i.elijahaa.com/Xj7d5Cg.gif "https://i.elijahaa.com/Xj7d5Cg.gif"&#41; )
