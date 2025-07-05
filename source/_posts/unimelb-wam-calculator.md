@@ -7,15 +7,15 @@ categories:
   - engineering
 tags:
   - reddit
-description: A University grade calculator that ranks 2nd on Google
+description: A grade calculator that ranks 2nd on Google
 redirect_url:
 thumbnail: /images/thumbnails/spaces.gif
 icons:
   - name: Python
     image: /images/icons/python.png
     url:
-mau: 1,000+
-help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
+mau: 10k+
+help_link: https://github.com/jl33-ai/um-wam
 photos:
     -
 ---

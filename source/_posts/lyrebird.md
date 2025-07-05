@@ -1,19 +1,19 @@
 ---
 title: AI @ Lyrebird
-thumbnail: /images/thumbnails/mocks/lyrebird.png
+thumbnail: /images/thumbnails/lyrebird-disposable.jpeg
 icons:
   - name: Lyrebird Health
     image: /images/icons/lyrebird.png
     url: https://www.lyrebirdhealth.com
-  - name: 3JS
-    image: /images/icons/3js.png
-    url:
-  - name: Figma
-    image: /images/icons/figma.png
-    url:
-  - name: MySQL
-    image: /images/icons/mysql.png
-    url:
+#  - name: 3JS
+#    image: /images/icons/3js.png
+#    url:
+#  - name: Figma
+#    image: /images/icons/figma.png
+#    url:
+#  - name: MySQL
+#    image: /images/icons/mysql.png
+#    url:
 date: 2024-03-27 12:14:25
 tags:
 description: Seed -> Series A @ Lyrebird

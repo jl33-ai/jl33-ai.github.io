@@ -5,8 +5,6 @@ thumbnail: /images/thumbnails/zetamatrix-2.jpg
 date: 2021-07-15
 description: An online math game for quant traders
 categories:
-    - engineering
-    - home
 tags:
   - big-data
 icons:
