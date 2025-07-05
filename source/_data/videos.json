@@ -1,20 +1,23 @@
 [
   {
-    "title": "pushed off a pier",
-    "url": "youtube.com",
-    "video_url": "pier-push.mov",
+    "title": "Push push",
     "length": "0:05",
     "created_at": "2024-06-24",
-    "author": "Justin Lee",
-    "thumbnail": ""
+    "video_id": "5Eynd5WpzAo",
+    "description": "My friends pushed me off a pier"
   },
   {
-    "title": "Sydney skyline",
-    "url": "youtube.com",
-    "video_url": "syd-skyline.mov",
+    "title": "Ball is life",
+    "length": "0:28",
+    "created_at": "2024-12-18",
+    "video_id": "mLpCJLd13Ds",
+    "description": "Balls"
+  },
+  {
+    "title": "Japan",
     "length": "0:05",
     "created_at": "2025-02-18",
-    "author": "Justin Lee",
-    "thumbnail": ""
+    "video_id": "n4E8BXRAQZw",
+    "description": "Short trip to Japan w/ myself and my camera"
   }
 ]
