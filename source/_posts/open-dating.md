@@ -12,10 +12,8 @@ date: 2025-01-01 17:09:31
 tags:
 description: Dating as an API
 categories:
-  - home
-  - engineering
 #redirect_url: /static/open-dating
-mau:
+mau: 27
 photos:
 permalink: /opendating/
 ---

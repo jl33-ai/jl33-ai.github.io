@@ -2,14 +2,12 @@
 title: aquaponics
 thumbnail: /images/thumbnails/farming.jpg
 icons:
-  - name: Name
-    image: /images/icons/name.png
-    url: null
 help_link: https://forms.gle/jMJVy4Jdq14x8fVM9
 date: 2017-11-10 15:16:02
 tags:
 description: A mini homemade aquaponics farm
 categories:
+  - home
   - engineering
 redirect_url:
 mau: 1
@@ -27,3 +25,4 @@ A perfect system, perfection in its simplicity. Perfectly self-sustaining, enclo
 
 It fascinated my mind. I begged my parents to take me to [Bunnings](https://en.wikipedia.org/wiki/Bunnings). 
 Nothing would stop me from building my **aquaponics system**.
+
