@@ -1,7 +1,7 @@
 ---
 title: The way to love
-description: This book changed my fucking life
+description: Happiness, desire and love
 book: true
 tier: S
-thumbnail: thinking-in-systems.jpg
+thumbnail: the-way-to-love.jpg
 ---
