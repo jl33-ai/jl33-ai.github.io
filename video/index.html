@@ -144,15 +144,15 @@
             <img src="/images/pfp/1_256.jpg"/>
         </div>
         <div class="info">
-            <h3>
-                <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=9fqocWiJ2vY">
+            <h3 class="video-title">
+                <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=9fqocWiJ2vY">
                     Pier push
                 </a>
             </h3>
             <div class="subtext">
-                <p>
-                    Justin Lee
-                </p>
+                <!--                <p>-->
+                <!--                    Justin Lee-->
+                <!--                </p>-->
                 <p>
                     1 year ago
                 </p>
@@ -192,10 +192,28 @@
             var lozenge = container.querySelector('.lozenge');
             var playerSlot = container.querySelector('.youtube-player-slot');
             var hoverTimeout;
+            var leaveTimeout;
+            var isVideoLoaded = false; // Track if video is already loaded
 
             container.addEventListener('mouseenter', function () {
+                // Clear any pending leave timeout
+                clearTimeout(leaveTimeout);
+
+                // If video is already loaded, don't load again
+                if (isVideoLoaded) {
+                    return;
+                }
+
+                // Clear any existing hover timeout to prevent multiple requests
+                clearTimeout(hoverTimeout);
+
                 // Small delay to prevent loading on quick hover
                 hoverTimeout = setTimeout(function () {
+                    // Double-check that we haven't already loaded a video
+                    if (isVideoLoaded) {
+                        return;
+                    }
+
                     thumbnail.style.opacity = '0';
                     lozenge.style.opacity = '0';
 
@@ -203,30 +221,33 @@
                     iframe.className = 'youtube-iframe';
                     iframe.width = '100%';
                     iframe.height = '100%';
-                    iframe.frameBorder = '0';
                     iframe.allow = 'autoplay; encrypted-media';
                     iframe.allowFullscreen = true;
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
 
                     playerSlot.appendChild(iframe);
-                }, 100);
+                    isVideoLoaded = true; // Mark as loaded
+                }, 250);
             });
 
             container.addEventListener('mouseleave', function () {
                 // Clear timeout if leaving quickly
                 clearTimeout(hoverTimeout);
 
-                // Remove all iframes from the slot
-                playerSlot.innerHTML = '';
+                // Add a delay before removing the video to allow for quick re-entry
+                leaveTimeout = setTimeout(function () {
+                    // Remove all iframes from the slot
+                    playerSlot.innerHTML = '';
+                    isVideoLoaded = false; // Reset the flag
 
-                // Fade thumbnail back in
-                thumbnail.style.opacity = '1';
-                lozenge.style.opacity = '1';
+                    // Fade thumbnail back in
+                    thumbnail.style.opacity = '1';
+                    lozenge.style.opacity = '1';
+                }, 2500);
             });
         });
     });
 </script>
-
             
                 <div class="video-item">
     <div class="upper">
@@ -248,15 +269,15 @@
             <img src="/images/pfp/1_256.jpg"/>
         </div>
         <div class="info">
-            <h3>
-                <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=mLpCJLd13Ds">
+            <h3 class="video-title">
+                <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=mLpCJLd13Ds">
                     Ball is life
                 </a>
             </h3>
             <div class="subtext">
-                <p>
-                    Justin Lee
-                </p>
+                <!--                <p>-->
+                <!--                    Justin Lee-->
+                <!--                </p>-->
                 <p>
                     6 months ago
                 </p>
@@ -296,10 +317,28 @@
             var lozenge = container.querySelector('.lozenge');
             var playerSlot = container.querySelector('.youtube-player-slot');
             var hoverTimeout;
+            var leaveTimeout;
+            var isVideoLoaded = false; // Track if video is already loaded
 
             container.addEventListener('mouseenter', function () {
+                // Clear any pending leave timeout
+                clearTimeout(leaveTimeout);
+
+                // If video is already loaded, don't load again
+                if (isVideoLoaded) {
+                    return;
+                }
+
+                // Clear any existing hover timeout to prevent multiple requests
+                clearTimeout(hoverTimeout);
+
                 // Small delay to prevent loading on quick hover
                 hoverTimeout = setTimeout(function () {
+                    // Double-check that we haven't already loaded a video
+                    if (isVideoLoaded) {
+                        return;
+                    }
+
                     thumbnail.style.opacity = '0';
                     lozenge.style.opacity = '0';
 
@@ -307,30 +346,33 @@
                     iframe.className = 'youtube-iframe';
                     iframe.width = '100%';
                     iframe.height = '100%';
-                    iframe.frameBorder = '0';
                     iframe.allow = 'autoplay; encrypted-media';
                     iframe.allowFullscreen = true;
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
 
                     playerSlot.appendChild(iframe);
-                }, 100);
+                    isVideoLoaded = true; // Mark as loaded
+                }, 250);
             });
 
             container.addEventListener('mouseleave', function () {
                 // Clear timeout if leaving quickly
                 clearTimeout(hoverTimeout);
 
-                // Remove all iframes from the slot
-                playerSlot.innerHTML = '';
+                // Add a delay before removing the video to allow for quick re-entry
+                leaveTimeout = setTimeout(function () {
+                    // Remove all iframes from the slot
+                    playerSlot.innerHTML = '';
+                    isVideoLoaded = false; // Reset the flag
 
-                // Fade thumbnail back in
-                thumbnail.style.opacity = '1';
-                lozenge.style.opacity = '1';
+                    // Fade thumbnail back in
+                    thumbnail.style.opacity = '1';
+                    lozenge.style.opacity = '1';
+                }, 2500);
             });
         });
     });
 </script>
-
             
                 <div class="video-item">
     <div class="upper">
@@ -352,15 +394,15 @@
             <img src="/images/pfp/1_256.jpg"/>
         </div>
         <div class="info">
-            <h3>
-                <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=n4E8BXRAQZw">
+            <h3 class="video-title">
+                <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=n4E8BXRAQZw">
                     Japan
                 </a>
             </h3>
             <div class="subtext">
-                <p>
-                    Justin Lee
-                </p>
+                <!--                <p>-->
+                <!--                    Justin Lee-->
+                <!--                </p>-->
                 <p>
                     5 months ago
                 </p>
@@ -400,10 +442,28 @@
             var lozenge = container.querySelector('.lozenge');
             var playerSlot = container.querySelector('.youtube-player-slot');
             var hoverTimeout;
+            var leaveTimeout;
+            var isVideoLoaded = false; // Track if video is already loaded
 
             container.addEventListener('mouseenter', function () {
+                // Clear any pending leave timeout
+                clearTimeout(leaveTimeout);
+
+                // If video is already loaded, don't load again
+                if (isVideoLoaded) {
+                    return;
+                }
+
+                // Clear any existing hover timeout to prevent multiple requests
+                clearTimeout(hoverTimeout);
+
                 // Small delay to prevent loading on quick hover
                 hoverTimeout = setTimeout(function () {
+                    // Double-check that we haven't already loaded a video
+                    if (isVideoLoaded) {
+                        return;
+                    }
+
                     thumbnail.style.opacity = '0';
                     lozenge.style.opacity = '0';
 
@@ -411,30 +471,33 @@
                     iframe.className = 'youtube-iframe';
                     iframe.width = '100%';
                     iframe.height = '100%';
-                    iframe.frameBorder = '0';
                     iframe.allow = 'autoplay; encrypted-media';
                     iframe.allowFullscreen = true;
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=0&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
+                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
 
                     playerSlot.appendChild(iframe);
-                }, 100);
+                    isVideoLoaded = true; // Mark as loaded
+                }, 250);
             });
 
             container.addEventListener('mouseleave', function () {
                 // Clear timeout if leaving quickly
                 clearTimeout(hoverTimeout);
 
-                // Remove all iframes from the slot
-                playerSlot.innerHTML = '';
+                // Add a delay before removing the video to allow for quick re-entry
+                leaveTimeout = setTimeout(function () {
+                    // Remove all iframes from the slot
+                    playerSlot.innerHTML = '';
+                    isVideoLoaded = false; // Reset the flag
 
-                // Fade thumbnail back in
-                thumbnail.style.opacity = '1';
-                lozenge.style.opacity = '1';
+                    // Fade thumbnail back in
+                    thumbnail.style.opacity = '1';
+                    lozenge.style.opacity = '1';
+                }, 2500);
             });
         });
     });
 </script>
-
             
         </div>
     </div>
