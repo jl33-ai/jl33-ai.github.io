@@ -1626,10 +1626,11 @@ article .content .caption {
 .post-item .post-thumbnail img,
 .post-item .post-thumbnail-large img {
   width: 100%;
-  aspect-ratio: 1.56;
+  aspect-ratio: 1.5;
   height: auto;
   object-fit: cover;
-  border-radius: 0.2rem;
+  border-radius: 0.25rem;
+  filter: brightness(0.95);
 }
 .post-item .post-thumbnail {
   flex: 0 0 150px;
@@ -1662,12 +1663,12 @@ article .content .caption {
   border-bottom-color: $color-accent-2-dark;
 }
 .post-item .post-description {
-  font-size: 0.75rem;
-  margin-top: 0;
-  margin-bottom: 1rem;
+  color: #22272a;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
 }
 .post-item .post-icons {
-  margin-top: auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -1677,11 +1678,11 @@ article .content .caption {
   all: unset;
 }
 .post-item .post-icons .icon-link img {
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   object-fit: contain;
   filter: grayscale(100%);
-  transition: filter 0.14s;
+  transition: filter 0.1s;
 }
 .post-item .post-icons .icon-link:hover img {
   filter: none;
@@ -1694,7 +1695,7 @@ article .content .caption {
   align-items: right;
   justify-content: space-between;
   padding: 0.5rem 0;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 .post-item .post-meta .meta-data {
   text-align: right;
@@ -1765,6 +1766,7 @@ article .content .caption {
   aspect-ratio: 16/9;
   border-radius: 0.5rem;
   object-fit: cover;
+  background-color: #000;
 }
 .videos-grid .video-item .upper .youtube-container .lozenge {
   cursor: pointer;
@@ -1830,7 +1832,7 @@ article .content .caption {
   color: #7e7c87;
 }
 .lower .info .subtext p {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   margin-top: -0.25rem;
   margin-bottom: 0;
 }
@@ -1901,7 +1903,7 @@ article .content .caption {
 .twitter-item .content .body {
   margin-top: 0 !important;
   color: #0a0a0a;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
 }
 .twitter-item .content .body p {
   margin-top: 0 !important;
@@ -1948,6 +1950,7 @@ article .content .caption {
   align-items: center;
   margin-bottom: 20px;
   min-height: 120px;
+  border-bottom: 1px dashed #e1e0e4;
 }
 .tier-grade {
   padding: 2px 8px;

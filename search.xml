@@ -23,6 +23,19 @@
     
     
     <entry>
+      <title>den</title>
+      <link href="/2025/07/05/den/"/>
+      <url>/2025/07/05/den/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>The way to love</title>
       <link href="/2025/06/24/the-way-to-love/"/>
       <url>/2025/06/24/the-way-to-love/</url>
@@ -94,6 +107,25 @@
             <tag> opinion </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TASTEful is the new RESTful</title>
+      <link href="/2024/12/31/tasteful-apis/"/>
+      <url>/2024/12/31/tasteful-apis/</url>
+      
+        <content type="html"><![CDATA[<p>As we enter the era of <strong>taste</strong>, I want to talk about practical ways you can write more TASTEful APIs.</p><br><p>I <strong>Error messages</strong></p><blockquote><p>Stripe returns errors in plain English: “That card number doesn’t look right.” Not <code>ERROR_INVALID_PARAMETER</code>. Because developers debug at 2am.</p></blockquote><ul><li>developers debug at 2am</li><li>the <em>unhappy</em> path is more important than the <em>happy</em> path.</li><li>wrap your errors in a loving, gentle ribbon.</li></ul><hr><p>II <strong>The API is the product</strong></p><ul><li>the API is the product. Act like a product person. <a href="https://opensource.zalando.com/restful-api-guidelines/">don’t get lost in the code</a>.</li><li>this is how to make an API that is <strong>irresistible</strong> to developers.</li><li>we don’t make shitty GUIs, so don’t write shitty APIs.</li><li>you are an author.</li></ul><hr><p>III <strong>Time to first ‘Hello World’</strong></p><ul><li>how long it would take for a non-technical person to get their first successful response from your API?</li><li>adjust accordingly.</li></ul><hr><p>IV <strong>Developers should be able to guess your API even without reading the documentation.</strong></p><ul><li>maximize predictability</li><li>minimize surprise</li></ul><hr><p>V <strong>Don’t overdo it</strong></p><blockquote><p>It’s easy to add new features to an API, but hard to remove them.</p></blockquote><ul><li>be intentional with the surface area of your API.</li><li>more surface area ≠ better.</li><li>don’t put your users in configuration paralysis.</li><li>let each endpoint be responsible for exactly one thing.</li></ul><br><p><strong>Implementation is trivial</strong>. Taste is hard.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -523,14 +555,6 @@
         <content type="html"><![CDATA[]]></content>
       
       
-      <categories>
-          
-          <category> engineering </category>
-          
-          <category> home </category>
-          
-      </categories>
-      
       
         <tags>
             
@@ -562,14 +586,6 @@
       
         <content type="html"><![CDATA[<p>My first engineering project wasn’t a program, it was a fish tank. </p><p><strong>Here is the idea behind aquaponics:</strong> </p><ol><li>The fish sh*t in the water, which fertilizes it for the plants</li><li>The plants keep the water clean for the fish</li></ol><p>A perfect system, perfection in its simplicity. Perfectly self-sustaining, enclosed, and symbiotic. </p><p>It fascinated my mind. I begged my parents to take me to <a href="https://en.wikipedia.org/wiki/Bunnings">Bunnings</a>.<br>Nothing would stop me from building my <strong>aquaponics system</strong>.</p>]]></content>
       
-      
-      <categories>
-          
-          <category> home </category>
-          
-          <category> engineering </category>
-          
-      </categories>
       
       
     </entry>
