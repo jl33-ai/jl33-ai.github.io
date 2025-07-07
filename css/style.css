@@ -1721,7 +1721,6 @@ article .content .caption {
   display: flex;
   align-items: stretch;
   margin-bottom: 2rem;
-  border-bottom: 1px dashed #e1e0e4;
   padding: 1rem 0;
 }
 @media (max-width: 768px) {
@@ -1856,7 +1855,6 @@ article .content .caption {
   margin-top: 1rem;
   display: flex;
   justify-content: flex-start;
-  border-bottom: 1px dashed #e1e0e4;
 }
 .twitter-item .pfp {
   cursor: pointer;
@@ -1955,9 +1953,7 @@ article .content .caption {
 .tier-row {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
   min-height: 120px;
-  border-bottom: 1px dashed #e1e0e4;
 }
 .tier-grade {
   padding: 2px 8px;
@@ -2186,4 +2182,10 @@ code {
   flex: 1;
   flex-direction: column;
   justify-content: flex-start;
+}
+.index-page .post-list {
+  padding-bottom: 4rem;
+}
+.item-with-border:not(:last-child) {
+  border-bottom: 1px dashed #e1e0e4;
 }
