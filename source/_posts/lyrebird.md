@@ -20,7 +20,7 @@ description: Seed -> Series A @ Lyrebird
 categories:
   - home
 redirect_url:
-revenue: millions
+revenue: 
 gallery:
   - 
 ---
