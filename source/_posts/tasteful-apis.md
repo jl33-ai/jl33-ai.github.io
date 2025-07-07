@@ -67,7 +67,7 @@ As we enter the era of **taste**, I want to talk about practical ways you can wr
 
 <br>
 
-**Implementation is trivial**. Taste is a moat.
+**Implementation is trivial**; taste is a moat.
 
 [//]: # ()
 [//]: # (VI **Plan first**)
