@@ -36,19 +36,6 @@
     
     
     <entry>
-      <title>The way to love</title>
-      <link href="/2025/06/24/the-way-to-love/"/>
-      <url>/2025/06/24/the-way-to-love/</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>A functional programming language for philosophy</title>
       <link href="/2025/03/13/programming-language-for-philosophy/"/>
       <url>/2025/03/13/programming-language-for-philosophy/</url>
@@ -117,7 +104,7 @@
       <link href="/2024/12/31/tasteful-apis/"/>
       <url>/2024/12/31/tasteful-apis/</url>
       
-        <content type="html"><![CDATA[<p>As we enter the era of <strong>taste</strong>, I want to talk about practical ways you can write more TASTEful APIs.</p><br><p>I <strong>Error messages</strong></p><blockquote><p>Stripe returns errors in plain English: “That card number doesn’t look right.” Not <code>ERROR_INVALID_PARAMETER</code>. Because developers debug at 2am.</p></blockquote><ul><li>developers debug at 2am</li><li>the <em>unhappy</em> path is more important than the <em>happy</em> path.</li><li>wrap your errors in a loving, gentle ribbon.</li></ul><hr><p>II <strong>The API is the product</strong></p><ul><li>the API is the product. Act like a product person. <a href="https://opensource.zalando.com/restful-api-guidelines/">don’t get lost in the code</a>.</li><li>this is how to make an API that is <strong>irresistible</strong> to developers.</li><li>we don’t make shitty GUIs, so don’t write shitty APIs.</li><li>you are an author.</li></ul><hr><p>III <strong>Time to first ‘Hello World’</strong></p><ul><li>how long it would take for a non-technical person to get their first successful response from your API?</li><li>adjust accordingly.</li></ul><hr><p>IV <strong>Developers should be able to guess your API even without reading the documentation.</strong></p><ul><li>maximize predictability</li><li>minimize surprise</li></ul><hr><p>V <strong>Don’t overdo it</strong></p><blockquote><p>It’s easy to add new features to an API, but hard to remove them.</p></blockquote><ul><li>be intentional with the surface area of your API.</li><li>more surface area ≠ better.</li><li>don’t put your users in configuration paralysis.</li><li>let each endpoint be responsible for exactly one thing.</li></ul><br><p><strong>Implementation is trivial</strong>. Taste is a moat.</p>]]></content>
+        <content type="html"><![CDATA[<p>As we enter the era of <strong>taste</strong>, I want to talk about practical ways you can write more TASTEful APIs.</p><br><h3 id="Error-messages"><a href="#Error-messages" class="headerlink" title="Error messages"></a>Error messages</h3><blockquote><p>Stripe returns errors in plain English: “That card number doesn’t look right.” Not <code>ERROR_INVALID_PARAMETER</code>. Because developers debug at 2am.</p></blockquote><ul><li>developers debug at 2am</li><li>the <em>unhappy</em> path is more important than the <em>happy</em> path.</li><li>wrap your errors in a loving, gentle ribbon.</li></ul><hr><h3 id="The-API-is-the-product"><a href="#The-API-is-the-product" class="headerlink" title="The API is the product"></a>The API is the product</h3><ul><li>the API is the product. Act like a product person. <a href="https://opensource.zalando.com/restful-api-guidelines/">don’t get lost in the code</a>.</li><li>this is how to make an API that is <strong>irresistible</strong> to developers.</li><li>we don’t make shitty GUIs, so don’t write shitty APIs.</li><li>you are an author.</li></ul><hr><h3 id="Time-to-first-‘Hello-World’"><a href="#Time-to-first-‘Hello-World’" class="headerlink" title="Time to first ‘Hello World’"></a>Time to first ‘Hello World’</h3><ul><li>how long it would take for a non-technical person to get their first successful response from your API?</li><li>adjust accordingly.</li></ul><hr><h3 id="Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation"><a href="#Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation" class="headerlink" title="Developers should be able to guess your API even without reading the documentation."></a>Developers should be able to guess your API even without reading the documentation.</h3><ul><li>maximize predictability</li><li>minimize surprise</li></ul><hr><h3 id="Don’t-overdo-it"><a href="#Don’t-overdo-it" class="headerlink" title="Don’t overdo it"></a>Don’t overdo it</h3><blockquote><p>It’s easy to add new features to an API, but hard to remove them.</p></blockquote><ul><li>be intentional with the surface area of your API.</li><li>more surface area ≠ better.</li><li>don’t put your users in configuration paralysis.</li><li>let each endpoint be responsible for exactly one thing.</li></ul><br><p><strong>Implementation is trivial</strong>; taste is a moat.</p>]]></content>
       
       
       <categories>

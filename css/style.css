@@ -445,10 +445,42 @@ body td {
   font-weight: normal;
   font-style: normal;
 }
+.back-btn {
+  margin-left: auto;
+}
+.back-btn a {
+  color: font-size 12px !important;
+  text-decoration: none !important;
+}
 .story .story-body {
   font-family: 'newspaper', sans-serif;
   font-size: 17px;
   line-height: 1.5;
+  counter-reset: h3-counter;
+}
+.story .story-body h3 {
+  color: #393939;
+  font-size: 18px;
+  margin: 2.5rem 0 1rem 0;
+  padding-left: 0.25rem;
+  position: relative;
+  letter-spacing: -0.01em;
+  text-decoration: none !important;
+}
+.story .story-body h3::before {
+  counter-increment: h3-counter;
+  content: counter(h3-counter, upper-roman) '.';
+  position: absolute;
+  left: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $color-accent-warm;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 400;
+  transition: opacity 0.3s ease;
+  min-width: 35px;
+  text-align: right;
 }
 .story .story-body p {
   color: #383838;
@@ -1435,10 +1467,6 @@ article .content .caption {
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
-.search-input:hover {
-  border-color: #9c8b7d;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
-}
 .search-input:focus {
   border-color: #1528ab;
   box-shadow: 0 0 0 3px rgba(21,40,171,0.1), 0 4px 12px rgba(0,0,0,0.1);
@@ -1863,7 +1891,7 @@ article .content .caption {
   text-align: right;
 }
 .post-item .post-meta .help-span .help-link {
-  color: #1528ab;
+  color: #9c8b7d;
   text-decoration: none;
   transition: color 0.3s ease;
   margin-top: 1rem;
@@ -2011,7 +2039,6 @@ article .content .caption {
 }
 .book-cover {
   width: 80px;
-  height: 120px;
   object-fit: cover;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.03), 0 4px 6px rgba(0,0,0,0.04);
