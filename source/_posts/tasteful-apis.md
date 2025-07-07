@@ -67,6 +67,8 @@ V **Don't overdo it**
 
 <br>
 
+**Implementation is trivial**. Taste is a moat.
+
 [//]: # ()
 [//]: # (VI **Plan first**)
 
@@ -86,7 +88,7 @@ V **Don't overdo it**
 [//]: # ()
 [//]: # (<br>)
 
-**Implementation is trivial**. Taste is hard.
+
 
 [//]: # ([1] https://slack.engineering/how-we-design-our-apis-at-slack/)
 
