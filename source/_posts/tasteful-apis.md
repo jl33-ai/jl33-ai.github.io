@@ -23,7 +23,7 @@ As we enter the era of **taste**, I want to talk about practical ways you can wr
 
 <br>
 
-I **Error messages**
+### Error messages
 
 > Stripe returns errors in plain English: "That card number doesn't look right." Not `ERROR_INVALID_PARAMETER`. Because developers debug at 2am.
 
@@ -33,7 +33,7 @@ I **Error messages**
 
 ---
 
-II **The API is the product**
+### The API is the product
 
 - the API is the product. Act like a product person. [don't get lost in the code](https://opensource.zalando.com/restful-api-guidelines/).
 - this is how to make an API that is **irresistible** to developers.
@@ -42,21 +42,21 @@ II **The API is the product**
 
 ---
 
-III **Time to first 'Hello World'**
+### Time to first 'Hello World'
 
 - how long it would take for a non-technical person to get their first successful response from your API?
 - adjust accordingly.
 
 ---
 
-IV **Developers should be able to guess your API even without reading the documentation.**
+### Developers should be able to guess your API even without reading the documentation.
 
 - maximize predictability
 - minimize surprise
 
 ---
 
-V **Don't overdo it**
+### Don't overdo it
 
 > It's easy to add new features to an API, but hard to remove them.
 
