@@ -1,0 +1,110 @@
+[
+  {
+    "title": "The Way to Love",
+    "description": "Just let go",
+    "tier": "S",
+    "thumbnail": "the-way-to-love.jpg"
+  },
+  {
+    "title": "Structures, or why things don't fall down",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "je-gordon.jpg"
+  },
+  {
+    "title": "Archetypal Patterns in Fairytales",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "marie-louise-von-franz.avif"
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance",
+    "description": "",
+    "tier": "S",
+    "thumbnail": "robert-m-pirsig.jpg"
+  },
+  {
+    "title": "Hands-on Machine Learning",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "aurelien-geron.jpg"
+  },
+  {
+    "title": "Designing Data-Intensive Applications",
+    "description": "",
+    "tier": "S",
+    "thumbnail": "martin-kleppmann.jpg"
+  },
+  {
+    "title": "The Three-Body Problem",
+    "description": "",
+    "tier": "B",
+    "thumbnail": "ken-liu.jpg"
+  },
+  {
+    "title": "Just for Fun",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "david-diamond.jpg"
+  },
+  {
+    "title": "Xanadu Light",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "xanadu-light.jpg"
+  },
+  {
+    "title": "The free-energy principle: a unified brain theory?",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "karl-friston.jpg"
+  },
+  {
+    "title": "Estée Lauder",
+    "description": "",
+    "tier": "B",
+    "thumbnail": "estee-lauder.jpg"
+  },
+  {
+    "title": "Steal Like an Artist",
+    "description": "",
+    "tier": "B",
+    "thumbnail": "justin-kleon.avif"
+  },
+  {
+    "title": "Zero to One",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "peter-thiel.jpg"
+  },
+  {
+    "title": "Danny the Champion of the World",
+    "description": "",
+    "tier": "S",
+    "thumbnail": "roald-dahl.jpg"
+  },
+  {
+    "title": "Crazy Rich Asians",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "kevin-kwan.webp"
+  },
+  {
+    "title": "Freakonomics",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "freakonomics.jpg"
+  },
+  {
+    "title": "Seneca",
+    "description": "",
+    "tier": "S",
+    "thumbnail": "seneca.jpg"
+  },
+  {
+    "title": "Wanting",
+    "description": "",
+    "tier": "A",
+    "thumbnail": "luke-burgis.jpg"
+  }
+]
