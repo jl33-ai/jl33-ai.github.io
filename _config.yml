@@ -115,3 +115,6 @@ deploy:
 stories:
   layout: story
   source: _stories
+#
+#search:
+#  template: source/themes/cactus/layout/search.xml
