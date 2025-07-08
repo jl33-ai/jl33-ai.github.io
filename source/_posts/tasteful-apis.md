@@ -5,7 +5,7 @@ icons:
   - name: Atlassian
     image: /images/icons/atlassian.png
     url: null
-date: 2024-12-31 13:50:57
+date: 2024-10-17 13:50:57
 description: How to write good APIs
 categories:
   - home
