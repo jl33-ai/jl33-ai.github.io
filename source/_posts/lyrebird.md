@@ -44,7 +44,7 @@ The company are the **people**.
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/7.jpg">
-        <figcaption>it was probably a really important phone call.</figcaption>
+        <figcaption>it was probably a really important phone call</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/8.jpg">
@@ -52,7 +52,7 @@ The company are the **people**.
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/9.jpg">
-        <figcaption>Linus finds out someone expensed a cake for a birthday.</figcaption>
+        <figcaption>Linus finds out someone expensed a cake for a birthday</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/4.jpg">
