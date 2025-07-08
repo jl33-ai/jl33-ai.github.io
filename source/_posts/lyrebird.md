@@ -58,6 +58,10 @@ The company are the **people**.
         <img src="/images/project-mocks/lyrebird/4.jpg">
         <figcaption>Shot on iPhone</figcaption>
     </figure>
+</section>
+
+<details>
+    <summary>what I actually did</summary>
     <figure>
         <img src="/images/project-mocks/lyrebird/1.jpg">
         <figcaption>Tool calling in medical workflows</figcaption>
@@ -70,4 +74,4 @@ The company are the **people**.
         <img src="/images/project-mocks/lyrebird/3.jpg">
         <figcaption class="figcaption">Realtime billing code prediction</figcaption>
     </figure>
-</section>
+</details>
