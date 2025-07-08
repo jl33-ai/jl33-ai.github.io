@@ -27,27 +27,47 @@ gallery:
 
 [//]: # (TODO: Automate this later)
 
-In school, they teach you that a company is an 'entity'.
+In school, we're taught that a company is an **entity**.
 
 This is a lie. 
 
-The company are the people.
+The company are the **people**.
 
 <section>
     <figure>
+        <img src="/images/project-mocks/lyrebird/5.jpg">
+        <figcaption>management is either carrot or stick...</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/6.jpg">
+        <figcaption>the lads (colorized)</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/7.jpg">
+        <figcaption>it was probably a really important phone call.</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/8.jpg">
+        <figcaption>pair programming.</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/9.jpg">
+        <figcaption>Linus finds out someone expensed a cake for a birthday.</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/4.jpg">
+        <figcaption>Shot on iPhone</figcaption>
+    </figure>
+    <figure>
         <img src="/images/project-mocks/lyrebird/1.jpg">
-        <figcaption>LLM tool use in medical workflows</figcaption>
+        <figcaption>Tool calling in medical workflows</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/2.jpg" alt="">
-        <figcaption>Fine-tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to detect drug names</figcaption>
+        <figcaption>Fine tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to detect drug names</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/3.jpg">
         <figcaption class="figcaption">Realtime billing code prediction</figcaption>
-    </figure>
-    <figure>
-        <img src="/images/project-mocks/lyrebird/4.jpg">
-        <figcaption class="figcaption">Abstracting away the prompting</figcaption>
     </figure>
 </section>
