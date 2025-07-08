@@ -1210,6 +1210,44 @@ article header .author {
 article header .postdate {
   display: inline;
 }
+article .content section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+  counter-reset: gallery-counter;
+}
+@media (max-width: 768px) {
+  article .content section {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+article .content section figure {
+  position: relative;
+  margin: 0;
+  counter-increment: gallery-counter;
+}
+article .content section figure::before {
+  content: counter(gallery-counter) ".";
+  position: absolute;
+  top: -1.5rem;
+  left: 0.5rem;
+  font-size: 0.7rem;
+  color: #3a3330;
+  z-index: 1;
+}
+article .content section figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+article .content section figure figcaption {
+  font-size: 0.5rem;
+  line-height: 1.2;
+  max-width: 30%;
+  color: #3a3330;
+}
 article .content h2:before {
   position: absolute;
   top: -4px;
