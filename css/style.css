@@ -1210,42 +1210,53 @@ article header .author {
 article header .postdate {
   display: inline;
 }
+article .content p {
+  color: #666;
+  line-height: 1;
+}
+article .content p strong {
+  color: #3a3330;
+}
 article .content section {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   margin-top: 2rem;
   counter-reset: gallery-counter;
 }
-@media (max-width: 768px) {
-  article .content section {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-}
 article .content section figure {
-  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
   margin: 0;
   counter-increment: gallery-counter;
 }
-article .content section figure::before {
-  content: counter(gallery-counter) ".";
-  position: absolute;
-  top: -1.5rem;
-  left: 0.5rem;
-  font-size: 0.7rem;
-  color: #3a3330;
-  z-index: 1;
+@media (max-width: 768px) {
+  article .content section figure {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 article .content section figure img {
   width: 100%;
   height: auto;
   display: block;
+  border-radius: 0.25rem;
+  border: 0.5px solid #c9b5a0;
 }
 article .content section figure figcaption {
-  font-size: 0.5rem;
-  line-height: 1.2;
-  max-width: 30%;
+  width: 70%;
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: #666;
+}
+article .content section figure figcaption::before {
+  content: counter(gallery-counter);
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
   color: #3a3330;
 }
 article .content h2:before {
