@@ -1212,19 +1212,21 @@ article header .postdate {
 }
 article .content p {
   color: #666;
-  line-height: 1;
+  line-height: 0.2;
 }
 article .content p strong {
   color: #3a3330;
 }
-article .content section {
+article .content section,
+article .content details {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   margin-top: 2rem;
   counter-reset: gallery-counter;
 }
-article .content section figure {
+article .content section figure,
+article .content details figure {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
@@ -1233,28 +1235,32 @@ article .content section figure {
   counter-increment: gallery-counter;
 }
 @media (max-width: 768px) {
-  article .content section figure {
+  article .content section figure,
+  article .content details figure {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
 }
-article .content section figure img {
+article .content section figure img,
+article .content details figure img {
   width: 100%;
   height: auto;
   display: block;
   border-radius: 0.25rem;
   border: 0.5px solid #c9b5a0;
 }
-article .content section figure figcaption {
+article .content section figure figcaption,
+article .content details figure figcaption {
   width: 70%;
   font-size: 0.75rem;
   line-height: 1.6;
   color: #666;
 }
-article .content section figure figcaption::before {
+article .content section figure figcaption::before,
+article .content details figure figcaption::before {
   content: counter(gallery-counter);
   display: block;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   font-weight: 500;
   margin-bottom: 1rem;
   color: #3a3330;
