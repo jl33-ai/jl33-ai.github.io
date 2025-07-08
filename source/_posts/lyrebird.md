@@ -27,19 +27,27 @@ gallery:
 
 [//]: # (TODO: Automate this later)
 
-<figure>
-    <img src="/images/project-mocks/lyrebird/1.jpg">
-    <p class="figcaption">LLM tool use in medical workflows</p>
-</figure>
-<figure>
-    <img src="/images/project-mocks/lyrebird/2.jpg">
-    <p class="figcaption">Fine-tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to catch drug names</p>
-</figure>
-<figure>
-    <img src="/images/project-mocks/lyrebird/3.jpg">
-    <p class="figcaption">Realtime billing code prediction</p>
-</figure>
-<figure>
-    <img src="/images/project-mocks/lyrebird/4.jpg">
-    <p class="figcaption">Abstracting away the prompting</p>
-</figure>
+In school, they teach you that a company is an 'entity'.
+
+This is a lie. 
+
+The company are the people.
+
+<section>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/1.jpg">
+        <figcaption>LLM tool use in medical workflows</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/2.jpg" alt="">
+        <figcaption>Fine-tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to detect drug names</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/3.jpg">
+        <figcaption class="figcaption">Realtime billing code prediction</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/project-mocks/lyrebird/4.jpg">
+        <figcaption class="figcaption">Abstracting away the prompting</figcaption>
+    </figure>
+</section>
