@@ -23,11 +23,11 @@
     
     
     <entry>
-      <title>den</title>
-      <link href="/2025/07/05/den/"/>
-      <url>/2025/07/05/den/</url>
+      <title>A functional programming language for philosophy</title>
+      <link href="/2025/03/13/programming-language-for-philosophy/"/>
+      <url>/2025/03/13/programming-language-for-philosophy/</url>
       
-        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li><li>Closure. I really like the name closure. It may be like but closure, a functional programming language for philosophy. </li><li>a deterministic adapter and a functional (deterministic) compiler to merely check the validity (w&#x2F; truth tables)</li></ul><p>Primitives:<br>Doing promise &#x3D;&gt; !conclusion should evaluate to ‘impossible’</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
       
       
       
@@ -36,12 +36,18 @@
     
     
     <entry>
-      <title>A functional programming language for philosophy</title>
-      <link href="/2025/03/13/programming-language-for-philosophy/"/>
-      <url>/2025/03/13/programming-language-for-philosophy/</url>
+      <title>Den</title>
+      <link href="/2025/02/12/den/"/>
+      <url>/2025/02/12/den/</url>
       
-        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li><li>Closure. I really like the name closure. It may be like but closure, a functional programming language for philosophy. </li><li>a deterministic adapter and a functional (deterministic) compiler to merely check the validity (w&#x2F; truth tables)</li></ul><p>Primitives:<br>Doing promise &#x3D;&gt; !conclusion should evaluate to ‘impossible’</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+        <content type="html"><![CDATA[<p>Thought experiment: if you wanted to start a <strong>$1T company</strong> with just <strong>two people</strong>, what tools would you need?</p><section>    <figure>        <img src="/images/project-mocks/den/1.jpg">        <figcaption>what would software look like in a world of agi?</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/den/2.jpg">        <figcaption>how would you touch the lives billions of knowledge workers?</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/den/3.jpg">        <figcaption>sacrifice and heartbreak,<br>taste and craftsmanship</figcaption>    </figure></section>]]></content>
       
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
       
       
     </entry>
@@ -100,25 +106,6 @@
     
     
     <entry>
-      <title>TASTEful is the new RESTful</title>
-      <link href="/2024/12/31/tasteful-apis/"/>
-      <url>/2024/12/31/tasteful-apis/</url>
-      
-        <content type="html"><![CDATA[<p>As we enter the era of <strong>taste</strong>, I want to talk about practical ways you can write more TASTEful APIs.</p><br><h3 id="Error-messages"><a href="#Error-messages" class="headerlink" title="Error messages"></a>Error messages</h3><blockquote><p>Stripe returns errors in plain English: “That card number doesn’t look right.” Not <code>ERROR_INVALID_PARAMETER</code>. Because developers debug at 2am.</p></blockquote><ul><li>developers debug at 2am</li><li>the <em>unhappy</em> path is more important than the <em>happy</em> path.</li><li>wrap your errors in a loving, gentle ribbon.</li></ul><hr><h3 id="The-API-is-the-product"><a href="#The-API-is-the-product" class="headerlink" title="The API is the product"></a>The API is the product</h3><ul><li>the API is the product. Act like a product person. <a href="https://opensource.zalando.com/restful-api-guidelines/">don’t get lost in the code</a>.</li><li>this is how to make an API that is <strong>irresistible</strong> to developers.</li><li>we don’t make shitty GUIs, so don’t write shitty APIs.</li><li>you are an author.</li></ul><hr><h3 id="Time-to-first-‘Hello-World’"><a href="#Time-to-first-‘Hello-World’" class="headerlink" title="Time to first ‘Hello World’"></a>Time to first ‘Hello World’</h3><ul><li>how long it would take for a non-technical person to get their first successful response from your API?</li><li>adjust accordingly.</li></ul><hr><h3 id="Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation"><a href="#Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation" class="headerlink" title="Developers should be able to guess your API even without reading the documentation."></a>Developers should be able to guess your API even without reading the documentation.</h3><ul><li>maximize predictability</li><li>minimize surprise</li></ul><hr><h3 id="Don’t-overdo-it"><a href="#Don’t-overdo-it" class="headerlink" title="Don’t overdo it"></a>Don’t overdo it</h3><blockquote><p>It’s easy to add new features to an API, but hard to remove them.</p></blockquote><ul><li>be intentional with the surface area of your API.</li><li>more surface area ≠ better.</li><li>don’t put your users in configuration paralysis.</li><li>let each endpoint be responsible for exactly one thing.</li></ul><br><p><strong>Implementation is trivial</strong>; taste is a moat.</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> home </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>A massively open source neural network</title>
       <link href="/2024/11/04/massively-open-source-neural-network/"/>
       <url>/2024/11/04/massively-open-source-neural-network/</url>
@@ -129,6 +116,25 @@
       <categories>
           
           <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>TASTEful is the new RESTful</title>
+      <link href="/2024/10/17/tasteful-apis/"/>
+      <url>/2024/10/17/tasteful-apis/</url>
+      
+        <content type="html"><![CDATA[<p>As we enter the era of <strong>taste</strong>, I want to talk about practical ways you can write more TASTEful APIs.</p><br><h3 id="Error-messages"><a href="#Error-messages" class="headerlink" title="Error messages"></a>Error messages</h3><blockquote><p>Stripe returns errors in plain English: “That card number doesn’t look right.” Not <code>ERROR_INVALID_PARAMETER</code>. Because developers debug at 2am.</p></blockquote><ul><li>developers debug at 2am</li><li>the <em>unhappy</em> path is more important than the <em>happy</em> path.</li><li>wrap your errors in a loving, gentle ribbon.</li></ul><hr><h3 id="The-API-is-the-product"><a href="#The-API-is-the-product" class="headerlink" title="The API is the product"></a>The API is the product</h3><ul><li>the API is the product. Act like a product person. <a href="https://opensource.zalando.com/restful-api-guidelines/">don’t get lost in the code</a>.</li><li>this is how to make an API that is <strong>irresistible</strong> to developers.</li><li>we don’t make shitty GUIs, so don’t write shitty APIs.</li><li>you are an author.</li></ul><hr><h3 id="Time-to-first-‘Hello-World’"><a href="#Time-to-first-‘Hello-World’" class="headerlink" title="Time to first ‘Hello World’"></a>Time to first ‘Hello World’</h3><ul><li>how long it would take for a non-technical person to get their first successful response from your API?</li><li>adjust accordingly.</li></ul><hr><h3 id="Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation"><a href="#Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation" class="headerlink" title="Developers should be able to guess your API even without reading the documentation."></a>Developers should be able to guess your API even without reading the documentation.</h3><ul><li>maximize predictability</li><li>minimize surprise</li></ul><hr><h3 id="Don’t-overdo-it"><a href="#Don’t-overdo-it" class="headerlink" title="Don’t overdo it"></a>Don’t overdo it</h3><blockquote><p>It’s easy to add new features to an API, but hard to remove them.</p></blockquote><ul><li>be intentional with the surface area of your API.</li><li>more surface area ≠ better.</li><li>don’t put your users in configuration paralysis.</li><li>let each endpoint be responsible for exactly one thing.</li></ul><br><p><strong>Implementation is trivial</strong>; taste is a moat.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
           
       </categories>
       
