@@ -9,7 +9,7 @@ help_link: mail:founders@getden.io
 type: project
 date: 2025-02-12 18:43:11
 tags:
-description:
+description: Building a unicorn with my friend
 categories:
   - home
 redirect_url:
