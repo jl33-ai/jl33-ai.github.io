@@ -34,6 +34,14 @@ This is a lie.
 The company are the **people**.
 
 <section>
+ <figure>
+        <img src="/images/project-mocks/lyrebird/7.jpg">
+        <figcaption>it was probably a really important phone call</figcaption>
+    </figure>
+<figure>
+        <img src="/images/project-mocks/lyrebird/4.jpg">
+        <figcaption>Shot on iPhone</figcaption>
+    </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/5.jpg">
         <figcaption>management is either carrot or stick...</figcaption>
@@ -43,21 +51,14 @@ The company are the **people**.
         <figcaption>the lads (colorized)</figcaption>
     </figure>
     <figure>
-        <img src="/images/project-mocks/lyrebird/7.jpg">
-        <figcaption>it was probably a really important phone call</figcaption>
-    </figure>
-    <figure>
         <img src="/images/project-mocks/lyrebird/8.jpg">
-        <figcaption>pair programming.</figcaption>
+        <figcaption>pair programming</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/lyrebird/9.jpg">
         <figcaption>Linus finds out someone expensed a cake for a birthday</figcaption>
     </figure>
-    <figure>
-        <img src="/images/project-mocks/lyrebird/4.jpg">
-        <figcaption>Shot on iPhone</figcaption>
-    </figure>
+
 </section>
 
 <details>
