@@ -1952,7 +1952,8 @@ article .content .caption {
 }
 .twitter-item {
   position: relative;
-  margin-top: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
 }
