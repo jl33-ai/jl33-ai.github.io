@@ -22,14 +22,27 @@ Thought experiment: if you wanted to start a **$1T company** with just **two peo
 <section>
     <figure>
         <img src="/images/project-mocks/den/1.jpg">
-        <figcaption>what would software look like in a world of agi?</figcaption>
+        <figcaption>What will software look like in a post-AGI world?</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/den/2.jpg">
-        <figcaption>how would you touch the lives billions of knowledge workers?</figcaption>
+        <figcaption>How do you touch the lives of <strong>billions</strong> knowledge workers?</figcaption>
     </figure>
-    <figure>
-        <img src="/images/project-mocks/den/3.jpg">
-        <figcaption>sacrifice and heartbreak,<br>taste and craftsmanship</figcaption>
-    </figure>
+
 </section>
+
+<br>
+<br>
+
+<div style="text-align: center">
+Blood, sweat, tears,<br>
+Sacrifice (heartbreak),<br>
+Craftsmanship and relentless <strong>taste</strong></div>
+
+<br>
+
+This will be the most beautiful **application-layer software** of the next 3 decades.
+
+[//]: # (- launch video, timelapse)
+
+[//]: # (- most cool / important application layer software)
