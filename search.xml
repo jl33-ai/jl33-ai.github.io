@@ -40,7 +40,7 @@
       <link href="/2025/02/12/den/"/>
       <url>/2025/02/12/den/</url>
       
-        <content type="html"><![CDATA[<p>Thought experiment: if you wanted to start a <strong>$1T company</strong> with just <strong>two people</strong>, what tools would you need?</p><section>    <figure>        <img src="/images/project-mocks/den/1.jpg">        <figcaption>what would software look like in a world of agi?</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/den/2.jpg">        <figcaption>how would you touch the lives billions of knowledge workers?</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/den/3.jpg">        <figcaption>sacrifice and heartbreak,<br>taste and craftsmanship</figcaption>    </figure></section>]]></content>
+        <content type="html"><![CDATA[<p>Thought experiment: if you wanted to start a <strong>$1T company</strong> with just <strong>two people</strong>, what tools would you need?</p><section>    <figure>        <img src="/images/project-mocks/den/1.jpg">        <figcaption>What will software look like in a post-AGI world?</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/den/2.jpg">        <figcaption>How do you touch the lives of <strong>billions</strong> knowledge workers?</figcaption>    </figure></section><br><br><div style="text-align: center">Blood, sweat, tears,<br>Sacrifice (heartbreak),<br>Craftsmanship and relentless <strong>taste</strong></div><br><p>This will be the most beautiful <strong>application-layer software</strong> of the next 3 decades.</p>]]></content>
       
       
       <categories>
@@ -333,11 +333,11 @@
       
         <tags>
             
+            <tag> open source </tag>
+            
             <tag> matplotlib </tag>
             
             <tag> data viz </tag>
-            
-            <tag> open source </tag>
             
         </tags>
       
@@ -452,13 +452,13 @@
       
         <tags>
             
-            <tag> open source </tag>
-            
             <tag> ipfs </tag>
             
             <tag> hexo </tag>
             
             <tag> plugin </tag>
+            
+            <tag> open source </tag>
             
         </tags>
       
