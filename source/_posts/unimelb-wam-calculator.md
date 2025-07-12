@@ -1,6 +1,6 @@
 ---
 title: Learnings from a WAM Calculator
-date: 2023-09-17
+date: 2023-02-17
 categories:
   - home
   - product
@@ -14,7 +14,7 @@ icons:
   - name: Python
     image: /images/icons/python.png
     url:
-mau: 10k+
+mau: 10k
 help_link: https://github.com/jl33-ai/um-wam
 photos:
     -
