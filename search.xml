@@ -468,8 +468,8 @@
     
     <entry>
       <title>Learnings from a WAM Calculator</title>
-      <link href="/2023/09/17/unimelb-wam-calculator/"/>
-      <url>/2023/09/17/unimelb-wam-calculator/</url>
+      <link href="/2023/02/17/unimelb-wam-calculator/"/>
+      <url>/2023/02/17/unimelb-wam-calculator/</url>
       
         <content type="html"><![CDATA[<p>I made a University grade calculator that ranks #1 on Google.</p><p align="center">  <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">    <img src="https://img.shields.io/badge/Reddit-60k-red">  </a></p><p><a href="https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko">Website</a>, <a href="https://github.com/jl33-ai/um-wam">repo</a>, <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">Reddit post</a></p><hr><h1 id="My-learnings"><a href="#My-learnings" class="headerlink" title="My learnings"></a>My learnings</h1><ol><li>Someone else will have already thought of your idea</li></ol><p><img src="/images/redd4.png"></p><ol start="2"><li>Someone will point out why it’s pointless</li></ol><p><img src="/images/redd2.png"></p><ol start="3"><li>Someone will make it worth it</li></ol><p><img src="/images/redd1.png"></p><hr><h1 id="Results"><a href="#Results" class="headerlink" title="Results"></a>Results</h1><p>Almost 7 months later (after completely forgetting about the project) I checked the analytics.</p><br><p><img src="/images/wam-stats.png"></p><br><hr><h1 id="Why-Streamlit"><a href="#Why-Streamlit" class="headerlink" title="Why Streamlit?"></a>Why Streamlit?</h1><ul><li>No one, in the history of human civilization, has ever said: “boy, this app is so helpful, but I don’t like it cos it’s written in X”</li><li>I can respond to feature requests in ~30 minutes instead of 3 hours.</li><li>Free hosting, because hobbies should stay hobbies.</li><li><a href="https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989">Be a Jedi master, not a mid-wit</a>.</li></ul>]]></content>
       
@@ -496,12 +496,18 @@
     
     
     <entry>
-      <title>Zetamatrix</title>
+      <title>Competitive online math</title>
       <link href="/2021/07/15/zetamatrix/"/>
       <url>/2021/07/15/zetamatrix/</url>
       
         <content type="html"><![CDATA[]]></content>
       
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
       
       
         <tags>
