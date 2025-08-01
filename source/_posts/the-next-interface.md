@@ -24,7 +24,7 @@ The history of technology can be traced through the invention of new interfaces.
 
 <br>
 
-# Examples
+### Examples
 
 For example, the Application Programming Interface (API) was born because software needed a way to communicate with other software and programmers. So we started writing protocols like [HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview).*
 
@@ -34,9 +34,7 @@ When you apply this framework, all breakthroughs in technology seem obvious. All
 
 A recent example is [Search Engine Optimization](https://developers.google.com/search/docs/fundamentals/seo-starter-guide). SEO was born thanks to a new type of consumer: the [web crawler](https://en.wikipedia.org/wiki/Web_crawler). People understood that their webpages were no longer being read by just humans, so they started writing html to be read by crawlers too. 
 
-<br>
-
-# How to create interfaces
+### How to create interfaces
 
 The Act of Interface Creation is a simple **two-step process**:
 1. Identify that there is a new type of consumer who wants to read/write to your stuff.
@@ -44,9 +42,7 @@ The Act of Interface Creation is a simple **two-step process**:
 
 [//]: # ([Interfaces diagram])
 
-<br>
-
-# AgentWare
+### AgentWare
 
 There's a new consumer on the block: the **[AI agent](https://zapier.com/blog/ai-agent/)**. 
 

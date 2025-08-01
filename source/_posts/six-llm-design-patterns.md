@@ -26,7 +26,7 @@ Many of these design patterns are predicated on the idea of 'Agents' - individua
 
 # The Six Patterns
 
-I. **[Looping]()**
+### Looping
 
 ```python
 while (task_not_done): 
@@ -43,12 +43,12 @@ One limitation is the tendency for the Agent to get stuck in [infinite loops](ht
 
 <br>
 
-II. **[The Reflection Pattern]()**
+### The Reflection Pattern
 In a nutshell, the reflection pattern is the classic *"make it better"* prompt. This pattern is based on the thesis that LLM's rarely generate their best work the first time around - and we should never expect them to in the future. 
 
 <br>
 
-III. **[Persistence]**
+### Persistence
 This is an extension of the *Reflection Pattern*. An example of the persistence pattern is an Agent writes [unit tests]() and persists them to a codebase. At face value, this simple act seems inconsequential, however it accomplishes two important feats:
 
 1. **Transmuting** the stochastic into the deterministic. Converting the flux-like state of natural language into immutable code.
@@ -62,7 +62,7 @@ The Persistence pattern allows agentic systems to iteratively build up a separat
 
 <br>
 
-IV. **[Tool use]()**
+### Tool use
 
 <blockquote>
   <p>Models, however intelligent, still need access to live, reliable information. As much as the world’s knowledge can theoretically be encoded and made available in model weights, a huge amount of the inputs models need change in real time.</p>
@@ -87,7 +87,7 @@ Agents should be able to do both.
 
 <br>
 
-V. **[The Planning Pattern]()**
+### The Planning Pattern
 The *raw horsepower* of the LLM - being able to, for example, write an entire essay from a single prompt - has led us to incorrect expectations where we have forgotten the *general necessity of breaking down a problem into smaller tasks*.
 
 A student, given the task of writing an essay, does not immediately put pen to paper and write the essay without stopping. Just because LLM’s _can_ write this way out of the box, doesn't mean that it is an optimal way to use them.
@@ -98,7 +98,7 @@ In 2022, Andrej Kaparthy referred to [System 1 and System 2 thinking](https://en
 
 <br>
 
-VI. **[Multiagent collaboration]()**
+### Multiagent collaboration
 
 Multiagent collaboration is self-explanatory and best summed up by the following quote:
 <blockquote>
@@ -123,6 +123,8 @@ However, there are a few limitations:
 2. The Agents themselves are themselves bottlenecked by the efficacy of natural language in communicating ideas; unlike the pure 1’s and 0’s which transfer packets of data over the internet, there is inevitable signal loss when one idea is transferred from *Agent A* to *Agent B*.
 
 Nonetheless, we have to get used to delegating tasks to Agents and patiently waiting for a response. 
+
+<br>
 
 # Conclusion
 
