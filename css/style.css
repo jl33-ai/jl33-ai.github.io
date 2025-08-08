@@ -1264,6 +1264,10 @@ article .content details figure figcaption::before {
   margin-bottom: 1rem;
   color: #3a3330;
 }
+article .content section figure figcaption strong,
+article .content details figure figcaption strong {
+  color: #2c2622;
+}
 article .content h2:before {
   position: absolute;
   top: -4px;
