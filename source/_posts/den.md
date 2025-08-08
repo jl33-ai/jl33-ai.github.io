@@ -17,31 +17,38 @@ revenue:
 photos:
 ---
 
-Thought experiment: if you wanted to start a **$1T company** with just **two people**, what tools would you need?
 
 <section>
     <figure>
-        <img src="/images/project-mocks/den/1.jpg">
-        <figcaption>What will software look like in a post-AGI world?</figcaption>
+        <img src="/images/project-mocks/den/2.jpg">
+        <figcaption>current plan: build b2b saas <strong>with the boys</strong> until the world is <strong>post-economic</strong>.</figcaption>
     </figure>
     <figure>
-        <img src="/images/project-mocks/den/2.jpg">
-        <figcaption>How do you touch the lives of <strong>billions</strong> knowledge workers?</figcaption>
+        <img src="/images/project-mocks/den/1.jpg">
+        <figcaption>this might be the last time <strong>in history</strong> to start a company...</figcaption>
     </figure>
 
 </section>
 
-<br>
-<br>
-
-<div style="text-align: center">
-Blood, sweat, tears,<br>
-Sacrifice (heartbreak),<br>
-Craftsmanship and relentless <strong>taste</strong></div>
+[//]: # (<br>)
 
 <br>
 
-This will be the most beautiful **application-layer software** of the next 3 decades.
+[//]: # ()
+
+[//]: # (<div style="text-align: center">)
+
+[//]: # (Blood, sweat, tears,<br>)
+
+[//]: # (Sacrifice &#40;heartbreak&#41;,<br>)
+
+[//]: # (Craftsmanship and relentless <strong>taste</strong></div>)
+
+[//]: # ()
+
+[//]: # (<br>)
+
+[//]: # (This will be the most beautiful **application-layer software** in the next decade.)
 
 [//]: # (- launch video, timelapse)
 
