@@ -20,7 +20,9 @@ photos:
     -
 ---
 
-I made a University grade calculator that ranks #1 on Google.
+
+[//]: # ([Website]&#40;https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko&#41;, [repo]&#40;https://github.com/jl33-ai/um-wam&#41;, [Reddit post]&#40;https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/&#41;)
+
 
 <p align="center">
   <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">
@@ -28,41 +30,37 @@ I made a University grade calculator that ranks #1 on Google.
   </a>
 </p>
 
-[Website](https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko), [repo](https://github.com/jl33-ai/um-wam), [Reddit post](https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/)
 
----
+I made
+a [University grade calculator](https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko)
+that ranks #1 on Google.
 
-# My learnings
 
-1. Someone else will have already thought of your idea
 
-![](/images/redd4.png)
-
-2. Someone will point out why it's pointless
-
-![](/images/redd2.png)
-
-3. Someone will make it worth it
-
-![](/images/redd1.png)
-
----
-
-# Results 
-
-Almost 7 months later (after completely forgetting about the project) I checked the analytics.
-
-<br>
-
-![](/images/wam-stats.png)
+<section>
+    <figure>
+        <img src="/images/redd4.png">
+        <figcaption>someone else will have already thought of your idea</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/redd2.png">
+        <figcaption>someone will point out why it's pointless</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/redd1.png">
+        <figcaption>someone will make it worth it</figcaption>
+    </figure>
+    <figure>
+        <img src="/images/wam-stats.png">
+        <figcaption>7 months later, after completely forgetting about it</figcaption>
+    </figure>
+</section>
 
 <br>
-
----
 
 # Why Streamlit?
 
-- No one, in the history of human civilization, has ever said: "boy, this app is so helpful, but I don't like it cos it's written in X"
-- I can respond to feature requests in ~30 minutes instead of 3 hours.
-- Free hosting, because hobbies should stay hobbies.
-- [Be a Jedi master, not a mid-wit](https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989).
+- I can respond to feature requests in <10 minutes instead of 3 hours.
+- python maximizes open-source contribution
+- brainless hosting (because hobbies should stay hobbies)
+- [be a Jedi master, not a mid-wit](https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989).
