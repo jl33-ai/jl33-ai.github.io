@@ -8,7 +8,7 @@ icons:
 date: 2024-10-17 13:50:57
 description: How to write good APIs
 categories:
-  - home
+  - opinion
 layout: story
 ---
 
