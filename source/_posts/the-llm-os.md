@@ -1,5 +1,5 @@
 ---
-title: LLMs - Why the LLM might unify data science and software engineering
+title: "llms/ why the LLM might unify data science and software engineering"
 thumbnail: 
 icons:
   - name: Docs
