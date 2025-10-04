@@ -1,5 +1,5 @@
 ---
-title: AI @ Lyrebird
+title: Lyrebird
 thumbnail: /images/thumbnails/lyrebird-disposable.jpeg
 icons:
   - name: Lyrebird Health

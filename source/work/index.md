@@ -1,0 +1,5 @@
+---
+title: work
+date: 2025-10-04 19:38:26
+layout: work
+---

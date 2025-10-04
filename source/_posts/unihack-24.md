@@ -1,12 +1,12 @@
 ---
-title: Winning a national hackathon
+title: UniHack
 date: 2024-03-01
 tech_type: js
 categories:
   - home
   - product
 thumbnail: /images/thumbnails/ghibli-0.gif
-description: First place @ UNIHACK 2024
+description: Winning a national hackathon
 icons:
   - name: Alex
     image: /images/icons/uh-alex-m.png
