@@ -1,5 +1,5 @@
 ---
-title: A Silicon Valley Story
+title: the state of the valley
 thumbnail: /images/thumbnails/fractal.jpg
 icons:
   - name: Name
@@ -101,10 +101,7 @@ type: writing
 \> far away from text, for now
 
 \> I pick construction.
-\> I will build an n=1 company
-\> robotics will follow the same arc as the llm
-\> but at least now there is still time
-\> my robots will build the new world
+\> the built world is my passion
 </details>
 
 [//]: # (\> they are not harder hills for the model to climb)
