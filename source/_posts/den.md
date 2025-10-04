@@ -1,6 +1,6 @@
 ---
 title: Den
-thumbnail: /images/thumbnails/den.gif
+thumbnail: /images/thumbnails/linus_justin_garry.jpg
 icons:
   - name: Den
     image: /images/icons/den.svg

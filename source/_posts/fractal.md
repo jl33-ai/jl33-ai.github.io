@@ -1,6 +1,6 @@
 ---
-title: Escaping the fractal
-thumbnail: /images/thumbnails/xerox-parc.jpg
+title: A Silicon Valley Story
+thumbnail: /images/thumbnails/fractal.jpg
 icons:
   - name: Name
     image: /images/icons/name.png
@@ -23,94 +23,98 @@ type: writing
 \> the year is 2025
 \> saas is my passion
 \> move to sf
-\> my new saas is incredible
 \> $100M revenue in 2 weeks
-\> I’m not a wrapper, because I did post-training
-\> we’re friends; they give me tokens
+\> I’m not a wrapper because I did post-training
 \> wake up one morning, check X
 \> the labs have swallowed me whole
 \> back to zero
 
 \> let’s try b2b
-\> wait, this already exists in 10 different colors
-\> the set of code everyone can write is equal
-\> the set of ideas is constant
+\> claude code is only $20/month
+\> make something people want
+\> find a niche, launch on product hunt
+
+\> someone already built it
+\> we are all writing the same set of code
 \> saas is a fractal
-
-\> I will find a gap, I can build anything
-\> claude code is $20/month
+\> saas is a commodity, like eggs and milk
 \> saas is too cheap to meter
-\> the fast-fashion era has arrived
-\> saas is a commodity like eggs or milk
 
+\> all my users churn
 \> time to sunset
-\> all my customers were other b2b saas anyway
-\> saas is a ponzi scheme
+\> they were all other b2b saas anyway
+\> b2b saas is a ponzi scheme
 
 \> read innovator’s dilemma
-\> I will build enterprise software
-\> I will blindside the incumbent with my ai
-\> /claude “write a salesforce clone, but with a right hand side chat”
-\> wait, how do these execs already know what rag and tokens mean?
+\> okay, I'll build enterprise software
+\> will blindside the incumbent with my AI
+\> /claude write a salesforce clone, but with a right hand side chat
+\> wait... how do these execs already know what RAG means?
 
 \> startups have speed
-\> but the incumbents have llm’s too
-\> senior engineers, unfettered by the juniors, sh*tting out 50k+ line pull requests.
-\> talking to their AI girlfriends to meet their new AI KPIs
+\> but the incumbents have LLMs too
+\> senior engineers shitting out 50k+ line pull requests, unfettered by the juniors
 \> /claude give me a moat
 
-\> I need to pick a vertical
+\> OK, I need to pick a vertical
+\> software is eating the world
 \> I will sell software to bankers
 \> I will 5x their workflows (then replace them, shhh)
 
-\> zoom call with a banker, do the mum test
-\> next week, she gets fired. weird
-\> 2 weeks later, she found a new job
-\> openai is paying her $400/hr to do fake spreadsheets
+\> find a banker, do mum test, get pilot
+\> headcount cuts announced, they're fired
+\> 2 weeks later, they find a new job!
+\> openai is paying her $500/hr to work spreadsheets
 \> knowledge work is too cheap to meter
-\> there is no point 5x’ing the workflow of a non-existent job
 
 <details>
-<summary>go to the party</summary>
+<summary>option 1: go to the party</summary>
 
-\> go to a party in sf
-\> everyone is pivoting, weird
-\> researcher comes up to me
-\> sorry, I don’t have any dru- oh, you need ‘training data’?
-\> I’VE GOT IT.
+\> go to party in sf
+\> researcher rushes over to me
+\> sorry, I don’t have any dru- oh, you want ‘training data’?
 
+\> I’VE GOT IT
 \> I will sell data to the labs
-\> the real gold rush all along
-\> don’t sell the picks and shovels…
-\> just dig for gold
+\> this was the real gold rush
+\> ...don’t sell the picks and shovels
+\> ...just dig for gold
 
-\> my data is pushing the species forward
-\> I am not a founder; this is arbitrage
-\> I can finally scroll on X without seeing the words ‘craft’ or ‘taste’
-\> why build a company when you can arbitrage?
-\> free money.
+\> $100M ARR
+\> my data moves the species forward
+\> no need for craft or taste when I have arbitrage
+\> free money
 
-\> I am not a generational company
-\> I am a speed ramp for the labs
-
-\> the year is 2030
-\> software has finally eaten the world
+\> training data is eating the valley
+\> so that agi can eat the world
 </details>
 
 
 <details>
-<summary>look out the window</summary>
+<summary>option 2: look out the window</summary>
 
 \> I look out the window
 \> knowledge work is solved
 \> but the future is still unevenly distributed
-\> healthcare, construction, or education
-\> they are not harder hills for the model to climb
-\> but there are physical or regulatory barriers that gpt-6 can’t cross
+\> there is reprieve in the real world
+\> healthcare, construction, or education are the final frontier
+\> far away from text, for now
 
 \> I pick construction.
+\> I will build an n=1 company
 \> robotics will follow the same arc as the llm
 \> but at least now there is still time
-
-\> my robots build the new world
+\> my robots will build the new world
 </details>
+
+[//]: # (\> they are not harder hills for the model to climb)
+
+[//]: # (\> but there are physical or regulatory barriers that gpt-6 can’t cross)
+
+[//]: # (\> I am not a generational company)
+
+[//]: # (\> I am a speed ramp for the labs)
+
+[//]: # (\> the year is 2030)
+
+[//]: # (\> software has finally eaten the world)
