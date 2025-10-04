@@ -1,6 +1,6 @@
 ---
-title: AgentWare and the next API
-thumbnail: /images/thumbnails/xerox-parc.jpg
+title: agents need a new api
+thumbnail: /images/thumbnails/anime-phone.gif
 icons:
   - name: Name
     image: /images/icons/name.png

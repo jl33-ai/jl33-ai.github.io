@@ -1,6 +1,5 @@
 ---
-title: TASTEful is the new RESTful
-thumbnail: /images/thumbnails/anime-phone.gif
+title: what are TASTEful apis
 icons:
   - name: Atlassian
     image: /images/icons/atlassian.png
