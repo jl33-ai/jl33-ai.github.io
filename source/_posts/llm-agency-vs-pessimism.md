@@ -1,5 +1,5 @@
 ---
-title: Agency and LLMs
+title: ideas vs agency
 thumbnail: 
 icons:
   - name: Docs
