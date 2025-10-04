@@ -1,5 +1,5 @@
 ---
-title: Technical Skills, Agency and Pessimism
+title: Agency and LLMs
 thumbnail: 
 icons:
   - name: Docs
