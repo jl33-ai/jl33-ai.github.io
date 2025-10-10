@@ -21,11 +21,11 @@ photos:
 <section>
     <figure>
         <img src="/images/project-mocks/den/2.jpg">
-        <figcaption>current plan: build b2b saas <strong>with the boys</strong> until the world is <strong>post-economic</strong>.</figcaption>
+        <figcaption>build b2b saas <strong>with the boys</strong> until the world is <strong>post-economic</strong>.</figcaption>
     </figure>
     <figure>
         <img src="/images/project-mocks/den/1.jpg">
-        <figcaption>this might be the last time <strong>in history</strong> to start a company...</figcaption>
+        <figcaption>the <strong>Network State</strong> concept proposes creating new countries that start as digital communities and grow into sovereign entities by amassing members, wealth, and physical land</figcaption>
     </figure>
 
 </section>
