@@ -217,19 +217,11 @@
     
     <entry>
       <title>UniHack</title>
-      <link href="/2024/03/01/unihack-24/"/>
-      <url>/2024/03/01/unihack-24/</url>
+      <link href="/2024/03/01/unihack/"/>
+      <url>/2024/03/01/unihack/</url>
       
         <content type="html"><![CDATA[<p><strong><a href="https://www.unihack.net/about">UniHack</a></strong>, Australia’s largest university student hackathon sponsored by <strong>AWS</strong> and <strong>Atlassian</strong></p><ul><li>🥇 First place</li><li>🎖️ + Most original idea</li></ul><p><strong>What we built:</strong> A product management suite for group work with AI product manager, <em>Freckle</em>.</p><p><strong>Why:</strong> Dysfunctional group projects (self-referential). </p><p><a href="https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r">Submission video</a> | <a href="https://github.com/orgs/amiables-2024/repositories">Github Repo</a> | <a href="https://devpost.com/software/sweet-qlndop">Devpost</a> | <a href="https://youtu.be/LfvLdgmBXa8">Timelapse</a></p><div style="display: flex;"><img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;"><img src="/images/unihack-24-team.png" style="width: 25%; height: auto;"></div>]]></content>
       
-      
-      <categories>
-          
-          <category> home </category>
-          
-          <category> product </category>
-          
-      </categories>
       
       
     </entry>
@@ -339,29 +331,19 @@
     
     
     <entry>
-      <title>Learnings from a WAM Calculator</title>
-      <link href="/2023/02/17/unimelb-wam-calculator/"/>
-      <url>/2023/02/17/unimelb-wam-calculator/</url>
+      <title>Archive</title>
+      <link href="/2022/10/12/mp4/"/>
+      <url>/2022/10/12/mp4/</url>
       
-        <content type="html"><![CDATA[<p align="center">  <a href="https://www.reddit.com/r/unimelb/comments/182kxtw/someone_finally_did_it_wam_calculator/">    <img src="https://img.shields.io/badge/Reddit-60k-red">  </a></p><p>I made<br>a <a href="https://wam-calculator.streamlit.app/?fbclid=IwAR1K9ixVHdMm1wE9KUK5P48BUahEgWaQ4ubhFwKJcrvxRmy9cKim3N0Coko">University grade calculator</a><br>that ranks #1 on Google.</p><section>    <figure>        <img src="/images/redd4.png">        <figcaption>someone else will have already thought of your idea</figcaption>    </figure>    <figure>        <img src="/images/redd2.png">        <figcaption>someone will point out why it's pointless</figcaption>    </figure>    <figure>        <img src="/images/redd1.png">        <figcaption>someone will make it worth it</figcaption>    </figure>    <figure>        <img src="/images/wam-stats.png">        <figcaption>7 months later, after completely forgetting about it</figcaption>    </figure></section><br><h1 id="Why-Streamlit"><a href="#Why-Streamlit" class="headerlink" title="Why Streamlit?"></a>Why Streamlit?</h1><ul><li>I can respond to feature requests in &lt;10 minutes instead of 3 hours.</li><li>python maximizes open-source contribution</li><li>brainless hosting (because hobbies should stay hobbies)</li><li><a href="https://youtu.be/rP7bpYsfa6Q?si=NdXIYPDYvKCaqfq2&t=989">be a Jedi master, not a mid-wit</a>.</li></ul>]]></content>
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
       
       
       <categories>
           
           <category> home </category>
           
-          <category> product </category>
-          
-          <category> engineering </category>
-          
       </categories>
       
-      
-        <tags>
-            
-            <tag> reddit </tag>
-            
-        </tags>
       
     </entry>
     
