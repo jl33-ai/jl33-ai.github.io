@@ -109,15 +109,14 @@
             style="display: flex; width: 100%; margin-bottom: 1.5rem"
             src="/images/thumbnails/linus-house.jpeg"
     />
-    <p style="font-size: 0.8rem">
+    <p style="font-size: 0.8rem; color: #A6B1B8">
         <strong>Hi, I'm Justin</strong>. 21yo from Australia, co-founder of <a target="_blank" rel="noopener" href="https://getden.io/">Den</a>,
         creator of <a target="_blank" rel="noopener" href="http://inav.al/">inav.al</a>.
 
         <br><br>
 
-        If you want to have fun and work hard in a post-agi world, send me an <a
-                href="mailto:justin@getden.io">email</a>
-        with your (1) best work and (2) favorite book.
+        Want to join in? <a
+                href="mailto:justin@getden.io">Email</a> me with your (1) best work and (2) favorite book.
 
         <br><br>
 
@@ -144,6 +143,129 @@
             
 
 <div class="twitter-item item-with-border"
+     data-post-key="2025%2F10%2F04%2Frfs%2F"
+     onclick="window.location.href='/2025/10/04/rfs/'">
+    
+    <div class="pfp">
+        <img src="/images/pfp/1_256.jpg" loading="lazy"/>
+    </div>
+    <div class="content">
+        <div class="header">
+            <strong>
+                Justin
+            </strong>
+            <p class="secondary">
+                @justin_lee
+                <span>
+                    
+                        ⸱ 7d
+                    
+                </span>
+            </p>
+        </div>
+        <p class="body">post-agi startup ideas</p>
+        
+        <div class="icons">
+            <div class="icon" data-metric="likes" data-scale="7">
+                <img src="/images/twitter/heart.svg" alt="heart">
+                <p class="metric-value">46</p>
+            </div>
+            <div class="icon" data-metric="replies" data-scale="3">
+                <img src="/images/twitter/message.svg" alt="heart">
+                <p class="metric-value">9</p>
+            </div>
+            <div class="icon" data-metric="retweets" data-scale="2">
+                <img src="/images/twitter/retweet.svg" alt="heart">
+                <p class="metric-value">1</p>
+            </div>
+            <div class="icon" data-metric="shares" data-scale="1">
+                <img src="/images/twitter/upload.svg" alt="heart">
+                <p class="metric-value">0</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        if (typeof window === 'undefined' || !window.localStorage) {
+            return;
+        }
+
+        function persistMetricsForItem(item) {
+            if (!item) return;
+
+            var postKey = item.getAttribute('data-post-key');
+            if (!postKey) return;
+
+            var storageKey = 'twitterMetrics:' + postKey;
+            var stored = {};
+
+            try {
+                var raw = window.localStorage.getItem(storageKey);
+                if (raw) {
+                    stored = JSON.parse(raw) || {};
+                }
+            } catch (err) {
+                stored = {};
+            }
+
+            var icons = item.querySelectorAll('.icon[data-metric]');
+            var updated = false;
+
+            for (var i = 0; i < icons.length; i++) {
+                var icon = icons[i];
+                var metric = icon.getAttribute('data-metric');
+                if (!metric) continue;
+
+                var valueEl = icon.querySelector('.metric-value');
+                if (!valueEl) continue;
+
+                var value = stored[metric];
+                if (typeof value !== 'number' || isNaN(value)) {
+                    var currentValue = parseInt(valueEl.textContent, 10);
+                    if (!isNaN(currentValue)) {
+                        value = currentValue;
+                    } else {
+                        var scale = Number(icon.getAttribute('data-scale')) || 1;
+                        value = Math.floor((scale * Math.random()) * scale + 0.5);
+                    }
+                    stored[metric] = value;
+                    updated = true;
+                }
+
+                valueEl.textContent = value;
+            }
+
+            if (updated) {
+                try {
+                    window.localStorage.setItem(storageKey, JSON.stringify(stored));
+                } catch (err) {
+                    // ignore storage failures
+                }
+            }
+        }
+
+        function initTwitterMetricsPersistence() {
+            var items = document.querySelectorAll('.twitter-item[data-post-key]');
+            for (var i = 0; i < items.length; i++) {
+                persistMetricsForItem(items[i]);
+            }
+        }
+
+        initTwitterMetricsPersistence();
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTwitterMetricsPersistence);
+        }
+    })();
+</script>
+
+
+        
+            
+
+<div class="twitter-item item-with-border"
      data-post-key="2025%2F09%2F27%2Ffractal%2F"
      onclick="window.location.href='/2025/09/27/fractal/'">
     
@@ -164,18 +286,18 @@
                 </span>
             </p>
         </div>
-        <p class="body">the state of the valley</p>
+        <p class="body">the fractal</p>
         
             <img class="twitter-img" src="/images/thumbnails/fractal.jpg"/>
         
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">45</p>
+                <p class="metric-value">44</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">7</p>
+                <p class="metric-value">9</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
@@ -296,19 +418,19 @@
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">34</p>
+                <p class="metric-value">44</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">1</p>
+                <p class="metric-value">4</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">0</p>
+                <p class="metric-value">1</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
-                <p class="metric-value">0</p>
+                <p class="metric-value">1</p>
             </div>
         </div>
     </div>
@@ -409,7 +531,7 @@
                 @justin_lee
                 <span>
                     
-                        ⸱ 11mo
+                        ⸱ 12mo
                     
                 </span>
             </p>
@@ -419,19 +541,19 @@
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">30</p>
+                <p class="metric-value">4</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">2</p>
+                <p class="metric-value">1</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">1</p>
+                <p class="metric-value">3</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
-                <p class="metric-value">1</p>
+                <p class="metric-value">0</p>
             </div>
         </div>
     </div>
@@ -550,11 +672,11 @@
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">3</p>
+                <p class="metric-value">0</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
-                <p class="metric-value">0</p>
+                <p class="metric-value">1</p>
             </div>
         </div>
     </div>
