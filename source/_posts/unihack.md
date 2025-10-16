@@ -3,8 +3,6 @@ title: UniHack
 date: 2024-03-01
 tech_type: js
 categories:
-  - home
-  - product
 thumbnail: /images/thumbnails/ghibli-0.gif
 description: Winning a national hackathon
 icons:
