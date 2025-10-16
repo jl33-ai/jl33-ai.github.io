@@ -420,7 +420,7 @@
 }
 .story .story-body details[open] {
   background: #fbfbfb;
-  border-color: #b8c1c6;
+  border-color: #c3bfb9;
 }
 .story .story-body details[open] summary::before {
   transform: translateY(-50%) rotate(90deg);

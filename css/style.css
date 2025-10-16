@@ -352,7 +352,7 @@ body h5,
 body h6 {
   display: inline;
   text-decoration: none;
-  color: #a6b1b8;
+  color: #b4afa7;
   font-weight: bold;
   font-size: 0.9rem;
 }
@@ -364,7 +364,7 @@ body h6 {
   margin-bottom: 0.5rem;
 }
 body hr {
-  border: 0.5px dashed #a6b1b8;
+  border: 0.5px dashed #b4afa7;
   opacity: 0.5;
   margin: 0;
   margin-top: 20px;
@@ -538,7 +538,7 @@ body td {
 }
 .story .story-body details[open] {
   background: #fbfbfb;
-  border-color: #b8c1c6;
+  border-color: #c3bfb9;
 }
 .story .story-body details[open] summary::before {
   transform: translateY(-50%) rotate(90deg);
@@ -738,6 +738,9 @@ body {
   p {
     text-align: justify;
   }
+}
+.index-page p {
+  color: #b4afa7;
 }
 #header {
   margin: 0 auto 2rem;
@@ -1252,7 +1255,7 @@ article header .meta {
   margin-bottom: 1rem;
 }
 article header .meta * {
-  color: #a6b1b8;
+  color: #b4afa7;
   font-size: 0.85rem;
 }
 article header .author {
@@ -1581,7 +1584,7 @@ article .content .caption {
   -moz-border-radius: 8px;
 }
 .search-input::placeholder {
-  color: #a6b1b8;
+  color: #b4afa7;
   opacity: 0.7;
   transition: opacity 0.3s ease;
 }
@@ -1866,7 +1869,7 @@ article .content .caption {
   border-bottom-color: #1528ab;
 }
 .lower .info .subtext {
-  color: #a6b1b8;
+  color: #b4afa7;
 }
 .lower .info .subtext p {
   font-size: 0.7rem;
@@ -2020,13 +2023,13 @@ article .content .caption {
   line-height: 1.2;
 }
 .post-item .post-meta .meta-data .meta-key {
-  color: #a6b1b8;
+  color: #b4afa7;
 }
 .post-item .post-meta .help-span {
   text-align: right;
 }
 .post-item .post-meta .help-span .help-link {
-  color: #a6b1b8;
+  color: #b4afa7;
   text-decoration: none;
   transition: color 0.3s ease;
   margin-top: 1rem;
@@ -2079,7 +2082,7 @@ article .content .caption {
   color: #2c2622;
 }
 .twitter-item .content .header .secondary {
-  color: #a6b1b8;
+  color: #b4afa7;
 }
 .twitter-item .content .twitter-img {
   border-radius: 0.33rem;
@@ -2113,7 +2116,7 @@ article .content .caption {
 }
 .twitter-item .content .icons .icon p {
   font-size: 0.7rem;
-  color: #a6b1b8;
+  color: #b4afa7;
 }
 .twitter-item .pinned {
   position: absolute;
@@ -2129,7 +2132,7 @@ article .content .caption {
 }
 .twitter-item .pinned strong {
   font-size: 0.7rem;
-  color: #a6b1b8;
+  color: #b4afa7;
 }
 .tier-row {
   display: flex;
@@ -2287,7 +2290,7 @@ figure {
 }
 figure p {
   text-align: center;
-  color: #a6b1b8;
+  color: #b4afa7;
 }
 pre {
   overflow-x: auto;
