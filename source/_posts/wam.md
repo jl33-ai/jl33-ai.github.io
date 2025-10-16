@@ -1,10 +1,7 @@
----
+ ---
 title: Learnings from a WAM Calculator
 date: 2023-02-17
 categories:
-  - home
-  - product
-  - engineering
 tags:
   - reddit
 description: A grade calculator that ranks 2nd on Google
