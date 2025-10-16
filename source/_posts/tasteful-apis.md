@@ -1,5 +1,5 @@
 ---
-title: what are TASTEful apis
+title: how to make a TASTEful api
 icons:
   - name: Atlassian
     image: /images/icons/atlassian.png
