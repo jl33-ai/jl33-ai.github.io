@@ -1890,6 +1890,9 @@ article .content .caption {
   margin-bottom: 2rem;
   padding: 1rem 0;
 }
+.post-item:first-child {
+  padding-top: 0;
+}
 @media (max-width: 768px) {
   .post-item {
     flex-direction: column;
@@ -2040,6 +2043,9 @@ article .content .caption {
   padding-bottom: 1rem;
   display: flex;
   justify-content: flex-start;
+}
+.twitter-item:first-child {
+  padding-top: 0;
 }
 .twitter-item .pfp {
   cursor: pointer;
