@@ -133,7 +133,7 @@
         <div class="info">
             <h3 class="video-title">
                 <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3zNo9PKPeEw">
-                    Lights
+                    Lights Edit
                 </a>
             </h3>
             <div class="subtext">
@@ -178,58 +178,88 @@
             var thumbnail = container.querySelector('.youtube-thumbnail');
             var lozenge = container.querySelector('.lozenge');
             var playerSlot = container.querySelector('.youtube-player-slot');
-            var hoverTimeout;
-            var leaveTimeout;
-            var isVideoLoaded = false; // Track if video is already loaded
+            var hoverTimeout = null;
+            var leaveTimeout = null;
+            var isVideoLoaded = false;
+            var isHovering = false;
+
+            function loadVideo() {
+                if (isVideoLoaded) return;
+
+                isVideoLoaded = true;
+                thumbnail.style.opacity = '0';
+                lozenge.style.opacity = '0';
+
+                var iframe = document.createElement('iframe');
+                iframe.className = 'youtube-iframe';
+                iframe.width = '100%';
+                iframe.height = '100%';
+                iframe.allow = 'autoplay; encrypted-media';
+                iframe.allowFullscreen = true;
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
+
+                playerSlot.appendChild(iframe);
+            }
+
+            function unloadVideo() {
+                if (!isVideoLoaded) return;
+
+                playerSlot.innerHTML = '';
+                isVideoLoaded = false;
+                thumbnail.style.opacity = '1';
+                lozenge.style.opacity = '1';
+            }
 
             container.addEventListener('mouseenter', function () {
-                // Clear any pending leave timeout
-                clearTimeout(leaveTimeout);
+                isHovering = true;
 
-                // If video is already loaded, don't load again
-                if (isVideoLoaded) {
-                    return;
+                // Clear any pending leave operation
+                if (leaveTimeout) {
+                    clearTimeout(leaveTimeout);
+                    leaveTimeout = null;
                 }
 
-                // Clear any existing hover timeout to prevent multiple requests
-                clearTimeout(hoverTimeout);
+                // If video is already loaded, nothing to do
+                if (isVideoLoaded) return;
 
-                // Small delay to prevent loading on quick hover
+                // Clear any existing hover timeout
+                if (hoverTimeout) {
+                    clearTimeout(hoverTimeout);
+                }
+
+                // Delay loading to prevent accidental triggers
                 hoverTimeout = setTimeout(function () {
-                    // Double-check that we haven't already loaded a video
-                    if (isVideoLoaded) {
-                        return;
+                    // Only load if still hovering
+                    if (isHovering) {
+                        loadVideo();
                     }
-
-                    thumbnail.style.opacity = '0';
-                    lozenge.style.opacity = '0';
-
-                    var iframe = document.createElement('iframe');
-                    iframe.className = 'youtube-iframe';
-                    iframe.width = '100%';
-                    iframe.height = '100%';
-                    iframe.allow = 'autoplay; encrypted-media';
-                    iframe.allowFullscreen = true;
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
-
-                    playerSlot.appendChild(iframe);
-                    isVideoLoaded = true; // Mark as loaded
+                    hoverTimeout = null;
                 }, 250);
             });
 
             container.addEventListener('mouseleave', function () {
-                // Clear timeout if leaving quickly
-                clearTimeout(hoverTimeout);
+                isHovering = false;
 
-                // Add a delay before removing the video to allow for quick re-entry
+                // Clear any pending hover operation
+                if (hoverTimeout) {
+                    clearTimeout(hoverTimeout);
+                    hoverTimeout = null;
+                }
+
+                // If no video is loaded, nothing to clean up
+                if (!isVideoLoaded) return;
+
+                // Delay unloading to allow for quick re-entry
+                if (leaveTimeout) {
+                    clearTimeout(leaveTimeout);
+                }
+
                 leaveTimeout = setTimeout(function () {
-                    // Remove all iframes from the slot
-                    playerSlot.innerHTML = '';
-                    isVideoLoaded = false; // Reset the flag
-
-                    // Fade thumbnail back in
-                    thumbnail.style.opacity = '1';
-                    lozenge.style.opacity = '1';
+                    // Only unload if still not hovering
+                    if (!isHovering) {
+                        unloadVideo();
+                    }
+                    leaveTimeout = null;
                 }, 2500);
             });
         });
@@ -238,15 +268,15 @@
             
                 <div class="video-item">
     <div class="upper">
-        <div class="youtube-container" data-video-id="MlOA6Ud1L7c">
+        <div class="youtube-container" data-video-id="3Z5Bu_86m0o">
             <img class="youtube-thumbnail"
-                 src="https://img.youtube.com/vi/MlOA6Ud1L7c/maxresdefault.jpg"
+                 src="https://img.youtube.com/vi/3Z5Bu_86m0o/maxresdefault.jpg"
                  alt="Video thumbnail">
 
             <div class="youtube-player-slot"></div>
 
             <p class="lozenge">
-                0:56
+                0:29
             </p>
         </div>
     </div>
@@ -257,8 +287,8 @@
         </div>
         <div class="info">
             <h3 class="video-title">
-                <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=MlOA6Ud1L7c">
-                    waternet (teaser)
+                <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3Z5Bu_86m0o">
+                    Ball in Sydney
                 </a>
             </h3>
             <div class="subtext">
@@ -266,12 +296,12 @@
                 <!--                    Justin Lee-->
                 <!--                </p>-->
                 <p>
-                    2 years ago
+                    1 year ago
                 </p>
             </div>
         </div>
         <div
-                data-description="Running a full neural network using water simulations"
+                data-description="Nerd by day, hooper by night"
                 class="ellipsis tooltip">
             ...
         </div>
@@ -303,58 +333,243 @@
             var thumbnail = container.querySelector('.youtube-thumbnail');
             var lozenge = container.querySelector('.lozenge');
             var playerSlot = container.querySelector('.youtube-player-slot');
-            var hoverTimeout;
-            var leaveTimeout;
-            var isVideoLoaded = false; // Track if video is already loaded
+            var hoverTimeout = null;
+            var leaveTimeout = null;
+            var isVideoLoaded = false;
+            var isHovering = false;
+
+            function loadVideo() {
+                if (isVideoLoaded) return;
+
+                isVideoLoaded = true;
+                thumbnail.style.opacity = '0';
+                lozenge.style.opacity = '0';
+
+                var iframe = document.createElement('iframe');
+                iframe.className = 'youtube-iframe';
+                iframe.width = '100%';
+                iframe.height = '100%';
+                iframe.allow = 'autoplay; encrypted-media';
+                iframe.allowFullscreen = true;
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
+
+                playerSlot.appendChild(iframe);
+            }
+
+            function unloadVideo() {
+                if (!isVideoLoaded) return;
+
+                playerSlot.innerHTML = '';
+                isVideoLoaded = false;
+                thumbnail.style.opacity = '1';
+                lozenge.style.opacity = '1';
+            }
 
             container.addEventListener('mouseenter', function () {
-                // Clear any pending leave timeout
-                clearTimeout(leaveTimeout);
+                isHovering = true;
 
-                // If video is already loaded, don't load again
-                if (isVideoLoaded) {
-                    return;
+                // Clear any pending leave operation
+                if (leaveTimeout) {
+                    clearTimeout(leaveTimeout);
+                    leaveTimeout = null;
                 }
 
-                // Clear any existing hover timeout to prevent multiple requests
-                clearTimeout(hoverTimeout);
+                // If video is already loaded, nothing to do
+                if (isVideoLoaded) return;
 
-                // Small delay to prevent loading on quick hover
+                // Clear any existing hover timeout
+                if (hoverTimeout) {
+                    clearTimeout(hoverTimeout);
+                }
+
+                // Delay loading to prevent accidental triggers
                 hoverTimeout = setTimeout(function () {
-                    // Double-check that we haven't already loaded a video
-                    if (isVideoLoaded) {
-                        return;
+                    // Only load if still hovering
+                    if (isHovering) {
+                        loadVideo();
                     }
-
-                    thumbnail.style.opacity = '0';
-                    lozenge.style.opacity = '0';
-
-                    var iframe = document.createElement('iframe');
-                    iframe.className = 'youtube-iframe';
-                    iframe.width = '100%';
-                    iframe.height = '100%';
-                    iframe.allow = 'autoplay; encrypted-media';
-                    iframe.allowFullscreen = true;
-                    iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
-
-                    playerSlot.appendChild(iframe);
-                    isVideoLoaded = true; // Mark as loaded
+                    hoverTimeout = null;
                 }, 250);
             });
 
             container.addEventListener('mouseleave', function () {
-                // Clear timeout if leaving quickly
-                clearTimeout(hoverTimeout);
+                isHovering = false;
 
-                // Add a delay before removing the video to allow for quick re-entry
+                // Clear any pending hover operation
+                if (hoverTimeout) {
+                    clearTimeout(hoverTimeout);
+                    hoverTimeout = null;
+                }
+
+                // If no video is loaded, nothing to clean up
+                if (!isVideoLoaded) return;
+
+                // Delay unloading to allow for quick re-entry
+                if (leaveTimeout) {
+                    clearTimeout(leaveTimeout);
+                }
+
                 leaveTimeout = setTimeout(function () {
-                    // Remove all iframes from the slot
-                    playerSlot.innerHTML = '';
-                    isVideoLoaded = false; // Reset the flag
+                    // Only unload if still not hovering
+                    if (!isHovering) {
+                        unloadVideo();
+                    }
+                    leaveTimeout = null;
+                }, 2500);
+            });
+        });
+    });
+</script>
+            
+                <div class="video-item">
+    <div class="upper">
+        <div class="youtube-container" data-video-id="K-qXUaozgl8">
+            <img class="youtube-thumbnail"
+                 src="https://img.youtube.com/vi/K-qXUaozgl8/maxresdefault.jpg"
+                 alt="Video thumbnail">
 
-                    // Fade thumbnail back in
-                    thumbnail.style.opacity = '1';
-                    lozenge.style.opacity = '1';
+            <div class="youtube-player-slot"></div>
+
+            <p class="lozenge">
+                1:00
+            </p>
+        </div>
+    </div>
+
+    <div class="lower">
+        <div class="pfp">
+            <img src="/images/pfp/2_256.jpg"/>
+        </div>
+        <div class="info">
+            <h3 class="video-title">
+                <a class="video-title-a" target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=K-qXUaozgl8">
+                    Vipassana in India
+                </a>
+            </h3>
+            <div class="subtext">
+                <!--                <p>-->
+                <!--                    Justin Lee-->
+                <!--                </p>-->
+                <p>
+                    9 months ago
+                </p>
+            </div>
+        </div>
+        <div
+                data-description="Hyderabad, India"
+                class="ellipsis tooltip">
+            ...
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('.tooltip', {
+            content(reference) {
+                const description = reference.getAttribute('data-description');
+                return `<span
+                            style="font-size: 10px"
+                        >${description || ''}</span>`;
+            },
+            allowHTML: true,
+            placement: 'left',
+            delay: [67, 0],
+            arrow: false,
+            theme: 'translucent'
+        });
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.youtube-container').forEach(function (container) {
+            var videoId = container.dataset.videoId;
+            var thumbnail = container.querySelector('.youtube-thumbnail');
+            var lozenge = container.querySelector('.lozenge');
+            var playerSlot = container.querySelector('.youtube-player-slot');
+            var hoverTimeout = null;
+            var leaveTimeout = null;
+            var isVideoLoaded = false;
+            var isHovering = false;
+
+            function loadVideo() {
+                if (isVideoLoaded) return;
+
+                isVideoLoaded = true;
+                thumbnail.style.opacity = '0';
+                lozenge.style.opacity = '0';
+
+                var iframe = document.createElement('iframe');
+                iframe.className = 'youtube-iframe';
+                iframe.width = '100%';
+                iframe.height = '100%';
+                iframe.allow = 'autoplay; encrypted-media';
+                iframe.allowFullscreen = true;
+                iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1&controls=1&showinfo=0&modestbranding=1&loop=1&playlist=${videoId}&rel=0`;
+
+                playerSlot.appendChild(iframe);
+            }
+
+            function unloadVideo() {
+                if (!isVideoLoaded) return;
+
+                playerSlot.innerHTML = '';
+                isVideoLoaded = false;
+                thumbnail.style.opacity = '1';
+                lozenge.style.opacity = '1';
+            }
+
+            container.addEventListener('mouseenter', function () {
+                isHovering = true;
+
+                // Clear any pending leave operation
+                if (leaveTimeout) {
+                    clearTimeout(leaveTimeout);
+                    leaveTimeout = null;
+                }
+
+                // If video is already loaded, nothing to do
+                if (isVideoLoaded) return;
+
+                // Clear any existing hover timeout
+                if (hoverTimeout) {
+                    clearTimeout(hoverTimeout);
+                }
+
+                // Delay loading to prevent accidental triggers
+                hoverTimeout = setTimeout(function () {
+                    // Only load if still hovering
+                    if (isHovering) {
+                        loadVideo();
+                    }
+                    hoverTimeout = null;
+                }, 250);
+            });
+
+            container.addEventListener('mouseleave', function () {
+                isHovering = false;
+
+                // Clear any pending hover operation
+                if (hoverTimeout) {
+                    clearTimeout(hoverTimeout);
+                    hoverTimeout = null;
+                }
+
+                // If no video is loaded, nothing to clean up
+                if (!isVideoLoaded) return;
+
+                // Delay unloading to allow for quick re-entry
+                if (leaveTimeout) {
+                    clearTimeout(leaveTimeout);
+                }
+
+                leaveTimeout = setTimeout(function () {
+                    // Only unload if still not hovering
+                    if (!isHovering) {
+                        unloadVideo();
+                    }
+                    leaveTimeout = null;
                 }, 2500);
             });
         });
