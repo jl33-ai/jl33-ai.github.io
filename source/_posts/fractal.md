@@ -10,7 +10,6 @@ date: 2025-09-27 12:06:32
 tags:
   - opinion
 categories:
-  - opinion
 description:
 redirect_url:
 mau:
