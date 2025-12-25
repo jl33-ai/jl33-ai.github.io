@@ -1,5 +1,5 @@
 ---
-title: post-agi startup ideas
+title: request for startups
 thumbnail:
 icons:
   - name: Name
@@ -77,5 +77,7 @@ type: writing
 \> anything that can be put in words is in-distribution; we need higher-level representations for thought.
 \> aggressively democratize and standardize using software.
 \> teach timeless stuff like physics and meditation.
+
+### Fitbit for your Brain
 
 [//]: # (Stuff from Naval’s thing)
