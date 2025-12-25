@@ -38,7 +38,7 @@
     <!-- tippy -->
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@5"></script>
-    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/themes/translucent.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/themes/light.css"/>
     <!-- async scripts -->
     <!-- Google Analytics -->
 
@@ -140,19 +140,8 @@
                 
                     <li class="writing-item">
                         <a href="/2025/10/04/rfs/"
-                           class="writing-link">post-agi startup ideas</a>
+                           class="writing-link">request for startups</a>
                         <span class="writing-time">2mo</span>
-                        
-                    </li>
-                
-                    <li class="writing-item">
-                        <a href="/2025/09/27/fractal/"
-                           class="writing-link">the fractal</a>
-                        <span class="writing-time">2mo</span>
-                        
-                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/thumbnails/fractal.jpg">
-                                <img class="writing-thumbnail" src="/images/thumbnails/fractal.jpg" loading="lazy" alt=""/>
-                            </span>
                         
                     </li>
                 
@@ -168,16 +157,20 @@
                     </li>
                 
                     <li class="writing-item">
-                        <a href="/2024/10/17/tasteful-apis/"
-                           class="writing-link">how to make a TASTEful api</a>
-                        <span class="writing-time">1y</span>
+                        <a target="_blank" rel="noopener" href="https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee"
+                           class="writing-link">ideas vs agency</a>
+                        <span class="writing-time">2y</span>
                         
                     </li>
                 
                     <li class="writing-item">
-                        <a target="_blank" rel="noopener" href="https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee"
-                           class="writing-link">ideas vs agency</a>
-                        <span class="writing-time">2y</span>
+                        <a href="/VCE_Literature_2021_A_Hunger.pdf"
+                           class="writing-link">literature essay</a>
+                        <span class="writing-time">4y</span>
+                        
+                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/vcaa.webp">
+                                <img class="writing-thumbnail" src="/images/icons/vcaa.webp" loading="lazy" alt=""/>
+                            </span>
                         
                     </li>
                 
@@ -198,6 +191,7 @@
                                  alt="Lights Edit"
                                  loading="lazy"
                                  class="video-gallery-thumbnail">
+                            <span class="video-title-overlay">Lights Edit</span>
                         </a>
                     
                         
@@ -208,6 +202,7 @@
                                  alt="Ball in Sydney"
                                  loading="lazy"
                                  class="video-gallery-thumbnail">
+                            <span class="video-title-overlay">Ball in Sydney</span>
                         </a>
                     
                         
@@ -218,6 +213,18 @@
                                  alt="Vipassana in India"
                                  loading="lazy"
                                  class="video-gallery-thumbnail">
+                            <span class="video-title-overlay">Vipassana in India</span>
+                        </a>
+                    
+                        
+                        <a href="https://www.youtube.com/watch?v=Qi9Eglax-tM"
+                           class="video-thumbnail-link"
+                           target="_blank">
+                            <img src="https://img.youtube.com/vi/Qi9Eglax-tM/maxresdefault.jpg"
+                                 alt="Markov chain diffusion"
+                                 loading="lazy"
+                                 class="video-gallery-thumbnail">
+                            <span class="video-title-overlay">Markov chain diffusion</span>
                         </a>
                     
                 </div>
@@ -231,9 +238,17 @@
                 <div class="draw-gallery">
                     
                         <div class="draw-thumbnail-link tooltip"
-                             data-image="/images/thumbnails/kindle.png">
-                            <img src="/images/thumbnails/kindle.png"
+                             data-image="/images/draw/kindle.png">
+                            <img src="/images/draw/kindle.png"
                                  alt="Kindle Drawing"
+                                 loading="lazy"
+                                 class="draw-gallery-thumbnail">
+                        </div>
+                    
+                        <div class="draw-thumbnail-link tooltip"
+                             data-image="/images/draw/scratch.png">
+                            <img src="/images/draw/scratch.png"
+                                 alt="Tokyo Scratch"
                                  loading="lazy"
                                  class="draw-gallery-thumbnail">
                         </div>
@@ -258,6 +273,11 @@
 </div>
 
 <style>
+    .index-page p {
+        color: #6B7280;
+        margin: 0;
+    }
+
     .expandable-link {
         cursor: pointer;
         position: relative;
@@ -268,7 +288,7 @@
         margin-left: 0.2em;
         display: inline-block;
         transform: translateY(-0.1em);
-        transition: transform 0.3s ease;
+        transition: transform 0.144s ease;
     }
 
     .expandable-link.active .expandable-icon {
@@ -288,12 +308,11 @@
     .dropdown-content {
         padding: 0.5rem 0;
         opacity: 0;
-        transition: opacity 0.3s ease;
+        transition: opacity 0.144s ease;
     }
 
     .dropdown-section.open .dropdown-content {
         opacity: 1;
-        transition-delay: 0.1s;
     }
 
     .writings-list {
@@ -313,7 +332,7 @@
     .writing-link {
         text-decoration: none;
         background-image: none !important;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.144s ease;
     }
 
     .writing-link:hover {
@@ -344,6 +363,7 @@
     .video-thumbnail-link {
         display: block;
         width: 160px;
+        position: relative;
         text-decoration: none !important;
         background-image: none !important;
     }
@@ -361,11 +381,33 @@
         height: 90px;
         object-fit: cover;
         border-radius: 2px;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.144s ease;
+    }
+
+    .video-title-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+        color: white;
+        font-size: 0.65rem;
+        line-height: 1.2;
+        text-align: center;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.144s ease;
+        pointer-events: none;
+        padding: 0 0.5rem;
+        width: 100%;
+        margin: 0;
     }
 
     .video-thumbnail-link:hover .video-gallery-thumbnail {
         opacity: 0.8;
+    }
+
+    .video-thumbnail-link:hover .video-title-overlay {
+        opacity: 1;
     }
 
     .draw-thumbnail-link {
@@ -378,37 +420,11 @@
         height: 120px;
         object-fit: contain;
         border-radius: 2px;
-        transition: opacity 0.2s ease;
+        transition: opacity 0.069s ease;
     }
 
     .draw-thumbnail-link:hover .draw-gallery-thumbnail {
         opacity: 0.8;
-    }
-
-    /* Remove tooltip background */
-    .tippy-box[data-theme~='none'],
-    .tippy-box[data-theme~='translucent'] {
-        background-color: transparent !important;
-        background: none !important;
-        box-shadow: none !important;
-    }
-
-    .tippy-box[data-theme~='none'] .tippy-backdrop,
-    .tippy-box[data-theme~='translucent'] .tippy-backdrop {
-        background-color: transparent !important;
-    }
-
-    .tippy-box[data-theme~='none'] .tippy-content,
-    .tippy-box[data-theme~='translucent'] .tippy-content {
-        padding: 0 !important;
-        background-color: transparent !important;
-        background: none !important;
-        box-shadow: none !important;
-    }
-
-    .tippy-box[data-theme~='none'] .tippy-arrow,
-    .tippy-box[data-theme~='translucent'] .tippy-arrow {
-        display: none !important;
     }
 
     .writing-thumbnail-wrapper {
@@ -468,13 +484,13 @@
             tippy('.draw-thumbnail-link.tooltip, .writing-thumbnail-wrapper.tooltip', {
                 content(reference) {
                     const imageSrc = reference.getAttribute('data-image');
-                    return `<img src="${imageSrc}" style="max-width: 400px; max-height: 400px; object-fit: contain;" />`;
+                    return `<img src="${imageSrc}" style="max-width: 500px; max-height: 500px; object-fit: contain; display: block;" />`;
                 },
                 allowHTML: true,
                 placement: 'right',
                 delay: [200, 0],
-                arrow: false,
-                theme: 'none'
+                theme: 'light',
+                maxWidth: 'none'
             });
         }
     });
