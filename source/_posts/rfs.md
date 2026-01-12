@@ -80,4 +80,13 @@ type: writing
 
 ### Fitbit for your Brain
 
+### palantir-aproach to agent builder
+
+### JTBD as a service
+
+### Remote Greenhouse
+
+the market: people who own farms/land. the jtbd: grow your own food. the biggest pain point: too hard to water without
+frequent visits.
+
 [//]: # (Stuff from Naval’s thing)

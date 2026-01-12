@@ -10,6 +10,7 @@ date: 2025-09-27 12:06:32
 tags:
   - opinion
 categories:
+  - opinion
 description:
 redirect_url:
 mau:
@@ -33,14 +34,12 @@ type: writing
 \> make something people want
 \> find a niche, launch on product hunt
 
-\> someone already built it
-\> we’re all writing the same code
+\> oh, we’re all writing the same code in this finite code space
 \> saas is a fractal
-\> saas is milk, eggs, air
-\> too cheap to meter
+\> saas is the new brick and mortar store
+\> niches are geographically
 
 \> all users churn
-\> time to sunset
 \> they were other b2b saas anyway
 \> b2b saas is a ponzi scheme
 
