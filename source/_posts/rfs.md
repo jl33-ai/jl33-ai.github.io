@@ -1,5 +1,5 @@
 ---
-title: request for startups
+title: my request for startups
 thumbnail:
 icons:
   - name: Name
@@ -29,24 +29,24 @@ type: writing
 
 ### Economy as an MMO
 
-\> model the economy as a massively multiplayer online game (like Sims).
-\> post-robotics, 99.9% of work will be done over the internet. use bitcoin as the in-game currency.
+\> simulate the economy as a massively multiplayer online game.
+\> in a post-robotics world, 99.9% of work will be done via teleoperation.
+\> bitcoin as the in-game currency.
 \> your userbase === the workforce.
 
 <br>
 
 ### Training Data for Megaprojects
 
-\> why can't Codex build a skyscraper?
-\> the labs need chain of thought data/rl for long-horizon, hyper-collaborative tasks.
+\> why can't Claude Code build a skyscraper?
+\> there is a gaping hole of data for massively long-horizon & collaborative task.
 
 <br>
 
 ### Shopify for Robotics
 
-\> robotics businesses are the new e-commerce. [[1]](https://a16z.com/toward-a-general-purpose-robotics-platform/)
 \> what is the equivalent of a website in 2006?
-\> build that infra; earn an eternal revenue cut.
+\> build the infra; earn an eternal revenue cut.
 
 <br>
 
@@ -54,17 +54,16 @@ type: writing
 
 \> construction is a $13T market.
 \> become an insider first; don't have hubris.
-\> vertically integrate until you the developer's point-of-contact.
-\> continue until the only thing left to replace is the labor itself.
-\> lastly, build skyscrapers with software margins.
+\> vertically integrate until you're the Developer's point of contact.
+\> iterate & expand until the only thing left to replace is the labor itself.
+\> finally, build skyscrapers with software margins.
 
 <br>
 
 ### Linkedin 2
 
-\> linkedin is built on old rituals (resumes, etc).
-\> find the proof-of-work for taste and agency.
-\> move prior work and social proof on-chain.
+\> linkedin is built on old rituals like resumes, etc.
+\> figure out how to mathematically verify taste+agency.
 \> forward integrate into labor, or backwards integrate into education.
 \> the economy is your oyster.
 
@@ -72,21 +71,20 @@ type: writing
 
 ### Education 2
 
-\> what does it mean to be 'well-educated' post-agi?
 \> teachers are high-variance. pedigree is rigged, intelligence is immeasurable.
+\> what does it mean to be 'well-educated' post-agi?
 \> anything that can be put in words is in-distribution; we need higher-level representations for thought.
-\> aggressively democratize and standardize using software.
-\> teach timeless stuff like physics and meditation.
+\> aggressively democratize & standardize the education system with software.
+\> teach timeless things like physics and meditation.
 
-### Fitbit for your Brain
+### Fitbit for your brain
 
 ### palantir-aproach to agent builder
 
 ### JTBD as a service
 
-### Remote Greenhouse
+### Remote-controlled greenhouses
 
-the market: people who own farms/land. the jtbd: grow your own food. the biggest pain point: too hard to water without
-frequent visits.
+### Claude Code for your social graph
 
 [//]: # (Stuff from Naval’s thing)

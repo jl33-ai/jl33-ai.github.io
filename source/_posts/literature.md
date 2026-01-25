@@ -1,5 +1,5 @@
 ---
-title: literature essay
+title: poetic analysis
 thumbnail: /images/icons/vcaa.webp
 help_link:
 type: project
