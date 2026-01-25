@@ -45,7 +45,8 @@ type: writing
 
 ### Shopify for Robotics
 
-\> what is the equivalent of a website in 2006?
+\> saas is the new dropshipping in 2025
+\> small businesses w/ robitics will be the new e-comm
 \> build the infra; earn an eternal revenue cut.
 
 <br>
