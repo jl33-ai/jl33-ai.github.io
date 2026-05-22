@@ -1,5 +1,5 @@
 ---
-title: poetic analysis
+title: Poetic Analysis, A Hunger
 thumbnail: /images/icons/vcaa.webp
 help_link:
 type: project

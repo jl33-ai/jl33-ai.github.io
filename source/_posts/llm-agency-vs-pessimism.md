@@ -1,5 +1,5 @@
 ---
-title: ideas vs agency
+title: agency and ai
 thumbnail: 
 icons:
   - name: Docs
@@ -8,10 +8,7 @@ icons:
 date: 2023-11-29
 tags:
   - llm
-  - Agency
-  - Pessimism
 description:
 categories:
-  - opinion
 redirect_url: https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee
 ---
