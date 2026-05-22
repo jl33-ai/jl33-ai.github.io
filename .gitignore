@@ -1,4 +1,4 @@
-.DS_Store
+çç.DS_Store
 Thumbs.db
 db.json
 *.log
@@ -10,3 +10,4 @@ _multiconfig.yml
 .idea
 source/quartz
 source/wiki
+.env
