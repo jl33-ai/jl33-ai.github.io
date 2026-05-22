@@ -81,8 +81,14 @@
             <header id="header">
     <a class="u-url u-uid" href="/">
         
-        <div id="title">
-            <h1 class="p-name">Justin</h1>
+        <div id="title" style="display: flex; align-items: center; gap: 0.5em;">
+            <img id="pfp-cycle" src="/images/pfp/with_max_512.png" alt="pfp"
+                 data-pfps='["/images/pfp/with_max_512.png","/images/pfp/with_roxy_512.jpg","/images/pfp/with_family_512.jpeg"]'
+                 onclick="(function(e){e.preventDefault();e.stopPropagation();var img=document.getElementById('pfp-cycle');var pfps=JSON.parse(img.dataset.pfps);var i=(parseInt(img.dataset.idx||'0',10)+1)%pfps.length;img.dataset.idx=i;img.src=pfps[i];})(event)"
+                 onmouseover="this.style.filter='grayscale(0%)'"
+                 onmouseout="this.style.filter='grayscale(100%)'"
+                 style="width: 4em; height: 4em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
+            <h1 class="p-name" style="margin: 0;">Justin</h1>
         </div>
     </a>
     <!--  <div id="nav">-->
@@ -116,15 +122,15 @@
 <!-- - novel-->
 <!-- - the most platonic artefact, me: which you cannot request as a webpage but you can book Tim-->
 <div class="index-page">
-    <p style="font-size: 0.8rem; margin-top: 1rem">
+    <p style="font-size: 1rem; margin-top: 1rem">
         I'm the cofounder of <a target="_blank" rel="noopener" href="https://getden.io/">Den</a>.
         <br><br>
 
         I like to make <a href="#" class="expandable-link"
-                          data-section="videos">videos<span
-                    class="expandable-icon">▾</span></a> and <a href="#" class="expandable-link"
-                                                                data-section="write">write<span
-                    class="expandable-icon">▾</span></a>.
+                          data-section="videos"><span
+                    class="expandable-icon">▾</span>videos</a> and <a href="#" class="expandable-link"
+                                                                      data-section="write"><span
+                    class="expandable-icon">▾</span>write</a>.
         <!--        <a href="#" class="expandable-link" data-section="draw">draw<span class="expandable-icon">▾</span></a>.-->
 
         <!--        15 min <a target="_blank" rel="noopener" href="https://cal.com/justin-lee-den/short-conversation">coffee</a>?-->
@@ -138,54 +144,43 @@
             <ul class="writings-list">
                 
                     <li class="writing-item">
-                        <a href="/2026/05/01/scale/"
-                           class="writing-link">scale</a>
-                        <span class="writing-time">10m</span>
-                        
-                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/fractal.jpg">
-                                <img class="writing-thumbnail" src="/images/icons/fractal.jpg" loading="lazy" alt=""/>
-                            </span>
-                        
-                    </li>
-                
-                    <li class="writing-item">
-                        <a href="/2025/01/01/the-next-interface/"
-                           class="writing-link">agents need a new api</a>
-                        <span class="writing-time">1y</span>
                         
                             <span class="writing-thumbnail-wrapper tooltip" data-image="/images/thumbnails/anime-phone.gif">
                                 <img class="writing-thumbnail" src="/images/thumbnails/anime-phone.gif" loading="lazy" alt=""/>
                             </span>
                         
+                        <a href="/2025/01/01/the-next-interface/"
+                           class="writing-link">agents need a new api</a>
+                        <span class="writing-time">1y</span>
                     </li>
                 
                     <li class="writing-item">
+                        
                         <a target="_blank" rel="noopener" href="https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee"
                            class="writing-link">ai agency</a>
                         <span class="writing-time">2y</span>
-                        
                     </li>
                 
                     <li class="writing-item">
-                        <a href="/VCE_Literature_2021_A_Hunger.pdf"
-                           class="writing-link">Poetic Analysis, A Hunger</a>
-                        <span class="writing-time">4y</span>
                         
                             <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/vcaa.webp">
                                 <img class="writing-thumbnail" src="/images/icons/vcaa.webp" loading="lazy" alt=""/>
                             </span>
                         
+                        <a href="/VCE_Literature_2021_A_Hunger.pdf"
+                           class="writing-link">Poetic Analysis, A Hunger</a>
+                        <span class="writing-time">4y</span>
                     </li>
                 
                     <li class="writing-item">
-                        <a target="_blank" rel="noopener" href="https://www.paulgraham.com/todo.html"
-                           class="writing-link">The Top Of My Todo List</a>
-                        <span class="writing-time">14y</span>
                         
                             <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/Enchanted_Book.gif">
                                 <img class="writing-thumbnail" src="/images/icons/Enchanted_Book.gif" loading="lazy" alt=""/>
                             </span>
                         
+                        <a target="_blank" rel="noopener" href="https://www.paulgraham.com/todo.html"
+                           class="writing-link">The Top Of My Todo List</a>
+                        <span class="writing-time">14y</span>
                     </li>
                 
             </ul>
@@ -199,14 +194,14 @@
                     
                         
                         
-                        <a href="https://www.youtube.com/watch?v=m4nqQ6jGRWU"
+                        <a href="https://www.youtube.com/watch?v=Qi9Eglax-tM"
                            class="video-thumbnail-link"
                            target="_blank">
-                            <img src="https://img.youtube.com/vi/m4nqQ6jGRWU/maxresdefault.jpg"
-                                 alt="Chungking Express in Melbourne"
+                            <img src="https://img.youtube.com/vi/Qi9Eglax-tM/maxresdefault.jpg"
+                                 alt="Markov chain diffusion"
                                  loading="lazy"
                                  class="video-gallery-thumbnail">
-                            <span class="video-title-overlay">Chungking Express in Melbourne</span>
+                            <span class="video-title-overlay">Markov chain diffusion</span>
                         </a>
                     
                         
@@ -241,14 +236,14 @@
                         
                         
                         
-                        <a href="https://www.youtube.com/watch?v=Qi9Eglax-tM"
+                        <a href="https://www.youtube.com/watch?v=m4nqQ6jGRWU"
                            class="video-thumbnail-link"
                            target="_blank">
-                            <img src="https://img.youtube.com/vi/Qi9Eglax-tM/maxresdefault.jpg"
-                                 alt="Markov chain diffusion"
+                            <img src="https://img.youtube.com/vi/m4nqQ6jGRWU/maxresdefault.jpg"
+                                 alt="chungking express, melbourne"
                                  loading="lazy"
                                  class="video-gallery-thumbnail">
-                            <span class="video-title-overlay">Markov chain diffusion</span>
+                            <span class="video-title-overlay">chungking express, melbourne</span>
                         </a>
                     
                 </div>
@@ -282,16 +277,16 @@
         </div>
     </div>
 
-    <p style="font-size: 0.8rem;">
+    <p style="font-size: 1rem;">
         <br>
 
-        Wanna chat? <a
-                href="mailto:justin@getden.io">Send me an email</a> with your (1) best work and (2) a book
-        recommendation.
+        <!--        Wanna chat? <a-->
+        <!--                href="mailto:justin@getden.io">Send me an email</a> with your (1) best work and (2) a book-->
+        <!--        recommendation.-->
 
-        <br><br>
+        <!--        <br><br>-->
 
-        Also <a target="_blank" rel="noopener" href="https://x.com/Justin01805921">𝕏</a> and
+        Also <a target="_blank" rel="noopener" href="https://x.com/Justin01805921">Twitter</a> and
         <a
                 target="_blank" rel="noopener" href="https://www.linkedin.com/in/justin1ee/">LinkedIn</a>.
     </p>
@@ -309,8 +304,8 @@
     }
 
     .expandable-icon {
-        font-size: 0.6em;
-        margin-left: 0.2em;
+        font-size: 0.75em;
+        margin-right: 0.2em;
         display: inline-block;
         transform: translateY(-0.1em);
         transition: transform 0.144s ease;

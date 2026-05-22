@@ -11,12 +11,6 @@
         <content type="html"><![CDATA[<p>my friend just left their $50M series A healthcare because they knew it wouldn’t scale.</p><p>the year is 2026. the only question that matters is for founders is: what scales.</p><h1 id="O-N-2"><a href="#O-N-2" class="headerlink" title="O(N^2)"></a>O(N^2)</h1><p>As a system grows, the number of connections between its nodes grows $O(N^2)$.</p><p>The best way to manage this scale is through protocols.</p><p>Instead of having to understand every other node, they only need to understand a shard <a href="https://en.wikipedia.org/wiki/Interface_(object-oriented_programming">interface</a>.</p><p>e.g.<br>the internet : TCP&#x2F;IP<br>biology : DNA&#x2F;RNA<br>shipping : shipping containers</p><h1 id="superlinear-scale"><a href="#superlinear-scale" class="headerlink" title="superlinear scale"></a>superlinear scale</h1><p>systems either scale sublinearly, linearly, or superlinearly.</p><p>for example, animals scale at $O(N^{3&#x2F;4})$ because volume scales faster than surface area (skin). bad companies scale like animals.</p><p>for example, cities scale superlinearly $O(N^{1.15})$ - walking speed increases by 15% per capita. so does innovation and wealth creation.</p><p>scaling requires platform&#x2F;ecosystem where nodes interact freely, instead of command-and-control (which bottlenecks)</p><h1 id="non-rivalrous-and-anti-fragile"><a href="#non-rivalrous-and-anti-fragile" class="headerlink" title="non-rivalrous and anti-fragile"></a>non-rivalrous and anti-fragile</h1><p>Most objects are <em>rivalrous</em>, meaning they can’t occupy the same space simultaneously.</p><p><em>Non-rivalrous</em> goods include algorithms, information, media and brand.</p><p>anti-fragile goods are even better; they get better the more they are consumed. E.g. language, open-source codebases or money.</p><h1 id="fractals"><a href="#fractals" class="headerlink" title="fractals"></a>fractals</h1><p>A system that needs a new architecture at 10, 100 and 10,000 will never scale.</p><p>systems that are self-similar do scale. The structure of $n&#x3D;1$ is identical to $n&#x3D;10,000$</p><p>e.g.</p><ul><li><a href="https://en.wikipedia.org/wiki/Self-replicating_spacecraft">Von Neumann probes</a></li><li>river networks</li><li>tree leaves</li></ul><p>Figure out what scales.</p>]]></content>
       
       
-      <categories>
-          
-          <category> opinion </category>
-          
-      </categories>
-      
       
     </entry>
     

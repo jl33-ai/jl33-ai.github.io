@@ -318,8 +318,45 @@
 }
 @font-face {
   font-style: normal;
-  font-family: "Input Mono";
-  src: local("Input Mono"), url("../fonts/InputMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-Buch-BF663d89cd32e6a.otf") format("opentype");
+}
+@font-face {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-BuchKursiv-BF663d89cd3e887.otf") format("opentype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-Halbfett-BF663d89cd2d67b.otf") format("opentype");
+}
+@font-face {
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-HalbfettKursiv-BF663d89cd41624.otf") format("opentype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Sohne Mono";
+  src: url("../fonts/sohne-font-family/TestSohneMono-Buch-BF663d89cbcec64.otf") format("opentype");
+}
+@font-face {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Sohne Mono";
+  src: url("../fonts/sohne-font-family/TestSohneMono-BuchKursiv-BF663d89cc8d4c3.otf") format("opentype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Sohne Mono";
+  src: url("../fonts/sohne-font-family/TestSohneMono-Halbfett-BF663d89cc69f9d.otf") format("opentype");
 }
 @font-face {
   font-family: 'newspaper';

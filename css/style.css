@@ -436,8 +436,45 @@ body td {
 }
 @font-face {
   font-style: normal;
-  font-family: "Input Mono";
-  src: local("Input Mono"), url("../fonts/InputMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-Buch-BF663d89cd32e6a.otf") format("opentype");
+}
+@font-face {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-BuchKursiv-BF663d89cd3e887.otf") format("opentype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-Halbfett-BF663d89cd2d67b.otf") format("opentype");
+}
+@font-face {
+  font-style: italic;
+  font-weight: bold;
+  font-family: "Sohne";
+  src: url("../fonts/sohne-font-family/TestSohne-HalbfettKursiv-BF663d89cd41624.otf") format("opentype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "Sohne Mono";
+  src: url("../fonts/sohne-font-family/TestSohneMono-Buch-BF663d89cbcec64.otf") format("opentype");
+}
+@font-face {
+  font-style: italic;
+  font-weight: normal;
+  font-family: "Sohne Mono";
+  src: url("../fonts/sohne-font-family/TestSohneMono-BuchKursiv-BF663d89cc8d4c3.otf") format("opentype");
+}
+@font-face {
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Sohne Mono";
+  src: url("../fonts/sohne-font-family/TestSohneMono-Halbfett-BF663d89cc69f9d.otf") format("opentype");
 }
 @font-face {
   font-family: 'newspaper';
@@ -633,7 +670,7 @@ body {
   color: #0b0b09;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Input Mono", "Meslo LG", monospace;
+  font-family: "Sohne", "Input Mono", "Meslo LG", sans-serif;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   -moz-osx-font-smoothing: grayscale;
@@ -1651,7 +1688,7 @@ article .content .caption {
   font-display: swap;
   font-weight: 400;
   font-size: 11.200000000000001px;
-  font-family: "Input Mono", "Meslo LG", monospace;
+  font-family: "Sohne", "Input Mono", "Meslo LG", sans-serif;
   line-height: 1.725;
   text-rendering: geometricPrecision;
   text-align: center;
@@ -2302,7 +2339,7 @@ pre {
   border: 1px dotted #8b7355;
   border-radius: 4px;
   font-size: 13px;
-  font-family: "Input Mono", "Meslo LG", monospace;
+  font-family: "Sohne Mono", "Input Mono", "Meslo LG", monospace;
   line-height: 22px;
   -webkit-border-radius: 4px;
 }
@@ -2323,7 +2360,7 @@ code {
   padding: 10px 15px;
   border-radius: 4px;
   background: #fafafa;
-  font-family: "Input Mono", "Meslo LG", monospace;
+  font-family: "Sohne Mono", "Input Mono", "Meslo LG", monospace;
   -webkit-border-radius: 4px;
 }
 .highlight:hover .btn-copy {
