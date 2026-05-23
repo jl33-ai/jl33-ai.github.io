@@ -21,17 +21,17 @@
     
         
             
-                <link rel="shortcut icon" href="/images/favicon.ico">
+                <link rel="shortcut icon" href="/images/basq-crown/favicon.ico">
             
         
         
             
-                <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+                <link rel="icon" type="image/png" href="/images/basq-crown/android-chrome-192x192.png" sizes="192x192">
             
         
         
             
-                <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/basq-crown/apple-touch-icon.png">
             
         
     
@@ -117,12 +117,12 @@
         
         <div id="title" style="display: flex; align-items: center; gap: 0.5em;">
             <img id="pfp-cycle" src="/images/pfp/with_max_512.png" alt="pfp"
-                 data-pfps='["/images/pfp/with_max_512.png","/images/pfp/with_roxy_512.jpg","/images/pfp/with_family_512.jpeg"]'
+                 data-pfps='["/images/pfp/with_max_512.png","/images/pfp/with_roxy_512.jpg"]'
                  onclick="(function(e){e.preventDefault();e.stopPropagation();var img=document.getElementById('pfp-cycle');var pfps=JSON.parse(img.dataset.pfps);var i=(parseInt(img.dataset.idx||'0',10)+1)%pfps.length;img.dataset.idx=i;img.src=pfps[i];})(event)"
                  onmouseover="this.style.filter='grayscale(0%)'"
                  onmouseout="this.style.filter='grayscale(100%)'"
-                 style="width: 4em; height: 4em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
-            <h1 class="p-name" style="margin: 0;">Justin</h1>
+                 style="width: 8em; height: 8em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
+            <!--            <h1 class="p-name" style="margin: 0;">Justin</h1>-->
         </div>
     </a>
     <!--  <div id="nav">-->
@@ -176,12 +176,12 @@
         </div>
         <p class="body">agents need a new api</p>
         
-            <img class="twitter-img" src="/images/thumbnails/anime-phone.gif"/>
+            <img class="twitter-img" src="/images/icons/minecraft-xp.gif"/>
         
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">21</p>
+                <p class="metric-value">49</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
@@ -189,7 +189,132 @@
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">1</p>
+                <p class="metric-value">4</p>
+            </div>
+            <div class="icon" data-metric="shares" data-scale="1">
+                <img src="/images/twitter/upload.svg" alt="heart">
+                <p class="metric-value">0</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function () {
+        if (typeof window === 'undefined' || !window.localStorage) {
+            return;
+        }
+
+        function persistMetricsForItem(item) {
+            if (!item) return;
+
+            var postKey = item.getAttribute('data-post-key');
+            if (!postKey) return;
+
+            var storageKey = 'twitterMetrics:' + postKey;
+            var stored = {};
+
+            try {
+                var raw = window.localStorage.getItem(storageKey);
+                if (raw) {
+                    stored = JSON.parse(raw) || {};
+                }
+            } catch (err) {
+                stored = {};
+            }
+
+            var icons = item.querySelectorAll('.icon[data-metric]');
+            var updated = false;
+
+            for (var i = 0; i < icons.length; i++) {
+                var icon = icons[i];
+                var metric = icon.getAttribute('data-metric');
+                if (!metric) continue;
+
+                var valueEl = icon.querySelector('.metric-value');
+                if (!valueEl) continue;
+
+                var value = stored[metric];
+                if (typeof value !== 'number' || isNaN(value)) {
+                    var currentValue = parseInt(valueEl.textContent, 10);
+                    if (!isNaN(currentValue)) {
+                        value = currentValue;
+                    } else {
+                        var scale = Number(icon.getAttribute('data-scale')) || 1;
+                        value = Math.floor((scale * Math.random()) * scale + 0.5);
+                    }
+                    stored[metric] = value;
+                    updated = true;
+                }
+
+                valueEl.textContent = value;
+            }
+
+            if (updated) {
+                try {
+                    window.localStorage.setItem(storageKey, JSON.stringify(stored));
+                } catch (err) {
+                    // ignore storage failures
+                }
+            }
+        }
+
+        function initTwitterMetricsPersistence() {
+            var items = document.querySelectorAll('.twitter-item[data-post-key]');
+            for (var i = 0; i < items.length; i++) {
+                persistMetricsForItem(items[i]);
+            }
+        }
+
+        initTwitterMetricsPersistence();
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTwitterMetricsPersistence);
+        }
+    })();
+</script>
+
+
+    
+        
+
+<div class="twitter-item item-with-border"
+     data-post-key="2023%2F11%2F29%2Fllm-agency-vs-pessimism%2F"
+     onclick="window.location.href='https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee'">
+    
+    <div class="pfp">
+        <img src="/images/pfp/1_256.jpg" loading="lazy"/>
+    </div>
+    <div class="content">
+        <div class="header">
+            <strong>
+                Justin
+            </strong>
+            <p class="secondary">
+                @justin_lee
+                <span>
+                    
+                        ⸱ 2y
+                    
+                </span>
+            </p>
+        </div>
+        <p class="body">agency and ai</p>
+        
+            <img class="twitter-img" src="/images/icons/Enchanted_Book.gif"/>
+        
+        <div class="icons">
+            <div class="icon" data-metric="likes" data-scale="7">
+                <img src="/images/twitter/heart.svg" alt="heart">
+                <p class="metric-value">15</p>
+            </div>
+            <div class="icon" data-metric="replies" data-scale="3">
+                <img src="/images/twitter/message.svg" alt="heart">
+                <p class="metric-value">0</p>
+            </div>
+            <div class="icon" data-metric="retweets" data-scale="2">
+                <img src="/images/twitter/retweet.svg" alt="heart">
+                <p class="metric-value">4</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
@@ -299,151 +424,26 @@
                 </span>
             </p>
         </div>
-        <p class="body">Poetic Analysis, A Hunger</p>
+        <p class="body">poem analysis</p>
         
-            <img class="twitter-img" src="/images/icons/vcaa.webp"/>
+            <img class="twitter-img" src="/images/icons/gapple.gif"/>
         
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">41</p>
-            </div>
-            <div class="icon" data-metric="replies" data-scale="3">
-                <img src="/images/twitter/message.svg" alt="heart">
                 <p class="metric-value">5</p>
             </div>
-            <div class="icon" data-metric="retweets" data-scale="2">
-                <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">1</p>
-            </div>
-            <div class="icon" data-metric="shares" data-scale="1">
-                <img src="/images/twitter/upload.svg" alt="heart">
-                <p class="metric-value">1</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    (function () {
-        if (typeof window === 'undefined' || !window.localStorage) {
-            return;
-        }
-
-        function persistMetricsForItem(item) {
-            if (!item) return;
-
-            var postKey = item.getAttribute('data-post-key');
-            if (!postKey) return;
-
-            var storageKey = 'twitterMetrics:' + postKey;
-            var stored = {};
-
-            try {
-                var raw = window.localStorage.getItem(storageKey);
-                if (raw) {
-                    stored = JSON.parse(raw) || {};
-                }
-            } catch (err) {
-                stored = {};
-            }
-
-            var icons = item.querySelectorAll('.icon[data-metric]');
-            var updated = false;
-
-            for (var i = 0; i < icons.length; i++) {
-                var icon = icons[i];
-                var metric = icon.getAttribute('data-metric');
-                if (!metric) continue;
-
-                var valueEl = icon.querySelector('.metric-value');
-                if (!valueEl) continue;
-
-                var value = stored[metric];
-                if (typeof value !== 'number' || isNaN(value)) {
-                    var currentValue = parseInt(valueEl.textContent, 10);
-                    if (!isNaN(currentValue)) {
-                        value = currentValue;
-                    } else {
-                        var scale = Number(icon.getAttribute('data-scale')) || 1;
-                        value = Math.floor((scale * Math.random()) * scale + 0.5);
-                    }
-                    stored[metric] = value;
-                    updated = true;
-                }
-
-                valueEl.textContent = value;
-            }
-
-            if (updated) {
-                try {
-                    window.localStorage.setItem(storageKey, JSON.stringify(stored));
-                } catch (err) {
-                    // ignore storage failures
-                }
-            }
-        }
-
-        function initTwitterMetricsPersistence() {
-            var items = document.querySelectorAll('.twitter-item[data-post-key]');
-            for (var i = 0; i < items.length; i++) {
-                persistMetricsForItem(items[i]);
-            }
-        }
-
-        initTwitterMetricsPersistence();
-
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', initTwitterMetricsPersistence);
-        }
-    })();
-</script>
-
-
-    
-        
-
-<div class="twitter-item item-with-border"
-     data-post-key="2012%2F04%2F01%2Ftodo%2F"
-     onclick="window.location.href='https://www.paulgraham.com/todo.html'">
-    
-    <div class="pfp">
-        <img src="/images/pfp/1_256.jpg" loading="lazy"/>
-    </div>
-    <div class="content">
-        <div class="header">
-            <strong>
-                Justin
-            </strong>
-            <p class="secondary">
-                @justin_lee
-                <span>
-                    
-                        ⸱ 14y
-                    
-                </span>
-            </p>
-        </div>
-        <p class="body">The Top Of My Todo List</p>
-        
-            <img class="twitter-img" src="/images/icons/Enchanted_Book.gif"/>
-        
-        <div class="icons">
-            <div class="icon" data-metric="likes" data-scale="7">
-                <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">36</p>
-            </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">7</p>
+                <p class="metric-value">1</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">1</p>
+                <p class="metric-value">2</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
-                <p class="metric-value">0</p>
+                <p class="metric-value">1</p>
             </div>
         </div>
     </div>

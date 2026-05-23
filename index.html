@@ -19,17 +19,17 @@
     
         
             
-                <link rel="shortcut icon" href="/images/favicon.ico">
+                <link rel="shortcut icon" href="/images/basq-crown/favicon.ico">
             
         
         
             
-                <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+                <link rel="icon" type="image/png" href="/images/basq-crown/android-chrome-192x192.png" sizes="192x192">
             
         
         
             
-                <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/basq-crown/apple-touch-icon.png">
             
         
     
@@ -115,12 +115,12 @@
         
         <div id="title" style="display: flex; align-items: center; gap: 0.5em;">
             <img id="pfp-cycle" src="/images/pfp/with_max_512.png" alt="pfp"
-                 data-pfps='["/images/pfp/with_max_512.png","/images/pfp/with_roxy_512.jpg","/images/pfp/with_family_512.jpeg"]'
+                 data-pfps='["/images/pfp/with_max_512.png","/images/pfp/with_roxy_512.jpg"]'
                  onclick="(function(e){e.preventDefault();e.stopPropagation();var img=document.getElementById('pfp-cycle');var pfps=JSON.parse(img.dataset.pfps);var i=(parseInt(img.dataset.idx||'0',10)+1)%pfps.length;img.dataset.idx=i;img.src=pfps[i];})(event)"
                  onmouseover="this.style.filter='grayscale(0%)'"
                  onmouseout="this.style.filter='grayscale(100%)'"
-                 style="width: 4em; height: 4em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
-            <h1 class="p-name" style="margin: 0;">Justin</h1>
+                 style="width: 8em; height: 8em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
+            <!--            <h1 class="p-name" style="margin: 0;">Justin</h1>-->
         </div>
     </a>
     <!--  <div id="nav">-->
@@ -154,8 +154,8 @@
 <!-- - novel-->
 <!-- - the most platonic artefact, me: which you cannot request as a webpage but you can book Tim-->
 <div class="index-page">
-    <p style="font-size: 1rem; margin-top: 1rem">
-        I'm the cofounder of <a target="_blank" rel="noopener" href="https://getden.io/">Den</a>.
+    <p>
+        I'm the cofounder of <a target="_blank" rel="noopener" href="https://www.ycombinator.com/companies/den/">Den</a>.
         <br><br>
 
         I like to make <a href="#" class="expandable-link"
@@ -177,8 +177,8 @@
                 
                     <li class="writing-item">
                         
-                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/thumbnails/anime-phone.gif">
-                                <img class="writing-thumbnail" src="/images/thumbnails/anime-phone.gif" loading="lazy" alt=""/>
+                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/minecraft-xp.gif">
+                                <img class="writing-thumbnail" src="/images/icons/minecraft-xp.gif" loading="lazy" alt=""/>
                             </span>
                         
                         <a href="/2025/01/01/the-next-interface/"
@@ -188,24 +188,24 @@
                 
                     <li class="writing-item">
                         
-                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/vcaa.webp">
-                                <img class="writing-thumbnail" src="/images/icons/vcaa.webp" loading="lazy" alt=""/>
-                            </span>
-                        
-                        <a href="/VCE_Literature_2021_A_Hunger.pdf"
-                           class="writing-link">Poetic Analysis, A Hunger</a>
-                        <span class="writing-time">4y</span>
-                    </li>
-                
-                    <li class="writing-item">
-                        
                             <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/Enchanted_Book.gif">
                                 <img class="writing-thumbnail" src="/images/icons/Enchanted_Book.gif" loading="lazy" alt=""/>
                             </span>
                         
-                        <a target="_blank" rel="noopener" href="https://www.paulgraham.com/todo.html"
-                           class="writing-link">The Top Of My Todo List</a>
-                        <span class="writing-time">14y</span>
+                        <a target="_blank" rel="noopener" href="https://www.melbournemicrofinance.com/new-blog/2023/11/29/justin-lee"
+                           class="writing-link">agency and ai</a>
+                        <span class="writing-time">2y</span>
+                    </li>
+                
+                    <li class="writing-item">
+                        
+                            <span class="writing-thumbnail-wrapper tooltip" data-image="/images/icons/gapple.gif">
+                                <img class="writing-thumbnail" src="/images/icons/gapple.gif" loading="lazy" alt=""/>
+                            </span>
+                        
+                        <a href="/VCE_Literature_2021_A_Hunger.pdf"
+                           class="writing-link">poem analysis</a>
+                        <span class="writing-time">4y</span>
                     </li>
                 
             </ul>
@@ -215,30 +215,36 @@
     <div id="videos-section" class="dropdown-section">
         <div class="dropdown-content">
             
-                <div class="videos-gallery">
+                <div class="videos-list">
                     
                         
                         
                         <a href="https://www.youtube.com/watch?v=Qi9Eglax-tM"
-                           class="video-thumbnail-link"
+                           class="video-row"
                            target="_blank">
                             <img src="https://img.youtube.com/vi/Qi9Eglax-tM/maxresdefault.jpg"
                                  alt="Markov chain diffusion"
                                  loading="lazy"
-                                 class="video-gallery-thumbnail">
-                            <span class="video-title-overlay">Markov chain diffusion</span>
+                                 class="video-row-thumbnail">
+                            <div class="video-row-info">
+                                <span class="video-row-title">Markov chain diffusion</span>
+                                <span class="video-row-time">Time: <strong>2:08</strong></span>
+                            </div>
                         </a>
                     
                         
                         
                         <a href="https://www.youtube.com/watch?v=Uxc4la0nrEY"
-                           class="video-thumbnail-link"
+                           class="video-row"
                            target="_blank">
                             <img src="https://img.youtube.com/vi/Uxc4la0nrEY/maxresdefault.jpg"
                                  alt="Dublin in Ecstacy"
                                  loading="lazy"
-                                 class="video-gallery-thumbnail">
-                            <span class="video-title-overlay">Dublin in Ecstacy</span>
+                                 class="video-row-thumbnail">
+                            <div class="video-row-info">
+                                <span class="video-row-title">Dublin in Ecstacy</span>
+                                <span class="video-row-time">Time: <strong>5:11</strong></span>
+                            </div>
                         </a>
                     
                         
@@ -248,13 +254,16 @@
                         
                         
                         <a href="https://www.youtube.com/watch?v=K-qXUaozgl8"
-                           class="video-thumbnail-link"
+                           class="video-row"
                            target="_blank">
                             <img src="https://img.youtube.com/vi/K-qXUaozgl8/maxresdefault.jpg"
-                                 alt="Vipassana, India"
+                                 alt="Vipassana in India"
                                  loading="lazy"
-                                 class="video-gallery-thumbnail">
-                            <span class="video-title-overlay">Vipassana, India</span>
+                                 class="video-row-thumbnail">
+                            <div class="video-row-info">
+                                <span class="video-row-title">Vipassana in India</span>
+                                <span class="video-row-time">Time: <strong>1:00</strong></span>
+                            </div>
                         </a>
                     
                         
@@ -262,13 +271,16 @@
                         
                         
                         <a href="https://www.youtube.com/watch?v=m4nqQ6jGRWU"
-                           class="video-thumbnail-link"
+                           class="video-row"
                            target="_blank">
                             <img src="https://img.youtube.com/vi/m4nqQ6jGRWU/maxresdefault.jpg"
-                                 alt="chungking express, melbourne"
+                                 alt="Chungking Express in Melbourne"
                                  loading="lazy"
-                                 class="video-gallery-thumbnail">
-                            <span class="video-title-overlay">chungking express, melbourne</span>
+                                 class="video-row-thumbnail">
+                            <div class="video-row-info">
+                                <span class="video-row-title">Chungking Express in Melbourne</span>
+                                <span class="video-row-time">Time: <strong>0:39</strong></span>
+                            </div>
                         </a>
                     
                 </div>
@@ -302,7 +314,7 @@
         </div>
     </div>
 
-    <p style="font-size: 1rem;">
+    <p>
         <br>
 
         <!--        Wanna chat? <a-->
@@ -314,14 +326,49 @@
         Also <a target="_blank" rel="noopener" href="https://x.com/Justin01805921">Twitter</a> and
         <a
                 target="_blank" rel="noopener" href="https://www.linkedin.com/in/justin1ee/">LinkedIn</a>.
+
+        <br></br>Email: <a
+                href="mailto:justinkhlee27@gmail.com">justinkhlee27@gmail.com</a>
     </p>
 </div>
 
 <style>
+    .index-page {
+        /* Single source of truth for page font size */
+        --font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        .index-page {
+            --font-size: 1.25rem;
+        }
+    }
+
     .index-page p {
         color: #6B7280;
         margin: 0;
         line-height: 1.3;
+        font-size: var(--font-size);
+    }
+
+    /* Heading → content gap (home page only; theme default is 2rem) */
+    .h-card #header {
+        margin-bottom: 2rem;
+    }
+
+    /* Inline links (Den, videos, write, Twitter, LinkedIn): Notion-style hover */
+    .index-page p a {
+        /* Underline off — the cactus theme draws it via background-image (underline() mixin, style.styl:81) */
+        background-image: none !important;
+        border-radius: 0.25em;
+        padding: 0.05em 0.2em;
+        margin: 0 -0.2em; /* offset padding so surrounding text doesn't shift */
+        transition: background-color 0.144s ease;
+    }
+
+    .index-page p a:hover {
+        background-color: rgb(229, 231, 235);
+        background-image: none !important; /* theme re-adds a gradient underline on :hover */
     }
 
     .expandable-link {
@@ -333,12 +380,16 @@
         font-size: 0.75em;
         margin-right: 0.2em;
         display: inline-block;
-        transform: translateY(-0.1em);
+        /* Collapsed (default): point right + a little taller, Notion-style.
+           scaleY runs before rotate (local space), so it's a fixed shape that rotates
+           rigidly — constant aspect ratio through the turn. */
+        transform: translateY(-0.1em) rotate(-90deg) scaleY(1.3);
         transition: transform 0.144s ease;
     }
 
     .expandable-link.active .expandable-icon {
-        transform: translateY(-0.1em) rotate(-180deg);
+        /* Expanded: rotate down (right → down animation) */
+        transform: translateY(-0.1em) rotate(0deg) scaleY(1.3);
     }
 
     .dropdown-section {
@@ -352,7 +403,7 @@
     }
 
     .dropdown-content {
-        padding: 0.5rem 0;
+        padding-top: 1rem;
         opacity: 0;
         transition: opacity 0.144s ease;
     }
@@ -365,7 +416,7 @@
         list-style: none;
         padding: 0;
         margin: 0 0 0 1.5rem;
-        font-size: 1rem;
+        font-size: var(--font-size);
     }
 
     .writing-item {
@@ -378,12 +429,16 @@
     .writing-link {
         text-decoration: none;
         background-image: none !important;
-        transition: opacity 0.144s ease;
+        /* Notion-style hover, matching .index-page p a */
+        border-radius: 0.25em;
+        padding: 0.05em 0.2em;
+        margin: 0 -0.2em; /* offset padding so the title stays put */
+        transition: background-color 0.144s ease;
     }
 
     .writing-link:hover {
         background-image: none !important;
-        opacity: 0.6;
+        background-color: rgb(229, 231, 235);
     }
 
     .writing-time {
@@ -391,69 +446,92 @@
     }
 
     .writing-thumbnail {
-        width: 1.25rem;
-        height: 1.25rem;
+        width: 1.5625rem; /* 1.25rem + 25% */
+        height: 1.5625rem;
         object-fit: cover;
         border-radius: 2px;
     }
 
-    /* Gallery styles (videos & draw) */
-    .videos-gallery,
+    /* Videos list — old-YouTube search-result rows */
+    .videos-list {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px dashed #eff3f4; /* matches $dashed-border ($color-accent-4) */
+        text-decoration: none !important;
+        background-image: none !important;
+    }
+
+    .video-row:first-child {
+        padding-top: 0;
+    }
+
+    .video-row:last-child {
+        border-bottom: none;
+    }
+
+    .video-row:hover,
+    .video-row:focus,
+    .video-row:active,
+    .video-row:visited {
+        text-decoration: none !important;
+        background-image: none !important;
+    }
+
+    .video-row-thumbnail {
+        width: 160px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 2px;
+        transition: opacity 0.144s ease;
+    }
+
+    .video-row:hover .video-row-thumbnail {
+        opacity: 0.85;
+    }
+
+    .video-row-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding-top: 0.15rem;
+    }
+
+    .video-row-title {
+        color: #2b50d8;
+        font-weight: bold;
+        font-size: calc(var(--font-size) * 1.1);
+        line-height: 1.2;
+    }
+
+    .video-row:hover .video-row-title {
+        text-decoration: underline;
+    }
+
+    .video-row-time {
+        color: #999;
+        font-size: calc(var(--font-size) * 0.85);
+    }
+
+    .video-row-time strong {
+        color: #555;
+        font-weight: bold;
+    }
+
+    /* Draw gallery */
     .draw-gallery {
         display: flex;
         flex-wrap: wrap;
         gap: 0.75rem;
         margin-left: 1.5rem;
-    }
-
-    .video-thumbnail-link {
-        display: block;
-        width: 160px;
-        position: relative;
-        text-decoration: none !important;
-        background-image: none !important;
-    }
-
-    .video-thumbnail-link:hover,
-    .video-thumbnail-link:focus,
-    .video-thumbnail-link:active,
-    .video-thumbnail-link:visited {
-        text-decoration: none !important;
-        background-image: none !important;
-    }
-
-    .video-gallery-thumbnail {
-        width: 100%;
-        height: 90px;
-        object-fit: cover;
-        border-radius: 2px;
-        transition: opacity 0.144s ease;
-    }
-
-    .video-title-overlay {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -70%);
-        color: white;
-        font-size: 0.65rem;
-        line-height: 1.2;
-        text-align: center;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
-        opacity: 0;
-        transition: opacity 0.144s ease;
-        pointer-events: none;
-        padding: 0 0.5rem;
-        width: 100%;
-        margin: 0;
-    }
-
-    .video-thumbnail-link:hover .video-gallery-thumbnail {
-        opacity: 0.8;
-    }
-
-    .video-thumbnail-link:hover .video-title-overlay {
-        opacity: 1;
     }
 
     .draw-thumbnail-link {
@@ -483,8 +561,9 @@
     document.addEventListener('DOMContentLoaded', function () {
         // PostHog home-page click tracking
         function track(element) {
-            if (window.posthog) posthog.capture('home_click', { element: element });
+            if (window.posthog) posthog.capture('home_click', {element: element});
         }
+
         const trackTargets = [
             ['#pfp-cycle', 'profile_picture'],
             ['a[href="https://getden.io/"]', 'den'],
@@ -495,7 +574,9 @@
         ];
         trackTargets.forEach(function ([selector, name]) {
             document.querySelectorAll(selector).forEach(function (el) {
-                el.addEventListener('click', function () { track(name); });
+                el.addEventListener('click', function () {
+                    track(name);
+                });
             });
         });
 
