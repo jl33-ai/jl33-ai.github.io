@@ -113,9 +113,10 @@
             <header id="header">
     <a class="u-url u-uid" href="/">
         
+        
         <div id="title" style="display: flex; align-items: center; gap: 0.5em;">
-            <img id="pfp-cycle" src="/images/pfp/with_max_512.png" alt="pfp"
-                 data-pfps='["/images/pfp/with_max_512.png","/images/pfp/with_roxy_512.jpg"]'
+            <img id="pfp-cycle" src="/images/pfp/album/output/with_family.jpg" alt="pfp"
+                 data-pfps='["/images/pfp/album/output/with_family.jpg","/images/pfp/album/output/with_max.png","/images/pfp/album/output/with_roxy.jpg"]'
                  onclick="(function(e){e.preventDefault();e.stopPropagation();var img=document.getElementById('pfp-cycle');var pfps=JSON.parse(img.dataset.pfps);var i=(parseInt(img.dataset.idx||'0',10)+1)%pfps.length;img.dataset.idx=i;img.src=pfps[i];})(event)"
                  onmouseover="this.style.filter='grayscale(0%)'"
                  onmouseout="this.style.filter='grayscale(100%)'"
@@ -228,7 +229,7 @@
                                  class="video-row-thumbnail">
                             <div class="video-row-info">
                                 <span class="video-row-title">Markov chain diffusion</span>
-                                <span class="video-row-time">Time: <strong>2:08</strong></span>
+                                <span class="video-row-time">2 years ago</span>
                             </div>
                         </a>
                     
@@ -243,7 +244,7 @@
                                  class="video-row-thumbnail">
                             <div class="video-row-info">
                                 <span class="video-row-title">Dublin in Ecstacy</span>
-                                <span class="video-row-time">Time: <strong>5:11</strong></span>
+                                <span class="video-row-time">2 years ago</span>
                             </div>
                         </a>
                     
@@ -262,7 +263,7 @@
                                  class="video-row-thumbnail">
                             <div class="video-row-info">
                                 <span class="video-row-title">Vipassana in India</span>
-                                <span class="video-row-time">Time: <strong>1:00</strong></span>
+                                <span class="video-row-time">1 year ago</span>
                             </div>
                         </a>
                     
@@ -279,7 +280,7 @@
                                  class="video-row-thumbnail">
                             <div class="video-row-info">
                                 <span class="video-row-title">Chungking Express in Melbourne</span>
-                                <span class="video-row-time">Time: <strong>0:39</strong></span>
+                                <span class="video-row-time">2 years ago</span>
                             </div>
                         </a>
                     
@@ -516,6 +517,12 @@
         font-weight: bold;
         font-size: calc(var(--font-size) * 1.1);
         line-height: 1.2;
+    }
+
+    @media (max-width: 600px) {
+        .video-row-title {
+            font-size: calc(var(--font-size) * 0.95);
+        }
     }
 
     .video-row:hover .video-row-title {
