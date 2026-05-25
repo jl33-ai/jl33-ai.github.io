@@ -118,11 +118,20 @@
         
         <div id="title" style="display: flex; align-items: center; gap: 0.5em;">
             <img id="pfp-cycle" src="/images/pfp/album/output/with_family.jpg" alt="pfp"
-                 data-pfps='["/images/pfp/album/output/with_family.jpg","/images/pfp/album/output/with_max.png","/images/pfp/album/output/with_roxy.jpg"]'
+                 data-pfps='["/images/pfp/album/output/with_family.jpg","/images/pfp/album/output/with_max.jpg","/images/pfp/album/output/with_roxy.jpg"]'
                  onclick="(function(e){e.preventDefault();e.stopPropagation();var img=document.getElementById('pfp-cycle');var pfps=JSON.parse(img.dataset.pfps);var i=(parseInt(img.dataset.idx||'0',10)+1)%pfps.length;img.dataset.idx=i;img.src=pfps[i];})(event)"
                  onmouseover="this.style.filter='grayscale(0%)'"
                  onmouseout="this.style.filter='grayscale(100%)'"
                  style="width: 8em; height: 8em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
+            <!-- Preload the rest of the rotation so click-to-cycle is instant (no
+                 first-click fetch delay). The first image is already loading via the
+                 <img> src above; this warms the browser cache for the others. -->
+            <script>
+                (function () {
+                    var pfps = ["/images/pfp/album/output/with_family.jpg","/images/pfp/album/output/with_max.jpg","/images/pfp/album/output/with_roxy.jpg"];
+                    pfps.forEach(function (src) { var i = new Image(); i.src = src; });
+                })();
+            </script>
             <!--            <h1 class="p-name" style="margin: 0;">Justin</h1>-->
         </div>
     </a>
@@ -182,15 +191,15 @@
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">38</p>
+                <p class="metric-value">28</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">3</p>
+                <p class="metric-value">1</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">3</p>
+                <p class="metric-value">1</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
@@ -307,11 +316,11 @@
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">24</p>
+                <p class="metric-value">6</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">6</p>
+                <p class="metric-value">3</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
@@ -319,7 +328,7 @@
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
-                <p class="metric-value">1</p>
+                <p class="metric-value">0</p>
             </div>
         </div>
     </div>
@@ -432,15 +441,15 @@
         <div class="icons">
             <div class="icon" data-metric="likes" data-scale="7">
                 <img src="/images/twitter/heart.svg" alt="heart">
-                <p class="metric-value">32</p>
+                <p class="metric-value">13</p>
             </div>
             <div class="icon" data-metric="replies" data-scale="3">
                 <img src="/images/twitter/message.svg" alt="heart">
-                <p class="metric-value">7</p>
+                <p class="metric-value">5</p>
             </div>
             <div class="icon" data-metric="retweets" data-scale="2">
                 <img src="/images/twitter/retweet.svg" alt="heart">
-                <p class="metric-value">2</p>
+                <p class="metric-value">0</p>
             </div>
             <div class="icon" data-metric="shares" data-scale="1">
                 <img src="/images/twitter/upload.svg" alt="heart">
