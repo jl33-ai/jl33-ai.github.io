@@ -11,3 +11,10 @@ _multiconfig.yml
 source/quartz
 source/wiki
 .env
+
+# private
+source/_drafts/
+.obsidian/
+source/.obsidian/
+db.json
+.DS_Store
