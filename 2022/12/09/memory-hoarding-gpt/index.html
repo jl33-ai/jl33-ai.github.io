@@ -10,14 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
     <meta name="description" content="It all started because I wanted to follow this tutorial - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: I could use my ~2 millio">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Fine tuning an LLM on 2 million Apple Notes">
+<meta property="og:title" content="Let’s train GPT on 2 million Apple Notes">
 <meta property="og:url" content="https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/index.html">
 <meta property="og:site_name" content="Justin">
 <meta property="og:description" content="It all started because I wanted to follow this tutorial - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: I could use my ~2 millio">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://jl33-ai.github.io/images/icons/apple-notes.gif">
 <meta property="article:published_time" content="2022-12-08T13:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-09T04:51:20.936Z">
+<meta property="article:modified_time" content="2026-11-09T05:09:17.120Z">
 <meta property="article:author" content="JL">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://jl33-ai.github.io/images/icons/apple-notes.gif">
@@ -40,7 +40,7 @@
         
     
     <!-- title -->
-    <title>Fine tuning an LLM on 2 million Apple Notes</title>
+    <title>Let’s train GPT on 2 million Apple Notes</title>
     <!-- tippy -->
     <script src="https://unpkg.com/popper.js@1"></script>
     <script src="https://unpkg.com/tippy.js@5"></script>
@@ -166,16 +166,16 @@
     <div id="share" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&text=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&is_video=false&description=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Fine tuning an LLM on 2 million Apple Notes&body=Check out this article: https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&name=Fine tuning an LLM on 2 million Apple Notes&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&t=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&text=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&is_video=false&description=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Let’s train GPT on 2 million Apple Notes&body=Check out this article: https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&name=Let’s train GPT on 2 million Apple Notes&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&t=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
@@ -198,7 +198,7 @@
         <header>
             
                         <h1 class="posttitle p-name" itemprop="name headline">
-                            Fine tuning an LLM on 2 million Apple Notes
+                            Let’s train GPT on 2 million Apple Notes
                         </h1>
                         
             <div class="meta">
@@ -334,16 +334,16 @@
     <div id="share-footer" style="display: none">
       <ul>
   <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&text=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&is_video=false&description=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" href="mailto:?subject=Fine tuning an LLM on 2 million Apple Notes&body=Check out this article: https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&name=Fine tuning an LLM on 2 million Apple Notes&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
-  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&t=Fine tuning an LLM on 2 million Apple Notes"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&text=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&is_video=false&description=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Let’s train GPT on 2 million Apple Notes&body=Check out this article: https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&title=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&name=Let’s train GPT on 2 million Apple Notes&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2022/12/09/memory-hoarding-gpt/&t=Let’s train GPT on 2 million Apple Notes"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
 </ul>
 
     </div>
