@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>ai = fiction</title>
+      <link href="/2026/10/16/ai-is-fiction/"/>
+      <url>/2026/10/16/ai-is-fiction/</url>
+      
+        <content type="html"><![CDATA[<p>AI is fiction that we are hacking to do our emails for us.</p><p>But first, what is fiction?</p><br><h3 id="What-is-fiction"><a href="#What-is-fiction" class="headerlink" title="What is fiction?"></a>What is fiction?</h3><br><h3 id="AI-is-fiction"><a href="#AI-is-fiction" class="headerlink" title="AI is fiction"></a>AI is fiction</h3><br><h3 id="Hacking-the-story"><a href="#Hacking-the-story" class="headerlink" title="Hacking the story"></a>Hacking the story</h3><br><p>This shit is so cool.</p><br><hr>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> opinion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>scale</title>
+      <link href="/2026/05/01/scale/"/>
+      <url>/2026/05/01/scale/</url>
+      
+        <content type="html"><![CDATA[<p>my friend just left their $50M series A healthcare because they knew it wouldn’t scale.</p><p>the year is 2026. the only question that matters is for founders is: what scales.</p><h1 id="O-N-2"><a href="#O-N-2" class="headerlink" title="O(N^2)"></a>O(N^2)</h1><p>As a system grows, the number of connections between its nodes grows $O(N^2)$.</p><p>The best way to manage this scale is through protocols.</p><p>Instead of having to understand every other node, they only need to understand a<br>shard <a href="https://en.wikipedia.org/wiki/Interface_(object-oriented_programming">interface</a>.</p><p>e.g.<br>the internet : TCP&#x2F;IP<br>biology : DNA&#x2F;RNA<br>shipping : shipping containers</p><h1 id="superlinear-scale"><a href="#superlinear-scale" class="headerlink" title="superlinear scale"></a>superlinear scale</h1><p>systems either scale sublinearly, linearly, or superlinearly.</p><p>for example, animals scale at $O(N^{3&#x2F;4})$ because volume scales faster than surface area (skin). bad companies scale<br>like animals.</p><p>for example, cities scale superlinearly $O(N^{1.15})$ - walking speed increases by 15% per capita. so does innovation<br>and wealth creation.</p><p>scaling requires platform&#x2F;ecosystem where nodes interact freely, instead of command-and-control (which bottlenecks)</p><h1 id="non-rivalrous-and-anti-fragile"><a href="#non-rivalrous-and-anti-fragile" class="headerlink" title="non-rivalrous and anti-fragile"></a>non-rivalrous and anti-fragile</h1><p>Most objects are <em>rivalrous</em>, meaning they can’t occupy the same space simultaneously.</p><p><em>Non-rivalrous</em> goods include algorithms, information, media and brand.</p><p>anti-fragile goods are even better; they get better the more they are consumed. E.g. language, open-source codebases or<br>money.</p><h1 id="fractals"><a href="#fractals" class="headerlink" title="fractals"></a>fractals</h1><p>A system that needs a new architecture at 10, 100 and 10,000 will never scale.</p><p>systems that are self-similar do scale. The structure of $n&#x3D;1$ is identical to $n&#x3D;10,000$</p><p>e.g.</p><ul><li><a href="https://en.wikipedia.org/wiki/Self-replicating_spacecraft">Von Neumann probes</a></li><li>river networks</li><li>tree leaves</li></ul><p>Figure out what scales.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Stop building for 2018</title>
+      <link href="/2026/04/13/stop-building-for-2018/"/>
+      <url>/2026/04/13/stop-building-for-2018/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Peter-Thiel"><a href="#Peter-Thiel" class="headerlink" title="Peter Thiel"></a>Peter Thiel</h3><p>Thiel’s core contrarian thesis is that we have lived through a half-century of the “Great Stagnation” in the physical<br>world, masked by rapid acceleration in the digital world (screens).</p><p>The era of building another B2B SaaS platform or consumer social app is largely over. The low-hanging fruit of the<br>internet has been picked. If you are building a pure software company today, you are likely fighting for marginal gains<br>in a saturated market.</p><p>The next decade belongs to founders who figure out how to innovate in the world of atoms—space, defense, nuclear energy,<br>synthetic biology, and heavy manufacturing.</p><p>Thiel views Artificial Intelligence as fundamentally centralizing (communist) and Crypto as fundamentally<br>decentralizing (libertarian). AI will allow large entities to command and control complex systems, while<br>crypto&#x2F;blockchain remains the only hedge against total centralization.</p><p>The post-Cold War era of frictionless global trade is over. Thiel believes we are moving into a multipolar, fragmented<br>world. Building supply chains reliant on global harmony is a massive vulnerability.</p><p>Stop building incremental software. If your company doesn’t interact with the physical world, defend a nation-state, or<br>solve a hard scientific problem, you are building a feature, not a generational company.</p><br><h3 id="Elon-Musk"><a href="#Elon-Musk" class="headerlink" title="Elon Musk"></a>Elon Musk</h3><p>Musk operates on physics-based first principles, laser-focused on one to three priorities at a time. What looks like<br>chaos from the outside is whiplash reprioritization — his attention pivoting the moment a bottleneck clears. A decade of<br>pattern recognition across AlexNet, DeepMind, OpenAI, Transformers, and ChatGPT has converged him on a single macro<br>thesis: the cost of human labor — physical and digital — is collapsing to zero, and whoever owns the compute stack owns<br>the next economy.</p><p>While the consensus worries about overpopulation, Musk’s most urgent macro-thesis is that demographic collapse is the<br>single greatest threat to civilization. Birth rates are plummeting globally. In 10 years, the global economy will face a<br>severe shortage of young, productive humans to support an aging population.</p><p>Optimus and general-purpose robotics aren’t just cool toys; they are economic reset buttons. If a humanoid robot can do<br>generalized physical labor for the cost of electricity and maintenance, the economic value of human physical labor drops<br>to near zero.</p><p>Musk views the traditional digital company — thousands of humans at desks manipulating software with a mouse and<br>keyboard — as obsolete. xAI is engineering agents that emulate human workers directly, processing screen inputs and<br>executing workflows. In 10 years, software companies won’t be collections of knowledge workers using SaaS tools; they<br>will be hyper-lean architectures where AI agents emulate entire departments.</p><p>If AI drops the cost of intelligence to zero and robotics drops the cost of labor to zero, the only scarce resources<br>left are energy, compute, and raw materials. The competitive landscape shifts from “who has the best UI&#x2F;UX” to “who has<br>the raw compute and energy to power a digital workforce.” This is why Musk is vertically integrating every layer that<br>produces compute — from Colossus to orbital data centers via Starlink, down to Terafab chip fabrication.</p><p>xAI is not a standalone model company; it is the intelligence layer inside a single vertically-integrated system. Tesla<br>provides vision and the physical fleet. Optimus provides embodiment. X provides real-time data and distribution.<br>Colossus, Starlink, and Terafab provide the energy and silicon substrate. Whoever owns the full stack — from electrons<br>to atoms to agents — owns the endgame.</p><p>Musk runs on roughly 70% focus on Priority 1, 20% on Priority 2, 10% on the rest. The moment a priority is on a good<br>path, his attention snaps to the next bottleneck. Outsiders read this as chaos; it is actually the signature move of a<br>technology organizer who compounds progress by clearing one constraint at a time. Betting against him at these<br>transition points has historically been the most expensive trade in tech.</p><p>If your business model relies on cheap human labor, an ever-growing young consumer base, or “making knowledge workers<br>more efficient,” you are building for a dying paradigm. Assume labor — physical and digital — is infinitely scalable via<br>robotics and AI. Build systems designed to be operated by AI agents, or build the compute, energy, and silicon<br>infrastructure that powers them. And never short Elon at a transition point.</p><br><h3 id="Naval-Ravikant"><a href="#Naval-Ravikant" class="headerlink" title="Naval Ravikant"></a>Naval Ravikant</h3><p>Naval looks at the future through the lens of individual leverage, wealth creation, and the unbundling of traditional<br>institutions.</p><p>The Coase Theorem dictates that firms exist because the transaction costs of organizing people internally are lower than<br>doing it on the open market. AI and smart contracts are destroying these transaction costs. In 10 years, 1,000-person<br>companies will be outmaneuvered by 3-person companies wielding massive AI leverage.</p><p>We are entering an era where capital, code, and media are entirely permissionless and infinitely scalable. You no longer<br>need permission to build, broadcast, or fundraise.</p><p>When code, content generation, and execution are fully commoditized by AI, the only human skill that retains a premium<br>is judgment (taste, resource allocation, and knowing what to build). Hard work becomes less important than high-variance<br>decision-making.</p><p>Wealth and talent will become entirely decoupled from geography and nation-states. Top-tier founders and operators will<br>operate as sovereign entities, migrating to jurisdictions that treat them best, unburdened by legacy institutions.</p><p>Stop hiring armies of junior employees. Optimize for a hyper-dense team of a few high-judgment generalists, armed with<br>AI. Build a company that requires zero permission to scale.</p><br><h3 id="Keith-Rabois"><a href="#Keith-Rabois" class="headerlink" title="Keith Rabois"></a>Keith Rabois</h3><p>Rabois operates as a ruthless pragmatist. His thesis for the next decade revolves around talent density and<br>systematically dismantling massive, inefficient legacy markets.</p><p>Rabois fundamentally believes that remote work is a destructive force for early-stage innovation. In 10 years, the<br>companies that dominate will be the ones that rejected the “work-from-anywhere” consensus and forced high-IQ,<br>high-agency talent into physical rooms together. Serendipity, speed, and shared suffering cannot be manufactured on<br>Zoom.</p><p>You don’t need a 500-person engineering team. You need a 50-person “mafia” of relentless operators. The premium in the<br>next decade isn’t on specialized skills (which AI is commoditizing); it’s on sheer velocity and willpower.</p><p>Stop building productivity software for other Silicon Valley tech companies. The real wealth of the 2030s will be built<br>by taking over massively fragmented, unsexy, analog markets—real estate, trucking, healthcare billing, supply chain<br>logistics. Rabois’s thesis is to find a massive industry with low net promoter scores, fire the human back-office, and<br>replace it entirely with software and AI.</p><p>If your team is distributed across five time zones working 35-hour weeks, you will be eaten alive by a dense group of<br>operators sleeping under their desks in a single room. Stop selling SaaS to startups; go digitize a $500B legacy<br>industry that still uses fax machines.</p><br><h3 id="Patrick-Collison"><a href="#Patrick-Collison" class="headerlink" title="Patrick Collison"></a>Patrick Collison</h3><p>Collison (and his brother John) look at the world through the lens of macro-history. Their thesis is that human<br>potential is currently bottlenecked by bad infrastructure and bureaucratic decay.</p><p>Why could the Empire State Building be built in roughly a year in 1930, but a single subway extension in a major city<br>today takes two decades and billions of dollars? Collison believes the West is suffering from institutional sclerosis.<br>The next 10 years will reward founders who can successfully bypass, disrupt, or reform the regulatory and institutional<br>red tape that makes building in the physical and digital world so slow.</p><p>Despite its size, Collison believes the “GDP of the internet” is still a fraction of what it should be. Geographic<br>borders still dictate economic opportunity. The long-term play is building infrastructure that makes moving value<br>globally as frictionless as moving data.</p><p>Collison champions “Progress Studies”—the idea that scientific and economic advancement doesn’t just happen by accident.<br>It is engineered by specific environments, funding mechanisms, and ambitious people.</p><p>Stop optimizing for a quick 3-year flip. Build compounding infrastructure that actively removes friction from the global<br>economy. If your company isn’t fundamentally expanding the total pie of human progress or breaking through a structural<br>bottleneck, you aren’t thinking big enough.</p><br><h3 id="Balaji-Srinivasan"><a href="#Balaji-Srinivasan" class="headerlink" title="Balaji Srinivasan"></a>Balaji Srinivasan</h3><p>Balaji looks at the world through the lens of network math, cryptography, and the historical decay of empires. His<br>macro-thesis is that the 20th-century nation-state model is buckling under the weight of debt, institutional<br>incompetence, and ideological civil war.</p><p>You cannot build a business assuming a unified “American market” or “Western consensus” for the next decade. Balaji<br>believes we are moving into a highly fragmented, multi-polar world where people align by shared truth and digital<br>tribes, not geographic proximity.</p><p>In Balaji’s view, AI is fundamentally centralizing—it allows the incumbent state to monitor, control, and generate<br>infinite propaganda. Crypto is the only decentralized counterbalance. He views cryptography as “Truth Tech.” In a 2030s<br>internet flooded with AI-generated noise and deepfakes, cryptographic proofs will be the only way to verify human<br>identity, authenticity, and financial truth.</p><p>The highest-leverage founders won’t just build companies; they will build parallel institutions. They will build<br>cloud-first, crypto-native communities that gain immense capital and eventually crowdfund physical territory.</p><p>If your business model assumes the legacy financial system, traditional media, or legacy government institutions will<br>function smoothly and protect your property rights through the 2030s, you are highly exposed. You must build systems<br>that are cryptographically verifiable, borderless, and immune to fiat devaluation.</p><br><h3 id="Palmer-Luckey"><a href="#Palmer-Luckey" class="headerlink" title="Palmer Luckey"></a>Palmer Luckey</h3><p>Luckey operates in the brutal reality of atoms, geopolitics, and deterrence. He recognized a decade before the rest of<br>Silicon Valley that building software for consumer convenience is a luxury afforded entirely by physical security.</p><p>The era of building harmless B2B SaaS while ignoring geopolitical threats is over. Luckey’s thesis is that the most<br>critical problems of the next 10 years are defense, border security, supply chain resilience, and energy independence.<br>If the physical layer fails, the digital layer collapses.</p><p>The moral high ground in Silicon Valley has violently shifted. For decades, elite talent refused to work on defense<br>tech. Now, building autonomous drone swarms, defense software, and military-grade hardware is the frontier. The next<br>trillion-dollar companies will be the ones that provide a technological shield against adversaries who do not care about<br>Western HR policies.</p><p>Luckey believes that scaling manufacturing and iterating physical hardware at software speeds is the only defensible<br>moat. Bureaucratic defense primes are too slow. Startups that can design, test, and deploy physical technology in months<br>rather than decades will completely usurp the legacy military-industrial complex.</p><p>Pure consumer internet is a saturated, low-stakes game. The generational wealth of the 2030s will be forged by defending<br>the physical world. If your technology cannot secure a nation, harden a supply chain, or project physical power, you are<br>building in the sandbox while the adults fight the actual wars.</p><br><h3 id="Vinod-Khosla"><a href="#Vinod-Khosla" class="headerlink" title="Vinod Khosla"></a>Vinod Khosla</h3><p>Khosla is the ultimate techno-optimist, but his timelines and specific predictions are ruthless to the current<br>professional class. He is looking at the 2030s as the era where human “expertise” drops to a marginal cost of near-zero.</p><p>Khosla doesn’t just mean drivers and warehouse workers; he specifically targets highly paid, high-status professionals.<br>He believes AI will replace the majority of functions performed by primary care doctors, oncologists, structural<br>engineers, and corporate lawyers.</p><p>For centuries, humans made money by knowing something someone else didn’t (a medical diagnosis, a legal loophole, a<br>complex coding language). Khosla’s thesis is that AI turns specialized knowledge into a free, infinitely distributable<br>commodity. The value of a human “expert” will plummet.</p><p>We are moving from a world of one-size-fits-all services to infinite, free personalization. Every child gets a<br>customized AI tutor; every patient gets a world-class AI physician available 24&#x2F;7. The companies that win will be the<br>infrastructure layers distributing this abundance, not the humans trying to compete with it.</p><p>Look at your company’s value proposition. Are you charging money because your team possesses specialized human<br>knowledge? If so, your margins are going to zero. You must pivot from “selling human expertise” to building the<br>distribution pipes for AI-generated abundance.</p><br><h3 id="Alex-Karp"><a href="#Alex-Karp" class="headerlink" title="Alex Karp"></a>Alex Karp</h3><p>Karp views the tech ecosystem through the lens of a wartime philosopher. His macro-thesis is that the luxury of building<br>trivial software—“apps that deliver your groceries faster”—was a byproduct of the post-Cold War peace dividend. That<br>dividend is now completely bankrupt.</p><p>Karp believes that the survival of the West does not depend on manufacturing parity with adversaries, but on software<br>superiority. In 2026 and beyond, the only meaningful moat a nation has is its algorithmic integration. Software is no<br>longer a business optimization tool; it is a kinetic weapon.</p><p>You cannot build a global, apolitical platform anymore. The idea that a tech company can sit out geopolitical conflicts<br>is dead. Founders in the next decade must explicitly choose sides. You are either building technology that hardens the<br>resilience of your allied nation-states, or you are a liability.</p><p>Karp aggressively attacked the “woke” and “pacifist” iterations of Silicon Valley that refused defense contracts. The<br>next decade’s most culturally and economically dominant companies will be explicitly patriotic, unapologetically working<br>to maintain Western hegemony through data, AI, and autonomous systems.</p><p>If your software goes offline, does anyone actually care? Does it impact the real world? The 2030s will not reward<br>founders who build “nice-to-have” enterprise SaaS. The massive valuations will go to founders who build “<br>must-have-to-survive” infrastructure for critical industries and sovereign entities.</p><br><h3 id="Sam-Altman"><a href="#Sam-Altman" class="headerlink" title="Sam Altman"></a>Sam Altman</h3><p>Altman is engineering the underlying utility of the 2030s. His thesis strips away all the noise about AI products and<br>focuses entirely on the base layer: what happens when cognitive capability becomes a utility.</p><p>Over the next 10 years, Altman believes the global economy will compress into only two primary inputs: Intelligence (<br>Compute) and Energy. Everything else is derivative. If you solve the energy bottleneck (via nuclear or fusion), you<br>unlock infinite compute. If you have infinite compute, you have infinite intelligence to solve all other scientific and<br>material bottlenecks.</p><p>You shouldn’t be building a “generative AI company.” That is like building an “electricity company” in 1915 by selling a<br>specific type of lightbulb. Intelligence is becoming an ambient, near-zero-cost utility that flows into every system.</p><p>Altman’s ultimate macro view is that AI will sever the historic relationship between labor and capital. In the 2030s,<br>the cost of generating high-tier cognitive work approaches zero, destroying the traditional professional class. The only<br>scarce asset left is ownership of the underlying compute or the physical energy powering it.</p><p>You must assume that whatever cognitive task your company performs today will cost effectively zero in five years. Do<br>not build a moat around intelligence or efficiency. Build a moat around proprietary data pipelines, extreme physical<br>world integration, or energy infrastructure.</p><br><h3 id="Marc-Andreessen"><a href="#Marc-Andreessen" class="headerlink" title="Marc Andreessen"></a>Marc Andreessen</h3><p>Andreessen looks at the next decade as an ideological holy war between “Accelerationists” (those who want to build,<br>expand, and push the Techno-Capital machine forward) and “Decelerationists” (the safety bureaucrats, regulatory capture<br>artists, and legacy institutions trying to slow it down).</p><p>Andreessen’s most brutal thesis for the late 2020s is that the biggest threat to your startup isn’t a competitor; it’s<br>the incumbent monopolies using “AI safety” and “trust and safety” as Trojan horses to pass regulations that make it<br>illegal for a startup to compete with them.</p><p>He argues that technology and free markets are the only things that have ever elevated the human condition. Poverty and<br>stagnation are the natural state of nature; technology is the artificial force that fixes it. Any attempt to slow down<br>AI or hard tech in the name of “caution” is actually a mandate for continued human suffering.</p><p>To defeat the regulatory capture of the incumbents, the next generation of founders must weaponize open-source<br>development. By making cutting-edge models and tools freely available, founders can commoditize the monopolies’ core<br>products and force the game to be played on execution rather than regulatory permission.</p><p>Stop asking for permission. If you are waiting for regulatory clarity, a legacy incumbent will lobby to ensure that<br>clarity locks you out of the market. You must build fast, heavily leverage open-source, and aggressively defend your<br>right to build without seeking the blessing of the legacy establishment.</p><br><h3 id="Jensen-Huang"><a href="#Jensen-Huang" class="headerlink" title="Jensen Huang"></a>Jensen Huang</h3><p>Huang isn’t just selling picks and shovels; he is architecting the new industrial revolution. His macro-thesis is that<br>the 60-year paradigm of humans writing instructions for computers is permanently over.</p><p>For a decade, the consensus advice was “learn to code.” Huang’s contrarian, and now proven, thesis is that the goal of<br>computer science is to create a world where nobody has to code. Human language is the new programming language. If your<br>company’s moat relies on having a massive team of traditional software engineers typing C++ or Python, you are carrying<br>dead weight.</p><p>In the 20th century, we built factories to manufacture physical goods. In the 2030s, the dominant economic engine is the<br>AI Factory . You put raw data and electricity in, and you generate “tokens” (intelligence) out. Software is no longer a<br>static tool you sell; intelligence is an ambient product you manufacture continuously.</p><p>Huang recognized that intelligence cannot be outsourced. Just as no nation would outsource its food supply or water<br>processing to a foreign adversary, no nation or massive enterprise in the next decade can afford to outsource its<br>intelligence. The next massive wave of capital expenditure is every nation-state and Fortune 100 company building their<br>own sovereign AI infrastructure.</p><p>Stop thinking of your company as a software vendor. You are either operating an AI Factory that generates intelligence,<br>or you are building the physical&#x2F;digital infrastructure to support one. If you are just a wrapper on someone else’s<br>factory, your margins will be crushed to zero.</p><br><h3 id="Paul-Graham"><a href="#Paul-Graham" class="headerlink" title="Paul Graham"></a>Paul Graham</h3><p>Graham has watched thousands of companies scale and fail. His most critical, contrarian insight for the late 2020s<br>fundamentally rejects the standard Silicon Valley playbook for scaling a business.</p><p>For decades, founders were told that once their company hit a certain size, they needed to “hire good people and get out<br>of their way”—essentially handing the company over to professional managers and MBAs. Graham argues this is actively<br>destructive. Professional managers optimize for process, politics, and risk-aversion, which kills innovation.</p><p>The most successful companies of the next decade will be run by founders who refuse to let go of the details. “Founder<br>Mode” means maintaining granular, unrelenting control over the product, skipping layers of middle management to speak<br>directly with the people doing the actual work, and leading by intuition rather than consensus.</p><p>Because AI has infinitely increased the leverage of a single individual, you no longer need middle managers to<br>coordinate armies of junior employees. A founder in 2026 can run a billion-dollar outcome with a team of 15 elite<br>generalists and an army of autonomous AI agents.</p><p>Fire your managers. Flatten your org chart. If you are spending your days in “manager mode”—reviewing OKRs, navigating<br>HR disputes, and sitting in alignment meetings—you are losing. Get back into the weeds. If you aren’t dictating the<br>exact pulse of the product, an AI-native competitor operating in Founder Mode will destroy you.</p><br><h3 id="Chamath-Palihapitiya"><a href="#Chamath-Palihapitiya" class="headerlink" title="Chamath Palihapitiya"></a>Chamath Palihapitiya</h3><p>Chamath operates purely on the ruthless math of capital flow. His thesis for the next 10 years is that the traditional<br>venture capital model for software is dead, and the real alpha has moved to atoms and electrons.</p><p>AI has driven the marginal cost of creating software to near zero. Because it is so cheap to build, there are zero<br>barriers to entry, which means pricing power is vanishing. Chamath argues that the massive, high-margin SaaS monopolies<br>of the 2010s are a historical anomaly. Enterprise software is undergoing a massive deflationary collapse. You can no<br>longer build a billion-dollar company just by creating a slightly better digital workflow.</p><p>The single biggest bottleneck to the Techno-Capital machine (and AI scaling) is power. Chamath’s thesis is that the<br>multi-trillion-dollar fortunes of the 2030s will be made by founders who solve the energy equation—specifically solar,<br>battery storage, and nuclear generation. Whoever can generate the cheapest, most abundant power controls the supply<br>chain for global intelligence.</p><p>Capital is fleeing ephemeral digital apps and flooding into companies that are rebuilding the industrial base of the<br>West. If you are building physical infrastructure, advanced materials, or energy grid optimizations, you have access to<br>functionally unlimited capital.</p><p>Do not build a business where your only differentiator is code. Code is now a commodity. You must build a business<br>anchored in hard assets, proprietary datasets, or physical world integration.</p><br><h3 id="Peter-Zeihan"><a href="#Peter-Zeihan" class="headerlink" title="Peter Zeihan"></a>Peter Zeihan</h3><p>Zeihan is a geopolitical strategist whose macro-predictions about supply chains and demographics have been ruthlessly<br>validated over the last few years. His thesis is that the macro-economic environment of 1990–2020 was a historical<br>anomaly that is never coming back.</p><p>Globalization was not an economic inevitability; it was an artificial security arrangement subsidized by the U.S. Navy<br>post-WWII to fight the Soviets. That arrangement is over. Zeihan’s thesis for the next decade is the violent unbundling<br>of global supply chains. If your hardware startup relies on components crossing three hostile oceans, your business<br>model is fundamentally broken.</p><p>With the exception of parts of Africa, the global working-age population is collapsing. China, Europe, and Russia are<br>aging past the point of economic return. This means the era of “cheap labor” to manufacture goods is permanently over.</p><p>Because globalized supply chains are fracturing (requiring expensive reshoring) and working-age populations are<br>shrinking (increasing labor bargaining power), Zeihan argues we are entering an era where capital will be structurally<br>more expensive and inflation will have a permanently higher floor. The zero-interest-rate fever dream is dead.</p><p>If your 10-year projection assumes you can manufacture cheaply in Asia, ship seamlessly across the globe, and hire an<br>infinite pool of cheap young talent, you are planning for a world that ceased to exist in 2022. You must build<br>hyper-localized, automated, and resilient systems.</p><br><h3 id="Yann-LeCun"><a href="#Yann-LeCun" class="headerlink" title="Yann LeCun"></a>Yann LeCun</h3><p>LeCun, a Turing Award winner and one of the “Godfathers of AI,” is currently executing the most aggressive contrarian<br>bet in the entire tech ecosystem. While the consensus (OpenAI, Anthropic) believes that scaling Large Language Models (<br>LLMs) will magically lead to AGI, LeCun recently left Meta to raise a billion-dollar seed round on the premise that the<br>LLM path is “complete bullshit.”</p><p>LeCun’s brutal reality check is that LLMs do not understand reality; they just predict text. They have no concept of<br>causality, physics, or spatial reasoning. Pumping another $100 billion of compute into text predictors will just create<br>more articulate hallucination engines, not superintelligence.</p><p>The next 10 years of AI will not be dominated by chatbots. LeCun is betting the future on Joint Embedding Predictive<br>Architectures (JEPAs)—AI that learns from video and physical reality, just like human babies do. This AI will understand<br>that if you push a glass off a table, it breaks. It will understand physics, allowing it to control robotics, industrial<br>processes, and autonomous systems without catastrophic failure.</p><p>LeCun believes the moat around closed, proprietary AI models is zero. Open-source models will consistently commoditize<br>the base layer of intelligence. Trying to build a massive monopoly by hoarding a closed model is a fool’s errand.</p><p>If your company is essentially just a software wrapper calling an LLM API, you have no moat and you are building on a<br>dead-end architecture. The generational value of the 2030s will be built by founders combining objective-driven AI with<br>physical world integration (robotics, manufacturing, defense).</p><br><h3 id="Elad-Gil"><a href="#Elad-Gil" class="headerlink" title="Elad Gil"></a>Elad Gil</h3><p>Gil is one of the most lethal capital allocators in the valley. He doesn’t get bogged down in the philosophical debates<br>about AGI; he looks purely at where market size and human necessity intersect.</p><p>We are transitioning out of the “infrastructure phase” of AI and into the “deployment phase.” The massive venture<br>returns of the next decade won’t come from building another foundation model; they will come from founders who build the<br>unsexy vertical software that actually deploys AI into legacy industries (healthcare billing, legal discovery,<br>procurement).</p><p>Gil’s thesis is that AI deployment will wipe out traditional B2B SaaS. Why pay $100&#x2F;seat for software that helps humans<br>do a workflow, when you can buy an AI agent that just executes the workflow itself? Startups will move to outcome-based<br>pricing (charging for the work done) rather than seat-based pricing (charging for the software used).</p><p>While everyone is distracted by digital intelligence, Gil is aggressively funding the next massive supercycle: Longevity<br>and Biotech. The ultimate constraint on the human condition isn’t compute; it is aging and death. By applying AI data<br>processing to computational biology (like his bets in BioAge Labs and NewLimit), the 2030s will be the decade where<br>aging is transitioned from an “inevitability” to a “solvable engineering problem.”</p><p>Don’t build tools that help people work; build agents that do the work. And if you want to tackle a truly unconstrained<br>Total Addressable Market for the next decade, look at computational biology. The first trillionaire won’t be made in<br>software; they will be made by adding 20 healthy years to the human lifespan.</p><br><h3 id="Shaun-Maguire"><a href="#Shaun-Maguire" class="headerlink" title="Shaun Maguire"></a>Shaun Maguire</h3><p>Maguire (Partner at Sequoia) approaches the next decade not as a software investor, but as a physicist and a<br>geopolitical realist. He recognized early that the most valuable companies of the 2030s will be the ones that bend<br>metal, master thermodynamics, and secure the West.</p><p>Maguire’s macro-view is that the zero-interest-rate era created a generation of “tourist founders”—people who started<br>companies for social status and quick exits. The next decade belongs exclusively to zealots. If you are building in hard<br>tech, aerospace, or defense, you are dealing with literal life-and-death physics and brutal capital requirements.<br>Tourists cannot survive this environment.</p><p>The idea that venture capital should avoid defense or government contracts is a relic of a naive past. Maguire’s thesis<br>is that the United States and its allies are in an existential race for technological supremacy. Startups are the only<br>entities moving fast enough to build the necessary deterrence. If you are building advanced materials, autonomous<br>systems, or space infrastructure, you aren’t just building a company; you are building the arsenal of the 21st century.</p><p>Maguire champions founders who are willing to take highly unpopular, contrarian, and even polarizing stances. In a<br>fragmented world, trying to appease everyone makes you weak. The next decade rewards founders with intense conviction<br>who align their companies with clear ideological and national realities.</p><p>You cannot bluff your way through the laws of physics or geopolitics. If your company’s core innovation is just a clever<br>marketing loop or a UI wrapper, it is fundamentally fragile. Are you building a business that can survive a global<br>supply chain shock, or better yet, are you building the technology that prevents one?</p><br><h3 id="Garry-Tan"><a href="#Garry-Tan" class="headerlink" title="Garry Tan"></a>Garry Tan</h3><p>As the CEO of Y Combinator, Tan sees the earliest signals of the future before anyone else. His operating thesis for<br>2026 is that we are in a literal war between “Little Tech” (agile, accelerated startups) and the unholy alliance of “Big<br>Tech” monopolies and the regulatory state.</p><p>Tan operates on the belief that technology is the only mechanism that expands human prosperity. There is no neutral<br>gear. You are either accelerating human progress or you are complicit in its stagnation. The founders who win the next<br>decade will view building their company as a moral imperative to advance civilization, completely rejecting the “<br>doomerism” of the early 2020s.</p><p>For decades, founders were told to “stay out of politics and focus on the product.” Tan proved this was a fatal error.<br>If you ignore the political and regulatory environment, the incumbents will use the government to crush you. The<br>founders of the 2030s must be politically active, fighting for their right to build, test, and deploy locally and<br>globally.</p><p>Under Tan, YC aggressively shifted back to its roots: hyper-lean teams of technical founders building hard things. The<br>era of raising $10M on a pitch deck to hire a bloated team of “strategy leads” and “growth hackers” is dead. You need<br>two engineers, infinite leverage via AI, and an obsession with the customer.</p><p>Do not assume the regulatory environment wants you to succeed; assume it is actively designed to protect incumbents. You<br>are an insurgent. Build your company with the lean, aggressive posture of a rebel force, and do not apologize for<br>accelerating progress.</p><br><h3 id="David-Sacks"><a href="#David-Sacks" class="headerlink" title="David Sacks"></a>David Sacks</h3><p>Sacks (Craft Ventures) is the ultimate operator-turned-macro-realist. While others preach techno-optimism, Sacks forces<br>founders to look at the brutal realities of cash flow and global macroeconomics.</p><p>Sacks’s most critical thesis is that the “SaaS massacre” of the early 2020s was not a temporary blip; it was a permanent<br>structural reset. The days of 50x ARR multiples and ignoring burn rates to buy growth are permanently over. Software is<br>no longer a magical asset class; it is a mature industry. If your unit economics do not make sense from day one, venture<br>capital will not bail you out.</p><p>Sacks views the geopolitical landscape through a lens of historical realism. The unified global market is fracturing.<br>The US, China, and emerging blocs are creating their own siloed technological ecosystems. You can no longer assume you<br>have a frictionless, global Total Addressable Market (TAM). You have to build for a fragmented, multipolar world where<br>tariffs, sanctions, and national firewalls dictate where you can sell.</p><p>When AI drives the cost of creating software to zero, features are no longer a moat. Distribution and brutal operational<br>efficiency are the only things that protect you. The companies that dominate the next decade will be the ones that run<br>so incredibly lean that they can out-price and out-last their bloated, legacy competitors.</p><p>Stop looking at your revenue growth; look at your burn multiple. If you are selling software into a crowded market,<br>assume your competitors will soon use AI to offer the exact same feature set for free. What is your fundamental,<br>undeniable edge when software margins compress to zero?</p><br><h3 id="Dario-Amodei"><a href="#Dario-Amodei" class="headerlink" title="Dario Amodei"></a>Dario Amodei</h3><p>Amodei operates with the terrifying clarity of someone who has stared directly into the scaling laws of intelligence.<br>His macro-thesis is that AGI is not just a chatbot or a workflow automation tool; it is the ultimate scientific engine.</p><p>Amodei’s contrarian belief is that once we hit AGI (which he targets in this immediate late-2020s window), the primary<br>economic shock won’t just be white-collar automation. It will be the total compression of scientific discovery. AGI<br>acting as millions of parallel, hyper-speed PhDs will condense a century of breakthroughs in biology, neuroscience, and<br>material science into a single decade.</p><p>For all of history, human biology (attention span, memory, lifespan) has been the bottleneck to R&amp;D. That bottleneck is<br>being removed. If your company relies on the slow, iterative pace of traditional human clinical trials, lab research, or<br>material testing, you are architecting a horse-and-buggy system in the age of the combustion engine.</p><p>Amodei doesn’t view AI safety as a regulatory chore; he views it as the only reason humanity survives the transition. In<br>a world where AI can engineer novel pathogens or break cryptographic protocols, the most valuable entities will be those<br>that can mathematically guarantee the alignment and security of their models. Unaligned intelligence is not a product;<br>it is a weapon of mass destruction.</p><p>Stop assuming the future will look like the present, just slightly faster. You must plan for a world where disease<br>curing, infinite lifespan research, and energy breakthroughs happen exponentially. If you are building in biotech,<br>pharma, or hard tech, you must fully hand over your R&amp;D pipeline to AI. Human scientists are now just the editors of<br>AI-generated discoveries.</p><br><h3 id="Leopold-Aschenbrenner"><a href="#Leopold-Aschenbrenner" class="headerlink" title="Leopold Aschenbrenner"></a>Leopold Aschenbrenner</h3><p>Aschenbrenner represents the clearest voice on the brutal geopolitical reality of the AGI race. His thesis is that the “<br>free market” era of Silicon Valley AI is effectively over, and we are entering an era of state-controlled gigawatt<br>clusters.</p><p>We are moving from models trained on $1B clusters to $100B, and soon $1T clusters. Aschenbrenner’s core insight is that<br>these are no longer corporate R&amp;D projects; they are the most critical military assets on Earth. The physical<br>infrastructure required—entire nuclear reactors dedicated to single data centers—cannot be managed by standard startups.</p><p>The most contrarian (but increasingly obvious) take is that the US national security apparatus will not allow a private<br>company or a flamboyant CEO to control a superintelligence that could destabilize global power. AGI will be<br>nationalized, or at least heavily co-opted by the Department of Defense.</p><p>Aschenbrenner warns that authoritarian states (specifically China) will not try to out-compute the US; they will simply<br>steal the model weights. The defining corporate battle of the next five years isn’t marketing; it’s military-grade<br>counterintelligence. If you cannot physically and digitally defend your IP from nation-state actors, you don’t actually<br>own it.</p><p>Do not build a business model that assumes you will have unchecked, cheap, API access to frontier superintelligence<br>forever. The state will heavily regulate, restrict, or monopolize access to AGI tier models for national security<br>reasons. You must build resilience into your architecture, utilizing localized open-weight models, or explicitly align<br>your company with the defense and security apparatus of the West.</p><br><h3 id="Jack-Dorsey"><a href="#Jack-Dorsey" class="headerlink" title="Jack Dorsey"></a>Jack Dorsey</h3><p>Dorsey reached the absolute pinnacle of the Web 2.0 era, realized it was a toxic trap, and is now dedicating his life to<br>destroying the very architecture he helped create.</p><p>Dorsey’s macro-thesis is that any centralized platform where a corporation controls your identity, your audience, and<br>your money is inherently corruptible and subject to state capture. If you build a walled garden, governments will<br>eventually force you to censor it, or competitors will commoditize it.</p><p>The only defensible long-term play is building open protocols (like Nostr for communication, or Bitcoin for money). You<br>don’t want to own the platform; you want to build the client interface on top of an unstoppable, decentralized protocol.<br>If the underlying protocol cannot be shut down by a nation-state, your business built on top of it has infinite staying<br>power.</p><p>Dorsey aggressively rejects the broader “crypto” ecosystem as unregistered securities and centralizes his focus entirely<br>on Bitcoin. In a 2030s world plagued by fiat debasement, AI-generated fraud, and deepfakes, Bitcoin is the only<br>cryptographically sound, decentralized base layer of truth and energy transfer.</p><p>If your business model relies on trapping users in a proprietary database where you can de-platform them or confiscate<br>their digital property at will, you are building a fragile empire. The wealth of the 2030s will be built by founders who<br>surrender control of the base layer and compete entirely on providing the best UI&#x2F;UX and services on top of<br>permissionless protocols.</p><br><h3 id="Ben-Thompson"><a href="#Ben-Thompson" class="headerlink" title="Ben Thompson"></a>Ben Thompson</h3><p>Thompson spent the 2010s defining “Aggregation Theory”—explaining how companies like Google and Meta won by monopolizing<br>demand and commoditizing supply. His macro-thesis for the next decade is that AI is completely blowing up that model.</p><p>Aggregators made trillions by being the router between a user’s question and a publisher’s link. AI removes the need for<br>routing entirely. When an AI agent simply gives you the synthesized answer, the aggregator’s interface loses its<br>monopoly on attention. The traditional search and social feeds are structurally dying.</p><p>In the 2030s, value will pool at the absolute extremes of the tech stack. At the bottom: the physical hardware, TSMC<br>foundries, energy grids, and foundational model compute. At the top: hyper-niche, proprietary data that the models must<br>ingest, and deeply trusted individual brands. Everything in the middle—the software wrappers, the aggregators, the<br>generic content platforms—gets crushed to zero margin.</p><p>Thompson is hyper-focused on the physical reality of compute. The entire global digital economy currently rests on a<br>single point of failure: Taiwan. He argues that building a 10-year software plan without factoring in the geopolitical<br>vulnerability of the semiconductor supply chain is strategic negligence.</p><p>You can no longer build a massive business by simply connecting supply and demand or aggregating other people’s content.<br>AI will do that for free. You must either own the physical infrastructure at the bottom, or you must own irreplaceable,<br>proprietary data at the very top.</p><br><h3 id="Ivan-Zhao"><a href="#Ivan-Zhao" class="headerlink" title="Ivan Zhao"></a>Ivan Zhao</h3><p>Zhao (founder of Notion) is architecting the death of the rigid software application. His thesis is that the 2010s era<br>of “there’s an app for that” was actually a failure of computing.</p><p>In the next 10 years, users will not buy a CRM, an HR platform, and a separate project management tool. Zhao views these<br>rigid silos as archaic. The future is “software as clay”—a blank, ubiquitous canvas where AI builds the exact workflow,<br>database, and UI you need in real-time, based purely on natural language.</p><p>We are moving toward a paradigm where software is generated exactly when you need it and dissolves when you are done.<br>The idea of navigating complex, static menus created by a human UI designer will look as outdated as using a<br>command-line prompt. The AI is the interface.</p><p>Enterprise SaaS companies survive by locking teams into proprietary data formats and charging per-seat licenses. Zhao’s<br>architecture suggests a future where data lives in a unified primitive layer, and AI agents manipulate it across the<br>entire organization seamlessly. The $100B B2B SaaS industry is going to be unbundled by simple, AI-powered workspaces.</p><p>If your entire business model is charging $20&#x2F;month&#x2F;user for a specialized digital workflow with a static UI, you are<br>dead walking. The AI of the 2030s will generate your entire product as a free feature within a broader workspace. You<br>must pivot to building the data primitives, the AI canvas itself, or workflows so deeply integrated into physical<br>reality that a digital canvas can’t replace them.</p><br><h3 id="Byrne-Hobart"><a href="#Byrne-Hobart" class="headerlink" title="Byrne Hobart"></a>Byrne Hobart</h3><p>Hobart views technology through the brutal lens of financial markets, liquidity, and structural arbitrage. His<br>macro-thesis is that AI forces the tech industry to look less like a software ecosystem and more like the<br>heavy-manufacturing booms of the 19th century.</p><p>For 20 years, founders bragged about being “asset-light.” Hobart argues that in the next 10 years, being asset-light<br>means you are defenseless. The most dominant companies will be those that master extreme financial engineering—raising<br>massive amounts of debt and equity to lock in supply chains for energy, cooling, and silicon.</p><p>The rate of AI advancement is creating unprecedented volatility. An entirely new business model could be vaporized<br>overnight by a foundation model update. Hobart sees a massive surge in the necessity of prediction markets and complex<br>financial hedging. Companies will need to financially hedge against the risk of AGI or specific algorithmic<br>breakthroughs destroying their core product.</p><p>In the SaaS era, a startup could build a product in a garage and overthrow a dinosaur. Hobart points out that in 2026,<br>the biggest companies have an insurmountable advantage: efficient capital markets. When buying GPUs requires billions of<br>dollars, the entities that can issue cheap corporate debt (Microsoft, Meta, sovereign wealth funds) will simply<br>out-spend startups on raw cognitive infrastructure.</p><p>Stop treating finance as an afterthought. If you are building a generational company in the 2030s, your CFO is just as<br>important as your CTO. You must structure your company to aggressively raise capital, secure physical assets, and hedge<br>against the existential volatility of frontier models. Pure software startups are playing on borrowed time.</p><br><h3 id="Benedict-Evans"><a href="#Benedict-Evans" class="headerlink" title="Benedict Evans"></a>Benedict Evans</h3><p>Evans strips away the hype to look at the historical patterns of technological deployment. His thesis is that we are<br>transitioning from “software eating the world” to “AI eating software.”</p><p>In the 2010s, the constraint on a business was how fast humans could write code to automate workflows. Evans argues that<br>in the next decade, AI models simply bypass the need for custom software. You don’t need a SaaS dashboard with 50<br>buttons; you just need an AI agent that understands the database and executes the goal. Software interfaces are<br>collapsing into natural language.</p><p>Evans is famous for predicting unbundling (e.g., the internet unbundled the newspaper into classifieds, news, and ads).<br>AI is now unbundling human cognition. A lawyer’s job is being unbundled into document review (AI), negotiation (human +<br>AI), and client empathy (human). The massive businesses of the 2030s will be the ones that perfectly integrate these<br>unbundled cognitive tasks into new, hyper-efficient workflows.</p><p>Evans warns against competing on raw intelligence. The foundation models will inevitably commoditize. The enduring value<br>in the 2030s lies in proprietary domain expertise, hyper-specific datasets, and physical-world feedback loops. AI is<br>just the new database—the value is in what you put into it and what physical actions it drives.</p><p>Look at your product interface. If it requires users to learn complex menus, navigate dashboards, and act like human<br>software integrators, it is obsolete. The user experience of the 2030s is “intent to execution.” Your moat is not your<br>code; it is your proprietary data and your ability to seamlessly orchestrate AI to solve the unbundled tasks of your<br>specific industry.</p><br><h3 id="Mark-Zuckerberg"><a href="#Mark-Zuckerberg" class="headerlink" title="Mark Zuckerberg"></a>Mark Zuckerberg</h3><p>Zuckerberg is operating with the longest time horizon in consumer tech. His macro-thesis is fundamentally about platform<br>sovereignty and destroying the margins of his competitors.</p><p>Llama isn’t a charity project; it is a ruthless, calculated strike at OpenAI, Anthropic, and Google. Zuckerberg’s<br>10-year thesis is that the foundational layer of AI must be commoditized. By spending billions to train frontier models<br>and giving them away for free, he destroys the business models of companies trying to charge a toll for intelligence. If<br>the base layer is free, the only way to make money is on distribution and application—which Meta dominates.</p><p>Zuckerberg was traumatized by Apple’s 2021 privacy changes, which wiped out billions of Meta’s market cap overnight. His<br>entire spatial computing&#x2F;AR&#x2F;VR thesis is driven by the mandate that Meta must never again be a tenant on someone else’s<br>operating system. In the 2030s, whoever owns the hardware and the OS of the AI interface controls the economy.</p><p>Zuckerberg proved that the consensus-driven, board-managed public company is weak. He burned $50 billion on Reality<br>Labs, fired tens of thousands of middle managers in his “Year of Efficiency,” and completely pivoted the company to<br>AI—and Wall Street eventually had to bow to him because he controls the voting shares.</p><p>If your business model relies on charging for raw intelligence, Mark Zuckerberg is explicitly trying to drive your<br>margins to zero. You must build your moat higher up the stack. Furthermore, structure your company’s governance so that<br>you cannot be fired when you need to make a brutally unpopular, decade-long pivot.</p><br><h3 id="Brian-Chesky"><a href="#Brian-Chesky" class="headerlink" title="Brian Chesky"></a>Brian Chesky</h3><p>While everyone else is focused on how to make AI faster and cheaper, Chesky is entirely focused on the socio-economic<br>reaction to AI. His macro-thesis is about human psychology in an era of infinite synthetic generation.</p><p>Over the next 10 years, AI will make digital content, digital friends, and digital interactions infinite and free.<br>Economics dictates that when something becomes infinitely abundant, its monetary value drops to zero. Chesky’s thesis is<br>that the only things that will command a massive premium in the 2030s are verifiable reality, physical hospitality, and<br>authentic human connection. “Meatspace” is the ultimate luxury good.</p><p>For the last 20 years, the bottleneck in tech was engineering—can you actually write the code to make this work? AI has<br>solved that bottleneck. When anyone can generate flawless code, engineering is no longer the differentiator. The new<br>bottleneck is taste, empathy, and design. The most valuable founders of the next decade will look more like artists and<br>hospitality experts than traditional computer scientists.</p><p>People are exhausted by algorithmic feeds, hyper-optimized funnels, and soulless digital efficiency. Chesky believes the<br>winning consumer companies of the next decade will actively rebel against total automation, injecting human friction,<br>curation, and personality back into their products.</p><p>If you are building a consumer product, stop trying to automate away every single human touchpoint. When your customers<br>spend 14 hours a day interacting with flawless, synthetic AI agents, they will pay a massive premium to interact with a<br>system that feels undeniably, authentically human. Elevate your designers to the same status as your lead engineers.</p><br><h3 id="Andrej-Karpathy"><a href="#Andrej-Karpathy" class="headerlink" title="Andrej Karpathy"></a>Andrej Karpathy</h3><p>Karpathy’s macro-thesis is that we are undergoing the most violent computing paradigm shift since the invention of the<br>transistor. The era of the “app” is over.</p><p>For 40 years, developers built applications that ran on top of Windows, macOS, or iOS. Karpathy’s thesis is that the<br>Large Language Model is the new OS . It manages memory, accesses the internet (disk), uses tools (peripherals), and runs<br>cognitive background processes. If you are building standalone SaaS apps with traditional GUIs, you are building<br>software for a dead operating system.</p><p>In Software 1.0, humans wrote logic (C++). In Software 2.0, humans wrote neural networks that learned logic. In Software<br>3.0, humans do not code at all. The only engineering that matters is data curation and behavioral alignment. Your entire<br>engineering org should transition from writing explicit instructions to curating ultra-high-fidelity datasets that shape<br>the AI’s behavior.</p><p>With his move to Eureka Labs, Karpathy is betting that the ultimate killer app of the new OS is the total<br>decentralization of human knowledge. The cost of a world-class, deeply personalized 1-on-1 expert for any subject is<br>crashing to zero. Human-led, institutional education is a legacy bottleneck that will be entirely bypassed by AI-native<br>generations.</p><p>If your company’s product requires a user to open an app, navigate a dashboard, and click buttons, you are obsolete. The<br>2030s belong to founders who build “peripherals” (tools, proprietary data feeds, physical actuators) that plug directly<br>into the LLM OS.</p><br><h3 id="Fei-Fei-Li"><a href="#Fei-Fei-Li" class="headerlink" title="Fei-Fei Li"></a>Fei-Fei Li</h3><p>Fei-Fei Li is the “Godmother of AI” who triggered the deep learning boom with ImageNet. Her contrarian, ruthless thesis<br>for the next decade is that the text-based LLMs everyone is currently obsessing over are fundamentally handicapped: they<br>are disembodied brains in vats that do not understand reality.</p><p>Language is just a highly compressed, lossy abstraction of the real world. A text-based LLM doesn’t actually understand<br>gravity, physical mechanics, or spatial reasoning; it just predicts words about them. If we want AI to do real work in<br>the real world, text is a dead end.</p><p>Li’s massive macro-play (via World Labs) is “Spatial Intelligence.” The next trillion-dollar leap isn’t a smarter<br>chatbot; it is an AI that can ingest, understand, simulate, and generate 3D physical environments . To conquer the<br>physical world, AI must have the spatial intuition of a human.</p><p>Elon Musk wants millions of humanoid robots, but physical hardware is useless without spatial intelligence. Li knows<br>that the founders who bridge the gap between digital cognitive reasoning and 3D physical execution will own the<br>automation of the entire physical economy.</p><p>You cannot automate the physical world with a text API. If you are trying to disrupt logistics, manufacturing,<br>architecture, or embodied AI, you must stop relying on autoregressive language models. You need to build or integrate<br>Large World Models that possess native physics engines and spatial reasoning.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The Experience Camera</title>
+      <link href="/2025/10/19/experience/"/>
+      <url>/2025/10/19/experience/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>meditation</title>
+      <link href="/2025/10/17/meditation/"/>
+      <url>/2025/10/17/meditation/</url>
+      
+        <content type="html"><![CDATA[<p>vipassana</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>distribution</title>
+      <link href="/2025/10/04/distribution/"/>
+      <url>/2025/10/04/distribution/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>my request for startups</title>
+      <link href="/2025/10/04/rfs/"/>
+      <url>/2025/10/04/rfs/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Labor-as-an-API"><a href="#Labor-as-an-API" class="headerlink" title="Labor as an API"></a>Labor as an API</h3><p>&gt; <code>human_labor()</code> will be a tool call.<br>&gt; agi will eat labor, but the economy is a fractal; humans will meet demand at the edges.<br>&gt; create a perfectly liquid gig economy; become a market-maker for labor.</p><br><h3 id="Economy-as-an-MMO"><a href="#Economy-as-an-MMO" class="headerlink" title="Economy as an MMO"></a>Economy as an MMO</h3><p>&gt; simulate the economy as a massively multiplayer online game.<br>&gt; in a post-robotics world, 99.9% of work will be done via teleoperation.<br>&gt; bitcoin as the in-game currency.<br>&gt; your userbase &#x3D;&#x3D;&#x3D; the workforce.</p><br><h3 id="Training-Data-for-Megaprojects"><a href="#Training-Data-for-Megaprojects" class="headerlink" title="Training Data for Megaprojects"></a>Training Data for Megaprojects</h3><p>&gt; why can’t Claude Code build a skyscraper?<br>&gt; there is a gaping hole of data for massively long-horizon &amp; collaborative task.</p><br><h3 id="Shopify-for-Robotics"><a href="#Shopify-for-Robotics" class="headerlink" title="Shopify for Robotics"></a>Shopify for Robotics</h3><p>&gt; saas is the new dropshipping in 2025<br>&gt; small businesses w&#x2F; robitics will be the new e-comm<br>&gt; build the infra; earn an eternal revenue cut.</p><br><h3 id="AI-construction-firm"><a href="#AI-construction-firm" class="headerlink" title="AI construction firm"></a>AI construction firm</h3><p>&gt; construction is a $13T market.<br>&gt; become an insider first; don’t have hubris.<br>&gt; vertically integrate until you’re the Developer’s point of contact.<br>&gt; iterate &amp; expand until the only thing left to replace is the labor itself.<br>&gt; finally, build skyscrapers with software margins.</p><br><h3 id="Linkedin-2"><a href="#Linkedin-2" class="headerlink" title="Linkedin 2"></a>Linkedin 2</h3><p>&gt; linkedin is built on old rituals like resumes, etc.<br>&gt; figure out how to mathematically verify taste+agency.<br>&gt; forward integrate into labor, or backwards integrate into education.<br>&gt; the economy is your oyster.</p><br><h3 id="Education-2"><a href="#Education-2" class="headerlink" title="Education 2"></a>Education 2</h3><p>&gt; teachers are high-variance. pedigree is rigged, intelligence is immeasurable.<br>&gt; what does it mean to be ‘well-educated’ post-agi?<br>&gt; anything that can be put in words is in-distribution; we need higher-level representations for thought.<br>&gt; aggressively democratize &amp; standardize the education system with software.<br>&gt; teach timeless things like physics and meditation.</p><h3 id="Fitbit-for-your-brain"><a href="#Fitbit-for-your-brain" class="headerlink" title="Fitbit for your brain"></a>Fitbit for your brain</h3><h3 id="palantir-aproach-to-agent-builder"><a href="#palantir-aproach-to-agent-builder" class="headerlink" title="palantir-aproach to agent builder"></a>palantir-aproach to agent builder</h3><h3 id="JTBD-as-a-service"><a href="#JTBD-as-a-service" class="headerlink" title="JTBD as a service"></a>JTBD as a service</h3><h3 id="Remote-controlled-greenhouses"><a href="#Remote-controlled-greenhouses" class="headerlink" title="Remote-controlled greenhouses"></a>Remote-controlled greenhouses</h3><h3 id="Claude-Code-for-your-social-graph"><a href="#Claude-Code-for-your-social-graph" class="headerlink" title="Claude Code for your social graph"></a>Claude Code for your social graph</h3>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>the fractal</title>
+      <link href="/2025/09/27/fractal/"/>
+      <url>/2025/09/27/fractal/</url>
+      
+        <content type="html"><![CDATA[<p>&gt; the year is 2025<br>&gt; saas is my passion<br>&gt; move to sf<br>&gt; $100M revenue in 2 weeks<br>&gt; I’m not a wrapper — I did post-training<br>&gt; wake up, check X<br>&gt; the labs have swallowed me whole<br>&gt; back to zero</p><p>&gt; let’s try b2b<br>&gt; claude code: $20&#x2F;month<br>&gt; make something people want<br>&gt; find a niche, launch on product hunt</p><p>&gt; oh, we’re all writing the same code in this finite code space<br>&gt; saas is a fractal<br>&gt; saas is the new brick and mortar store<br>&gt; niches are geographically</p><p>&gt; all users churn<br>&gt; they were other b2b saas anyway<br>&gt; b2b saas is a ponzi scheme</p><p>&gt; read innovator’s dilemma<br>&gt; okay — enterprise software<br>&gt; blindside the incumbent with AI<br>&gt; &#x2F;claude write a salesforce clone with chat<br>&gt; wait… how do these execs already know RAG?</p><p>&gt; startups move fast<br>&gt; incumbents have LLMs too<br>&gt; senior engineers shipping 50k-line PRs<br>&gt; &#x2F;claude, give me a moat</p><p>&gt; pick a vertical<br>&gt; software eats the world<br>&gt; I’ll sell to bankers<br>&gt; 5x workflows (then replace them, shhh)</p><p>&gt; find a banker, do the mum test, get pilot<br>&gt; layoffs hit, they’re gone<br>&gt; two weeks later — new job<br>&gt; openai pays $500&#x2F;hr for spreadsheets<br>&gt; knowledge work: too cheap to meter</p><details><summary>option 1: go to the party</summary><p>&gt; sf party<br>&gt; researcher rushes over<br>&gt; no, I don’t have dru— oh, you want <em>training data?</em></p><p>&gt; I’VE GOT IT<br>&gt; sell data to the labs<br>&gt; the real gold rush<br>&gt; don’t sell picks and shovels<br>&gt; just dig</p><p>&gt; $100M ARR<br>&gt; my data moves the species<br>&gt; no craft, just arbitrage<br>&gt; free money</p><p>&gt; training data is eating the valley<br>&gt; so agi can eat the world</p></details><details><summary>option 2: look out the window</summary><blockquote><p>look outside<br>knowledge work: solved<br>but the future’s unevenly distributed<br>salvation lies in atoms<br>healthcare, construction, education — the frontier<br>far from text, for now</p></blockquote><blockquote><p>I pick construction<br>the built world is my passion</p></blockquote></details>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> opinion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>A functional programming language for philosophy</title>
+      <link href="/2025/03/13/programming-language-for-philosophy/"/>
+      <url>/2025/03/13/programming-language-for-philosophy/</url>
+      
+        <content type="html"><![CDATA[<ul><li><input disabled="" type="checkbox"> Haskell, &#x3D;&gt; and mathematics, and philosophy [wip]<br>In javascript, w&#x2F;o side effects, &#x3D;&gt; actually means implies</li><li>(&gt;”The sun has risen every morning for the last 1000 years”) &#x3D;&gt; &gt;”It will rise tomorrow”</li><li>Semantic compiler</li><li>Closure. I really like the name closure. It may be like but closure, a functional programming language for philosophy. </li><li>a deterministic adapter and a functional (deterministic) compiler to merely check the validity (w&#x2F; truth tables)</li></ul><p>Primitives:<br>Doing promise &#x3D;&gt; !conclusion should evaluate to ‘impossible’</p><hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Den</title>
+      <link href="/2025/02/12/den/"/>
+      <url>/2025/02/12/den/</url>
+      
+        <content type="html"><![CDATA[<section>    <figure>        <img src="/images/project-mocks/den/2.jpg">        <figcaption>build b2b saas <strong>with the boys</strong> until the world is <strong>post-economic</strong>.</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/den/1.jpg">        <figcaption>the <strong>Network State</strong> concept proposes creating new countries that start as digital communities and grow into sovereign entities by amassing members, wealth, and physical land</figcaption>    </figure></section><br>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OpenDating</title>
+      <link href="//opendating/"/>
+      <url>//opendating/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui.min.css" /><script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/5.11.8/swagger-ui-bundle.min.js"></script><script>    window.onload = () => {        window.ui = SwaggerUIBundle({            url: 'https://raw.githubusercontent.com/jl33-ai/OpenDating/refs/heads/main/docs/api-spec.yaml',            dom_id: '#swagger-ui',            deepLinking: true,            presets: [                SwaggerUIBundle.presets.apis,                SwaggerUIBundle.SwaggerUIStandalonePreset            ],        });    };</script><div id="swagger-ui"></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>agents need a new api</title>
+      <link href="/2025/01/01/the-next-interface/"/>
+      <url>/2025/01/01/the-next-interface/</url>
+      
+        <content type="html"><![CDATA[<p>The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of <strong><em>consumer</em></strong> that wants to read or write to our systems.</p><br><h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>For example, the Application Programming Interface (API) was born because software needed a way to communicate with other software and programmers. So we started writing protocols like <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">HTTP</a>.*</p><p>The Graphical User Interface (GUI) was made in <a href="https://spectrum.ieee.org/xerox-parc">Xerox PARC</a> because we needed to make computers accessible to <em>normal people</em> (not just programmers). So we moved from text-based commands to visual metaphors (like the mouse, desktop, or folders).</p><p>When you apply this framework, all breakthroughs in technology seem obvious. All they were doing was catering to a new type of consumer.</p><p>A recent example is <a href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Search Engine Optimization</a>. SEO was born thanks to a new type of consumer: the <a href="https://en.wikipedia.org/wiki/Web_crawler">web crawler</a>. People understood that their webpages were no longer being read by just humans, so they started writing html to be read by crawlers too. </p><h3 id="How-to-create-interfaces"><a href="#How-to-create-interfaces" class="headerlink" title="How to create interfaces"></a>How to create interfaces</h3><p>The Act of Interface Creation is a simple <strong>two-step process</strong>:</p><ol><li>Identify that there is a new type of consumer who wants to read&#x2F;write to your stuff.</li><li>Consider how to design your interface so that it is as “readable” as possible for the consumer.</li></ol><h3 id="AgentWare"><a href="#AgentWare" class="headerlink" title="AgentWare"></a>AgentWare</h3><p>There’s a new consumer on the block: the <strong><a href="https://zapier.com/blog/ai-agent/">AI agent</a></strong>. </p><p>Why? All content we create will eventually be read by an agent — whether this be an LLM or other AI. </p><p><a href="https://en.wikipedia.org/wiki/Hypermedia">Hypermedia</a> was at first <em>computer-readable</em>, then <em>human-readable</em>, and then <em>web-scraper-readable</em>. Now it must be <em>agent-readable</em>.</p><p>I am proposing two things: </p><ul><li><strong>Agent-Application Interface (AAI)</strong>: the interface between agents and software.⁑</li><li><strong><em>AgentWare</em></strong>: software that implements <strong>AAI</strong>, built from the ground-up for agents as the end-user.</li></ul><p><strong><em>AgentWare</em></strong> will have underlying data structures that can be easily read by agents, and written to if needed.⁂ </p><p>Because the way humans and agents “read” is quite similar, <strong><em>AgentWare</em></strong> will be backwards-compatible with existing software for a while, and therefore maintain good “user-interface” for human beings.</p><br><h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Interfaces are anything that allow <em>A</em> to connect with <em>B</em>. Without interfaces, things exist in complete isolation. But, with well-made interfaces, there is infinite emergent potential.</p><br><hr><p>* &nbsp; <a href="https://github.com/modelcontextprotocol">Model Context Protocol</a>: An open protocol that enables seamless integration between LLM applications and external data sources and tools<br>⁑ &nbsp;&nbsp; Most likely some derivative of natural language, but I have no idea :’)<br>⁂ &nbsp; Caveat — there needs to be clear monetary incentive for making your stuff more accessible. Web crawlers, for example, will thank you by leading to higher site traffic.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> opinion </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>how to make a TASTEful api</title>
+      <link href="/2024/10/17/tasteful-apis/"/>
+      <url>/2024/10/17/tasteful-apis/</url>
+      
+        <content type="html"><![CDATA[<p>As we enter the era of <strong>taste</strong>, I want to talk about practical ways you can write more TASTEful APIs.</p><br><h3 id="Error-messages"><a href="#Error-messages" class="headerlink" title="Error messages"></a>Error messages</h3><blockquote><p>Stripe returns errors in plain English: “That card number doesn’t look right.” Not <code>ERROR_INVALID_PARAMETER</code>. Because developers debug at 2am.</p></blockquote><ul><li>developers debug at 2am</li><li>the <em>unhappy</em> path is more important than the <em>happy</em> path.</li><li>wrap your errors in a loving, gentle ribbon.</li></ul><hr><h3 id="The-API-is-the-product"><a href="#The-API-is-the-product" class="headerlink" title="The API is the product"></a>The API is the product</h3><ul><li>the API is the product. Act like a product person. <a href="https://opensource.zalando.com/restful-api-guidelines/">don’t get lost in the code</a>.</li><li>this is how to make an API that is <strong>irresistible</strong> to developers.</li><li>we don’t make shitty GUIs, so don’t write shitty APIs.</li><li>you are an author.</li></ul><hr><h3 id="Time-to-first-‘Hello-World’"><a href="#Time-to-first-‘Hello-World’" class="headerlink" title="Time to first ‘Hello World’"></a>Time to first ‘Hello World’</h3><ul><li>how long it would take for a non-technical person to get their first successful response from your API?</li><li>adjust accordingly.</li></ul><hr><h3 id="Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation"><a href="#Developers-should-be-able-to-guess-your-API-even-without-reading-the-documentation" class="headerlink" title="Developers should be able to guess your API even without reading the documentation."></a>Developers should be able to guess your API even without reading the documentation.</h3><ul><li>maximize predictability</li><li>minimize surprise</li></ul><hr><h3 id="Don’t-overdo-it"><a href="#Don’t-overdo-it" class="headerlink" title="Don’t overdo it"></a>Don’t overdo it</h3><blockquote><p>It’s easy to add new features to an API, but hard to remove them.</p></blockquote><ul><li>be intentional with the surface area of your API.</li><li>more surface area ≠ better.</li><li>don’t put your users in configuration paralysis.</li><li>let each endpoint be responsible for exactly one thing.</li></ul><br><p><strong>Implementation is trivial</strong>; taste is a moat.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Orchestra</title>
+      <link href="/2024/07/27/orchestra/"/>
+      <url>/2024/07/27/orchestra/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Poll Anything</title>
+      <link href="/2024/06/15/poll-anything/"/>
+      <url>/2024/06/15/poll-anything/</url>
+      
+        <content type="html"><![CDATA[<p>Poll Anything allows you to publish yes&#x2F;no questions and gather thousands of responses within minutes.</p><p>I built this one weekend because my colleague was arguing with his partner about whether ‘the majority of men’ close the bathroom door. He wished he had a way to instantly gather votes from a small sample size.</p><p>Try it here: <a href="https://sampler-sage.vercel.app/">https://sampler-sage.vercel.app/</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> product </category>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Viral by Design</title>
+      <link href="/2024/05/18/viral-by-design/"/>
+      <url>/2024/05/18/viral-by-design/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Lyrebird</title>
+      <link href="/2024/03/27/lyrebird/"/>
+      <url>/2024/03/27/lyrebird/</url>
+      
+        <content type="html"><![CDATA[<p>In school, we’re taught that a company is an <strong>entity</strong>.</p><p>This is a lie. </p><p>The company are the <strong>people</strong>.</p><section> <figure>        <img src="/images/project-mocks/lyrebird/7.jpg">        <figcaption>it was probably a really important phone call</figcaption>    </figure><figure>        <img src="/images/project-mocks/lyrebird/4.jpg">        <figcaption>Shot on iPhone</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/lyrebird/5.jpg">        <figcaption>management is either carrot or stick...</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/lyrebird/6.jpg">        <figcaption>the lads (colorized)</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/lyrebird/8.jpg">        <figcaption>pair programming</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/lyrebird/9.jpg">        <figcaption>Linus finds out someone expensed a cake for a birthday</figcaption>    </figure></section><details>    <summary>what I actually did</summary>    <figure>        <img src="/images/project-mocks/lyrebird/1.jpg">        <figcaption>Tool calling in medical workflows</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/lyrebird/2.jpg" alt="">        <figcaption>Fine tuning a <a href="https://github.com/jl33-ai/speech-2-drug">speech-to-text model</a> to detect drug names</figcaption>    </figure>    <figure>        <img src="/images/project-mocks/lyrebird/3.jpg">        <figcaption class="figcaption">Realtime billing code prediction</figcaption>    </figure></details>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>UniHack</title>
+      <link href="/2024/03/01/unihack/"/>
+      <url>/2024/03/01/unihack/</url>
+      
+        <content type="html"><![CDATA[<p><strong><a href="https://www.unihack.net/about">UniHack</a></strong>, Australia’s largest university student hackathon sponsored by <strong>AWS</strong> and <strong>Atlassian</strong></p><ul><li>🥇 First place</li><li>🎖️ + Most original idea</li></ul><p><strong>What we built:</strong> A product management suite for group work with AI product manager, <em>Freckle</em>.</p><p><strong>Why:</strong> Dysfunctional group projects (self-referential). </p><p><a href="https://youtu.be/VYJglfuWDqo?si=enaEYBgqaMORxe-r">Submission video</a> | <a href="https://github.com/orgs/amiables-2024/repositories">Github Repo</a> | <a href="https://devpost.com/software/sweet-qlndop">Devpost</a> | <a href="https://youtu.be/LfvLdgmBXa8">Timelapse</a></p><div style="display: flex;"><img src="/images/unihack-devpost-cover.png" style="width: 25%; height: auto;"><img src="/images/unihack-24-team.png" style="width: 25%; height: auto;"></div>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hacks4nets.com</title>
+      <link href="/2024/01/24/hacks4nets/"/>
+      <url>/2024/01/24/hacks4nets/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>MLAI Hack &#39;23 writeup</title>
+      <link href="/2023/12/18/ml-ai-hack-23/"/>
+      <url>/2023/12/18/ml-ai-hack-23/</url>
+      
+        <content type="html"><![CDATA[<h1 id="The-Team"><a href="#The-Team" class="headerlink" title="The Team"></a>The Team</h1><p><img src="/images/the-team2.png"></p><p><strong>The Problem:</strong> Public Transport Victoria Interface</p><p><strong>The Solution:</strong> A live data-enabled ChatBot with algorithms and predictive analytics built in</p><p><strong>Submission Video:</strong> <a href="https://youtu.be/NmYVubGNH-E?si=o_3Cf7nmCq03rcRi">here</a></p><p><strong>Github Repo:</strong> <a href="https://github.com/jl33-ai/ml-ai-hack">here</a></p><hr><h1 id="Gallery"><a href="#Gallery" class="headerlink" title="Gallery"></a>Gallery</h1><p><img src="/images/mlai-1.png"></p><p><img src="/images/mlai-2.png"></p><p><img src="/images/mlai-3.png"></p><p><img src="/images/mlai-4.png"></p><p><img src="/images/mlai-5.png"></p><p><img src="/images/mlai-6.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>llms/ why the LLM might unify data science and software engineering</title>
+      <link href="/2023/12/01/the-llm-os/"/>
+      <url>/2023/12/01/the-llm-os/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> llm </tag>
+            
+            <tag> Data Science </tag>
+            
+            <tag> Programming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>agency and ai</title>
+      <link href="/2023/11/29/llm-agency-vs-pessimism/"/>
+      <url>/2023/11/29/llm-agency-vs-pessimism/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> llm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-ipfs-plugin</title>
+      <link href="/2023/10/15/hexo-ipfs-plugin/"/>
+      <url>/2023/10/15/hexo-ipfs-plugin/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> engineering </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ipfs </tag>
+            
+            <tag> hexo </tag>
+            
+            <tag> plugin </tag>
+            
+            <tag> open source </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Fine tuning an LLM on 2 million Apple Notes</title>
+      <link href="/2022/12/09/memory-hoarding-gpt/"/>
+      <url>/2022/12/09/memory-hoarding-gpt/</url>
+      
+        <content type="html"><![CDATA[<p><strong>It all started because</strong> I wanted to follow <a href="https://youtu.be/kCc8FmEb1nY">this tutorial</a> - creating your own character-level GPT - and train on a dataset more interesting than Shakespeare. A stroke of genius: <em>I could use my ~2 million words worth of diary entries.</em> </p><p>2 million words, that seems like a lot? Well, I have <a href="https://ocdla.com/memory-hoarding-obsessive-compulsive-disorder-ocd-1964#:~:text=Memory%20hoarding%20is%20a%20mental,is%20at%20a%20later%20date.">Memory Hoarding OCD (mhocd)</a> aka the neurological compulsion to write everything down. Memory hoarders believe it is of upmost importance to <strong>encode</strong> every detail of their human experience. </p><p>Pay attention to that internal monologue going on in your head right now. If there was some way to rigorously transcribe it, you would have a dataset near 1-to-1 with your mind. Without getting too <a href="https://en.wikipedia.org/wiki/Qualia">philosophical</a>, you probably get the gist of what I’m saying. So I continued forth, hoping for some kind of <strong>psuedotherapy</strong>. </p><blockquote><p>In the deepest hour of the night, confess to yourself that you would die if you were forbidden to write. And look deep into your heart where it spreads its roots, the answer, and ask yourself, must I write? - <strong><a href="https://en.wikipedia.org/wiki/Letters_to_a_Young_Poet">Rainer Maria Rilke</a></strong></p></blockquote><hr><h1 id="training"><a href="#training" class="headerlink" title="training"></a>training</h1><p>Using <code>pytorch</code>, <code>numpy</code> and <code>12 hours</code> of training on a <a href="https://www.techradar.com/reviews/razer-blade-2019-review">laptop</a>, the model is able to ‘dream’ sentences by predicting the most likely next character.</p><figure class="highlight text"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">She holds me every on mt dinner word to something I f*ck right a milk I must want to no feel about this stuff like ur whole quickly detail adorable in bedroom with why Just deserve that did then. you Feel someone like those fring from whole excited to be the tell her personality about her friends it gets so deeplying into the reminder. Be hot. Actually get drying to Oat and I could drive the places with her. Aight the whole Integrity. Get To Her. </span><br><span class="line">Icle Tim. </span><br><span class="line">Her mind. What was the explainates rough. </span><br><span class="line">She had a difference record of her mhm</span><br><span class="line">‘Forgive.’ 🙏🙏🙏❤️</span><br><span class="line">The&#x27;res omg we’d reply don’t even insecurity and my form tho. Mental… now charge, andddd Mew harder. unspitateful. The most registical girl. She’s picking in.. Budget. The couple stuff. And they helped my copperment and so bsugging ur v not to warm like the schedule customach englishmic dinner with EYES too.</span><br><span class="line">- </span><br><span class="line">- M is the prank you invitewt ugh?!‘She perfect meanly the RB people seriously thing.’ ‘Rip my friend all the music crack on the&#x27;</span><br></pre></td></tr></table></figure><p>I know - this is unintelligible gibberish. It’s still very impressive; given ~ 16 KB of code, the model is even able to use emojis the exact same way I do…</p><p><strong>The problem</strong> is that this model was born and raised entirely within the universe of my diary - unlike larger models, it hadn’t been exposed to sufficient data to actually build up any language, vocabulary, or knowledge of the outside world…</p><blockquote><p>The human brain has about 100 trillion ($10^{14}$) synaptic connections, and you will live for about $10^9$ seconds; that’s $\sim 10^5$ bits per second that you need to learn in your life. From this crude argument; there’s no way that most of what we know is through supervised learning, but rather by sucking in these audio&#x2F;visual&#x2F;sensory experiences throughout out lives. - <a href="https://youtu.be/0jspaMLxBig?si=8mskSH8FpxGPez2T&t=1438">Andrew Ng</a></p></blockquote><p>In the same way toddlers learn to speak in 12-18 months, I had just ‘taught’ this model to speak and think, from scratch. </p><hr><h1 id="the-magic-finetuning"><a href="#the-magic-finetuning" class="headerlink" title="the magic: finetuning"></a>the magic: finetuning</h1><p>I thought it’d be interesting to contrast these results with fine tuning an existing model like <code>gpt2</code>, which has been trained on <a href="https://openwebtext2.readthedocs.io/en/latest/">OpenWebText</a>; many millions of webpages. </p><p>My original method exposed my $10^7$ parameter model to around $10^6$ (2 million) words of knowledge. But by fine tuning, it feels more like I’m teaching a 9 year old a new concept, able to leverage their pre-existing knowledge of language and understanding of the world, rather than ‘training up’ that toddler from scratch.  </p><p><strong>Fine-tuning</strong> is exactly the same as training, except instead of initializing the parameters with noise from a $\text{Normal}(0, 0.02)$, we use the weights and biases from <code>gpt2-xl</code>, and then train from there as usual. </p><p><img src="/images/gp2-xl2.png"></p><table><thead><tr><th>Device</th><th>Training Time</th><th>Model</th><th>Loss</th></tr></thead><tbody><tr><td>macbook m2, metal performance shaders</td><td>8 hr</td><td>gpt2-medium</td><td>4.7</td></tr></tbody></table><br><p><strong>As I read the newly generated output</strong>, immediately I could tell that it was <em>too</em> familiar, and knew <em>too</em> much about me and my life. So there was clearly a simple bug in the code; my original notes were being printed to the screen. </p><p>But as I went to terminate the program, I realized that I was actually seeing an fresh stream of words. My throat went dry. </p><p>It was like that jarring feeling of hearing your own voice played on recording. It was <em>awkward</em> to continue reading, having to face the realization that that’s what I sound like. </p><p><em>(Output censored, to protect places&#x2F;identities&#x2F;emotions&#x2F;secrets)</em></p><p><img src="/images/gpt2-output.png"></p><p>So, it turns out that fine tuning is <strong>very</strong> effective. While the original output was held back by its incoherence, this was near-indistinguishable from my own writing. But it wasn’t just better next-word prediction in general; it captured <strong>my</strong> linguistic nuances, and even artifacts of my self and memories. </p><p>Reinforced by those millions of webpages it had already read, the model was now able to copy me precisely, asymptotically approaching my own stream of consciousness. </p><p>I kept reading. Despite the model reciting real life events, and recalling particular emotions that I felt last week, I felt a growing awareness that it was another entity from which all of these words were streaming. So it felt different to reading one’s own writing - but rather, a deep form of introspection through a <strong>cloning of the self</strong>. For the first time, instead of writing, I was able to listen. Observing <em>something else</em> struggle to express itself evoked a sense of pity. </p><p>The words, despite being randomly generated, held much weight. I understood the Author’s struggle; the pursuit to capture every fleeting thought and feeling through this futile emission of words - a unique kind of words that did not exist to be read. And so I stopped writing.</p><hr><h1 id="conclusion"><a href="#conclusion" class="headerlink" title="conclusion"></a>conclusion</h1><p>Memory hoarding OCD provides the rare opportunity to replicate your consciousness, as you have unintentionally created the perfect dataset for doing so. </p><p>Could it be that in some way the weights and biases in this 355M parameter model mirror my own brain? Probably not. But in some extrinsic way, this little thing is <strong>myself</strong>. </p><p>So, that’s the story of how I accidentally cured my OCD, and cloned my consciousness, or stream of thought, or internal monologue… whatever you call it. </p><hr><h1 id="appendix"><a href="#appendix" class="headerlink" title="appendix"></a>appendix</h1><ul><li><a href="https://medium.com/inside-machine-learning/what-is-a-transformer-d07dd1fbec04">Transformers</a> </li><li><a href="https://github.com/karpathy/nanoGPT">NanoGPT</a></li><li><a href="https://youtu.be/kCc8FmEb1nY">Tutorial</a> </li><li><a href="https://arxiv.org/abs/1706.03762">Attention</a></li><li><a href="https://arxiv.org/abs/2005.14165">Few Shot Learners</a></li><li><a href="https://huggingface.co/gpt2-medium">gpt2-medium</a></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> artphilosophy </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Archive</title>
+      <link href="/2022/10/12/mp4/"/>
+      <url>/2022/10/12/mp4/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> home </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>poem analysis</title>
+      <link href="/2021/11/12/literature/"/>
+      <url>/2021/11/12/literature/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> opinion </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Reads</title>
+      <link href="/2020/06/24/reads/"/>
+      <url>/2020/06/24/reads/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>aquaponics</title>
+      <link href="/2017/11/10/aquaponics/"/>
+      <url>/2017/11/10/aquaponics/</url>
+      
+        <content type="html"><![CDATA[<p>My first engineering project wasn’t a program, it was a fish tank. </p><p><strong>Here is the idea behind aquaponics:</strong> </p><ol><li>The fish sh*t in the water, which fertilizes it for the plants</li><li>The plants keep the water clean for the fish</li></ol><p>A perfect system, perfection in its simplicity. Perfectly self-sustaining, enclosed, and symbiotic. </p><p>It fascinated my mind. I begged my parents to take me to <a href="https://en.wikipedia.org/wiki/Bunnings">Bunnings</a>.<br>Nothing would stop me from building my <strong>aquaponics system</strong>.</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The Donovan Project</title>
+      <link href="/2016/01/01/donovan-project/"/>
+      <url>/2016/01/01/donovan-project/</url>
+      
+        <content type="html"><![CDATA[<p>Your friendly neighbourhood digital agency helping local businesses use <strong>tech</strong> (or what of it I knew at the time).</p><p>I offered the following ‘services’: </p><ul><li>Website building<ul><li>Personal portfolios</li><li>Basic branding home pages</li></ul></li><li>Graphic design</li><li>Branding campaigns</li><li>SEO</li><li>Copywriting</li><li>3D modelling</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> design </category>
+          
+          <category> product </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> graphic design </tag>
+            
+            <tag> 3d rendering </tag>
+            
+            <tag> branding </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>The Top Of My Todo List</title>
+      <link href="/2012/04/01/todo/"/>
+      <url>/2012/04/01/todo/</url>
+      
+        <content type="html"><![CDATA[<hr><p>* &nbsp;&nbsp; [something]<br>⁑ &nbsp;&nbsp;</p><p>[1] &nbsp;&nbsp; Reference</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>

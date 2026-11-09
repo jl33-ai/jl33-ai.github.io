@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang=en>
+
+
+    <head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+    <meta name="description" content="The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of consumer that wants to read or write to our systems.   ExamplesFor exam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="agents need a new api">
+<meta property="og:url" content="https://jl33-ai.github.io/2025/01/01/the-next-interface/index.html">
+<meta property="og:site_name" content="Justin">
+<meta property="og:description" content="The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of consumer that wants to read or write to our systems.   ExamplesFor exam">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://jl33-ai.github.io/images/icons/minecraft-xp.gif">
+<meta property="article:published_time" content="2025-01-01T03:06:32.000Z">
+<meta property="article:modified_time" content="2026-10-02T03:43:14.005Z">
+<meta property="article:author" content="JL">
+<meta property="article:tag" content="opinion">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jl33-ai.github.io/images/icons/minecraft-xp.gif">
+    
+    
+        
+            
+                <link rel="shortcut icon" href="/images/basq-crown/favicon.ico">
+            
+        
+        
+            
+                <link rel="icon" type="image/png" href="/images/basq-crown/android-chrome-192x192.png" sizes="192x192">
+            
+        
+        
+            
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/basq-crown/apple-touch-icon.png">
+            
+        
+    
+    <!-- title -->
+    <title>agents need a new api</title>
+    <!-- tippy -->
+    <script src="https://unpkg.com/popper.js@1"></script>
+    <script src="https://unpkg.com/tippy.js@5"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@5/themes/light.css"/>
+    <!-- async scripts -->
+    <!-- Google Analytics -->
+
+
+    <!-- Umami Analytics -->
+
+
+    <!-- PostHog -->
+
+    <script>
+        !function (t, e) {
+            var o, n, p, r;
+            e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) {
+                function g(t, e) {
+                    var o = e.split(".");
+                    2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () {
+                        t.push([e].concat(Array.prototype.slice.call(arguments, 0)))
+                    }
+                }
+
+                (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r);
+                var u = e;
+                for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) {
+                    var e = "posthog";
+                    return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e
+                }, u.people.toString = function () {
+                    return u.toString(1) + ".people (stub)"
+                }, o = "init Ce Ds Rs capture Ie calculateEventProperties Os register register_once register_for_session unregister unregister_for_session js getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSurveysLoaded onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey canRenderSurveyAsync identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug getPageViewId captureTraceFeedback captureTraceMetric".split(" "), n = 0; n < o.length; n++) g(u, o[n]);
+                e._i.push([i, s, a])
+            }, e.__SV = 1)
+        }(document, window.posthog || []);
+        posthog.init('phc_pNX57P97r86UecaA4Mrk3jQR9jEZC5vWnawi5JiUFw9v', {
+            api_host: 'https://us.i.posthog.com',
+            autocapture: false,
+            capture_pageview: true
+        });
+    </script>
+
+
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+    <!-- mathjax -->
+    
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+              tex2jax: {
+                skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+                inlineMath: [['$','$']]
+              }
+            });
+        </script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML'
+                async></script>
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+    <body
+            style="min-height: 100vh"
+            class="max-width mx-auto px3 ltr">
+    
+        <div id="header-post">
+    <a id="menu-icon" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fa-solid fa-bars fa-lg"></i></a>
+    <a id="top-icon-tablet" href="#" aria-label="Top"
+       onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i
+                class="fa-solid fa-chevron-up fa-lg"></i></a>
+    <span id="menu">
+    <span id="nav">
+      <ul>
+          
+              <li><a href="/">home</a></li>
+          
+              <li><a href="/blog">blog</a></li>
+          
+              <li><a href="/work">work</a></li>
+          
+              <li><a href="/etc">etc</a></li>
+          
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+          
+              <li><a class="icon" aria-label="Previous post" href="/opendating/"><i
+                              class="fa-solid fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();"
+                              onmouseout="$('#i-prev').toggle();"></i></a></li>
+          
+          
+              <li><a class="icon" aria-label="Next post" href="/2024/10/17/tasteful-apis/"><i
+                              class="fa-solid fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();"
+                              onmouseout="$('#i-next').toggle();"></i></a></li>
+          
+          <li><a class="icon" aria-label="Back to top" href="#"
+                 onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up"
+                                                                                 aria-hidden="true"
+                                                                                 onmouseover="$('#i-top').toggle();"
+                                                                                 onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fa-solid fa-share-alt"
+                                                                                     aria-hidden="true"
+                                                                                     onmouseover="$('#i-share').toggle();"
+                                                                                     onmouseout="$('#i-share').toggle();"
+                                                                                     onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&text=agents need a new api"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&is_video=false&description=agents need a new api"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=agents need a new api&body=Check out this article: https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fa-solid fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&name=agents need a new api&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/&t=agents need a new api"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+        
+        
+            <div id="toc">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Examples"><span class="toc-number">1.</span> <span class="toc-text">Examples</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-create-interfaces"><span class="toc-number">2.</span> <span class="toc-text">How to create interfaces</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AgentWare"><span class="toc-number">3.</span> <span class="toc-text">AgentWare</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number"></span> <span class="toc-text">Conclusion</span></a>
+      </div>
+        
+    </span>
+</div>
+
+    
+
+    <div class="content index py4 ">
+        
+
+        <article class="post story h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="story-header">
+        <a class="back-btn" href="/">← back</a>
+        
+                        <h1 class="posttitle storytitle p-name" itemprop="name headline">
+                            agents need a new api
+                        </h1>
+                        
+        <div class="meta">
+            
+    <div class="postdate">
+      
+        <time datetime="2025-01-01T03:06:32.000Z" class="dt-published" itemprop="datePublished">2025-01-01</time>
+        
+      
+    </div>
+
+
+            <!--            
+    <div class="article-category">
+        <i class="fa-solid fa-archive"></i>
+        <a class="category-link" href="/categories/opinion/">opinion</a>
+    </div>
+
+-->
+            <!--            
+    <div class="article-tag">
+        <i class="fa-solid fa-tag"></i>
+        <a class="p-category" href="/tags/opinion/" rel="tag">opinion</a>
+    </div>
+
+-->
+
+            <!--            todo go back button -->
+        </div>
+    </header>
+
+    <div class="story-body e-content" itemprop="articleBody">
+        <p>The history of technology can be traced through the invention of new interfaces. Interfaces are born when there is a new type of <strong><em>consumer</em></strong> that wants to read or write to our systems.</p>
+<br>
+
+<h3 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h3><p>For example, the Application Programming Interface (API) was born because software needed a way to communicate with other software and programmers. So we started writing protocols like <a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">HTTP</a>.*</p>
+<p>The Graphical User Interface (GUI) was made in <a target="_blank" rel="noopener" href="https://spectrum.ieee.org/xerox-parc">Xerox PARC</a> because we needed to make computers accessible to <em>normal people</em> (not just programmers). So we moved from text-based commands to visual metaphors (like the mouse, desktop, or folders).</p>
+<p>When you apply this framework, all breakthroughs in technology seem obvious. All they were doing was catering to a new type of consumer.</p>
+<p>A recent example is <a target="_blank" rel="noopener" href="https://developers.google.com/search/docs/fundamentals/seo-starter-guide">Search Engine Optimization</a>. SEO was born thanks to a new type of consumer: the <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Web_crawler">web crawler</a>. People understood that their webpages were no longer being read by just humans, so they started writing html to be read by crawlers too. </p>
+<h3 id="How-to-create-interfaces"><a href="#How-to-create-interfaces" class="headerlink" title="How to create interfaces"></a>How to create interfaces</h3><p>The Act of Interface Creation is a simple <strong>two-step process</strong>:</p>
+<ol>
+<li>Identify that there is a new type of consumer who wants to read&#x2F;write to your stuff.</li>
+<li>Consider how to design your interface so that it is as “readable” as possible for the consumer.</li>
+</ol>
+<h3 id="AgentWare"><a href="#AgentWare" class="headerlink" title="AgentWare"></a>AgentWare</h3><p>There’s a new consumer on the block: the <strong><a target="_blank" rel="noopener" href="https://zapier.com/blog/ai-agent/">AI agent</a></strong>. </p>
+<p>Why? All content we create will eventually be read by an agent — whether this be an LLM or other AI. </p>
+<p><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Hypermedia">Hypermedia</a> was at first <em>computer-readable</em>, then <em>human-readable</em>, and then <em>web-scraper-readable</em>. Now it must be <em>agent-readable</em>.</p>
+<p>I am proposing two things: </p>
+<ul>
+<li><strong>Agent-Application Interface (AAI)</strong>: the interface between agents and software.⁑</li>
+<li><strong><em>AgentWare</em></strong>: software that implements <strong>AAI</strong>, built from the ground-up for agents as the end-user.</li>
+</ul>
+<p><strong><em>AgentWare</em></strong> will have underlying data structures that can be easily read by agents, and written to if needed.⁂ </p>
+<p>Because the way humans and agents “read” is quite similar, <strong><em>AgentWare</em></strong> will be backwards-compatible with existing software for a while, and therefore maintain good “user-interface” for human beings.</p>
+<br>
+
+<h1 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h1><p>Interfaces are anything that allow <em>A</em> to connect with <em>B</em>. Without interfaces, things exist in complete isolation. But, with well-made interfaces, there is infinite emergent potential.</p>
+<br>
+
+<hr>
+<p>* &nbsp; <a target="_blank" rel="noopener" href="https://github.com/modelcontextprotocol">Model Context Protocol</a>: An open protocol that enables seamless integration between LLM applications and external data sources and tools<br>⁑ &nbsp;&nbsp; Most likely some derivative of natural language, but I have no idea :’)<br>⁂ &nbsp; Caveat — there needs to be clear monetary incentive for making your stuff more accessible. Web crawlers, for example, will thank you by leading to higher site traffic.</p>
+
+    </div>
+</article>
+
+
+    <div class="blog-post-comments">
+        <div id="utterances_thread">
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        </div>
+    </div>
+
+
+
+        
+            <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+        
+          <li><a href="/">home</a></li>
+        
+          <li><a href="/blog">blog</a></li>
+        
+          <li><a href="/work">work</a></li>
+        
+          <li><a href="/etc">etc</a></li>
+        
+      </ul>
+    </div>
+
+    
+    
+      <div id="toc-footer" style="display: none">
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#Examples"><span class="toc-number">1.</span> <span class="toc-text">Examples</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-create-interfaces"><span class="toc-number">2.</span> <span class="toc-text">How to create interfaces</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#AgentWare"><span class="toc-number">3.</span> <span class="toc-text">AgentWare</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Conclusion"><span class="toc-number"></span> <span class="toc-text">Conclusion</span></a>
+      </div>
+    
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&text=agents need a new api"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&is_video=false&description=agents need a new api"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=agents need a new api&body=Check out this article: https://jl33-ai.github.io/2025/01/01/the-next-interface/"><i class="fa-solid fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&title=agents need a new api"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=https://jl33-ai.github.io/2025/01/01/the-next-interface/&name=agents need a new api&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=https://jl33-ai.github.io/2025/01/01/the-next-interface/&t=agents need a new api"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        
+          <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa-solid fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa-solid fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa-solid fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <!-- Hide footer on home screen -->
+        
+            <footer id="footer">
+    <div class="footer-left">
+        <div style="display: none">
+            
+            
+            200*-2026
+            JL</div>
+    </div>
+    <div class="footer-right">
+        <nav>
+            <ul>
+                
+                    <li><a href="/">home</a></li>
+                
+                    <li><a href="/blog">blog</a></li>
+                
+                    <li><a href="/work">work</a></li>
+                
+                    <li><a href="/etc">etc</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</footer>
+
+        
+    </div>
+
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script>
+
+
+
+
+<!-- clipboard -->
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript">
+        $(function () {
+            // copy-btn HTML
+            var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+            btn += '<i class="fa-regular fa-clone"></i>';
+            btn += '</span>';
+            // mount it!
+            $(".highlight table").before(btn);
+            var clip = new ClipboardJS('.btn-copy', {
+                text: function (trigger) {
+                    return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str, it) => str + it.innerText + '\n', '')
+                }
+            });
+            clip.on('success', function (e) {
+                e.trigger.setAttribute('aria-label', "Copied!");
+                e.clearSelection();
+            })
+        })
+    </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+    
+<script src="/js/search.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+
+            var $inputArea = $("input#search-input");
+            var $resultArea = document.querySelector("div#search-result");
+
+            $inputArea.focus(function () {
+                var search_path = "search.xml";
+                if (search_path.length == 0) {
+                    search_path = "search.xml";
+                }
+                var path = "/" + search_path;
+                searchFunc(path, 'search-input', 'search-result');
+            });
+
+            $inputArea.keydown(function (e) {
+                if (e.which == 13) {
+                    e.preventDefault();
+                }
+            });
+
+            var observer = new MutationObserver(function (mutationsList, observer) {
+                if (mutationsList.length == 1) {
+                    if (mutationsList[0].addedNodes.length) {
+                        $(".search-no-result").hide();
+                    } else if (mutationsList[0].removedNodes.length) {
+                        $(".search-no-result").show(200);
+                    }
+                }
+            });
+
+            observer.observe($resultArea, {childList: true});
+
+        });
+    </script>
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+    <script type="text/javascript">
+        var utterances_repo = 'jl33-ai/utterances';
+        var utterances_issue_term = 'pathname';
+        var utterances_label = 'Comment';
+        var utterances_theme = 'github-light';
+
+        (function () {
+            var script = document.createElement('script');
+
+            script.src = 'https://utteranc.es/client.js';
+            script.setAttribute('repo', utterances_repo);
+            script.setAttribute('issue-term', 'pathname');
+            script.setAttribute('label', utterances_label);
+            script.setAttribute('theme', utterances_theme);
+            script.setAttribute('crossorigin', 'anonymous');
+            script.async = true;
+            (document.getElementById('utterances_thread'))?.appendChild(script);
+        }());
+    </script>
+
+    </body>
+
+</html>
