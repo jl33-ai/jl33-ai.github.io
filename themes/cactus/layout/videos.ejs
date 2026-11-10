@@ -1,0 +1,9 @@
+<% if (site.data.videos) { %>
+    <div class="videos-container">
+        <div class="videos-grid">
+            <% for(var obj in site.data.videos){ %>
+                <%- partial('_partial/video/video_item', site.data.videos[obj]) %>
+            <% } %>
+        </div>
+    </div>
+<% } %>

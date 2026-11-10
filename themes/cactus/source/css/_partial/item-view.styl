@@ -1,0 +1,157 @@
+.post-item
+  display: flex
+  align-items stretch
+  margin-bottom: 2rem
+  padding: 1rem 0
+
+  &:first-child
+    padding-top 0
+
+  @media (max-width 768px)
+    flex-direction: column
+    padding: 1rem 1rem
+    .post-thumbnail, .post-thumbnail-large
+      margin-right: 0
+      margin-bottom: 1rem
+      align-items: center
+
+      //IDK WHY THIS DOESN'T FUCKING WORK
+
+      img
+        width: 70%
+
+  //background-color #00cc66
+
+  .post-thumbnail, .post-thumbnail-large
+    position: relative
+    overflow: hidden
+    margin-right: 1rem
+    float: left
+    display: flex
+    flex-direction: column
+    justify-content: center
+
+    &::after
+      content: ''
+      position: absolute
+      inset: 0
+      pointer-events: none
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='grain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23grain)' opacity='0.32'/%3E%3C/svg%3E")
+      background-size: 200px 200px
+      mix-blend-mode: soft-light
+
+    a
+      all: unset
+
+    img
+      width: 100%
+      aspect-ratio: 1.5
+      height: auto
+      object-fit: cover
+      border-radius: 0.25rem
+      filter: grayscale(100%) contrast(1.05) brightness(0.9)
+      transition: filter 0.6s cubic-bezier(0.4, 0, 0.2, 1)
+
+    &:hover
+      img
+        filter: grayscale(0%) contrast(1) brightness(1)
+
+  // Specific sizes
+
+  .post-thumbnail
+    flex: 0 0 150px
+
+  .post-thumbnail-large
+    flex: 0 0 200px
+
+    img
+      border: 0.08rem solid #e5e5e5
+      border-radius: 0.8rem
+      box-shadow: 0 1px 5px rgba(0, 0, 0, 0.03)
+
+
+  .post-content
+    display: flex
+    flex: 1
+    flex-direction: column
+    margin-right: 4rem
+
+  //background-color #00b0e8
+
+
+  .post-title
+    margin: 0
+
+    a
+      color: $color-accent-2
+      text-decoration: none
+      border-bottom: 1px solid $color-accent-2
+
+      &:hover
+        color: $color-accent-2-dark
+        border-bottom: 2px solid $color-accent-2
+        border-bottom-color: $color-accent-2-dark
+
+  .post-description
+    color: $color-text
+    font-size $font-size-subtext
+    margin-top: 0.2rem
+    margin-bottom: 0.4rem
+
+  .post-icons
+    display: flex
+    justify-content flex-start
+    align-items center
+    gap: 0.6rem
+
+    a
+      all: unset
+
+    .icon-link
+      img
+        width: 20px
+        height: 20px
+        object-fit contain
+        filter: grayscale(100%)
+        transition: filter 0.1s
+
+      &:hover
+        img
+          filter: none
+
+  .post-meta
+    flex: 0 0 150px
+    display: flex
+    flex-direction: column
+    text-align: right
+    align-items right
+    justify-content: space-between
+    padding: 0.5rem 0
+    font-size $font-size-subtext
+
+    //background-color #5c2699
+
+    .meta-data
+      text-align: right
+
+      p
+        text-align: right
+        margin: 0
+        line-height 0
+
+      span
+        text-align: right
+        margin: 0
+        line-height: 1.2
+
+      .meta-key
+        color: $color-accent-3
+
+    .help-span
+      text-align right
+
+      .help-link
+        color: $color-accent-3
+        text-decoration: none
+        transition: color 0.3s ease
+        margin-top: 1rem

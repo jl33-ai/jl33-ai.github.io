@@ -1,0 +1,79 @@
+<header id="header">
+    <a class="u-url u-uid" href="<%- url_for("/") %>">
+        <% if (theme.logo && theme.logo.enabled) { %>
+            <% if (theme.gravatar && (theme.gravatar.email || theme.gravatar.hash) && theme.logo.gravatar) { %>
+                <% if (theme.gravatar.email) { %>
+                    <img id="logo" alt class="u-logo"
+                         srcset="<%- gravatar(theme.gravatar.email) %>?s=<%= theme.logo.width %>, <%- gravatar(theme.gravatar.email) %>?s=<%= theme.logo.width * 1.5 %> 1.5x, <%- gravatar(theme.gravatar.email) %>?s=<%= theme.logo.width * 2 %> 2x"
+                         src="<%- gravatar(theme.gravatar.email) %>"/>
+                <% } else { %>
+                    <img id="logo" alt class="u-logo"
+                         srcset="https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=<%= theme.logo.width %>, https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=<%= theme.logo.width * 1.5 %> 1.5x, https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>?s=<%= theme.logo.width * 2 %> 2x"
+                         src="https://www.gravatar.com/avatar/<%= theme.gravatar.hash %>"/>
+                <% } %>
+            <% } else { %>
+                <img id="logo" alt class="u-logo" src="<%- url_for(theme.logo.url) %>"/>
+            <% } %>
+        <% } %>
+        <%
+            /* Build the pfp rotation from whatever is in /images/pfp/album/output,
+               ordered: 1_me -> 2_anime, then any extras (A–Z).
+
+               Performance: the source images are downscaled to 512x512 center-cropped
+               JPEGs (q90) — small on the wire but still crisp at the 8em display size,
+               even on retina. They're also preloaded (see <script> below) so clicking
+               to cycle is instant instead of fetching each image on first click. */
+            var pfpOrder = ['1_me', '2_anime'];
+            var pfps;
+            try {
+                var fs = require('fs');
+                var path = require('path');
+                var pfpDir = path.join(process.cwd(), 'themes/cactus/source/images/pfp/album/output');
+                pfps = fs.readdirSync(pfpDir)
+                    .filter(function (f) { return /\.(png|jpe?g|gif|webp|avif)$/i.test(f); })
+                    .sort(function (a, b) {
+                        var ia = pfpOrder.indexOf(a.replace(/\.[^.]+$/, ''));
+                        var ib = pfpOrder.indexOf(b.replace(/\.[^.]+$/, ''));
+                        if (ia === -1) ia = pfpOrder.length;
+                        if (ib === -1) ib = pfpOrder.length;
+                        return ia !== ib ? ia - ib : a.localeCompare(b);
+                    })
+                    .map(function (f) { return url_for('/images/pfp/album/output/' + f); });
+            } catch (e) { pfps = []; }
+            if (!pfps.length) {
+                /* Fallback if the directory can't be read at build time (all JPEG) */
+                pfps = pfpOrder.map(function (n) {
+                    return url_for('/images/pfp/album/output/' + n + '.jpg');
+                });
+            }
+        %>
+        <div id="title" style="display: flex; align-items: center; gap: 0.5em;">
+            <img id="pfp-cycle" src="<%- pfps[0] %>" alt="pfp"
+                 data-pfps='<%- JSON.stringify(pfps) %>'
+                 onclick="(function(e){e.preventDefault();e.stopPropagation();var img=document.getElementById('pfp-cycle');var pfps=JSON.parse(img.dataset.pfps);var i=(parseInt(img.dataset.idx||'0',10)+1)%pfps.length;img.dataset.idx=i;img.src=pfps[i];})(event)"
+                 onmouseover="this.style.filter='grayscale(0%)'"
+                 onmouseout="this.style.filter='grayscale(100%)'"
+                 style="width: 8em; height: 8em; object-fit: cover; border-radius: 1px; margin-right: 0.35em; cursor: pointer; filter: grayscale(100%); transition: filter 0.3s ease;"/>
+            <!-- Preload the rest of the rotation so click-to-cycle is instant (no
+                 first-click fetch delay). The first image is already loading via the
+                 <img> src above; this warms the browser cache for the others. -->
+            <script>
+                (function () {
+                    var pfps = <%- JSON.stringify(pfps) %>;
+                    pfps.forEach(function (src) { var i = new Image(); i.src = src; });
+                })();
+            </script>
+            <!--            <h1 class="p-name" style="margin: 0;"><%= config.title %></h1>-->
+        </div>
+    </a>
+    <!--  <div id="nav">-->
+    <!--    <ul>-->
+    <!--      <li class="icon">-->
+    <!--        <a href="#" aria-label="<%- __('icons.menu') %>"><i class="fa-solid fa-bars fa-2x"></i></a>-->
+    <!--      </li>-->
+    <!--      <% for (var i in theme.nav) { %>-->
+    <!--        <li><a href="<%- url_for(theme.nav[i]) %>"><%= __('nav.' + i).replace("nav.", "") %></a></li>-->
+    <!--        <% } %>-->
+    <!--    </ul>-->
+    <!--  </div>-->
+</header>

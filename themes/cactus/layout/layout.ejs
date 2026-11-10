@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html<%= config.language ? " lang=" + config.language.substring(0, 2) : "" %>>
+
+<% // Some jank shit to prevent layouts being applied to the Obsidian site :D
+function show_actions() {
+    return (is_post() && !page.sublayout);
+}
+
+const pathsToIgnore = [
+    'quartz/', 'static/', 'wiki/'
+]
+const ignoreLayout = page.source && pathsToIgnore.some(path => page.source.startsWith(path));
+if (ignoreLayout) { %>
+    <body class="<%- theme.direction -%>">
+    <%- body %>
+    <link rel="stylesheet" href="/css/quartz.css">
+    <%- partial('_partial/footer') %>
+    </body>
+<% } else { %>
+    <%- partial('_partial/head') %>
+
+    <body
+            style="min-height: 100vh"
+            class="max-width mx-auto px3 <%- theme.direction -%>">
+    <% if (show_actions()) { %>
+        <%- partial('_partial/post/actions_desktop') %>
+    <% } %>
+
+    <div class="content index py4 <%= is_home() ? 'h-card' : '' %>">
+        <% if (!is_post()) { %>
+            <%- partial('_partial/header') %>
+        <% } %>
+
+        <%- body %>
+
+        <% if (show_actions()) { %>
+            <%- partial('_partial/post/actions_mobile') %>
+        <% } %>
+        <!-- Hide footer on home screen -->
+        <% if (!is_home()) { %>
+            <%- partial('_partial/footer') %>
+        <% } %>
+    </div>
+
+    <%- partial('_partial/styles') %>
+    <%- partial('_partial/scripts') %>
+    </body>
+<% } %>
+</html>

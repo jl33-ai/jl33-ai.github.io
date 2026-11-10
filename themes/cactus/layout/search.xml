@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<search>
+    <% site.posts.each(function(post) { %>
+    <entry>
+        <title><%= post.title %>
+        </title>
+        <content><%= strip_html(post.content) %>
+        </content>
+        <url><%= post.permalink %>
+        </url>
+        <type>post</type>
+    </entry>
+    <% }) %>
+
+    <% site.pages.each(function(page) { %>
+    <entry>
+        <title><%= page.title %>
+        </title>
+        <content><%= strip_html(page.content) %>
+        </content>
+        <url><%= page.permalink %>
+        </url>
+        <type>page</type>
+    </entry>
+    <% }) %>
+
+    <% Object.keys(site.data).forEach(function(dataKey) { %>
+    <% if (Array.isArray(site.data[dataKey])) { %>
+    <% site.data[dataKey].forEach(function(item) { %>
+    <entry>
+        <title><%= item.title || 'Untitled' %>
+        </title>
+        <content><%= item.description || '' %>
+        </content>
+        <url>/data/<%= dataKey %>/<%= (item.title || 'item').toLowerCase().replace(/[^a-z0-9]+/g, '-') %>
+        </url>
+        <type>data</type>
+        <dataType><%= dataKey %>
+        </dataType>
+        <% if (item.tier) { %>
+        <tier><%= item.tier %>
+        </tier>
+        <% } %>
+        <% if (item.thumbnail) { %>
+        <thumbnail><%= item.thumbnail %>
+        </thumbnail>
+        <% } %>
+    </entry>
+    <% }) %>
+    <% } %>
+    <% }) %>
+</search>

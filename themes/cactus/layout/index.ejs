@@ -1,0 +1,403 @@
+<script src="https://signmysite.com/w/d932dd3d7824be03.js"></script>
+<div class="index-page">
+    <p>
+        You <strong>do not</strong> want to click this link → <a href="https://theclonebook.com/@justin">https://theclonebook.com/@justin</a>
+        <br><br>
+
+        I like to make <a href="#" class="expandable-link"
+                          data-section="videos"><span
+                    class="expandable-icon"></span>videos</a> and <a href="#" class="expandable-link"
+                                                                     data-section="write"><span
+                    class="expandable-icon"></span>write</a>.
+        <!--        <a href="#" class="expandable-link" data-section="draw">draw<span class="expandable-icon">▾</span></a>.-->
+
+    </p>
+
+    <div id="write-section" class="dropdown-section">
+        <div class="dropdown-content">
+            <% var field_sort = 'date' %>
+            <% var writings = site.posts.filter((post) => post.categories.data.some(cat => ['artphilosophy', 'opinion'].includes(cat.name))).sort(field_sort, 'desc') %>
+            <ul class="writings-list">
+                <% writings.each(function(post, i){ %>
+                    <li class="writing-item">
+                        <% if (post.thumbnail) { %>
+                            <span class="writing-thumbnail-wrapper tooltip" data-image="<%- post.thumbnail %>">
+                                <img class="writing-thumbnail" src="<%- post.thumbnail %>" loading="lazy" alt=""/>
+                            </span>
+                        <% } %>
+                        <a href="<%- url_for(post.pdf || post.redirect_url || post.path) %>"
+                           class="writing-link"><%- post.title %></a>
+                        <span class="writing-time"><%- makeDateString(post.date) %></span>
+                    </li>
+                <% }); %>
+            </ul>
+        </div>
+    </div>
+
+    <div id="videos-section" class="dropdown-section">
+        <div class="dropdown-content">
+            <% if (site.data.videos) { %>
+                <div class="videos-list">
+                    <% for(var obj in site.data.videos){ %>
+                        <% var video = site.data.videos[obj] %>
+                        <% if (video.hidden) continue; %>
+                        <a href="https://www.youtube.com/watch?v=<%= video.video_id %>"
+                           class="video-row"
+                           target="_blank">
+                            <img src="https://img.youtube.com/vi/<%= video.video_id %>/maxresdefault.jpg"
+                                 alt="<%= video.title %>"
+                                 loading="lazy"
+                                 class="video-row-thumbnail">
+                            <div class="video-row-info">
+                                <span class="video-row-title"><%= video.title %></span>
+                                <span class="video-row-time"><%= format_duration(video.length) %> · <%= get_date_string(video.created_at) %></span>
+                            </div>
+                        </a>
+                    <% } %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+    <div id="draw-section" class="dropdown-section">
+        <div class="dropdown-content">
+            <% if (site.data.draw) { %>
+                <div class="draw-gallery">
+                    <% site.data.draw.forEach(function(drawing){ %>
+                        <div class="draw-thumbnail-link tooltip"
+                             data-image="<%= drawing.image %>">
+                            <img src="<%= drawing.image %>"
+                                 alt="<%= drawing.title %>"
+                                 loading="lazy"
+                                 class="draw-gallery-thumbnail">
+                        </div>
+                    <% }); %>
+                </div>
+            <% } %>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    .index-page {
+        /* Single source of truth for page font size */
+        --font-size: 1rem;
+    }
+
+    @media (max-width: 600px) {
+        .index-page {
+            --font-size: 1.25rem;
+        }
+
+        /* The 1.25rem mobile bump makes the 1.1x video title too chunky — pull it back */
+        .video-row-title {
+            font-size: calc(var(--font-size) * 0.9);
+        }
+    }
+
+    .index-page p {
+        color: #6B7280;
+        margin: 0;
+        line-height: 1.25;
+        font-size: var(--font-size);
+    }
+
+    /* Heading → content gap (home page only; theme default is 2rem) */
+    .h-card #header {
+        margin-bottom: 2rem;
+    }
+
+    /* Inline links (Den, videos, write, Twitter, LinkedIn): Notion-style hover */
+    .index-page p a {
+        /* Underline off — the cactus theme draws it via background-image (underline() mixin, style.styl:81) */
+        background-image: none !important;
+        border-radius: 0.15em;
+        padding: 0.05em 0.2em;
+        margin: 0 -0.2em; /* offset padding so surrounding text doesn't shift */
+        transition: background-color 0.144s ease;
+    }
+
+    .index-page p a:hover {
+        background-color: rgb(229, 231, 235);
+        background-image: none !important; /* theme re-adds a gradient underline on :hover */
+    }
+
+    .expandable-link {
+        cursor: pointer;
+        position: relative;
+    }
+
+    .expandable-icon {
+        display: inline-block;
+        margin-left: 0.2em;
+        margin-right: 0.15em;
+        width: 0;
+        height: 0;
+        /* Triangle drawn with CSS borders (geometry, not the ▾ font glyph) so it
+           renders pixel-identically on every platform — no mobile font/emoji
+           fallback that made it taller. A little taller than wide, Notion-style. */
+        border-top: 0.3em solid transparent;
+        border-bottom: 0.3em solid transparent;
+        border-left: 0.42em solid currentColor; /* points right (collapsed default) */
+        vertical-align: middle;
+        transition: transform 0.144s ease;
+    }
+
+    .expandable-link.active .expandable-icon {
+        transform: rotate(90deg); /* point down when expanded */
+    }
+
+    .dropdown-section {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .dropdown-section.open {
+        max-height: 2000px;
+    }
+
+    .dropdown-content {
+        padding-top: 1rem;
+        opacity: 0;
+        transition: opacity 0.144s ease;
+    }
+
+    .dropdown-section.open .dropdown-content {
+        opacity: 1;
+    }
+
+    .writings-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 0 1.5rem;
+        font-size: var(--font-size);
+    }
+
+    .writing-item {
+        margin-bottom: 0.25rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    .writing-link {
+        text-decoration: none;
+        background-image: none !important;
+        /* Notion-style hover, matching .index-page p a */
+        border-radius: 0.15em;
+        padding: 0.05em 0.2em;
+        margin: 0 -0.2em; /* offset padding so the title stays put */
+        transition: background-color 0.144s ease;
+    }
+
+    .writing-link:hover {
+        background-image: none !important;
+        background-color: rgb(229, 231, 235);
+    }
+
+    .writing-time {
+        opacity: 0.6;
+    }
+
+    .writing-thumbnail {
+        width: 1.5625rem; /* 1.25rem + 25% */
+        height: 1.5625rem;
+        object-fit: cover;
+        border-radius: 2px;
+    }
+
+    /* Videos list — old-YouTube search-result rows */
+    .videos-list {
+        margin-left: 1.5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .video-row {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px dashed #eff3f4; /* matches $dashed-border ($color-accent-4) */
+        text-decoration: none !important;
+        background-image: none !important;
+    }
+
+    .video-row:first-child {
+        padding-top: 0;
+    }
+
+    .video-row:last-child {
+        border-bottom: none;
+    }
+
+    .video-row:hover,
+    .video-row:focus,
+    .video-row:active,
+    .video-row:visited {
+        text-decoration: none !important;
+        background-image: none !important;
+    }
+
+    .video-row-thumbnail {
+        width: 160px;
+        aspect-ratio: 16 / 9;
+        object-fit: cover;
+        flex-shrink: 0;
+        border-radius: 2px;
+    }
+
+    .video-row:hover .video-row-thumbnail {
+        opacity: 0.85; /* instant — no transition */
+    }
+
+    .video-row-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.25rem;
+        padding-top: 0.15rem;
+    }
+
+    .video-row-title {
+        color: #2b50d8;
+        font-weight: bold;
+        font-size: calc(var(--font-size) * 1.1);
+        line-height: 1.2;
+    }
+
+    @media (max-width: 600px) {
+        .video-row-title {
+            font-size: calc(var(--font-size) * 0.95);
+        }
+    }
+
+    .video-row:hover .video-row-title {
+        text-decoration: underline;
+    }
+
+    .video-row-time {
+        color: #999;
+        font-size: calc(var(--font-size) * 0.85);
+    }
+
+    .video-row-time strong {
+        color: #555;
+        font-weight: bold;
+    }
+
+    /* Draw gallery */
+    .draw-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-left: 1.5rem;
+    }
+
+    .draw-thumbnail-link {
+        display: block;
+        cursor: pointer;
+    }
+
+    .draw-gallery-thumbnail {
+        width: auto;
+        height: 120px;
+        object-fit: contain;
+        border-radius: 2px;
+        transition: opacity 0.069s ease;
+    }
+
+    .draw-thumbnail-link:hover .draw-gallery-thumbnail {
+        opacity: 0.8;
+    }
+
+    .writing-thumbnail-wrapper {
+        display: inline-flex;
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // PostHog home-page click tracking
+        function track(element) {
+            if (window.posthog) posthog.capture('home_click', {element: element});
+        }
+
+        const trackTargets = [
+            ['#pfp-cycle', 'profile_picture'],
+            ['a[href="https://getden.io/"]', 'den'],
+            ['.expandable-link[data-section="videos"]', 'videos_dropdown'],
+            ['.expandable-link[data-section="write"]', 'write_dropdown'],
+            ['a[href="https://x.com/Justin01805921"]', 'twitter'],
+            ['a[href="https://www.linkedin.com/in/justin1ee/"]', 'linkedin']
+        ];
+        trackTargets.forEach(function ([selector, name]) {
+            document.querySelectorAll(selector).forEach(function (el) {
+                el.addEventListener('click', function () {
+                    track(name);
+                });
+            });
+        });
+
+        const expandableLinks = document.querySelectorAll('.expandable-link');
+
+        expandableLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const sectionName = this.getAttribute('data-section');
+                const section = document.getElementById(sectionName + '-section');
+                const isCurrentlyOpen = section.classList.contains('open');
+
+                // Check if any other section is open
+                const otherOpenSection = Array.from(document.querySelectorAll('.dropdown-section')).find(
+                    s => s !== section && s.classList.contains('open')
+                );
+
+                if (otherOpenSection) {
+                    // Close other sections first
+                    document.querySelectorAll('.dropdown-section').forEach(s => {
+                        if (s !== section) {
+                            s.classList.remove('open');
+                        }
+                    });
+
+                    document.querySelectorAll('.expandable-link').forEach(l => {
+                        if (l !== this) {
+                            l.classList.remove('active');
+                        }
+                    });
+
+                    // Wait for close animation to complete, then open new section
+                    if (!isCurrentlyOpen) {
+                        setTimeout(() => {
+                            this.classList.add('active');
+                            section.classList.add('open');
+                        }, 400);
+                    }
+                } else {
+                    // No other section open, just toggle immediately
+                    this.classList.toggle('active');
+                    section.classList.toggle('open');
+                }
+            });
+        });
+
+        // Tippy tooltips for draw gallery and writing thumbnails
+        if (typeof tippy !== 'undefined') {
+            tippy('.draw-thumbnail-link.tooltip, .writing-thumbnail-wrapper.tooltip', {
+                content(reference) {
+                    const imageSrc = reference.getAttribute('data-image');
+                    return `<img src="${imageSrc}" style="max-width: 500px; max-height: 500px; object-fit: contain; display: block;" />`;
+                },
+                allowHTML: true,
+                placement: 'right',
+                delay: [200, 0],
+                theme: 'light',
+                maxWidth: 'none'
+            });
+        }
+    });
+</script>

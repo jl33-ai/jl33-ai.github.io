@@ -1,0 +1,66 @@
+<%
+function getRandomThumbnail() {
+    const thumbnails = [
+        '/images/thumbnails/house.png',
+        '/images/thumbnails/waste.png',
+        '/images/thumbnails/field.png',
+        '/images/thumbnails/red-houses.png',
+        '/images/thumbnails/flowers.png',
+        '/images/thumbnails/fruit.png',
+        '/images/thumbnails/girl.png',
+        '/images/thumbnails/couple.png',
+        '/images/thumbnails/arab.png'
+    ];
+    return thumbnails[Math.floor(Math.random() * thumbnails.length)];
+}
+
+function isWritingPost(type) {
+    return type && type === 'writing';
+}
+
+const thumbnailSrc = post.thumbnail || getRandomThumbnail();
+%>
+
+<div class="post-item item-with-border">
+    <div class="post-thumbnail">
+        <a href="<%- url_for(post.pdf || post.redirect_url || post.path) %>" class="post-link">
+            <img src="<%- url_for(thumbnailSrc) %>" alt="<%- post.title %>">
+        </a>
+    </div>
+    <div class="post-content">
+        <h2 class="post-title">
+            <a href="<%- url_for(post.pdf || post.redirect_url || post.path) %>"
+               class="post-link">
+                <%- post.title %>
+            </a>
+        </h2>
+        <p class="post-description"><%- post.description %></p>
+        <div class="post-icons">
+            <% if (!isWritingPost(type) && post.icons && post.icons.length) { %>
+                <% post.icons.forEach(function(icon) { %>
+                    <a href="<%- icon.url %>" class="icon-link">
+                        <img src="<%- url_for(icon.image) %>" alt="<%- icon.name %>">
+                    </a>
+                <% }) %>
+            <% } %>
+        </div>
+    </div>
+    <div class="post-meta">
+        <div class="meta-data">
+            <% if (post.date) { %>
+                <p><span class="meta-key"></span><span
+                            class="post-date"><%- get_date_string(post.date) %></span></p>
+            <% } %>
+            <% if (!isWritingPost(type) && post.mau !== undefined) { %>
+                <p><span class="meta-key">MAU: </span><span class="post-mau"><%- post.mau %></span></p>
+            <% } %>
+            <% if (!isWritingPost(type) && post.revenue !== undefined) { %>
+                <p><span class="meta-key"><%- post.revenue %></span></p>
+            <% } %>
+        </div>
+        <% if (post.help_link) { %>
+            <span class="help-span"><a href="<%- url_for(post.help_link) %>"
+                                       class="help-link">I want to contribute</a></span>
+        <% } %>
+    </div>
+</div>

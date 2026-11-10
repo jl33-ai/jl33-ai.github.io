@@ -1,0 +1,18 @@
+<article class="post story h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+    <header class="story-header">
+        <a class="back-btn" href="/">← back</a>
+        <%- partial('_partial/post/title', {post: page, index: false, class_name: 'posttitle storytitle'}) %>
+        <div class="meta">
+            <%- partial('_partial/post/date', {post: page, class_name: 'postdate'}) %>
+            <!--            <%- partial('_partial/post/category') %>-->
+            <!--            <%- partial('_partial/post/tag') %>-->
+
+            <!--            todo go back button -->
+        </div>
+    </header>
+
+    <div class="story-body e-content" itemprop="articleBody">
+        <%- page.content %>
+    </div>
+</article>
+<%- partial('_partial/comments') %>

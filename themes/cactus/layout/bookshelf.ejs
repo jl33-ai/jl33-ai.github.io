@@ -1,0 +1,72 @@
+<div class="bookshelf-container">
+    <%
+    const tiers = [
+        {grade: 'S', bg: '#c67b7b', tooltip: 'Read asap'},
+        {grade: 'A', bg: '#7b9bc6', tooltip: 'Add it to the list'},
+        {grade: 'B', bg: '#8bc67b', tooltip: 'Solid read'},
+        {grade: 'C', bg: '#c6a67b', tooltip: 'Use discretion'},
+        {grade: 'D', bg: '#a8a8a8', tooltip: "Don't read"}
+    ];
+    %>
+    <ul class="tier-list">
+        <% for (const tier of tiers) { %>
+            <li class="tier-row item-with-border">
+                <span class="tier-grade tooltip"
+                      style="background-color: <%= tier.bg %>"
+                      data-description="<%= tier.tooltip %>"
+                >
+                    <%= tier.grade %>
+                </span>
+                <div class="shelf">
+                    <%
+                        const books = site.data.books.filter(book => book.tier === tier.grade);
+                    if (books.length > 0) {
+                    books.forEach(function(book) {
+                    %>
+                        <div class="book-wrapper tooltip"
+                             title="<%- book.title %>"
+                             data-description="<%- book.description || '' %>"
+                        >
+                            <img
+                                    src="<%- url_for("/images/thumbnails/books/" + book.thumbnail) %>"
+                                    alt="<%- book.title %>"
+                                    class="book-cover"
+                            >
+                        </div>
+                    <%
+                    });
+                    } else {
+                    %>
+                        <div class="empty-shelf">no books in this tier yet</div>
+                    <% } %>
+                </div>
+            </li>
+        <% } %>
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        tippy('.tooltip', {
+            content(reference) {
+                const title = reference.getAttribute('title');
+                const description = reference.getAttribute('data-description');
+                return `<span>
+<span
+style="font-size: 10px"
+>${title || ''}
+<br>
+<span
+style="font-size: 8px"
+>${description}</span>
+</span>
+</span>`;
+            },
+            allowHTML: true,
+            placement: 'bottom',
+            delay: [200, 0],
+            arrow: false,
+            theme: 'translucent'
+        });
+    });
+</script>

@@ -1,0 +1,97 @@
+//.bookshelf-container
+
+//.tier-list
+
+.tier-row
+  display flex
+  align-items center
+  min-height 120px
+
+
+.tier-grade
+  padding: 2px 8px;
+  font-weight 800;
+  color white;
+  cursor help
+  transition transform 0.2s ease
+
+  &:hover
+    transform scale(1.05)
+
+.shelf
+  flex 1
+  display flex
+  gap 15px
+  align-items center
+  overflow-x auto
+  padding 15px 20px
+
+  &::-webkit-scrollbar
+    height 8px
+
+  &::-webkit-scrollbar-track
+    background #f1f1f1
+    border-radius 4px
+
+  &::-webkit-scrollbar-thumb
+    background #888
+    border-radius 4px
+
+    &:hover
+      background #555
+
+.book-wrapper
+  position relative
+  transition transform 0.1s ease-in-out
+
+// todo some weird after shit
+//&:hover
+//  &::after
+//    opacity 1
+//
+//&::after
+//  content attr(data-title)
+//  position absolute
+//  bottom -15px
+//  left 50%
+//  transform translateX(-50%)
+//  white-space nowrap
+//  font-size 8px
+//  color $color-text
+//  padding 4px 8px
+//  opacity 0
+//  transition opacity 2s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+
+.book-cover
+  width 80px
+  object-fit cover
+  border-radius 4px
+  box-shadow 0 2px 4px rgba(0, 0, 0, 0.03), 0 4px 6px rgba(0, 0, 0, 0.04)
+  cursor pointer
+  transition box-shadow 0.3s ease
+
+  &:hover
+    box-shadow 0 6px 12px rgba(0, 0, 0, 0.1), 0 7px 9px rgba(0, 0, 0, 0.08)
+
+
+.empty-shelf
+  color $color-meta
+
+@media (max-width: 768px)
+  .tier-row
+    flex-direction column
+    align-items stretch
+
+  .tier-grade
+    align-self center
+    margin-right 0
+    margin-bottom 10px
+
+  .shelf
+    justify-content center
+    flex-wrap wrap
+    max-width 100%
+
+  .book-cover
+    width 60px
+    height 90px

@@ -1,0 +1,133 @@
+.videos-container
+  display flex
+  flex-direction column
+  min-height: 100%
+  height: 100%
+  margin-bottom: 5rem
+
+.videos-grid
+  display: grid
+  grid-gap: 1.5rem 0.5rem
+
+  @media screen and (min-width: 1024px)
+    grid-template-columns: repeat(3, 1fr)
+
+  @media screen and (min-width: 640px) and (max-width: 1023px)
+    grid-template-columns: repeat(2, 1fr)
+
+  @media screen and (max-width: 639px)
+    grid-template-columns: 1fr
+
+  .video-item
+    width: 100%
+    max-width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    gap: 0.5rem
+    position relative
+
+    .upper
+      margin: 0
+
+      .youtube-container
+        position: relative;
+        width: 100%
+        aspect-ratio 16 / 9
+        border-radius: 0.5rem
+        object-fit cover
+        background-color black
+
+
+        .lozenge
+          cursor pointer
+          font-size 0.7rem
+          position absolute
+          right 0.7rem
+          bottom 0
+          padding 0 0.2rem
+          border-radius 0.2rem
+          color white
+          z-index 10
+          background-color rgba(0, 0, 0, 0.25)
+
+      .youtube-thumbnail,
+      .youtube-player-slot,
+      .youtube-iframe
+        cursor pointer
+        position: absolute;
+        border-radius: 0.5rem
+
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+      .youtube-thumbnail
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+
+      .youtube-player-slot
+        z-index: 2;
+
+
+.lower
+  margin: 0
+  display: flex
+  align-items: flex-start
+
+  .pfp
+    cursor pointer
+    padding 0.1rem 0.25rem
+    flex-grow: 0
+    max-width: 32px
+    aspect-ratio 1
+    margin-right 0.2rem
+
+    &:hover
+    img
+      width 100%
+      filter: none
+      border-radius 1000px
+
+  .info
+    flex-grow: 1
+
+    h3
+      margin-top: -0.1rem
+      margin-bottom: 0.1rem
+      text-decoration: none
+
+
+      .video-title-a
+
+
+        font-size $font-size-label
+        color: $color-accent-2
+        border-bottom: 1px solid $color-accent-2
+
+        &:hover
+          color: $color-accent-2-dark
+          border-bottom: 2px solid $color-accent-2
+          border-bottom-color: $color-accent-2-dark
+
+    .subtext
+      color: $color-accent-3
+
+      p
+        font-size $font-size-subtext
+        margin-top: -0.25rem
+        margin-bottom: 0
+
+  .ellipsis
+    aspect-ratio 1
+    margin-top 0.25rem
+    rotate 90deg
+    font-size 0.5rem
+    flex-grow: 0
+    cursor: pointer
+
+
+
+

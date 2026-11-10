@@ -1,0 +1,24 @@
+<section id="projects">
+    <h1 class="h1-main-page"><a href="<%- url_for(theme.nav.home) %>">
+            <%= page.category %>
+        </a></h1>
+    <% if (theme.tags_overview && site.tags.length) { %>
+        <span class="h2">
+            <%= __('index.topics') %>
+        </span>
+        <span class="widget tagcloud">
+            <%- tagcloud(theme.tags_overview) %>
+        </span>
+        <span class="h2">
+            <%= __('index.most_recent') %>
+        </span>
+    <% } %>
+    <ul class="post-list">
+        <% var field_sort = theme.posts_overview.sort_updated ? 'updated' : 'date' %>
+        <% var show_posts = site.posts.filter((post) => post.categories.data.some(cat => cat.name === page.category)).sort(field_sort, 'desc') %>
+        <% show_posts.each(function(post, i){ %>
+            <%- partial('_partial/item-view', {post: post, type: 'project'}) %>
+        <% }); %>
+    </ul>
+</section>
+

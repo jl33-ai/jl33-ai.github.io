@@ -1,0 +1,21 @@
+<div class="post-item" style="border-bottom: none">
+    <div class="post-thumbnail-large">
+        <img src="<%= post.image %>" alt="Justin's Manifesto">
+    </div>
+    <div class="post-content">
+        <h2 class="post-title">
+            <a href=<%- post.link %>>
+                <%= post.title %>
+            </a>
+        </h2>
+        <p class="post-description"><%= post.subtitle %></p>
+    </div>
+    <div class="post-meta">
+        <div class="meta-data">
+            <% if (post.date) { %>
+                <p><span class="meta-key">Date: </span><span
+                            class="post-date"><%- post.date.format('DD-MM-YY') %></span></p>
+            <% } %>
+        </div>
+    </div>
+</div>

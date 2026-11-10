@@ -1,0 +1,17 @@
+<div class="content">
+    <%- page.content %>
+</div>
+
+<% if (site.data.morelinks) { %>
+    <section id="projects">
+      <ul class="project-list">
+        <% for(var obj in site.data.morelinks){ %>
+          <li class="project-item">
+            <a href="<%= site.data.morelinks[obj].url %>"><%= site.data.morelinks[obj].name %></a>: <%- markdown(site.data.morelinks[obj].desc) %>
+          </li>
+        <% } %>
+      </ul>
+    </section>
+<% } %>
+
+<hr>

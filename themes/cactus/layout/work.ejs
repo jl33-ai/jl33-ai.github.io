@@ -1,0 +1,11 @@
+<!--<%- partial('_partial/search') %>-->
+
+<section>
+    <ul class="post-list">
+        <% var field_sort = theme.posts_overview.sort_updated ? 'updated' : 'date' %>
+        <% var show_posts = site.posts.filter((post) => post.categories.data.some(cat => cat.name === "home")).sort(field_sort, 'desc') %>
+        <% show_posts.each(function(post, i){ %>
+            <%- partial('_partial/item-view', {post: post, type: 'project'}) %>
+        <% }); %>
+    </ul>
+</section>
