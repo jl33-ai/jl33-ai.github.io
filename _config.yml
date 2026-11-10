@@ -90,9 +90,13 @@ pagination_dir: page
 # Include / Exclude file(s)
 ## include:/exclude: options only apply to the 'source/' folder
 include:
+  - .nojekyll
 exclude:
 #  - "quartz/**"
-ignore:
+ignore: # private folders that exist locally but must never be published
+  - "**/wiki/**"
+  - "**/quartz/**"
+  - "**/.obsidian/**"
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/]
@@ -110,6 +114,7 @@ deploy:
   type: git
   repo: git@github.com:jl33-ai/jl33-ai.github.io
   branch: gh-pages
+  ignore_hidden: false
   message: "{{ now('YYYY-MM-DD HH:mm:ss') }}"
 
 stories:

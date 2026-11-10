@@ -11,7 +11,6 @@ date: 2012-04-01 08:17:17
 tags:
 description:
 categories:
-  - opinion
 redirect_url: https://www.paulgraham.com/todo.html
 mau:
 revenue:

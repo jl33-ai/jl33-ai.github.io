@@ -1,6 +1,6 @@
 ---
 title: agents need a new api
-thumbnail: /images/thumbnails/anime-phone.gif
+thumbnail: /images/icons/minecraft-xp.gif
 icons:
   - name: Name
     image: /images/icons/name.png

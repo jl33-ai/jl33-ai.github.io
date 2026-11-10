@@ -1,6 +1,6 @@
 ---
-title: Poetic Analysis, A Hunger
-thumbnail: /images/icons/vcaa.webp
+title: poem analysis
+thumbnail: /images/icons/gapple.gif
 help_link:
 type: project
 date: 2021-11-12 13:42:32
